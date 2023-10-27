@@ -1,0 +1,1232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DbAntrenmanTakip2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="__EFMigrationsHistory">
+          <Key>
+            <PropertyRef Name="MigrationId" />
+          </Key>
+          <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+          <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AntrenmanBolge">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SporcuId" Type="int" />
+          <Property Name="AntrenmanTuruId" Type="int" Nullable="false" />
+          <Property Name="Bolge" Type="int" Nullable="false" />
+          <Property Name="BasariliMi" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Antrenmanlar">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SporcuId" Type="int" Nullable="false" />
+          <Property Name="AntrenamTuruId" Type="int" />
+          <Property Name="AtisSayisi" Type="int" Nullable="false" />
+          <Property Name="BasariliAtis" Type="int" Nullable="false" />
+          <Property Name="Tarih" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="AntrenmanSayisi" Type="int" Nullable="false" />
+          <Property Name="AntrenmanSuresi" Type="int" />
+          <Property Name="KAntrenmanTuruId" Type="int" />
+        </EntityType>
+        <EntityType Name="AntrenmanTurleri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TopKonumId" Type="int" Nullable="false" />
+          <Property Name="TopGelisSekliId" Type="int" Nullable="false" />
+          <Property Name="VurusBicimiId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Diller">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Language" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Selected" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KaleciAntrenmanTurleri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TopKonumId" Type="int" Nullable="false" />
+          <Property Name="TopGelisSekliId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Kullanicilar">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="YetkiId" Type="int" Nullable="false" />
+          <Property Name="Ad" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Soyad" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Yas" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="KullaniciAdi" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Sifre" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Mail" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="KullaniciSporcular">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SporcuId" Type="int" Nullable="false" />
+          <Property Name="KullaniciId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Mevkiler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Adi" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="EAdi" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="PortAyari">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Port" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Resimler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Path" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Sporcular">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MevkiId" Type="int" Nullable="false" />
+          <Property Name="Adi" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Soyadi" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Yas" Type="int" Nullable="false" />
+          <Property Name="Kilo" Type="int" Nullable="false" />
+          <Property Name="Boy" Type="int" Nullable="false" />
+          <Property Name="Ulke" Type="nvarchar(max)" />
+          <Property Name="ResimId" Type="int" />
+          <Property Name="DogumTarihi" Type="datetime" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="TopGelisSekilleri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Adi" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="EAdi" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="TopKonumlari">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Adi" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="EAdi" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="VurusBicimleri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Adi" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="ResimId" Type="int" />
+          <Property Name="EAdi" Type="nvarchar(max)" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_Antrenmanlar' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="View_Antrenmanlar">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="TopKonumId" />
+            <PropertyRef Name="AntrenmanId" />
+            <PropertyRef Name="AntrenmanSayisi" />
+            <PropertyRef Name="AntrenmanTurleri" />
+            <PropertyRef Name="AtisSayisi" />
+            <PropertyRef Name="BasariliAtis" />
+            <PropertyRef Name="Tarih" />
+          </Key>
+          <Property Name="AntrenamTuruId" Type="int" />
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="TopKonumId" Type="int" Nullable="false" />
+          <Property Name="AntrenmanId" Type="int" Nullable="false" />
+          <Property Name="AntrenmanSayisi" Type="int" Nullable="false" />
+          <Property Name="AntrenmanSuresi" Type="int" />
+          <Property Name="AntrenmanTurleri" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="EAntrenmanTurleri" Type="nvarchar(max)" />
+          <Property Name="AtisSayisi" Type="int" Nullable="false" />
+          <Property Name="BasariliAtis" Type="int" Nullable="false" />
+          <Property Name="Tarih" Type="datetime2" Precision="7" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_AntrenmanlarCMB' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="View_AntrenmanlarCMB">
+          <Key>
+            <PropertyRef Name="AntrenmanId" />
+            <PropertyRef Name="AntrenmanTurleri" />
+            <PropertyRef Name="SporcuId" />
+            <PropertyRef Name="TopKonumId" />
+          </Key>
+          <Property Name="AntrenmanId" Type="int" Nullable="false" />
+          <Property Name="AntrenmanTurleri" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="EAntrenmanTurleri" Type="nvarchar(max)" />
+          <Property Name="SporcuId" Type="int" Nullable="false" />
+          <Property Name="TopKonumId" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_Antrenorler' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="View_Antrenorler">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="AdSoyad" />
+            <PropertyRef Name="YetkiId" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AdSoyad" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="YetkiId" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="View_VurusBicimleri">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Adi" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Adi" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="EAdi" Type="nvarchar(max)" />
+        </EntityType>
+        <Association Name="FK_Antrenmanlar_AntrenmanTurleri_AntrenamTuruId">
+          <End Role="AntrenmanTurleri" Type="Self.AntrenmanTurleri" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Antrenmanlar" Type="Self.Antrenmanlar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AntrenmanTurleri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Antrenmanlar">
+              <PropertyRef Name="AntrenamTuruId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Antrenmanlar_KaleciAntrenmanTurleri_KAntrenmanTuruId">
+          <End Role="KaleciAntrenmanTurleri" Type="Self.KaleciAntrenmanTurleri" Multiplicity="0..1" />
+          <End Role="Antrenmanlar" Type="Self.Antrenmanlar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KaleciAntrenmanTurleri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Antrenmanlar">
+              <PropertyRef Name="KAntrenmanTuruId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Antrenmanlar_Sporcular_SporcuId">
+          <End Role="Sporcular" Type="Self.Sporcular" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Antrenmanlar" Type="Self.Antrenmanlar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sporcular">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Antrenmanlar">
+              <PropertyRef Name="SporcuId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AntrenmanTurleri_TopGelisSekilleri_TopGelisSekliId">
+          <End Role="TopGelisSekilleri" Type="Self.TopGelisSekilleri" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AntrenmanTurleri" Type="Self.AntrenmanTurleri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TopGelisSekilleri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AntrenmanTurleri">
+              <PropertyRef Name="TopGelisSekliId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AntrenmanTurleri_TopKonumlari_TopKonumId">
+          <End Role="TopKonumlari" Type="Self.TopKonumlari" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AntrenmanTurleri" Type="Self.AntrenmanTurleri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TopKonumlari">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AntrenmanTurleri">
+              <PropertyRef Name="TopKonumId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AntrenmanTurleri_VurusBicimleri_VurusBicimiId">
+          <End Role="VurusBicimleri" Type="Self.VurusBicimleri" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AntrenmanTurleri" Type="Self.AntrenmanTurleri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VurusBicimleri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AntrenmanTurleri">
+              <PropertyRef Name="VurusBicimiId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KaleciAntrenmanTurleri_TopGelisSekilleri_TopGelisSekliId">
+          <End Role="TopGelisSekilleri" Type="Self.TopGelisSekilleri" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="KaleciAntrenmanTurleri" Type="Self.KaleciAntrenmanTurleri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TopGelisSekilleri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="KaleciAntrenmanTurleri">
+              <PropertyRef Name="TopGelisSekliId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KaleciAntrenmanTurleri_TopKonumlari_TopKonumId">
+          <End Role="TopKonumlari" Type="Self.TopKonumlari" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="KaleciAntrenmanTurleri" Type="Self.KaleciAntrenmanTurleri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TopKonumlari">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="KaleciAntrenmanTurleri">
+              <PropertyRef Name="TopKonumId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KullaniciSporcular_Kullanicilar_KullaniciId">
+          <End Role="Kullanicilar" Type="Self.Kullanicilar" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="KullaniciSporcular" Type="Self.KullaniciSporcular" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Kullanicilar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="KullaniciSporcular">
+              <PropertyRef Name="KullaniciId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KullaniciSporcular_Sporcular_SporcuId">
+          <End Role="Sporcular" Type="Self.Sporcular" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="KullaniciSporcular" Type="Self.KullaniciSporcular" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sporcular">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="KullaniciSporcular">
+              <PropertyRef Name="SporcuId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sporcular_Mevkiler_MevkiId">
+          <End Role="Mevkiler" Type="Self.Mevkiler" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Sporcular" Type="Self.Sporcular" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Mevkiler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Sporcular">
+              <PropertyRef Name="MevkiId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sporcular_Resimler">
+          <End Role="Resimler" Type="Self.Resimler" Multiplicity="0..1" />
+          <End Role="Sporcular" Type="Self.Sporcular" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Resimler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Sporcular">
+              <PropertyRef Name="ResimId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VurusBicimleri_Resimler_ResimId">
+          <End Role="Resimler" Type="Self.Resimler" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="VurusBicimleri" Type="Self.VurusBicimleri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Resimler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="VurusBicimleri">
+              <PropertyRef Name="ResimId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DbAntrenmanTakip2ModelStoreContainer">
+          <EntitySet Name="__EFMigrationsHistory" EntityType="Self.__EFMigrationsHistory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AntrenmanBolge" EntityType="Self.AntrenmanBolge" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Antrenmanlar" EntityType="Self.Antrenmanlar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AntrenmanTurleri" EntityType="Self.AntrenmanTurleri" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Diller" EntityType="Self.Diller" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KaleciAntrenmanTurleri" EntityType="Self.KaleciAntrenmanTurleri" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Kullanicilar" EntityType="Self.Kullanicilar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KullaniciSporcular" EntityType="Self.KullaniciSporcular" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Mevkiler" EntityType="Self.Mevkiler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PortAyari" EntityType="Self.PortAyari" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Resimler" EntityType="Self.Resimler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sporcular" EntityType="Self.Sporcular" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TopGelisSekilleri" EntityType="Self.TopGelisSekilleri" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TopKonumlari" EntityType="Self.TopKonumlari" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VurusBicimleri" EntityType="Self.VurusBicimleri" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="View_Antrenmanlar" EntityType="Self.View_Antrenmanlar" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [View_Antrenmanlar].[AntrenamTuruId] AS [AntrenamTuruId], 
+    [View_Antrenmanlar].[Id] AS [Id], 
+    [View_Antrenmanlar].[TopKonumId] AS [TopKonumId], 
+    [View_Antrenmanlar].[AntrenmanId] AS [AntrenmanId], 
+    [View_Antrenmanlar].[AntrenmanSayisi] AS [AntrenmanSayisi], 
+    [View_Antrenmanlar].[AntrenmanSuresi] AS [AntrenmanSuresi], 
+    [View_Antrenmanlar].[AntrenmanTurleri] AS [AntrenmanTurleri], 
+    [View_Antrenmanlar].[EAntrenmanTurleri] AS [EAntrenmanTurleri], 
+    [View_Antrenmanlar].[AtisSayisi] AS [AtisSayisi], 
+    [View_Antrenmanlar].[BasariliAtis] AS [BasariliAtis], 
+    [View_Antrenmanlar].[Tarih] AS [Tarih]
+    FROM [dbo].[View_Antrenmanlar] AS [View_Antrenmanlar]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="View_AntrenmanlarCMB" EntityType="Self.View_AntrenmanlarCMB" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [View_AntrenmanlarCMB].[AntrenmanId] AS [AntrenmanId], 
+    [View_AntrenmanlarCMB].[AntrenmanTurleri] AS [AntrenmanTurleri], 
+    [View_AntrenmanlarCMB].[EAntrenmanTurleri] AS [EAntrenmanTurleri], 
+    [View_AntrenmanlarCMB].[SporcuId] AS [SporcuId], 
+    [View_AntrenmanlarCMB].[TopKonumId] AS [TopKonumId]
+    FROM [dbo].[View_AntrenmanlarCMB] AS [View_AntrenmanlarCMB]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="View_Antrenorler" EntityType="Self.View_Antrenorler" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [View_Antrenorler].[Id] AS [Id], 
+    [View_Antrenorler].[AdSoyad] AS [AdSoyad], 
+    [View_Antrenorler].[YetkiId] AS [YetkiId]
+    FROM [dbo].[View_Antrenorler] AS [View_Antrenorler]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="View_VurusBicimleri" EntityType="Self.View_VurusBicimleri" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [View_VurusBicimleri].[Id] AS [Id], 
+    [View_VurusBicimleri].[Adi] AS [Adi], 
+    [View_VurusBicimleri].[EAdi] AS [EAdi]
+    FROM [dbo].[View_VurusBicimleri] AS [View_VurusBicimleri]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_Antrenmanlar_AntrenmanTurleri_AntrenamTuruId" Association="Self.FK_Antrenmanlar_AntrenmanTurleri_AntrenamTuruId">
+            <End Role="AntrenmanTurleri" EntitySet="AntrenmanTurleri" />
+            <End Role="Antrenmanlar" EntitySet="Antrenmanlar" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Antrenmanlar_KaleciAntrenmanTurleri_KAntrenmanTuruId" Association="Self.FK_Antrenmanlar_KaleciAntrenmanTurleri_KAntrenmanTuruId">
+            <End Role="KaleciAntrenmanTurleri" EntitySet="KaleciAntrenmanTurleri" />
+            <End Role="Antrenmanlar" EntitySet="Antrenmanlar" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Antrenmanlar_Sporcular_SporcuId" Association="Self.FK_Antrenmanlar_Sporcular_SporcuId">
+            <End Role="Sporcular" EntitySet="Sporcular" />
+            <End Role="Antrenmanlar" EntitySet="Antrenmanlar" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AntrenmanTurleri_TopGelisSekilleri_TopGelisSekliId" Association="Self.FK_AntrenmanTurleri_TopGelisSekilleri_TopGelisSekliId">
+            <End Role="TopGelisSekilleri" EntitySet="TopGelisSekilleri" />
+            <End Role="AntrenmanTurleri" EntitySet="AntrenmanTurleri" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AntrenmanTurleri_TopKonumlari_TopKonumId" Association="Self.FK_AntrenmanTurleri_TopKonumlari_TopKonumId">
+            <End Role="TopKonumlari" EntitySet="TopKonumlari" />
+            <End Role="AntrenmanTurleri" EntitySet="AntrenmanTurleri" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AntrenmanTurleri_VurusBicimleri_VurusBicimiId" Association="Self.FK_AntrenmanTurleri_VurusBicimleri_VurusBicimiId">
+            <End Role="VurusBicimleri" EntitySet="VurusBicimleri" />
+            <End Role="AntrenmanTurleri" EntitySet="AntrenmanTurleri" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KaleciAntrenmanTurleri_TopGelisSekilleri_TopGelisSekliId" Association="Self.FK_KaleciAntrenmanTurleri_TopGelisSekilleri_TopGelisSekliId">
+            <End Role="TopGelisSekilleri" EntitySet="TopGelisSekilleri" />
+            <End Role="KaleciAntrenmanTurleri" EntitySet="KaleciAntrenmanTurleri" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KaleciAntrenmanTurleri_TopKonumlari_TopKonumId" Association="Self.FK_KaleciAntrenmanTurleri_TopKonumlari_TopKonumId">
+            <End Role="TopKonumlari" EntitySet="TopKonumlari" />
+            <End Role="KaleciAntrenmanTurleri" EntitySet="KaleciAntrenmanTurleri" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KullaniciSporcular_Kullanicilar_KullaniciId" Association="Self.FK_KullaniciSporcular_Kullanicilar_KullaniciId">
+            <End Role="Kullanicilar" EntitySet="Kullanicilar" />
+            <End Role="KullaniciSporcular" EntitySet="KullaniciSporcular" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KullaniciSporcular_Sporcular_SporcuId" Association="Self.FK_KullaniciSporcular_Sporcular_SporcuId">
+            <End Role="Sporcular" EntitySet="Sporcular" />
+            <End Role="KullaniciSporcular" EntitySet="KullaniciSporcular" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sporcular_Mevkiler_MevkiId" Association="Self.FK_Sporcular_Mevkiler_MevkiId">
+            <End Role="Mevkiler" EntitySet="Mevkiler" />
+            <End Role="Sporcular" EntitySet="Sporcular" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sporcular_Resimler" Association="Self.FK_Sporcular_Resimler">
+            <End Role="Resimler" EntitySet="Resimler" />
+            <End Role="Sporcular" EntitySet="Sporcular" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VurusBicimleri_Resimler_ResimId" Association="Self.FK_VurusBicimleri_Resimler_ResimId">
+            <End Role="Resimler" EntitySet="Resimler" />
+            <End Role="VurusBicimleri" EntitySet="VurusBicimleri" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DbAntrenmanTakip2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="C__EFMigrationsHistory">
+          <Key>
+            <PropertyRef Name="MigrationId" />
+          </Key>
+          <Property Name="MigrationId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ProductVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Antrenmanlar">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SporcuId" Type="Int32" Nullable="false" />
+          <Property Name="AntrenamTuruId" Type="Int32" />
+          <Property Name="AtisSayisi" Type="Int32" Nullable="false" />
+          <Property Name="BasariliAtis" Type="Int32" Nullable="false" />
+          <Property Name="Tarih" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="AntrenmanSayisi" Type="Int32" Nullable="false" />
+          <Property Name="AntrenmanSuresi" Type="Int32" />
+          <Property Name="KAntrenmanTuruId" Type="Int32" />
+          <NavigationProperty Name="AntrenmanTurleri" Relationship="Self.FK_Antrenmanlar_AntrenmanTurleri_AntrenamTuruId" FromRole="Antrenmanlar" ToRole="AntrenmanTurleri" />
+          <NavigationProperty Name="KaleciAntrenmanTurleri" Relationship="Self.FK_Antrenmanlar_KaleciAntrenmanTurleri_KAntrenmanTuruId" FromRole="Antrenmanlar" ToRole="KaleciAntrenmanTurleri" />
+          <NavigationProperty Name="Sporcular" Relationship="Self.FK_Antrenmanlar_Sporcular_SporcuId" FromRole="Antrenmanlar" ToRole="Sporcular" />
+        </EntityType>
+        <EntityType Name="AntrenmanTurleri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TopKonumId" Type="Int32" Nullable="false" />
+          <Property Name="TopGelisSekliId" Type="Int32" Nullable="false" />
+          <Property Name="VurusBicimiId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Antrenmanlar" Relationship="Self.FK_Antrenmanlar_AntrenmanTurleri_AntrenamTuruId" FromRole="AntrenmanTurleri" ToRole="Antrenmanlar" />
+          <NavigationProperty Name="TopGelisSekilleri" Relationship="Self.FK_AntrenmanTurleri_TopGelisSekilleri_TopGelisSekliId" FromRole="AntrenmanTurleri" ToRole="TopGelisSekilleri" />
+          <NavigationProperty Name="TopKonumlari" Relationship="Self.FK_AntrenmanTurleri_TopKonumlari_TopKonumId" FromRole="AntrenmanTurleri" ToRole="TopKonumlari" />
+          <NavigationProperty Name="VurusBicimleri" Relationship="Self.FK_AntrenmanTurleri_VurusBicimleri_VurusBicimiId" FromRole="AntrenmanTurleri" ToRole="VurusBicimleri" />
+        </EntityType>
+        <EntityType Name="Diller">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Language" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Selected" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KaleciAntrenmanTurleri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TopKonumId" Type="Int32" Nullable="false" />
+          <Property Name="TopGelisSekliId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Antrenmanlar" Relationship="Self.FK_Antrenmanlar_KaleciAntrenmanTurleri_KAntrenmanTuruId" FromRole="KaleciAntrenmanTurleri" ToRole="Antrenmanlar" />
+          <NavigationProperty Name="TopGelisSekilleri" Relationship="Self.FK_KaleciAntrenmanTurleri_TopGelisSekilleri_TopGelisSekliId" FromRole="KaleciAntrenmanTurleri" ToRole="TopGelisSekilleri" />
+          <NavigationProperty Name="TopKonumlari" Relationship="Self.FK_KaleciAntrenmanTurleri_TopKonumlari_TopKonumId" FromRole="KaleciAntrenmanTurleri" ToRole="TopKonumlari" />
+        </EntityType>
+        <EntityType Name="Kullanicilar">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="YetkiId" Type="Int32" Nullable="false" />
+          <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Soyad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Yas" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="KullaniciAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Sifre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Mail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="KullaniciSporcular" Relationship="Self.FK_KullaniciSporcular_Kullanicilar_KullaniciId" FromRole="Kullanicilar" ToRole="KullaniciSporcular" />
+        </EntityType>
+        <EntityType Name="KullaniciSporcular">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SporcuId" Type="Int32" Nullable="false" />
+          <Property Name="KullaniciId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Kullanicilar" Relationship="Self.FK_KullaniciSporcular_Kullanicilar_KullaniciId" FromRole="KullaniciSporcular" ToRole="Kullanicilar" />
+          <NavigationProperty Name="Sporcular" Relationship="Self.FK_KullaniciSporcular_Sporcular_SporcuId" FromRole="KullaniciSporcular" ToRole="Sporcular" />
+        </EntityType>
+        <EntityType Name="Mevkiler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Adi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Sporcular" Relationship="Self.FK_Sporcular_Mevkiler_MevkiId" FromRole="Mevkiler" ToRole="Sporcular" />
+          <Property Name="EAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Resimler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Path" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Sporcular" Relationship="Self.FK_Sporcular_Resimler" FromRole="Resimler" ToRole="Sporcular" />
+          <NavigationProperty Name="VurusBicimleri" Relationship="Self.FK_VurusBicimleri_Resimler_ResimId" FromRole="Resimler" ToRole="VurusBicimleri" />
+        </EntityType>
+        <EntityType Name="Sporcular">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MevkiId" Type="Int32" Nullable="false" />
+          <Property Name="Adi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Soyadi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Yas" Type="Int32" Nullable="false" />
+          <Property Name="Kilo" Type="Int32" Nullable="false" />
+          <Property Name="Boy" Type="Int32" Nullable="false" />
+          <Property Name="Ulke" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ResimId" Type="Int32" />
+          <NavigationProperty Name="Antrenmanlar" Relationship="Self.FK_Antrenmanlar_Sporcular_SporcuId" FromRole="Sporcular" ToRole="Antrenmanlar" />
+          <NavigationProperty Name="KullaniciSporcular" Relationship="Self.FK_KullaniciSporcular_Sporcular_SporcuId" FromRole="Sporcular" ToRole="KullaniciSporcular" />
+          <NavigationProperty Name="Mevkiler" Relationship="Self.FK_Sporcular_Mevkiler_MevkiId" FromRole="Sporcular" ToRole="Mevkiler" />
+          <NavigationProperty Name="Resimler" Relationship="Self.FK_Sporcular_Resimler" FromRole="Sporcular" ToRole="Resimler" />
+          <Property Name="DogumTarihi" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="TopGelisSekilleri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Adi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AntrenmanTurleri" Relationship="Self.FK_AntrenmanTurleri_TopGelisSekilleri_TopGelisSekliId" FromRole="TopGelisSekilleri" ToRole="AntrenmanTurleri" />
+          <NavigationProperty Name="KaleciAntrenmanTurleri" Relationship="Self.FK_KaleciAntrenmanTurleri_TopGelisSekilleri_TopGelisSekliId" FromRole="TopGelisSekilleri" ToRole="KaleciAntrenmanTurleri" />
+        </EntityType>
+        <EntityType Name="TopKonumlari">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Adi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AntrenmanTurleri" Relationship="Self.FK_AntrenmanTurleri_TopKonumlari_TopKonumId" FromRole="TopKonumlari" ToRole="AntrenmanTurleri" />
+          <NavigationProperty Name="KaleciAntrenmanTurleri" Relationship="Self.FK_KaleciAntrenmanTurleri_TopKonumlari_TopKonumId" FromRole="TopKonumlari" ToRole="KaleciAntrenmanTurleri" />
+        </EntityType>
+        <EntityType Name="VurusBicimleri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Adi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ResimId" Type="Int32" />
+          <Property Name="EAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AntrenmanTurleri" Relationship="Self.FK_AntrenmanTurleri_VurusBicimleri_VurusBicimiId" FromRole="VurusBicimleri" ToRole="AntrenmanTurleri" />
+          <NavigationProperty Name="Resimler" Relationship="Self.FK_VurusBicimleri_Resimler_ResimId" FromRole="VurusBicimleri" ToRole="Resimler" />
+        </EntityType>
+        <Association Name="FK_Antrenmanlar_AntrenmanTurleri_AntrenamTuruId">
+          <End Role="AntrenmanTurleri" Type="Self.AntrenmanTurleri" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Antrenmanlar" Type="Self.Antrenmanlar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AntrenmanTurleri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Antrenmanlar">
+              <PropertyRef Name="AntrenamTuruId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Antrenmanlar_KaleciAntrenmanTurleri_KAntrenmanTuruId">
+          <End Role="KaleciAntrenmanTurleri" Type="Self.KaleciAntrenmanTurleri" Multiplicity="0..1" />
+          <End Role="Antrenmanlar" Type="Self.Antrenmanlar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KaleciAntrenmanTurleri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Antrenmanlar">
+              <PropertyRef Name="KAntrenmanTuruId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Antrenmanlar_Sporcular_SporcuId">
+          <End Role="Sporcular" Type="Self.Sporcular" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Antrenmanlar" Type="Self.Antrenmanlar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sporcular">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Antrenmanlar">
+              <PropertyRef Name="SporcuId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AntrenmanTurleri_TopGelisSekilleri_TopGelisSekliId">
+          <End Role="TopGelisSekilleri" Type="Self.TopGelisSekilleri" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AntrenmanTurleri" Type="Self.AntrenmanTurleri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TopGelisSekilleri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AntrenmanTurleri">
+              <PropertyRef Name="TopGelisSekliId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AntrenmanTurleri_TopKonumlari_TopKonumId">
+          <End Role="TopKonumlari" Type="Self.TopKonumlari" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AntrenmanTurleri" Type="Self.AntrenmanTurleri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TopKonumlari">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AntrenmanTurleri">
+              <PropertyRef Name="TopKonumId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AntrenmanTurleri_VurusBicimleri_VurusBicimiId">
+          <End Role="VurusBicimleri" Type="Self.VurusBicimleri" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AntrenmanTurleri" Type="Self.AntrenmanTurleri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VurusBicimleri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AntrenmanTurleri">
+              <PropertyRef Name="VurusBicimiId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KaleciAntrenmanTurleri_TopGelisSekilleri_TopGelisSekliId">
+          <End Role="TopGelisSekilleri" Type="Self.TopGelisSekilleri" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="KaleciAntrenmanTurleri" Type="Self.KaleciAntrenmanTurleri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TopGelisSekilleri">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="KaleciAntrenmanTurleri">
+              <PropertyRef Name="TopGelisSekliId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KaleciAntrenmanTurleri_TopKonumlari_TopKonumId">
+          <End Role="TopKonumlari" Type="Self.TopKonumlari" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="KaleciAntrenmanTurleri" Type="Self.KaleciAntrenmanTurleri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TopKonumlari">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="KaleciAntrenmanTurleri">
+              <PropertyRef Name="TopKonumId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KullaniciSporcular_Kullanicilar_KullaniciId">
+          <End Role="Kullanicilar" Type="Self.Kullanicilar" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="KullaniciSporcular" Type="Self.KullaniciSporcular" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Kullanicilar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="KullaniciSporcular">
+              <PropertyRef Name="KullaniciId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KullaniciSporcular_Sporcular_SporcuId">
+          <End Role="Sporcular" Type="Self.Sporcular" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="KullaniciSporcular" Type="Self.KullaniciSporcular" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sporcular">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="KullaniciSporcular">
+              <PropertyRef Name="SporcuId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sporcular_Mevkiler_MevkiId">
+          <End Role="Mevkiler" Type="Self.Mevkiler" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Sporcular" Type="Self.Sporcular" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Mevkiler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Sporcular">
+              <PropertyRef Name="MevkiId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sporcular_Resimler">
+          <End Role="Resimler" Type="Self.Resimler" Multiplicity="0..1" />
+          <End Role="Sporcular" Type="Self.Sporcular" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Resimler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Sporcular">
+              <PropertyRef Name="ResimId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VurusBicimleri_Resimler_ResimId">
+          <End Role="Resimler" Type="Self.Resimler" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="VurusBicimleri" Type="Self.VurusBicimleri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Resimler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="VurusBicimleri">
+              <PropertyRef Name="ResimId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DbAntrenmanTakipEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="C__EFMigrationsHistory" EntityType="Self.C__EFMigrationsHistory" />
+          <EntitySet Name="Antrenmanlar" EntityType="Self.Antrenmanlar" />
+          <EntitySet Name="AntrenmanTurleri" EntityType="Self.AntrenmanTurleri" />
+          <EntitySet Name="Diller" EntityType="Self.Diller" />
+          <EntitySet Name="KaleciAntrenmanTurleri" EntityType="Self.KaleciAntrenmanTurleri" />
+          <EntitySet Name="Kullanicilar" EntityType="Self.Kullanicilar" />
+          <EntitySet Name="KullaniciSporcular" EntityType="Self.KullaniciSporcular" />
+          <EntitySet Name="Mevkiler" EntityType="Self.Mevkiler" />
+          <EntitySet Name="Resimler" EntityType="Self.Resimler" />
+          <EntitySet Name="Sporcular" EntityType="Self.Sporcular" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="TopGelisSekilleri" EntityType="Self.TopGelisSekilleri" />
+          <EntitySet Name="TopKonumlari" EntityType="Self.TopKonumlari" />
+          <EntitySet Name="VurusBicimleri" EntityType="Self.VurusBicimleri" />
+          <AssociationSet Name="FK_Antrenmanlar_AntrenmanTurleri_AntrenamTuruId" Association="Self.FK_Antrenmanlar_AntrenmanTurleri_AntrenamTuruId">
+            <End Role="AntrenmanTurleri" EntitySet="AntrenmanTurleri" />
+            <End Role="Antrenmanlar" EntitySet="Antrenmanlar" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Antrenmanlar_KaleciAntrenmanTurleri_KAntrenmanTuruId" Association="Self.FK_Antrenmanlar_KaleciAntrenmanTurleri_KAntrenmanTuruId">
+            <End Role="KaleciAntrenmanTurleri" EntitySet="KaleciAntrenmanTurleri" />
+            <End Role="Antrenmanlar" EntitySet="Antrenmanlar" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Antrenmanlar_Sporcular_SporcuId" Association="Self.FK_Antrenmanlar_Sporcular_SporcuId">
+            <End Role="Sporcular" EntitySet="Sporcular" />
+            <End Role="Antrenmanlar" EntitySet="Antrenmanlar" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AntrenmanTurleri_TopGelisSekilleri_TopGelisSekliId" Association="Self.FK_AntrenmanTurleri_TopGelisSekilleri_TopGelisSekliId">
+            <End Role="TopGelisSekilleri" EntitySet="TopGelisSekilleri" />
+            <End Role="AntrenmanTurleri" EntitySet="AntrenmanTurleri" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AntrenmanTurleri_TopKonumlari_TopKonumId" Association="Self.FK_AntrenmanTurleri_TopKonumlari_TopKonumId">
+            <End Role="TopKonumlari" EntitySet="TopKonumlari" />
+            <End Role="AntrenmanTurleri" EntitySet="AntrenmanTurleri" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AntrenmanTurleri_VurusBicimleri_VurusBicimiId" Association="Self.FK_AntrenmanTurleri_VurusBicimleri_VurusBicimiId">
+            <End Role="VurusBicimleri" EntitySet="VurusBicimleri" />
+            <End Role="AntrenmanTurleri" EntitySet="AntrenmanTurleri" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KaleciAntrenmanTurleri_TopGelisSekilleri_TopGelisSekliId" Association="Self.FK_KaleciAntrenmanTurleri_TopGelisSekilleri_TopGelisSekliId">
+            <End Role="TopGelisSekilleri" EntitySet="TopGelisSekilleri" />
+            <End Role="KaleciAntrenmanTurleri" EntitySet="KaleciAntrenmanTurleri" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KaleciAntrenmanTurleri_TopKonumlari_TopKonumId" Association="Self.FK_KaleciAntrenmanTurleri_TopKonumlari_TopKonumId">
+            <End Role="TopKonumlari" EntitySet="TopKonumlari" />
+            <End Role="KaleciAntrenmanTurleri" EntitySet="KaleciAntrenmanTurleri" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KullaniciSporcular_Kullanicilar_KullaniciId" Association="Self.FK_KullaniciSporcular_Kullanicilar_KullaniciId">
+            <End Role="Kullanicilar" EntitySet="Kullanicilar" />
+            <End Role="KullaniciSporcular" EntitySet="KullaniciSporcular" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KullaniciSporcular_Sporcular_SporcuId" Association="Self.FK_KullaniciSporcular_Sporcular_SporcuId">
+            <End Role="Sporcular" EntitySet="Sporcular" />
+            <End Role="KullaniciSporcular" EntitySet="KullaniciSporcular" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sporcular_Mevkiler_MevkiId" Association="Self.FK_Sporcular_Mevkiler_MevkiId">
+            <End Role="Mevkiler" EntitySet="Mevkiler" />
+            <End Role="Sporcular" EntitySet="Sporcular" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sporcular_Resimler" Association="Self.FK_Sporcular_Resimler">
+            <End Role="Resimler" EntitySet="Resimler" />
+            <End Role="Sporcular" EntitySet="Sporcular" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VurusBicimleri_Resimler_ResimId" Association="Self.FK_VurusBicimleri_Resimler_ResimId">
+            <End Role="Resimler" EntitySet="Resimler" />
+            <End Role="VurusBicimleri" EntitySet="VurusBicimleri" />
+          </AssociationSet>
+          <EntitySet Name="View_Antrenmanlar" EntityType="DbAntrenmanTakip2Model.View_Antrenmanlar" />
+          <EntitySet Name="View_AntrenmanlarCMB" EntityType="DbAntrenmanTakip2Model.View_AntrenmanlarCMB" />
+          <EntitySet Name="View_Antrenorler" EntityType="DbAntrenmanTakip2Model.View_Antrenorler" />
+          <EntitySet Name="View_VurusBicimleri" EntityType="DbAntrenmanTakip2Model.View_VurusBicimleri" />
+          <EntitySet Name="PortAyari" EntityType="DbAntrenmanTakip2Model.PortAyari" />
+          <EntitySet Name="AntrenmanBolge" EntityType="DbAntrenmanTakip2Model.AntrenmanBolge" />
+        </EntityContainer>
+        <EntityType Name="View_Antrenmanlar">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="TopKonumId" />
+            <PropertyRef Name="AntrenmanId" />
+            <PropertyRef Name="AntrenmanSayisi" />
+            <PropertyRef Name="AntrenmanTurleri" />
+            <PropertyRef Name="AtisSayisi" />
+            <PropertyRef Name="BasariliAtis" />
+            <PropertyRef Name="Tarih" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="TopKonumId" Type="Int32" Nullable="false" />
+          <Property Name="AntrenmanId" Type="Int32" Nullable="false" />
+          <Property Name="AntrenmanSayisi" Type="Int32" Nullable="false" />
+          <Property Name="AntrenmanSuresi" Type="Int32" />
+          <Property Name="AntrenmanTurleri" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EAntrenmanTurleri" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AtisSayisi" Type="Int32" Nullable="false" />
+          <Property Name="BasariliAtis" Type="Int32" Nullable="false" />
+          <Property Name="Tarih" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="AntrenamTuruId" Type="Int32" />
+        </EntityType>
+        <EntityType Name="View_AntrenmanlarCMB">
+          <Key>
+            <PropertyRef Name="AntrenmanId" />
+            <PropertyRef Name="AntrenmanTurleri" />
+            <PropertyRef Name="SporcuId" />
+            <PropertyRef Name="TopKonumId" />
+          </Key>
+          <Property Name="AntrenmanId" Type="Int32" Nullable="false" />
+          <Property Name="AntrenmanTurleri" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EAntrenmanTurleri" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SporcuId" Type="Int32" Nullable="false" />
+          <Property Name="TopKonumId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="View_Antrenorler">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="AdSoyad" />
+            <PropertyRef Name="YetkiId" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AdSoyad" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="YetkiId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="View_VurusBicimleri">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Adi" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Adi" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="PortAyari">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Port" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="AntrenmanBolge">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AntrenmanTuruId" Type="Int32" Nullable="false" />
+          <Property Name="Bolge" Type="Int32" Nullable="false" />
+          <Property Name="BasariliMi" Type="Boolean" Nullable="false" />
+          <Property Name="SporcuId" Type="Int32" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DbAntrenmanTakip2ModelStoreContainer" CdmEntityContainer="DbAntrenmanTakipEntities">
+          <EntitySetMapping Name="C__EFMigrationsHistory">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.C__EFMigrationsHistory">
+              <MappingFragment StoreEntitySet="__EFMigrationsHistory">
+                <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+                <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Antrenmanlar">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.Antrenmanlar">
+              <MappingFragment StoreEntitySet="Antrenmanlar">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="SporcuId" ColumnName="SporcuId" />
+                <ScalarProperty Name="AntrenamTuruId" ColumnName="AntrenamTuruId" />
+                <ScalarProperty Name="AtisSayisi" ColumnName="AtisSayisi" />
+                <ScalarProperty Name="BasariliAtis" ColumnName="BasariliAtis" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="AntrenmanSayisi" ColumnName="AntrenmanSayisi" />
+                <ScalarProperty Name="AntrenmanSuresi" ColumnName="AntrenmanSuresi" />
+                <ScalarProperty Name="KAntrenmanTuruId" ColumnName="KAntrenmanTuruId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AntrenmanTurleri">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.AntrenmanTurleri">
+              <MappingFragment StoreEntitySet="AntrenmanTurleri">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TopKonumId" ColumnName="TopKonumId" />
+                <ScalarProperty Name="TopGelisSekliId" ColumnName="TopGelisSekliId" />
+                <ScalarProperty Name="VurusBicimiId" ColumnName="VurusBicimiId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Diller">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.Diller">
+              <MappingFragment StoreEntitySet="Diller">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Language" ColumnName="Language" />
+                <ScalarProperty Name="Selected" ColumnName="Selected" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KaleciAntrenmanTurleri">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.KaleciAntrenmanTurleri">
+              <MappingFragment StoreEntitySet="KaleciAntrenmanTurleri">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TopKonumId" ColumnName="TopKonumId" />
+                <ScalarProperty Name="TopGelisSekliId" ColumnName="TopGelisSekliId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Kullanicilar">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.Kullanicilar">
+              <MappingFragment StoreEntitySet="Kullanicilar">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="YetkiId" ColumnName="YetkiId" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+                <ScalarProperty Name="Yas" ColumnName="Yas" />
+                <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+                <ScalarProperty Name="Mail" ColumnName="Mail" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KullaniciSporcular">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.KullaniciSporcular">
+              <MappingFragment StoreEntitySet="KullaniciSporcular">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="SporcuId" ColumnName="SporcuId" />
+                <ScalarProperty Name="KullaniciId" ColumnName="KullaniciId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Mevkiler">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.Mevkiler">
+              <MappingFragment StoreEntitySet="Mevkiler">
+                <ScalarProperty Name="EAdi" ColumnName="EAdi" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Adi" ColumnName="Adi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Resimler">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.Resimler">
+              <MappingFragment StoreEntitySet="Resimler">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Path" ColumnName="Path" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sporcular">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.Sporcular">
+              <MappingFragment StoreEntitySet="Sporcular">
+                <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="MevkiId" ColumnName="MevkiId" />
+                <ScalarProperty Name="Adi" ColumnName="Adi" />
+                <ScalarProperty Name="Soyadi" ColumnName="Soyadi" />
+                <ScalarProperty Name="Yas" ColumnName="Yas" />
+                <ScalarProperty Name="Kilo" ColumnName="Kilo" />
+                <ScalarProperty Name="Boy" ColumnName="Boy" />
+                <ScalarProperty Name="Ulke" ColumnName="Ulke" />
+                <ScalarProperty Name="ResimId" ColumnName="ResimId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TopGelisSekilleri">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.TopGelisSekilleri">
+              <MappingFragment StoreEntitySet="TopGelisSekilleri">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Adi" ColumnName="Adi" />
+                <ScalarProperty Name="EAdi" ColumnName="EAdi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TopKonumlari">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.TopKonumlari">
+              <MappingFragment StoreEntitySet="TopKonumlari">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Adi" ColumnName="Adi" />
+                <ScalarProperty Name="EAdi" ColumnName="EAdi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VurusBicimleri">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.VurusBicimleri">
+              <MappingFragment StoreEntitySet="VurusBicimleri">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Adi" ColumnName="Adi" />
+                <ScalarProperty Name="ResimId" ColumnName="ResimId" />
+                <ScalarProperty Name="EAdi" ColumnName="EAdi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="View_Antrenmanlar">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.View_Antrenmanlar">
+              <MappingFragment StoreEntitySet="View_Antrenmanlar">
+                <ScalarProperty Name="AntrenamTuruId" ColumnName="AntrenamTuruId" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="BasariliAtis" ColumnName="BasariliAtis" />
+                <ScalarProperty Name="AtisSayisi" ColumnName="AtisSayisi" />
+                <ScalarProperty Name="EAntrenmanTurleri" ColumnName="EAntrenmanTurleri" />
+                <ScalarProperty Name="AntrenmanTurleri" ColumnName="AntrenmanTurleri" />
+                <ScalarProperty Name="AntrenmanSuresi" ColumnName="AntrenmanSuresi" />
+                <ScalarProperty Name="AntrenmanSayisi" ColumnName="AntrenmanSayisi" />
+                <ScalarProperty Name="AntrenmanId" ColumnName="AntrenmanId" />
+                <ScalarProperty Name="TopKonumId" ColumnName="TopKonumId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="View_AntrenmanlarCMB">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.View_AntrenmanlarCMB">
+              <MappingFragment StoreEntitySet="View_AntrenmanlarCMB">
+                <ScalarProperty Name="TopKonumId" ColumnName="TopKonumId" />
+                <ScalarProperty Name="SporcuId" ColumnName="SporcuId" />
+                <ScalarProperty Name="EAntrenmanTurleri" ColumnName="EAntrenmanTurleri" />
+                <ScalarProperty Name="AntrenmanTurleri" ColumnName="AntrenmanTurleri" />
+                <ScalarProperty Name="AntrenmanId" ColumnName="AntrenmanId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="View_Antrenorler">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.View_Antrenorler">
+              <MappingFragment StoreEntitySet="View_Antrenorler">
+                <ScalarProperty Name="YetkiId" ColumnName="YetkiId" />
+                <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="View_VurusBicimleri">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.View_VurusBicimleri">
+              <MappingFragment StoreEntitySet="View_VurusBicimleri">
+                <ScalarProperty Name="EAdi" ColumnName="EAdi" />
+                <ScalarProperty Name="Adi" ColumnName="Adi" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PortAyari">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.PortAyari">
+              <MappingFragment StoreEntitySet="PortAyari">
+                <ScalarProperty Name="Port" ColumnName="Port" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AntrenmanBolge">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.AntrenmanBolge">
+              <MappingFragment StoreEntitySet="AntrenmanBolge">
+                <ScalarProperty Name="SporcuId" ColumnName="SporcuId" />
+                <ScalarProperty Name="BasariliMi" ColumnName="BasariliMi" />
+                <ScalarProperty Name="Bolge" ColumnName="Bolge" />
+                <ScalarProperty Name="AntrenmanTuruId" ColumnName="AntrenmanTuruId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

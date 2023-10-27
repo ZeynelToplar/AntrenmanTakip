@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3bc56a8b9c1e439d815f0ba570f6d4e2" Name="Diagram1">
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.C__EFMigrationsHistory" Width="1.5" PointX="7.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.Antrenmanlar" Width="1.5" PointX="7.5" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.AntrenmanTurleri" Width="1.5" PointX="5.25" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.Diller" Width="1.5" PointX="7.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.KaleciAntrenmanTurleri" Width="1.5" PointX="5.25" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.Kullanicilar" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.KullaniciSporcular" Width="1.5" PointX="5.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.Mevkiler" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.Resimler" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.Sporcular" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.sysdiagrams" Width="1.5" PointX="9.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.TopGelisSekilleri" Width="1.5" PointX="3" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.TopKonumlari" Width="1.5" PointX="3" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.VurusBicimleri" Width="1.5" PointX="3" PointY="9.25" IsExpanded="true" />
+        <AssociationConnector Association="DbAntrenmanTakip2Model.FK_Antrenmanlar_AntrenmanTurleri_AntrenamTuruId" ManuallyRouted="false" />
+        <AssociationConnector Association="DbAntrenmanTakip2Model.FK_Antrenmanlar_KaleciAntrenmanTurleri_KAntrenmanTuruId" ManuallyRouted="false" />
+        <AssociationConnector Association="DbAntrenmanTakip2Model.FK_Antrenmanlar_Sporcular_SporcuId" ManuallyRouted="false" />
+        <AssociationConnector Association="DbAntrenmanTakip2Model.FK_AntrenmanTurleri_TopGelisSekilleri_TopGelisSekliId" ManuallyRouted="false" />
+        <AssociationConnector Association="DbAntrenmanTakip2Model.FK_AntrenmanTurleri_TopKonumlari_TopKonumId" ManuallyRouted="false" />
+        <AssociationConnector Association="DbAntrenmanTakip2Model.FK_AntrenmanTurleri_VurusBicimleri_VurusBicimiId" ManuallyRouted="false" />
+        <AssociationConnector Association="DbAntrenmanTakip2Model.FK_KaleciAntrenmanTurleri_TopGelisSekilleri_TopGelisSekliId" ManuallyRouted="false" />
+        <AssociationConnector Association="DbAntrenmanTakip2Model.FK_KaleciAntrenmanTurleri_TopKonumlari_TopKonumId" ManuallyRouted="false" />
+        <AssociationConnector Association="DbAntrenmanTakip2Model.FK_KullaniciSporcular_Kullanicilar_KullaniciId" ManuallyRouted="false" />
+        <AssociationConnector Association="DbAntrenmanTakip2Model.FK_KullaniciSporcular_Sporcular_SporcuId" ManuallyRouted="false" />
+        <AssociationConnector Association="DbAntrenmanTakip2Model.FK_Sporcular_Mevkiler_MevkiId" ManuallyRouted="false" />
+        <AssociationConnector Association="DbAntrenmanTakip2Model.FK_Sporcular_Resimler" ManuallyRouted="false" />
+        <AssociationConnector Association="DbAntrenmanTakip2Model.FK_VurusBicimleri_Resimler_ResimId" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.View_Antrenmanlar" Width="1.5" PointX="10.375" PointY="6.75" />
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.View_AntrenmanlarCMB" Width="1.5" PointX="7.375" PointY="10.75" />
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.View_Antrenorler" Width="1.5" PointX="9.375" PointY="10.75" />
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.View_VurusBicimleri" Width="1.5" PointX="11.375" PointY="10.75" />
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.PortAyari" Width="1.5" PointX="10.375" PointY="3.75" />
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.AntrenmanBolge" Width="1.5" PointX="12.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

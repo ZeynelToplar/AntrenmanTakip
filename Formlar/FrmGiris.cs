@@ -53,7 +53,7 @@ namespace AntrenmanTakip.Formlar
             if (txtKullaniciAdi.Text == "" || txtSifre.Text == "")
             {
                 if(dil.Language == "Turkish")
-                    MessageBox.Show("Lütfen bilgilerinizi giriniz.", "Uyarı");
+                    MessageBox.Show("Lütfen bilgilerinizi giriniz...", "Uyarı");
                 else if(dil.Language == "English")
                     MessageBox.Show("Please enter your information.", "Warning");
             }

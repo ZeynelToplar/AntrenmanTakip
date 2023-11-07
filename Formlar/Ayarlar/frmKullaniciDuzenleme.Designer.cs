@@ -32,12 +32,10 @@
             this.lblKullaniciAdi = new System.Windows.Forms.Label();
             this.lblAd = new System.Windows.Forms.Label();
             this.lblSoyad = new System.Windows.Forms.Label();
-            this.lblYas = new System.Windows.Forms.Label();
             this.lblYetki = new System.Windows.Forms.Label();
             this.txtKullaniciAdi = new System.Windows.Forms.TextBox();
             this.txtAd = new System.Windows.Forms.TextBox();
             this.txtSoyad = new System.Windows.Forms.TextBox();
-            this.txtYas = new System.Windows.Forms.TextBox();
             this.cmbYetki = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -59,11 +57,6 @@
             resources.ApplyResources(this.lblSoyad, "lblSoyad");
             this.lblSoyad.Name = "lblSoyad";
             // 
-            // lblYas
-            // 
-            resources.ApplyResources(this.lblYas, "lblYas");
-            this.lblYas.Name = "lblYas";
-            // 
             // lblYetki
             // 
             resources.ApplyResources(this.lblYetki, "lblYetki");
@@ -84,22 +77,17 @@
             resources.ApplyResources(this.txtSoyad, "txtSoyad");
             this.txtSoyad.Name = "txtSoyad";
             // 
-            // txtYas
-            // 
-            resources.ApplyResources(this.txtYas, "txtYas");
-            this.txtYas.Name = "txtYas";
-            // 
             // cmbYetki
             // 
-            this.cmbYetki.FormattingEnabled = true;
             resources.ApplyResources(this.cmbYetki, "cmbYetki");
+            this.cmbYetki.FormattingEnabled = true;
             this.cmbYetki.Name = "cmbYetki";
             // 
             // button1
             // 
+            resources.ApplyResources(this.button1, "button1");
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.button1, "button1");
             this.button1.Image = global::AntrenmanTakip.Properties.Resources.ekle2_48px;
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -122,13 +110,11 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cmbYetki);
             this.Controls.Add(this.txtMail);
-            this.Controls.Add(this.txtYas);
             this.Controls.Add(this.txtSoyad);
             this.Controls.Add(this.txtAd);
             this.Controls.Add(this.txtKullaniciAdi);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblYetki);
-            this.Controls.Add(this.lblYas);
             this.Controls.Add(this.lblSoyad);
             this.Controls.Add(this.lblAd);
             this.Controls.Add(this.lblKullaniciAdi);
@@ -146,12 +132,10 @@
         private System.Windows.Forms.Label lblKullaniciAdi;
         private System.Windows.Forms.Label lblAd;
         private System.Windows.Forms.Label lblSoyad;
-        private System.Windows.Forms.Label lblYas;
         private System.Windows.Forms.Label lblYetki;
         private System.Windows.Forms.TextBox txtKullaniciAdi;
         private System.Windows.Forms.TextBox txtAd;
         private System.Windows.Forms.TextBox txtSoyad;
-        private System.Windows.Forms.TextBox txtYas;
         private System.Windows.Forms.ComboBox cmbYetki;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;

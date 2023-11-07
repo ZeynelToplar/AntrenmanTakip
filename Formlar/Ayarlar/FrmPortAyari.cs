@@ -30,7 +30,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
         {
             var ayar = Context._context.PortAyari.FirstOrDefault(x => x.Id == 1);
             ayar.Port = txtPort.Text;
-            using (DbAntrenmanTakipEntities context = new DbAntrenmanTakipEntities())
+            using (DbAntrenmanTakip2Entities context = new DbAntrenmanTakip2Entities())
             {
                 var updatedEntity = context.Entry(ayar);
                 updatedEntity.State = System.Data.Entity.EntityState.Modified;

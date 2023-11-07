@@ -297,11 +297,13 @@
             // 
             // dtimeBaslangic
             // 
+            this.dtimeBaslangic.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             resources.ApplyResources(this.dtimeBaslangic, "dtimeBaslangic");
             this.dtimeBaslangic.Name = "dtimeBaslangic";
             // 
             // dtimeBitis
             // 
+            this.dtimeBitis.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             resources.ApplyResources(this.dtimeBitis, "dtimeBitis");
             this.dtimeBitis.Name = "dtimeBitis";
             // 

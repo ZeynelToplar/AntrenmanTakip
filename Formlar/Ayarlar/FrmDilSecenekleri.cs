@@ -49,16 +49,18 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                         dil.Selected = true;
                     else
                         dil.Selected = false;
-                    
+
                 }
             }
             Context._context.SaveChanges();
             var selectedLanguage = Context._context.Diller.Where(d => d.Selected).First();
-            if(selectedLanguage.Language == "Turkish")
-                MessageBox.Show("Password change successful. Restart the program to apply the language change.");
-            else if(systemLanguage == "English")
-                MessageBox.Show("Şifre değişikliği başarılı. Dil değişikliğini uygulamak için programı yeniden başlatın.");
-           // this.Close();
+            if (selectedLanguage.Language == "Turkish")
+                FrmCustomMessageBox.Show("Şifre değişikliği başarılı. Dil değişikliğini uygulamak için programı yeniden başlatın.");
+            else if (selectedLanguage.Language == "English")
+                FrmCustomMessageBox.Show("Password change successful. Restart the program to apply the language change.");
+            // this.Close();
+
+
         }
     }
 }

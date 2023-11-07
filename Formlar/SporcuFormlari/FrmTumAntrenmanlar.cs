@@ -149,11 +149,27 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
 
         private void FrmTumAntrenmanlar_Load(object sender, EventArgs e)
         {
-            //CultureInfo cultureInfo = System.Globalization.CultureInfo.GetCultureInfo("en-US");
-            //dtimeBaslangic.Format = DateTimePickerFormat.Custom;
-            //string format = dtimeBaslangic.Value.GetDateTimeFormats(cultureInfo).First();
-            //dtimeBaslangic.CustomFormat = format;
             systemLanguge = DbService.GetApplicationLanguage();
+
+            CultureInfo cultureInfo = System.Globalization.CultureInfo.GetCultureInfo("en-US");
+            if (systemLanguge == "English")
+            {
+                string format = dtimeBaslangic.Value.GetDateTimeFormats(cultureInfo).First();
+                dtimeBaslangic.CustomFormat = format;
+
+                string format2 = dtimeBaslangic.Value.GetDateTimeFormats(cultureInfo).First();
+                dtimeBitis.CustomFormat = format2;
+            }
+            else if(systemLanguge == "Turkish")
+            {
+                CultureInfo cultureInfo_ = System.Globalization.CultureInfo.GetCultureInfo("tr-TR");
+                string format = dtimeBaslangic.Value.GetDateTimeFormats(cultureInfo_).First();
+                dtimeBaslangic.CustomFormat = format;
+
+                string format2 = dtimeBaslangic.Value.GetDateTimeFormats(cultureInfo_).First();
+                dtimeBitis.CustomFormat = format2;
+            }
+
             dtimeBaslangic.Value = DateTime.Now.AddMonths(-1);
             //Sporcu Bilgileri
             dynamic sporcu = DbService.GetFootballer(Context.sporcu.Id);

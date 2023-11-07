@@ -117,269 +117,161 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lblKullaniciAdi.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lblKullaniciAdi.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14pt</value>
-  </data>
-  <data name="lblKullaniciAdi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 18</value>
-  </data>
-  <data name="lblKullaniciAdi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 24</value>
-  </data>
-  <data name="lblKullaniciAdi.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lblKullaniciAdi.Text" xml:space="preserve">
-    <value>Kullanıcı Adı:</value>
-  </data>
-  <data name="&gt;&gt;lblKullaniciAdi.Name" xml:space="preserve">
-    <value>lblKullaniciAdi</value>
-  </data>
-  <data name="&gt;&gt;lblKullaniciAdi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblKullaniciAdi.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblKullaniciAdi.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="lblAd.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblAd.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14pt</value>
-  </data>
-  <data name="lblAd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 44</value>
-  </data>
-  <data name="lblAd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 24</value>
-  </data>
-  <data name="lblAd.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lblAd.Text" xml:space="preserve">
-    <value>Ad:</value>
-  </data>
-  <data name="&gt;&gt;lblAd.Name" xml:space="preserve">
-    <value>lblAd</value>
-  </data>
-  <data name="&gt;&gt;lblAd.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblAd.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblAd.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="lblSoyad.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblSoyad.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14pt</value>
-  </data>
-  <data name="lblSoyad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 70</value>
-  </data>
-  <data name="lblSoyad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 24</value>
-  </data>
-  <data name="lblSoyad.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lblSoyad.Text" xml:space="preserve">
-    <value>Soyad:</value>
-  </data>
-  <data name="&gt;&gt;lblSoyad.Name" xml:space="preserve">
-    <value>lblSoyad</value>
-  </data>
-  <data name="&gt;&gt;lblSoyad.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblSoyad.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblSoyad.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="lblYas.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblYas.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14pt</value>
-  </data>
-  <data name="lblYas.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 98</value>
-  </data>
-  <data name="lblYas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 24</value>
-  </data>
-  <data name="lblYas.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lblYas.Text" xml:space="preserve">
-    <value>Yaş:</value>
-  </data>
-  <data name="&gt;&gt;lblYas.Name" xml:space="preserve">
-    <value>lblYas</value>
-  </data>
-  <data name="&gt;&gt;lblYas.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblYas.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblYas.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="lblYetki.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="lblYetki.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14pt</value>
   </data>
-  <data name="lblYetki.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 153</value>
+  <data name="&gt;&gt;txtMail.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblYetki.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 24</value>
-  </data>
-  <data name="lblYetki.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lblYetki.Text" xml:space="preserve">
-    <value>Yetki:</value>
-  </data>
-  <data name="&gt;&gt;lblYetki.Name" xml:space="preserve">
-    <value>lblYetki</value>
-  </data>
-  <data name="&gt;&gt;lblYetki.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblYetki.Parent" xml:space="preserve">
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;lblYetki.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="txtKullaniciAdi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>137, 21</value>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
   </data>
-  <data name="txtKullaniciAdi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 20</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="txtKullaniciAdi.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;txtKullaniciAdi.Name" xml:space="preserve">
-    <value>txtKullaniciAdi</value>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;txtKullaniciAdi.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtKullaniciAdi.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="lblKullaniciAdi.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
   </data>
-  <data name="&gt;&gt;txtKullaniciAdi.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="lblAd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 24</value>
   </data>
-  <data name="txtAd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>137, 49</value>
+  <data name="txtKullaniciAdi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 21</value>
   </data>
-  <data name="txtAd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 20</value>
+  <data name="&gt;&gt;lblYetki.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="txtAd.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;txtAd.Name" xml:space="preserve">
-    <value>txtAd</value>
-  </data>
-  <data name="&gt;&gt;txtAd.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtAd.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txtAd.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="txtSoyad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>137, 75</value>
-  </data>
-  <data name="txtSoyad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 20</value>
-  </data>
-  <data name="txtSoyad.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;txtSoyad.Name" xml:space="preserve">
-    <value>txtSoyad</value>
+  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="&gt;&gt;txtSoyad.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="lblSoyad.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblSoyad.Name" xml:space="preserve">
+    <value>lblSoyad</value>
+  </data>
+  <data name="&gt;&gt;lblKullaniciAdi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtAd.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblYetki.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="lblKullaniciAdi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 24</value>
+  </data>
+  <data name="txtMail.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblKullaniciAdi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 18</value>
+  </data>
+  <data name="&gt;&gt;txtMail.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblYetki.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;txtSoyad.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;txtSoyad.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="txtYas.Location" type="System.Drawing.Point, System.Drawing">
-    <value>137, 102</value>
-  </data>
-  <data name="txtYas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 20</value>
-  </data>
-  <data name="txtYas.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;txtYas.Name" xml:space="preserve">
-    <value>txtYas</value>
-  </data>
-  <data name="&gt;&gt;txtYas.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtYas.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txtYas.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="cmbYetki.Location" type="System.Drawing.Point, System.Drawing">
-    <value>138, 158</value>
-  </data>
-  <data name="cmbYetki.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 21</value>
-  </data>
-  <data name="cmbYetki.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;cmbYetki.Name" xml:space="preserve">
-    <value>cmbYetki</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Kullanıcı Düzenleme</value>
   </data>
   <data name="&gt;&gt;cmbYetki.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="lblSoyad.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblAd.Name" xml:space="preserve">
+    <value>lblAd</value>
+  </data>
+  <data name="lblKullaniciAdi.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="&gt;&gt;txtKullaniciAdi.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="txtAd.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtMail.Name" xml:space="preserve">
+    <value>txtMail</value>
+  </data>
+  <data name="&gt;&gt;txtAd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblSoyad.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="&gt;&gt;lblYetki.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtAd.Name" xml:space="preserve">
+    <value>txtAd</value>
+  </data>
+  <data name="&gt;&gt;lblKullaniciAdi.Name" xml:space="preserve">
+    <value>lblKullaniciAdi</value>
+  </data>
+  <data name="txtMail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 20</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 24</value>
+  </data>
+  <data name="&gt;&gt;lblSoyad.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblSoyad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 24</value>
+  </data>
+  <data name="lblSoyad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 70</value>
+  </data>
+  <data name="&gt;&gt;txtKullaniciAdi.Name" xml:space="preserve">
+    <value>txtKullaniciAdi</value>
+  </data>
   <data name="&gt;&gt;cmbYetki.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;cmbYetki.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 100</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="txtMail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 104</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 185</value>
+    <value>176, 161</value>
+  </data>
+  <data name="lblAd.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 50</value>
@@ -387,83 +279,137 @@
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
+  <data name="&gt;&gt;lblAd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtAd.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmbYetki.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblYetki.Text" xml:space="preserve">
+    <value>Yetki:</value>
+  </data>
+  <data name="&gt;&gt;cmbYetki.Name" xml:space="preserve">
+    <value>cmbYetki</value>
+  </data>
+  <data name="&gt;&gt;txtSoyad.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>330, 219</value>
+  </data>
+  <data name="txtSoyad.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblYetki.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 24</value>
+  </data>
+  <data name="lblSoyad.Text" xml:space="preserve">
+    <value>Soyad:</value>
+  </data>
+  <data name="lblAd.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtAd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 49</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtAd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 20</value>
+  </data>
+  <data name="&gt;&gt;lblYetki.Name" xml:space="preserve">
+    <value>lblYetki</value>
+  </data>
   <data name="&gt;&gt;button1.Name" xml:space="preserve">
     <value>button1</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblAd.Text" xml:space="preserve">
+    <value>Ad:</value>
   </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="lblKullaniciAdi.Text" xml:space="preserve">
+    <value>Kullanıcı Adı:</value>
   </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;txtSoyad.Name" xml:space="preserve">
+    <value>txtSoyad</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14pt</value>
-  </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 124</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 24</value>
+  <data name="lblAd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 44</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
+  <data name="lblYetki.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 129</value>
+  </data>
+  <data name="cmbYetki.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 134</value>
+  </data>
+  <data name="cmbYetki.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 21</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmKullaniciDuzenleme</value>
+  </data>
+  <data name="lblAd.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;txtKullaniciAdi.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lblSoyad.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>E-Mail:</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="cmbYetki.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;lblYetki.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="txtMail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>138, 128</value>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="txtMail.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtSoyad.Size" type="System.Drawing.Size, System.Drawing">
     <value>154, 20</value>
   </data>
-  <data name="txtMail.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;txtMail.Name" xml:space="preserve">
-    <value>txtMail</value>
-  </data>
-  <data name="&gt;&gt;txtMail.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtMail.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblAd.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;txtMail.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="txtKullaniciAdi.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <data name="&gt;&gt;lblKullaniciAdi.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>330, 245</value>
+  <data name="lblKullaniciAdi.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblAd.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;lblSoyad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txtSoyad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 75</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -671,16 +617,16 @@
         UWjhtIuG3/gfzQGa+2QwjpcAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+  <data name="&gt;&gt;lblKullaniciAdi.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Kullanıcı Düzenleme</value>
+  <data name="&gt;&gt;txtMail.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frmKullaniciDuzenleme</value>
+  <data name="txtKullaniciAdi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 20</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

@@ -37,7 +37,6 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                     item.KullaniciAdi,
                     item.Ad,
                     item.Soyad,
-                    item.Yas,
                     yetki
                 });
             }

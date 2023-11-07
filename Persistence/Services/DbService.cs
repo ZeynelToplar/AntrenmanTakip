@@ -6,7 +6,7 @@ namespace AntrenmanTakip.Persistence.Services
 {
     public static class DbService
     {
-        static DbAntrenmanTakipEntities Context = new DbAntrenmanTakipEntities();
+        static DbAntrenmanTakip2Entities Context = new DbAntrenmanTakip2Entities();
         public static object GetFootballer(int id)
         {
             var sporcu = (from s in Context.Sporcular join m in Context.Mevkiler on s.MevkiId equals m.Id where s.Id == id select new 

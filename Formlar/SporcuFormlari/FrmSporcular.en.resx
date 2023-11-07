@@ -139,23 +139,17 @@
     <value>Position</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ctxStrpSporcular.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 26</value>
+  </data>
+  <data name="gridViewSporcular.Size" type="System.Drawing.Size, System.Drawing">
+    <value>817, 608</value>
+  </data>
   <data name="resimEkleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 22</value>
   </data>
   <data name="resimEkleToolStripMenuItem.Text" xml:space="preserve">
     <value>Add Image</value>
-  </data>
-  <data name="ctxStrpSporcular.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 26</value>
-  </data>
-  <data name="ctxStrpSporcular.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="gridViewSporcular.Size" type="System.Drawing.Size, System.Drawing">
-    <value>817, 608</value>
-  </data>
-  <data name="gridViewSporcular.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="lblAd.Location" type="System.Drawing.Point, System.Drawing">
     <value>69, 7</value>
@@ -166,9 +160,6 @@
   <data name="lblAd.Text" xml:space="preserve">
     <value>Name:</value>
   </data>
-  <data name="lblAd.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="lblYas.Location" type="System.Drawing.Point, System.Drawing">
     <value>69, 66</value>
   </data>
@@ -177,9 +168,6 @@
   </data>
   <data name="lblYas.Text" xml:space="preserve">
     <value>Age:</value>
-  </data>
-  <data name="lblYas.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="lblSoyad.Location" type="System.Drawing.Point, System.Drawing">
     <value>69, 36</value>
@@ -190,9 +178,6 @@
   <data name="lblSoyad.Text" xml:space="preserve">
     <value>Surname:</value>
   </data>
-  <data name="lblSoyad.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="lblBoy.Location" type="System.Drawing.Point, System.Drawing">
     <value>69, 124</value>
   </data>
@@ -201,9 +186,6 @@
   </data>
   <data name="lblBoy.Text" xml:space="preserve">
     <value>Height:</value>
-  </data>
-  <data name="lblBoy.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="lblMevki.Location" type="System.Drawing.Point, System.Drawing">
     <value>69, 153</value>
@@ -214,9 +196,6 @@
   <data name="lblMevki.Text" xml:space="preserve">
     <value>Position:</value>
   </data>
-  <data name="lblMevki.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="lblKilo.Location" type="System.Drawing.Point, System.Drawing">
     <value>69, 95</value>
   </data>
@@ -226,44 +205,23 @@
   <data name="lblKilo.Text" xml:space="preserve">
     <value>Weight:</value>
   </data>
-  <data name="lblKilo.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="txtAd.Location" type="System.Drawing.Point, System.Drawing">
     <value>240, 7</value>
-  </data>
-  <data name="txtAd.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="txtSoyad.Location" type="System.Drawing.Point, System.Drawing">
     <value>240, 42</value>
   </data>
-  <data name="txtSoyad.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="numYas.Location" type="System.Drawing.Point, System.Drawing">
     <value>240, 73</value>
-  </data>
-  <data name="numYas.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="numKilo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>240, 101</value>
-  </data>
-  <data name="numKilo.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="numBoy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>240, 129</value>
-  </data>
-  <data name="numBoy.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="cmbMevki.Location" type="System.Drawing.Point, System.Drawing">
     <value>240, 155</value>
   </data>
-  <data name="cmbMevki.ToolTip" xml:space="preserve">
-    <value />
+  <data name="numBoy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>240, 129</value>
+  </data>
+  <data name="numKilo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>240, 101</value>
   </data>
   <data name="dateTimePicker1.Location" type="System.Drawing.Point, System.Drawing">
     <value>240, 214</value>
@@ -271,26 +229,20 @@
   <data name="dateTimePicker1.Size" type="System.Drawing.Size, System.Drawing">
     <value>176, 20</value>
   </data>
-  <data name="dateTimePicker1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 208</value>
+    <value>67, 211</value>
   </data>
-  <data name="label1.ToolTip" xml:space="preserve">
-    <value />
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 29</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Date Of Birth:</value>
   </data>
   <data name="txtUlke.Location" type="System.Drawing.Point, System.Drawing">
     <value>240, 182</value>
   </data>
-  <data name="txtUlke.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="txtId.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 585</value>
-  </data>
-  <data name="txtId.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="btnProfilGor.Location" type="System.Drawing.Point, System.Drawing">
     <value>179, 478</value>
@@ -301,17 +253,11 @@
   <data name="btnProfilGor.Text" xml:space="preserve">
     <value>View Profile</value>
   </data>
-  <data name="btnProfilGor.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="btnSifirla.Location" type="System.Drawing.Point, System.Drawing">
     <value>179, 534</value>
   </data>
   <data name="btnSifirla.Text" xml:space="preserve">
     <value>Reset</value>
-  </data>
-  <data name="btnSifirla.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="btnAntrenmanGor.Location" type="System.Drawing.Point, System.Drawing">
     <value>179, 422</value>
@@ -322,17 +268,11 @@
   <data name="btnAntrenmanGor.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="btnAntrenmanGor.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="btnGuncelle.Location" type="System.Drawing.Point, System.Drawing">
     <value>179, 366</value>
   </data>
   <data name="btnGuncelle.Text" xml:space="preserve">
     <value>Update</value>
-  </data>
-  <data name="btnGuncelle.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="btnSil.Location" type="System.Drawing.Point, System.Drawing">
     <value>179, 310</value>
@@ -340,20 +280,14 @@
   <data name="btnSil.Text" xml:space="preserve">
     <value>Remove</value>
   </data>
-  <data name="btnSil.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="btnEkle.Location" type="System.Drawing.Point, System.Drawing">
     <value>179, 254</value>
   </data>
   <data name="btnEkle.Text" xml:space="preserve">
     <value>Add</value>
   </data>
-  <data name="btnEkle.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="lblUlke.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 182</value>
+    <value>67, 181</value>
   </data>
   <data name="lblUlke.Size" type="System.Drawing.Size, System.Drawing">
     <value>143, 29</value>
@@ -361,17 +295,11 @@
   <data name="lblUlke.Text" xml:space="preserve">
     <value>Nationality:</value>
   </data>
-  <data name="lblUlke.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>826, 3</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>456, 608</value>
-  </data>
-  <data name="panel1.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="btnGeriGit.ToolTip" xml:space="preserve">
     <value>Go back</value>
@@ -382,14 +310,8 @@
   <data name="btnSettings.ToolTip" xml:space="preserve">
     <value>Settings</value>
   </data>
-  <data name="tableLayoutPanel1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>1285, 614</value>
-  </data>
-  <data name="tableLayoutPanel2.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1303, 661</value>
@@ -605,8 +527,5 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Footballer</value>
-  </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
   </data>
 </root>

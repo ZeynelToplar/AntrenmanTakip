@@ -370,6 +370,12 @@
     <Compile Include="Formlar\SporcuFormlari\FrmTumAntrenmanlar.Designer.cs">
       <DependentUpon>FrmTumAntrenmanlar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCustomMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCustomMessageBox.Designer.cs">
+      <DependentUpon>FrmCustomMessageBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="KaleciAntrenmanTurleri.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -410,6 +416,12 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sporcular.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="sysdiagrams.cs">
@@ -604,6 +616,12 @@
     <EmbeddedResource Include="Formlar\SporcuFormlari\FrmTumAntrenmanlar.resx">
       <DependentUpon>FrmTumAntrenmanlar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmCustomMessageBox.en.resx">
+      <DependentUpon>FrmCustomMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCustomMessageBox.resx">
+      <DependentUpon>FrmCustomMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -732,7 +750,7 @@
     <None Include="Resources\antrenor.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DVP Communication With Visual C#1\DVP Communication With Visual C#\DVP Communication With Visual C#\DELTA DVP Series PLC Core\DELTA DVP Series PLC Core.csproj">
+    <ProjectReference Include="DELTA DVP Series PLC Core\DELTA DVP Series PLC Core.csproj">
       <Project>{56826e0b-cfce-4655-8367-830bbefd059d}</Project>
       <Name>DELTA DVP Series PLC Core</Name>
     </ProjectReference>

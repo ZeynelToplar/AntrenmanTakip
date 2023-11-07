@@ -37,7 +37,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
             }
         }
 
-        DbAntrenmanTakipEntities db = new DbAntrenmanTakipEntities();
+        DbAntrenmanTakip2Entities db = new DbAntrenmanTakip2Entities();
 
         //private void btnKaydet_Click(object sender, EventArgs e)
         //{

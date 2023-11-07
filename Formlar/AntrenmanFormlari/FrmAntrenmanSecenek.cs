@@ -62,8 +62,6 @@ namespace AntrenmanTakip.Formlar.AntrenmanFormlari
         private void btnGeriGit_Click(object sender, EventArgs e)
         {
             this.Close();
-            _frm1 = new Form1();
-            _frm1.Show();
         }
 
         private void btnSettings_Click(object sender, EventArgs e)

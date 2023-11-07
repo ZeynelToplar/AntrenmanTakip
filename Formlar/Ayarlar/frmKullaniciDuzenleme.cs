@@ -24,7 +24,6 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                 KullaniciAdi = kullanici.KullaniciAdi,
                 Ad = kullanici.Ad,
                 Soyad = kullanici.Soyad,
-                Yas = kullanici.Yas,
                 YetkiId = kullanici.YetkiId,
                 Mail = kullanici.Mail
             };
@@ -52,7 +51,6 @@ namespace AntrenmanTakip.Formlar.Ayarlar
             txtKullaniciAdi.Text = _kullanici.KullaniciAdi;
             txtAd.Text = _kullanici.Ad;
             txtSoyad.Text = _kullanici.Soyad;
-            txtYas.Text = _kullanici.Yas;
             cmbYetki.SelectedIndex = _kullanici.YetkiId;
             txtMail.Text = _kullanici.Mail;
         }
@@ -70,7 +68,6 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                 kullanici.KullaniciAdi = txtKullaniciAdi.Text;
                 kullanici.Ad = txtAd.Text;
                 kullanici.Soyad = txtSoyad.Text;
-                kullanici.Yas = txtYas.Text;
                 kullanici.YetkiId = cmbYetki.SelectedIndex;
                 kullanici.Mail = txtMail.Text;
                 Context._context.SaveChanges();

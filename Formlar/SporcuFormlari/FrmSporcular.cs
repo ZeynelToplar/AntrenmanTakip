@@ -24,7 +24,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         private void btnEkle_Click(object sender, EventArgs e)
         {
             Kullanicilar authenticateUser = DbService.GetUser(Context.kullanici.Id);
-            if (txtAd.Text == "" || txtSoyad.Text == "" || numBoy.Value == 0 || numKilo.Value == 0 || txtUlke.Text == "")
+            if (txtAd.Text == "" || txtSoyad.Text == "" || numBoy.Text == "0" || numKilo.Text == "0" || txtUlke.Text == "")
             {
                 if (systemLanguage == "Turkish")
                     MessageBox.Show("Lütfen gerekli bilgileri giriniz", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -56,8 +56,8 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                             Adi = txtAd.Text,
                             Soyadi = txtSoyad.Text,
                             Yas = yas,
-                            Kilo = Convert.ToInt32(numKilo.Value),
-                            Boy = Convert.ToInt32(numBoy.Value),
+                            Kilo = Convert.ToInt32(numKilo.Text),
+                            Boy = Convert.ToInt32(numBoy.Text),
                             Ulke = txtUlke.Text,
                             MevkiId = mevki,
                             ResimId = 14,
@@ -98,8 +98,8 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                             Adi = txtAd.Text,
                             Soyadi = txtSoyad.Text,
                             Yas = yas,
-                            Kilo = Convert.ToInt32(numKilo.Value),
-                            Boy = Convert.ToInt32(numBoy.Value),
+                            Kilo = Convert.ToInt32(numKilo.Text),
+                            Boy = Convert.ToInt32(numBoy.Text),
                             Ulke = txtUlke.Text,
                             MevkiId = mevki,
                             ResimId = 14,
@@ -128,7 +128,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
 
         private void btnSil_Click(object sender, EventArgs e)
         {
-            if (txtAd.Text == null || txtSoyad.Text == null ||  numBoy.Value == 0 || numKilo.Value == 0)
+            if (txtAd.Text == null || txtSoyad.Text == null ||  numBoy.Text == "0" || numKilo.Text == "0")
             {
                 if (systemLanguage == "Turkish")
                     MessageBox.Show("Lütfen silmek istediğiniz sporcuyu seçiniz!", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -188,7 +188,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
 
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
-            if (txtAd.Text == null || txtSoyad.Text == null || numBoy.Value == 0 || numKilo.Value == 0)
+            if (txtAd.Text == null || txtSoyad.Text == null || numBoy.Text == "0" || numKilo.Text == "0")
             {
                 if (systemLanguage == "Turkish")
                     MessageBox.Show("Lütfen güncellemek istediğiniz sporcuyu seçiniz!", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -211,10 +211,11 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                         sporcu.Adi = txtAd.Text;
                         sporcu.Soyadi = txtSoyad.Text;
                         sporcu.Yas = Convert.ToInt32(numYas.Value);
-                        sporcu.Boy = Convert.ToInt32(numBoy.Value);
-                        sporcu.Kilo = Convert.ToInt32(numKilo.Value);
+                        sporcu.Boy = Convert.ToInt32(numBoy.Text);
+                        sporcu.Kilo = Convert.ToInt32(numKilo.Text);
                         sporcu.MevkiId = Convert.ToInt32(cmbMevki.SelectedValue);
                         sporcu.DogumTarihi = dateTimePicker1.Value;
+                        sporcu.Ulke = txtUlke.Text;
                         Context._context.SaveChanges();
                         if (systemLanguage == "Turkish")
                             MessageBox.Show("Güncelleme işlemi başarılı.");
@@ -259,8 +260,8 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             txtId.Clear();
             txtAd.Clear();
             txtSoyad.Clear();
-            numBoy.Value = 0;
-            numKilo.Value = 0;
+            numBoy.Text = "";
+            numKilo.Text = "";
             numYas.Value = 0;
             txtUlke.Clear();
             cmbMevki.SelectedIndex = 0;
@@ -430,8 +431,8 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             txtId.Text = Convert.ToString(selectedRow.Cells["Id"].Value);
             txtAd.Text = Convert.ToString(selectedRow.Cells["Ad"].Value);
             txtSoyad.Text = Convert.ToString(selectedRow.Cells["Soyad"].Value);
-            numBoy.Value = Convert.ToInt32(selectedRow.Cells["Boy"].Value);
-            numKilo.Value = Convert.ToInt32(selectedRow.Cells["Kilo"].Value);
+            numBoy.Text = (selectedRow.Cells["Boy"].Value).ToString();
+            numKilo.Text = (selectedRow.Cells["Kilo"].Value).ToString();
             numYas.Value = Convert.ToInt32(selectedRow.Cells["Yas"].Value);
             txtUlke.Text = Convert.ToString(selectedRow.Cells["Ulke"].Value);
             dateTimePicker1.Value = Convert.ToDateTime(selectedRow.Cells["DogumTarihi"].Value);
@@ -441,8 +442,6 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         private void btnGeriGit_Click(object sender, EventArgs e)
         {
             this.Close();
-            _form1 = new Form1();
-            _form1.Show();
         }
 
         private void btnSettings_Click(object sender, EventArgs e)
@@ -527,7 +526,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            if (txtAd.Text != null || txtSoyad.Text != null || numBoy.Value != 0 || numKilo.Value != 0)
+            if (txtAd.Text != null || txtSoyad.Text != null || numBoy.Text != "0" || numKilo.Text != "0")
             {
                 int yas = YasHesapla(dateTimePicker1.Value);
                 numYas.Value = yas;
@@ -536,12 +535,21 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
 
         private int YasHesapla(DateTime dogumTarihi)
         {
-            DateTime dogumGunu = dateTimePicker1.Value;
-            DateTime bugun = DateTime.Today;
-            int yas = bugun.Year - dogumGunu.Year;
-            if (dogumGunu > bugun.AddYears(-yas))
-                yas--;
-            return yas;
+            if(DateTime.Now.ToShortDateString() != dogumTarihi.ToShortDateString())
+            {
+                DateTime dogumGunu = dateTimePicker1.Value;
+                DateTime bugun = DateTime.Today;
+                int yas = bugun.Year - dogumGunu.Year;
+                if (dogumGunu > bugun.AddYears(-yas))
+                    yas--;
+                return yas;
+            }
+            return 0;
+        }
+
+        private void numKilo_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

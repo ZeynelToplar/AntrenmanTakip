@@ -24,7 +24,6 @@ namespace AntrenmanTakip
         public int YetkiId { get; set; }
         public string Ad { get; set; }
         public string Soyad { get; set; }
-        public string Yas { get; set; }
         public string KullaniciAdi { get; set; }
         public string Sifre { get; set; }
         public string Mail { get; set; }

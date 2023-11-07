@@ -8,7 +8,7 @@ namespace AntrenmanTakip.Persistence
 {
     public static class Context
     {
-        public static DbAntrenmanTakipEntities _context = new DbAntrenmanTakipEntities();
+        public static DbAntrenmanTakip2Entities _context = new DbAntrenmanTakip2Entities();
         public static Kullanicilar kullanici;
         public static Sporcular sporcu;
     }

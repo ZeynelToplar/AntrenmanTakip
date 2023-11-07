@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="DbAntrenmanTakip2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="DbAntrenmanTakip2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="__EFMigrationsHistory">
           <Key>
             <PropertyRef Name="MigrationId" />
@@ -69,7 +69,6 @@
           <Property Name="YetkiId" Type="int" Nullable="false" />
           <Property Name="Ad" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Soyad" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="Yas" Type="nvarchar(max)" Nullable="false" />
           <Property Name="KullaniciAdi" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Sifre" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Mail" Type="nvarchar(max)" />
@@ -395,6 +394,37 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+        <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <EntityContainer Name="DbAntrenmanTakip2ModelStoreContainer">
           <EntitySet Name="__EFMigrationsHistory" EntityType="Self.__EFMigrationsHistory" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="AntrenmanBolge" EntityType="Self.AntrenmanBolge" Schema="dbo" store:Type="Tables" />
@@ -503,7 +533,8 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
             <End Role="VurusBicimleri" EntitySet="VurusBicimleri" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DbAntrenmanTakip2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -513,6 +544,16 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
           </Key>
           <Property Name="MigrationId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="ProductVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AntrenmanBolge">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SporcuId" Type="Int32" />
+          <Property Name="AntrenmanTuruId" Type="Int32" Nullable="false" />
+          <Property Name="Bolge" Type="Int32" Nullable="false" />
+          <Property Name="BasariliMi" Type="Boolean" Nullable="false" />
         </EntityType>
         <EntityType Name="Antrenmanlar">
           <Key>
@@ -571,7 +612,6 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
           <Property Name="YetkiId" Type="Int32" Nullable="false" />
           <Property Name="Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Soyad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Yas" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="KullaniciAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Sifre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Mail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
@@ -593,8 +633,15 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Adi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="Sporcular" Relationship="Self.FK_Sporcular_Mevkiler_MevkiId" FromRole="Mevkiler" ToRole="Sporcular" />
           <Property Name="EAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Sporcular" Relationship="Self.FK_Sporcular_Mevkiler_MevkiId" FromRole="Mevkiler" ToRole="Sporcular" />
+        </EntityType>
+        <EntityType Name="PortAyari">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Port" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="Resimler">
           <Key>
@@ -618,11 +665,11 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
           <Property Name="Boy" Type="Int32" Nullable="false" />
           <Property Name="Ulke" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="ResimId" Type="Int32" />
+          <Property Name="DogumTarihi" Type="DateTime" Precision="3" />
           <NavigationProperty Name="Antrenmanlar" Relationship="Self.FK_Antrenmanlar_Sporcular_SporcuId" FromRole="Sporcular" ToRole="Antrenmanlar" />
           <NavigationProperty Name="KullaniciSporcular" Relationship="Self.FK_KullaniciSporcular_Sporcular_SporcuId" FromRole="Sporcular" ToRole="KullaniciSporcular" />
           <NavigationProperty Name="Mevkiler" Relationship="Self.FK_Sporcular_Mevkiler_MevkiId" FromRole="Sporcular" ToRole="Mevkiler" />
           <NavigationProperty Name="Resimler" Relationship="Self.FK_Sporcular_Resimler" FromRole="Sporcular" ToRole="Resimler" />
-          <Property Name="DogumTarihi" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -664,6 +711,61 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
           <Property Name="EAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="AntrenmanTurleri" Relationship="Self.FK_AntrenmanTurleri_VurusBicimleri_VurusBicimiId" FromRole="VurusBicimleri" ToRole="AntrenmanTurleri" />
           <NavigationProperty Name="Resimler" Relationship="Self.FK_VurusBicimleri_Resimler_ResimId" FromRole="VurusBicimleri" ToRole="Resimler" />
+        </EntityType>
+        <EntityType Name="View_Antrenmanlar">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="TopKonumId" />
+            <PropertyRef Name="AntrenmanId" />
+            <PropertyRef Name="AntrenmanSayisi" />
+            <PropertyRef Name="AntrenmanTurleri" />
+            <PropertyRef Name="AtisSayisi" />
+            <PropertyRef Name="BasariliAtis" />
+            <PropertyRef Name="Tarih" />
+          </Key>
+          <Property Name="AntrenamTuruId" Type="Int32" />
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="TopKonumId" Type="Int32" Nullable="false" />
+          <Property Name="AntrenmanId" Type="Int32" Nullable="false" />
+          <Property Name="AntrenmanSayisi" Type="Int32" Nullable="false" />
+          <Property Name="AntrenmanSuresi" Type="Int32" />
+          <Property Name="AntrenmanTurleri" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EAntrenmanTurleri" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AtisSayisi" Type="Int32" Nullable="false" />
+          <Property Name="BasariliAtis" Type="Int32" Nullable="false" />
+          <Property Name="Tarih" Type="DateTime" Nullable="false" Precision="7" />
+        </EntityType>
+        <EntityType Name="View_AntrenmanlarCMB">
+          <Key>
+            <PropertyRef Name="AntrenmanId" />
+            <PropertyRef Name="AntrenmanTurleri" />
+            <PropertyRef Name="SporcuId" />
+            <PropertyRef Name="TopKonumId" />
+          </Key>
+          <Property Name="AntrenmanId" Type="Int32" Nullable="false" />
+          <Property Name="AntrenmanTurleri" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EAntrenmanTurleri" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SporcuId" Type="Int32" Nullable="false" />
+          <Property Name="TopKonumId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="View_Antrenorler">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="AdSoyad" />
+            <PropertyRef Name="YetkiId" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AdSoyad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="YetkiId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="View_VurusBicimleri">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Adi" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Adi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <Association Name="FK_Antrenmanlar_AntrenmanTurleri_AntrenamTuruId">
           <End Role="AntrenmanTurleri" Type="Self.AntrenmanTurleri" Multiplicity="0..1">
@@ -843,8 +945,9 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="DbAntrenmanTakipEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="DbAntrenmanTakip2Entities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="C__EFMigrationsHistory" EntityType="Self.C__EFMigrationsHistory" />
+          <EntitySet Name="AntrenmanBolge" EntityType="Self.AntrenmanBolge" />
           <EntitySet Name="Antrenmanlar" EntityType="Self.Antrenmanlar" />
           <EntitySet Name="AntrenmanTurleri" EntityType="Self.AntrenmanTurleri" />
           <EntitySet Name="Diller" EntityType="Self.Diller" />
@@ -852,12 +955,17 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
           <EntitySet Name="Kullanicilar" EntityType="Self.Kullanicilar" />
           <EntitySet Name="KullaniciSporcular" EntityType="Self.KullaniciSporcular" />
           <EntitySet Name="Mevkiler" EntityType="Self.Mevkiler" />
+          <EntitySet Name="PortAyari" EntityType="Self.PortAyari" />
           <EntitySet Name="Resimler" EntityType="Self.Resimler" />
           <EntitySet Name="Sporcular" EntityType="Self.Sporcular" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
           <EntitySet Name="TopGelisSekilleri" EntityType="Self.TopGelisSekilleri" />
           <EntitySet Name="TopKonumlari" EntityType="Self.TopKonumlari" />
           <EntitySet Name="VurusBicimleri" EntityType="Self.VurusBicimleri" />
+          <EntitySet Name="View_Antrenmanlar" EntityType="Self.View_Antrenmanlar" />
+          <EntitySet Name="View_AntrenmanlarCMB" EntityType="Self.View_AntrenmanlarCMB" />
+          <EntitySet Name="View_Antrenorler" EntityType="Self.View_Antrenorler" />
+          <EntitySet Name="View_VurusBicimleri" EntityType="Self.View_VurusBicimleri" />
           <AssociationSet Name="FK_Antrenmanlar_AntrenmanTurleri_AntrenamTuruId" Association="Self.FK_Antrenmanlar_AntrenmanTurleri_AntrenamTuruId">
             <End Role="AntrenmanTurleri" EntitySet="AntrenmanTurleri" />
             <End Role="Antrenmanlar" EntitySet="Antrenmanlar" />
@@ -910,96 +1018,70 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
             <End Role="Resimler" EntitySet="Resimler" />
             <End Role="VurusBicimleri" EntitySet="VurusBicimleri" />
           </AssociationSet>
-          <EntitySet Name="View_Antrenmanlar" EntityType="DbAntrenmanTakip2Model.View_Antrenmanlar" />
-          <EntitySet Name="View_AntrenmanlarCMB" EntityType="DbAntrenmanTakip2Model.View_AntrenmanlarCMB" />
-          <EntitySet Name="View_Antrenorler" EntityType="DbAntrenmanTakip2Model.View_Antrenorler" />
-          <EntitySet Name="View_VurusBicimleri" EntityType="DbAntrenmanTakip2Model.View_VurusBicimleri" />
-          <EntitySet Name="PortAyari" EntityType="DbAntrenmanTakip2Model.PortAyari" />
-          <EntitySet Name="AntrenmanBolge" EntityType="DbAntrenmanTakip2Model.AntrenmanBolge" />
+          <FunctionImport Name="sp_alterdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_creatediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_dropdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(DbAntrenmanTakip2Model.sp_helpdiagramdefinition_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(DbAntrenmanTakip2Model.sp_helpdiagrams_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_renamediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="new_diagramname" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_upgraddiagrams" />
         </EntityContainer>
-        <EntityType Name="View_Antrenmanlar">
-          <Key>
-            <PropertyRef Name="Id" />
-            <PropertyRef Name="TopKonumId" />
-            <PropertyRef Name="AntrenmanId" />
-            <PropertyRef Name="AntrenmanSayisi" />
-            <PropertyRef Name="AntrenmanTurleri" />
-            <PropertyRef Name="AtisSayisi" />
-            <PropertyRef Name="BasariliAtis" />
-            <PropertyRef Name="Tarih" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="TopKonumId" Type="Int32" Nullable="false" />
-          <Property Name="AntrenmanId" Type="Int32" Nullable="false" />
-          <Property Name="AntrenmanSayisi" Type="Int32" Nullable="false" />
-          <Property Name="AntrenmanSuresi" Type="Int32" />
-          <Property Name="AntrenmanTurleri" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="EAntrenmanTurleri" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="AtisSayisi" Type="Int32" Nullable="false" />
-          <Property Name="BasariliAtis" Type="Int32" Nullable="false" />
-          <Property Name="Tarih" Type="DateTime" Nullable="false" Precision="7" />
-          <Property Name="AntrenamTuruId" Type="Int32" />
-        </EntityType>
-        <EntityType Name="View_AntrenmanlarCMB">
-          <Key>
-            <PropertyRef Name="AntrenmanId" />
-            <PropertyRef Name="AntrenmanTurleri" />
-            <PropertyRef Name="SporcuId" />
-            <PropertyRef Name="TopKonumId" />
-          </Key>
-          <Property Name="AntrenmanId" Type="Int32" Nullable="false" />
-          <Property Name="AntrenmanTurleri" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="EAntrenmanTurleri" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="SporcuId" Type="Int32" Nullable="false" />
-          <Property Name="TopKonumId" Type="Int32" Nullable="false" />
-        </EntityType>
-        <EntityType Name="View_Antrenorler">
-          <Key>
-            <PropertyRef Name="Id" />
-            <PropertyRef Name="AdSoyad" />
-            <PropertyRef Name="YetkiId" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="AdSoyad" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="YetkiId" Type="Int32" Nullable="false" />
-        </EntityType>
-        <EntityType Name="View_VurusBicimleri">
-          <Key>
-            <PropertyRef Name="Id" />
-            <PropertyRef Name="Adi" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="Adi" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="EAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-        </EntityType>
-        <EntityType Name="PortAyari">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Port" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-        </EntityType>
-        <EntityType Name="AntrenmanBolge">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="AntrenmanTuruId" Type="Int32" Nullable="false" />
-          <Property Name="Bolge" Type="Int32" Nullable="false" />
-          <Property Name="BasariliMi" Type="Boolean" Nullable="false" />
-          <Property Name="SporcuId" Type="Int32" />
-        </EntityType>
+        <ComplexType Name="sp_helpdiagramdefinition_Result">
+          <Property Type="Int32" Name="version" Nullable="true" />
+          <Property Type="Binary" Name="definition" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_helpdiagrams_Result">
+          <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+          <Property Type="Int32" Name="OwnerID" Nullable="false" />
+        </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="DbAntrenmanTakip2ModelStoreContainer" CdmEntityContainer="DbAntrenmanTakipEntities">
+        <EntityContainerMapping StorageEntityContainer="DbAntrenmanTakip2ModelStoreContainer" CdmEntityContainer="DbAntrenmanTakip2Entities">
           <EntitySetMapping Name="C__EFMigrationsHistory">
             <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.C__EFMigrationsHistory">
               <MappingFragment StoreEntitySet="__EFMigrationsHistory">
                 <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
                 <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AntrenmanBolge">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.AntrenmanBolge">
+              <MappingFragment StoreEntitySet="AntrenmanBolge">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="SporcuId" ColumnName="SporcuId" />
+                <ScalarProperty Name="AntrenmanTuruId" ColumnName="AntrenmanTuruId" />
+                <ScalarProperty Name="Bolge" ColumnName="Bolge" />
+                <ScalarProperty Name="BasariliMi" ColumnName="BasariliMi" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -1053,7 +1135,6 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
                 <ScalarProperty Name="YetkiId" ColumnName="YetkiId" />
                 <ScalarProperty Name="Ad" ColumnName="Ad" />
                 <ScalarProperty Name="Soyad" ColumnName="Soyad" />
-                <ScalarProperty Name="Yas" ColumnName="Yas" />
                 <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
                 <ScalarProperty Name="Sifre" ColumnName="Sifre" />
                 <ScalarProperty Name="Mail" ColumnName="Mail" />
@@ -1072,9 +1153,17 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
           <EntitySetMapping Name="Mevkiler">
             <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.Mevkiler">
               <MappingFragment StoreEntitySet="Mevkiler">
-                <ScalarProperty Name="EAdi" ColumnName="EAdi" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Adi" ColumnName="Adi" />
+                <ScalarProperty Name="EAdi" ColumnName="EAdi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PortAyari">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.PortAyari">
+              <MappingFragment StoreEntitySet="PortAyari">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Port" ColumnName="Port" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -1089,7 +1178,6 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
           <EntitySetMapping Name="Sporcular">
             <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.Sporcular">
               <MappingFragment StoreEntitySet="Sporcular">
-                <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="MevkiId" ColumnName="MevkiId" />
                 <ScalarProperty Name="Adi" ColumnName="Adi" />
@@ -1099,6 +1187,7 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
                 <ScalarProperty Name="Boy" ColumnName="Boy" />
                 <ScalarProperty Name="Ulke" ColumnName="Ulke" />
                 <ScalarProperty Name="ResimId" ColumnName="ResimId" />
+                <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -1145,67 +1234,72 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
             <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.View_Antrenmanlar">
               <MappingFragment StoreEntitySet="View_Antrenmanlar">
                 <ScalarProperty Name="AntrenamTuruId" ColumnName="AntrenamTuruId" />
-                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
-                <ScalarProperty Name="BasariliAtis" ColumnName="BasariliAtis" />
-                <ScalarProperty Name="AtisSayisi" ColumnName="AtisSayisi" />
-                <ScalarProperty Name="EAntrenmanTurleri" ColumnName="EAntrenmanTurleri" />
-                <ScalarProperty Name="AntrenmanTurleri" ColumnName="AntrenmanTurleri" />
-                <ScalarProperty Name="AntrenmanSuresi" ColumnName="AntrenmanSuresi" />
-                <ScalarProperty Name="AntrenmanSayisi" ColumnName="AntrenmanSayisi" />
-                <ScalarProperty Name="AntrenmanId" ColumnName="AntrenmanId" />
-                <ScalarProperty Name="TopKonumId" ColumnName="TopKonumId" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TopKonumId" ColumnName="TopKonumId" />
+                <ScalarProperty Name="AntrenmanId" ColumnName="AntrenmanId" />
+                <ScalarProperty Name="AntrenmanSayisi" ColumnName="AntrenmanSayisi" />
+                <ScalarProperty Name="AntrenmanSuresi" ColumnName="AntrenmanSuresi" />
+                <ScalarProperty Name="AntrenmanTurleri" ColumnName="AntrenmanTurleri" />
+                <ScalarProperty Name="EAntrenmanTurleri" ColumnName="EAntrenmanTurleri" />
+                <ScalarProperty Name="AtisSayisi" ColumnName="AtisSayisi" />
+                <ScalarProperty Name="BasariliAtis" ColumnName="BasariliAtis" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="View_AntrenmanlarCMB">
             <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.View_AntrenmanlarCMB">
               <MappingFragment StoreEntitySet="View_AntrenmanlarCMB">
-                <ScalarProperty Name="TopKonumId" ColumnName="TopKonumId" />
-                <ScalarProperty Name="SporcuId" ColumnName="SporcuId" />
-                <ScalarProperty Name="EAntrenmanTurleri" ColumnName="EAntrenmanTurleri" />
-                <ScalarProperty Name="AntrenmanTurleri" ColumnName="AntrenmanTurleri" />
                 <ScalarProperty Name="AntrenmanId" ColumnName="AntrenmanId" />
+                <ScalarProperty Name="AntrenmanTurleri" ColumnName="AntrenmanTurleri" />
+                <ScalarProperty Name="EAntrenmanTurleri" ColumnName="EAntrenmanTurleri" />
+                <ScalarProperty Name="SporcuId" ColumnName="SporcuId" />
+                <ScalarProperty Name="TopKonumId" ColumnName="TopKonumId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="View_Antrenorler">
             <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.View_Antrenorler">
               <MappingFragment StoreEntitySet="View_Antrenorler">
-                <ScalarProperty Name="YetkiId" ColumnName="YetkiId" />
-                <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+                <ScalarProperty Name="YetkiId" ColumnName="YetkiId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="View_VurusBicimleri">
             <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.View_VurusBicimleri">
               <MappingFragment StoreEntitySet="View_VurusBicimleri">
-                <ScalarProperty Name="EAdi" ColumnName="EAdi" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Adi" ColumnName="Adi" />
-                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="EAdi" ColumnName="EAdi" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="PortAyari">
-            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.PortAyari">
-              <MappingFragment StoreEntitySet="PortAyari">
-                <ScalarProperty Name="Port" ColumnName="Port" />
-                <ScalarProperty Name="Id" ColumnName="Id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="AntrenmanBolge">
-            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.AntrenmanBolge">
-              <MappingFragment StoreEntitySet="AntrenmanBolge">
-                <ScalarProperty Name="SporcuId" ColumnName="SporcuId" />
-                <ScalarProperty Name="BasariliMi" ColumnName="BasariliMi" />
-                <ScalarProperty Name="Bolge" ColumnName="Bolge" />
-                <ScalarProperty Name="AntrenmanTuruId" ColumnName="AntrenmanTuruId" />
-                <ScalarProperty Name="Id" ColumnName="Id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="DbAntrenmanTakip2Model.Store.sp_alterdiagram" />
+          <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="DbAntrenmanTakip2Model.Store.sp_creatediagram" />
+          <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="DbAntrenmanTakip2Model.Store.sp_dropdiagram" />
+          <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="DbAntrenmanTakip2Model.Store.sp_helpdiagramdefinition">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DbAntrenmanTakip2Model.sp_helpdiagramdefinition_Result">
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="DbAntrenmanTakip2Model.Store.sp_helpdiagrams">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DbAntrenmanTakip2Model.sp_helpdiagrams_Result">
+                <ScalarProperty Name="Database" ColumnName="Database" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Owner" ColumnName="Owner" />
+                <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="DbAntrenmanTakip2Model.Store.sp_renamediagram" />
+          <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="DbAntrenmanTakip2Model.Store.sp_upgraddiagrams" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

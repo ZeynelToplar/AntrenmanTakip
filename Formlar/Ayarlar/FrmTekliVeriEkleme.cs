@@ -45,6 +45,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                                      Boy = s.Boy,
                                      Kilo = s.Kilo,
                                      Ulke = s.Ulke,
+                                     dogumTarihi = s.DogumTarihi,
                                      Mevkiler = m
                                  }).ToList();
                 //gridViewSporcular.DataSource = sporcular;
@@ -63,6 +64,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                         sporcu.Yas,
                         sporcu.Boy,
                         sporcu.Kilo,
+                        sporcu.dogumTarihi,
                         mevki
                         });
                     }
@@ -77,6 +79,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                         sporcu.Yas,
                         sporcu.Boy,
                         sporcu.Kilo,
+                        sporcu.dogumTarihi,
                         sporcu.Mevkiler.Adi
                         });
                     }
@@ -99,6 +102,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                                      Yas = s.Yas,
                                      Boy = s.Boy,
                                      Kilo = s.Kilo,
+                                     dogumTarihi= s.DogumTarihi,
                                      Mevkiler = s.Mevkiler
                                  }).ToList();
                 //gridViewSporcular.DataSource = sporcular;
@@ -117,6 +121,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                         sporcu.Yas,
                         sporcu.Boy,
                         sporcu.Kilo,
+                        sporcu.dogumTarihi,
                         mevki
                         });
                     }
@@ -131,6 +136,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                         sporcu.Yas,
                         sporcu.Boy,
                         sporcu.Kilo,
+                        sporcu.dogumTarihi,
                         sporcu.Mevkiler.Adi
                         });
                     }

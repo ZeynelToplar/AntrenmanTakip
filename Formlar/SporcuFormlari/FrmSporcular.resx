@@ -204,11 +204,8 @@
   <data name="lblBoy.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;txtUlke.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSettings.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="lblSoyad.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 18pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;btnSil.Name" xml:space="preserve">
     <value>btnSil</value>
@@ -220,7 +217,7 @@
     <value />
   </data>
   <data name="dateTimePicker1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>189, 195</value>
+    <value>189, 199</value>
   </data>
   <data name="&gt;&gt;Kilo.Name" xml:space="preserve">
     <value>Kilo</value>
@@ -267,23 +264,20 @@
   <data name="numYas.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="lblKilo.Text" xml:space="preserve">
-    <value>Kilo:</value>
+  <data name="&gt;&gt;resimEkleToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lblSoyad.ZOrder" xml:space="preserve">
-    <value>20</value>
+  <data name="&gt;&gt;txtUlke.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblSoyad.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 18pt, style=Bold</value>
+  <data name="btnProfilGor.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lblAd.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;Ad.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnGuncelle.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -301,7 +295,7 @@
     <value>Ülke:</value>
   </data>
   <data name="&gt;&gt;txtId.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="lblKilo.ToolTip" xml:space="preserve">
     <value />
@@ -343,7 +337,7 @@
     <value>Ayarlar</value>
   </data>
   <data name="txtUlke.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+    <value>6</value>
   </data>
   <data name="lblMevki.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 29</value>
@@ -366,6 +360,9 @@
   <data name="&gt;&gt;ctxStrpSporcular.Name" xml:space="preserve">
     <value>ctxStrpSporcular</value>
   </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 193</value>
+  </data>
   <data name="btnAntrenmanGor.Text" xml:space="preserve">
     <value>Antrenmaları Görüntüle</value>
   </data>
@@ -375,14 +372,11 @@
   <data name="gridViewSporcular.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="lblSoyad.Text" xml:space="preserve">
-    <value>Soyad:</value>
-  </data>
   <data name="lblKilo.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 18pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;txtUlke.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1303, 659</value>
@@ -393,8 +387,8 @@
   <data name="txtUlke.Size" type="System.Drawing.Size, System.Drawing">
     <value>176, 20</value>
   </data>
-  <data name="&gt;&gt;btnGeriGit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="lblAd.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -417,14 +411,14 @@
   <data name="btnSettings.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="resimEkleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 22</value>
   </data>
   <data name="&gt;&gt;btnSil.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="label1.ToolTip" xml:space="preserve">
-    <value />
+    <value>10</value>
   </data>
   <data name="&gt;&gt;lblAd.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -444,8 +438,8 @@
   <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 193</value>
+  <data name="&gt;&gt;numBoy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lblAd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -465,8 +459,8 @@
   <data name="&gt;&gt;Kilo.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Mevki.HeaderText" xml:space="preserve">
-    <value>Mevki</value>
+  <data name="panel1.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="numYas.Size" type="System.Drawing.Size, System.Drawing">
     <value>176, 20</value>
@@ -487,28 +481,37 @@
     <value>2</value>
   </data>
   <data name="&gt;&gt;cmbMevki.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="lblSoyad.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 29</value>
   </data>
+  <data name="&gt;&gt;lblYas.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
   <data name="&gt;&gt;numKilo.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>1</value>
   </data>
   <data name="btnSil.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="lblUlke.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="numYas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>189, 62</value>
   </data>
   <data name="btnGeriGit.ToolTip" xml:space="preserve">
     <value>Geri git</value>
   </data>
-  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1303, 45</value>
+  <data name="&gt;&gt;btnAntrenmanGor.Name" xml:space="preserve">
+    <value>btnAntrenmanGor</value>
   </data>
   <data name="btnProfilGor.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
+  </data>
+  <data name="btnGuncelle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 371</value>
   </data>
   <data name="btnProfilGor.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -555,9 +558,6 @@
   <data name="btnProfilGor.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 14.25pt</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Sporcular</value>
-  </data>
   <data name="&gt;&gt;btnSettings.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -585,14 +585,11 @@
   <data name="&gt;&gt;lblMevki.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
-  <data name="&gt;&gt;lblKilo.Name" xml:space="preserve">
-    <value>lblKilo</value>
-  </data>
   <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="lblSoyad.Text" xml:space="preserve">
+    <value>Soyad:</value>
   </data>
   <data name="&gt;&gt;btnGeriGit.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -603,8 +600,8 @@
   <data name="btnSifirla.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
+  <data name="numKilo.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;Mevki.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -621,11 +618,8 @@
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>174, 29</value>
   </data>
-  <data name="Yas.HeaderText" xml:space="preserve">
-    <value>Yaş</value>
-  </data>
-  <data name="panel1.ToolTip" xml:space="preserve">
-    <value />
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>836, 3</value>
   </data>
   <data name="lblAd.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 29</value>
@@ -645,8 +639,8 @@
   <data name="lblBoy.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 18pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;txtUlke.Name" xml:space="preserve">
-    <value>txtUlke</value>
+  <data name="label1.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;btnEkle.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -681,9 +675,6 @@
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="panel1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="gridViewSporcular" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,64,10256,Percent,35,89743" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="numYas.Location" type="System.Drawing.Point, System.Drawing">
-    <value>189, 62</value>
-  </data>
   <data name="&gt;&gt;gridViewSporcular.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
   </data>
@@ -699,14 +690,23 @@
   <data name="&gt;&gt;txtAd.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
+  <data name="lblYas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 29</value>
+  </data>
   <data name="lblSoyad.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 27</value>
+  </data>
+  <data name="numBoy.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="btnAntrenmanGor.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lblKilo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="lblSoyad.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btnSettings.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -718,7 +718,7 @@
     <value>System.ComponentModel.BackgroundWorker, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="dateTimePicker1.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;Boy.Name" xml:space="preserve">
     <value>Boy</value>
@@ -736,7 +736,7 @@
     <value>Id</value>
   </data>
   <data name="numBoy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>189, 114</value>
+    <value>189, 113</value>
   </data>
   <data name="&gt;&gt;btnAntrenmanGor.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -751,7 +751,7 @@
     <value>18, 108</value>
   </data>
   <data name="&gt;&gt;numKilo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Mevki.Name" xml:space="preserve">
     <value>Mevki</value>
@@ -768,20 +768,11 @@
   <data name="lblKilo.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>836, 3</value>
-  </data>
   <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;lblUlke.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnAntrenmanGor.Name" xml:space="preserve">
-    <value>btnAntrenmanGor</value>
-  </data>
-  <data name="btnAntrenmanGor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>168, 427</value>
   </data>
   <data name="lblAd.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 1</value>
@@ -802,7 +793,7 @@
     <value>NoControl</value>
   </data>
   <data name="&gt;&gt;dateTimePicker1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="Id.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -813,17 +804,11 @@
   <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>1300, 612</value>
   </data>
-  <data name="&gt;&gt;resimEkleToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="btnSifirla.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
   <data name="&gt;&gt;btnSifirla.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="numKilo.ToolTip" xml:space="preserve">
-    <value />
+    <value>7</value>
   </data>
   <data name="&gt;&gt;cmbMevki.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -844,7 +829,7 @@
     <value>Arial, 24pt</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;lblKilo.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -852,8 +837,8 @@
   <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="btnGuncelle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>168, 371</value>
+  <data name="&gt;&gt;btnGeriGit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblUlke.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -870,8 +855,8 @@
   <data name="&gt;&gt;lblYas.ZOrder" xml:space="preserve">
     <value>21</value>
   </data>
-  <data name="lblUlke.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="Mevki.HeaderText" xml:space="preserve">
+    <value>Mevki</value>
   </data>
   <data name="&gt;&gt;numBoy.Name" xml:space="preserve">
     <value>numBoy</value>
@@ -881,6 +866,9 @@
   </data>
   <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
+  </data>
+  <data name="lblKilo.Text" xml:space="preserve">
+    <value>Kilo:</value>
   </data>
   <data name="lblYas.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 18pt, style=Bold</value>
@@ -1100,6 +1088,9 @@
   <data name="lblUlke.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 18pt, style=Bold</value>
   </data>
+  <data name="&gt;&gt;txtUlke.Name" xml:space="preserve">
+    <value>txtUlke</value>
+  </data>
   <data name="&gt;&gt;ctxStrpSporcular.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1124,17 +1115,20 @@
   <data name="&gt;&gt;Ulke.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
+  <data name="numBoy.Mask" xml:space="preserve">
+    <value>000</value>
   </data>
   <data name="btnGuncelle.Text" xml:space="preserve">
     <value>Güncelle</value>
   </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;panel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblSoyad.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;lblKilo.Name" xml:space="preserve">
+    <value>lblKilo</value>
   </data>
   <data name="&gt;&gt;numKilo.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -1157,8 +1151,11 @@
   <data name="txtAd.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="numKilo.Mask" xml:space="preserve">
+    <value>00</value>
+  </data>
   <data name="&gt;&gt;btnGuncelle.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="&gt;&gt;lblAd.ZOrder" xml:space="preserve">
     <value>22</value>
@@ -1181,11 +1178,8 @@
   <data name="&gt;&gt;lblMevki.Name" xml:space="preserve">
     <value>lblMevki</value>
   </data>
-  <data name="&gt;&gt;numBoy.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;btnEkle.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="btnGuncelle.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lblBoy.Text" xml:space="preserve">
     <value>Boy:</value>
@@ -1202,8 +1196,8 @@
   <data name="&gt;&gt;dateTimePicker1.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;lblYas.Name" xml:space="preserve">
-    <value>lblYas</value>
+  <data name="&gt;&gt;btnSettings.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;btnSil.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1226,8 +1220,11 @@
   <data name="lblBoy.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;lblYas.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Sporcular</value>
+  </data>
+  <data name="&gt;&gt;numBoy.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="btnSettings.Size" type="System.Drawing.Size, System.Drawing">
     <value>33, 39</value>
@@ -1236,7 +1233,7 @@
     <value>True</value>
   </data>
   <data name="&gt;&gt;btnProfilGor.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="lblAd.Text" xml:space="preserve">
     <value>Ad:</value>
@@ -1245,19 +1242,19 @@
     <value>3, 584</value>
   </data>
   <data name="&gt;&gt;btnAntrenmanGor.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="btnSil.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="&gt;&gt;numBoy.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnEkle.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
   <data name="btnGuncelle.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="lblYas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 29</value>
+  <data name="&gt;&gt;lblSoyad.ZOrder" xml:space="preserve">
+    <value>20</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -1277,8 +1274,8 @@
   <data name="btnSil.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;txtAd.ZOrder" xml:space="preserve">
-    <value>15</value>
+  <data name="btnAntrenmanGor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 427</value>
   </data>
   <data name="btnGuncelle.Size" type="System.Drawing.Size, System.Drawing">
     <value>274, 50</value>
@@ -1316,11 +1313,14 @@
   <data name="&gt;&gt;btnOturumKapat.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;txtAd.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
   <data name="&gt;&gt;cmbMevki.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnEkle.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="&gt;&gt;txtId.Name" xml:space="preserve">
     <value>txtId</value>
@@ -1352,9 +1352,6 @@
   <data name="txtId.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
   </data>
-  <data name="btnProfilGor.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="btnEkle.Size" type="System.Drawing.Size, System.Drawing">
     <value>274, 50</value>
   </data>
@@ -1370,8 +1367,8 @@
   <data name="btnSettings.Location" type="System.Drawing.Point, System.Drawing">
     <value>42, 3</value>
   </data>
-  <data name="&gt;&gt;txtSoyad.Name" xml:space="preserve">
-    <value>txtSoyad</value>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
   </data>
   <data name="cmbMevki.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1391,6 +1388,9 @@
   <data name="&gt;&gt;btnOturumKapat.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
   </data>
+  <data name="&gt;&gt;lblYas.Name" xml:space="preserve">
+    <value>lblYas</value>
+  </data>
   <data name="btnSil.Location" type="System.Drawing.Point, System.Drawing">
     <value>168, 315</value>
   </data>
@@ -1409,8 +1409,8 @@
   <data name="btnGeriGit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="numBoy.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="Yas.HeaderText" xml:space="preserve">
+    <value>Yaş</value>
   </data>
   <data name="&gt;&gt;btnSifirla.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -1433,8 +1433,14 @@
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;txtSoyad.Name" xml:space="preserve">
+    <value>txtSoyad</value>
+  </data>
   <data name="&gt;&gt;gridViewSporcular.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1303, 45</value>
   </data>
   <data name="btnGeriGit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>

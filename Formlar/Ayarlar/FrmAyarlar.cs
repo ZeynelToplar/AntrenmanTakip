@@ -83,7 +83,6 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                    searchedUser.KullaniciAdi,
                    searchedUser.Ad,
                    searchedUser.Soyad,
-                   searchedUser.Yas,
                    yetki
                });
             }
@@ -151,13 +150,6 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                 txtSoyad.Size = new System.Drawing.Size(166, 23);
                 txtSoyad.TabIndex = 5;
                 // 
-                // txtYas
-                // 
-                txtYas.Location = new System.Drawing.Point(262, 186);
-                txtYas.Name = "txtYas";
-                txtYas.Size = new System.Drawing.Size(166, 23);
-                txtYas.TabIndex = 6;
-                // 
                 // label7
                 // 
                 lblKullaniciAdi.AutoSize = true;
@@ -223,7 +215,6 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                 txtKullaniciAd.Text = kullanici?.KullaniciAdi;
                 txtAd.Text = kullanici?.Ad;
                 txtSoyad.Text = kullanici?.Soyad;
-                txtYas.Text = kullanici?.Yas;
                 txtId.Text = kullanici?.Id.ToString();
 
                 tabPageBilgiler.Controls.Add(lblAd);
@@ -258,7 +249,6 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                     kullanici.KullaniciAdi = txtKullaniciAd.Text;
                     kullanici.Ad = txtAd.Text;
                     kullanici.Soyad = txtSoyad.Text;
-                    kullanici.Yas = txtYas.Text;
                     Context._context.SaveChanges();
                     if (systemLanguage == "Turkish")
                         MessageBox.Show("Bilgiler başarıyla güncellenmiştir.");
@@ -639,7 +629,6 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                         KullaniciAdi = txtYKullaniciAdi.Text,
                         Ad = txtYAd.Text,
                         Soyad = txtYSoyad.Text,
-                        Yas = txtYYas.Text,
                         YetkiId = yetki,
                         Mail = txtYMail.Text,
                         Sifre = "net1"
@@ -676,7 +665,6 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                         kullanici.KullaniciAdi,
                         kullanici.Ad,
                         kullanici.Soyad,
-                        kullanici.Yas,
                         yetki
                     });
                 }
@@ -697,7 +685,6 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                         kullanici.KullaniciAdi,
                         kullanici.Ad,
                         kullanici.Soyad,
-                        kullanici.Yas,
                         yetki
                 });
             }

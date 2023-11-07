@@ -127,13 +127,13 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblMevki.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Bodoni MT, 20.25pt</value>
+    <value>Microsoft Sans Serif, 20.25pt</value>
   </data>
   <data name="lblMevki.Location" type="System.Drawing.Point, System.Drawing">
-    <value>50, 327</value>
+    <value>9, 301</value>
   </data>
   <data name="lblMevki.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 32</value>
+    <value>86, 31</value>
   </data>
   <data name="lblMevki.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -157,13 +157,13 @@
     <value>True</value>
   </data>
   <data name="lblKilo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Bodoni MT, 20.25pt</value>
+    <value>Microsoft Sans Serif, 20.25pt</value>
   </data>
   <data name="lblKilo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 277</value>
+    <value>9, 261</value>
   </data>
   <data name="lblKilo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 32</value>
+    <value>86, 31</value>
   </data>
   <data name="lblKilo.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -187,13 +187,13 @@
     <value>True</value>
   </data>
   <data name="lblBoy.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Bodoni MT, 20.25pt</value>
+    <value>Microsoft Sans Serif, 20.25pt</value>
   </data>
   <data name="lblBoy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 234</value>
+    <value>9, 220</value>
   </data>
   <data name="lblBoy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 32</value>
+    <value>86, 31</value>
   </data>
   <data name="lblBoy.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -217,13 +217,13 @@
     <value>True</value>
   </data>
   <data name="lblYas.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Bodoni MT, 20.25pt</value>
+    <value>Microsoft Sans Serif, 20.25pt</value>
   </data>
   <data name="lblYas.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 189</value>
+    <value>9, 180</value>
   </data>
   <data name="lblYas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 32</value>
+    <value>86, 31</value>
   </data>
   <data name="lblYas.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -247,13 +247,13 @@
     <value>True</value>
   </data>
   <data name="lblSporcu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Bodoni MT, 20.25pt</value>
+    <value>Microsoft Sans Serif, 20.25pt</value>
   </data>
   <data name="lblSporcu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 145</value>
+    <value>9, 139</value>
   </data>
   <data name="lblSporcu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 32</value>
+    <value>86, 31</value>
   </data>
   <data name="lblSporcu.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -826,11 +826,8 @@
     <value>1</value>
   </data>
   <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="panel3" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="gridViewAntrenmanlar" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,17,40139,Percent,82,59861" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="panel3" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="gridViewAntrenmanlar" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,17.40139,Percent,82.59861" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

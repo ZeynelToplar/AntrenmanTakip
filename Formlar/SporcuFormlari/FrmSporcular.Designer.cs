@@ -55,10 +55,10 @@
             this.txtAd = new System.Windows.Forms.TextBox();
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.numYas = new System.Windows.Forms.NumericUpDown();
-            this.numKilo = new System.Windows.Forms.NumericUpDown();
-            this.numBoy = new System.Windows.Forms.NumericUpDown();
             this.cmbMevki = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.numBoy = new System.Windows.Forms.MaskedTextBox();
+            this.numKilo = new System.Windows.Forms.MaskedTextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.txtUlke = new System.Windows.Forms.TextBox();
@@ -80,8 +80,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridViewSporcular)).BeginInit();
             this.ctxStrpSporcular.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numYas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numKilo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numBoy)).BeginInit();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -252,28 +250,6 @@
             this.numYas.Name = "numYas";
             this.toolTip1.SetToolTip(this.numYas, resources.GetString("numYas.ToolTip"));
             // 
-            // numKilo
-            // 
-            resources.ApplyResources(this.numKilo, "numKilo");
-            this.numKilo.Maximum = new decimal(new int[] {
-            200,
-            0,
-            0,
-            0});
-            this.numKilo.Name = "numKilo";
-            this.toolTip1.SetToolTip(this.numKilo, resources.GetString("numKilo.ToolTip"));
-            // 
-            // numBoy
-            // 
-            resources.ApplyResources(this.numBoy, "numBoy");
-            this.numBoy.Maximum = new decimal(new int[] {
-            250,
-            0,
-            0,
-            0});
-            this.numBoy.Name = "numBoy";
-            this.toolTip1.SetToolTip(this.numBoy, resources.GetString("numBoy.ToolTip"));
-            // 
             // cmbMevki
             // 
             resources.ApplyResources(this.cmbMevki, "cmbMevki");
@@ -285,6 +261,8 @@
             // 
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel1.Controls.Add(this.numBoy);
+            this.panel1.Controls.Add(this.numKilo);
             this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtUlke);
@@ -296,8 +274,6 @@
             this.panel1.Controls.Add(this.btnSil);
             this.panel1.Controls.Add(this.btnEkle);
             this.panel1.Controls.Add(this.cmbMevki);
-            this.panel1.Controls.Add(this.numBoy);
-            this.panel1.Controls.Add(this.numKilo);
             this.panel1.Controls.Add(this.numYas);
             this.panel1.Controls.Add(this.txtSoyad);
             this.panel1.Controls.Add(this.txtAd);
@@ -312,9 +288,23 @@
             this.toolTip1.SetToolTip(this.panel1, resources.GetString("panel1.ToolTip"));
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // numBoy
+            // 
+            resources.ApplyResources(this.numBoy, "numBoy");
+            this.numBoy.Name = "numBoy";
+            this.toolTip1.SetToolTip(this.numBoy, resources.GetString("numBoy.ToolTip"));
+            // 
+            // numKilo
+            // 
+            resources.ApplyResources(this.numKilo, "numKilo");
+            this.numKilo.Name = "numKilo";
+            this.toolTip1.SetToolTip(this.numKilo, resources.GetString("numKilo.ToolTip"));
+            this.numKilo.ValidatingType = typeof(int);
+            // 
             // dateTimePicker1
             // 
             resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.toolTip1.SetToolTip(this.dateTimePicker1, resources.GetString("dateTimePicker1.ToolTip"));
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
@@ -471,8 +461,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridViewSporcular)).EndInit();
             this.ctxStrpSporcular.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numYas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numKilo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numBoy)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -496,8 +484,6 @@
         private System.Windows.Forms.TextBox txtAd;
         private System.Windows.Forms.TextBox txtSoyad;
         private System.Windows.Forms.NumericUpDown numYas;
-        private System.Windows.Forms.NumericUpDown numKilo;
-        private System.Windows.Forms.NumericUpDown numBoy;
         private System.Windows.Forms.ComboBox cmbMevki;
         private System.Windows.Forms.Button btnEkle;
         private System.Windows.Forms.Panel panel1;
@@ -526,5 +512,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Kilo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Mevki;
         private System.Windows.Forms.DataGridViewTextBoxColumn DogumTarihi;
+        private System.Windows.Forms.MaskedTextBox numBoy;
+        private System.Windows.Forms.MaskedTextBox numKilo;
     }
 }

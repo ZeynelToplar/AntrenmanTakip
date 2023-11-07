@@ -121,24 +121,36 @@
   <data name="lblMevki.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblMevki.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 31</value>
+  </data>
   <data name="lblKilo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="lblKilo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 31</value>
   </data>
   <data name="lblBoy.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="lblBoy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 31</value>
+  </data>
   <data name="lblYas.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="lblYas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 31</value>
   </data>
   <data name="lblSporcu.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="lblSporcu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 31</value>
+  </data>
   <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="AntrenmanId.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="AntrenmanTuru.HeaderText" xml:space="preserve">
     <value>Practice Type</value>
@@ -158,7 +170,6 @@
   <data name="Tarih.HeaderText" xml:space="preserve">
     <value>Date</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="detaylarıGörToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>140, 22</value>
   </data>
@@ -186,6 +197,9 @@
   <data name="btnSettings.ToolTip" xml:space="preserve">
     <value>Settings</value>
   </data>
+  <data name="cmbAra.Items" xml:space="preserve">
+    <value>Choose...</value>
+  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>End</value>
   </data>
@@ -194,6 +208,12 @@
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Start</value>
+  </data>
+  <data name="dtimeBaslangic.CustomFormat" xml:space="preserve">
+    <value>dd MMMM yyyy dddd</value>
+  </data>
+  <data name="dtimeBitis.CustomFormat" xml:space="preserve">
+    <value>dd MMMM yyyy dddd</value>
   </data>
   <data name="btnFiltrele.Text" xml:space="preserve">
     <value>Filter</value>
@@ -406,9 +426,6 @@
         VkQbroWGb1co7cimFRHlQZrMWimcPGi1rdrtpzzHTNOY1OiAiOu4oBip+KLdIim6cHwg9rmGhpdIGpQ5
         UWjhtIuG3/gfzQGa+2QwjpcAAAAASUVORK5CYII=
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>All Practices</value>

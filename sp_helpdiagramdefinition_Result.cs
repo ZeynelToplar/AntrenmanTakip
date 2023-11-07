@@ -10,14 +10,10 @@
 namespace AntrenmanTakip
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class AntrenmanBolge
+    public partial class sp_helpdiagramdefinition_Result
     {
-        public int Id { get; set; }
-        public Nullable<int> SporcuId { get; set; }
-        public int AntrenmanTuruId { get; set; }
-        public int Bolge { get; set; }
-        public bool BasariliMi { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }

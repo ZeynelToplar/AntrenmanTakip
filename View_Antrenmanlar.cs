@@ -14,6 +14,7 @@ namespace AntrenmanTakip
     
     public partial class View_Antrenmanlar
     {
+        public Nullable<int> AntrenamTuruId { get; set; }
         public int Id { get; set; }
         public int TopKonumId { get; set; }
         public int AntrenmanId { get; set; }
@@ -24,6 +25,5 @@ namespace AntrenmanTakip
         public int AtisSayisi { get; set; }
         public int BasariliAtis { get; set; }
         public System.DateTime Tarih { get; set; }
-        public Nullable<int> AntrenamTuruId { get; set; }
     }
 }

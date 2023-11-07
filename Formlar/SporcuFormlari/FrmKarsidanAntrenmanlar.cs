@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -145,6 +146,17 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             btnGrafik.Enabled = false;
             btnGrafik.BackColor = Color.DimGray;
             systemLanguage = DbService.GetApplicationLanguage();
+
+            CultureInfo cultureInfo = System.Globalization.CultureInfo.GetCultureInfo("en-US");
+            if (systemLanguage == "English")
+            {
+                string format = dtimeBaslangic.Value.GetDateTimeFormats(cultureInfo).First();
+                dtimeBaslangic.CustomFormat = format;
+
+                string format2 = dtimeBaslangic.Value.GetDateTimeFormats(cultureInfo).First();
+                dtimeBitis.CustomFormat = format2;
+            }
+
             dtimeBaslangic.Value = DateTime.Now.AddMonths(-1);
             //Sporcu Bilgileri
             dynamic sporcu = DbService.GetFootballer(Context.sporcu.Id);

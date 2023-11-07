@@ -32,7 +32,6 @@ namespace AntrenmanTakip
         {
             if (_frmAntrenmanSecenek == null || _frmAntrenmanSecenek.IsDisposed)
             {
-                this.Close();
                 _frmAntrenmanSecenek = new FrmAntrenmanSecenek();
                 _frmAntrenmanSecenek.Show();
             }

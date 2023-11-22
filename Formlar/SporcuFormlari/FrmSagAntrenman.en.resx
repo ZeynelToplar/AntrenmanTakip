@@ -142,33 +142,17 @@
   <data name="lblMevki.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lblMevki.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 31</value>
-  </data>
   <data name="lblKilo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="lblKilo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 31</value>
   </data>
   <data name="lblBoy.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lblBoy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 31</value>
-  </data>
   <data name="lblYas.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lblYas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 31</value>
-  </data>
   <data name="lblSporcu.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="lblSporcu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 31</value>
   </data>
   <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -185,6 +169,7 @@
   <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
   </data>
@@ -220,6 +205,15 @@
   </data>
   <data name="Tarih.HeaderText" xml:space="preserve">
     <value>Date</value>
+  </data>
+  <data name="detaylarıGörToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="detaylarıGörToolStripMenuItem.Text" xml:space="preserve">
+    <value>Show Details</value>
+  </data>
+  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 26</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

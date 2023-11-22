@@ -42,13 +42,6 @@
             this.lblSporcu = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gridViewAntrenmanlar = new System.Windows.Forms.DataGridView();
-            this.AntrenmanTuruId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AntrenmanTuru = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AntrenmanSayisi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AtisSayisi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BasariliAtis = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sure = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tarih = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.detaylarıGörToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -66,6 +59,14 @@
             this.btnSifirla = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.Antrenman = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AntTuru = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AntrenmanTuru = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AntrenmanSayisi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AtisSayisi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BasariliAtis = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sure = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tarih = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewAntrenmanlar)).BeginInit();
@@ -136,7 +137,8 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gridViewAntrenmanlar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridViewAntrenmanlar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.AntrenmanTuruId,
+            this.Antrenman,
+            this.AntTuru,
             this.AntrenmanTuru,
             this.AntrenmanSayisi,
             this.AtisSayisi,
@@ -167,41 +169,6 @@
             this.gridViewAntrenmanlar.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gridViewAntrenmanlar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridViewAntrenmanlar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewAntrenmanlar_CellContentClick);
-            // 
-            // AntrenmanTuruId
-            // 
-            resources.ApplyResources(this.AntrenmanTuruId, "AntrenmanTuruId");
-            this.AntrenmanTuruId.Name = "AntrenmanTuruId";
-            // 
-            // AntrenmanTuru
-            // 
-            resources.ApplyResources(this.AntrenmanTuru, "AntrenmanTuru");
-            this.AntrenmanTuru.Name = "AntrenmanTuru";
-            // 
-            // AntrenmanSayisi
-            // 
-            resources.ApplyResources(this.AntrenmanSayisi, "AntrenmanSayisi");
-            this.AntrenmanSayisi.Name = "AntrenmanSayisi";
-            // 
-            // AtisSayisi
-            // 
-            resources.ApplyResources(this.AtisSayisi, "AtisSayisi");
-            this.AtisSayisi.Name = "AtisSayisi";
-            // 
-            // BasariliAtis
-            // 
-            resources.ApplyResources(this.BasariliAtis, "BasariliAtis");
-            this.BasariliAtis.Name = "BasariliAtis";
-            // 
-            // Sure
-            // 
-            resources.ApplyResources(this.Sure, "Sure");
-            this.Sure.Name = "Sure";
-            // 
-            // Tarih
-            // 
-            resources.ApplyResources(this.Tarih, "Tarih");
-            this.Tarih.Name = "Tarih";
             // 
             // contextMenuStrip1
             // 
@@ -331,6 +298,46 @@
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel3_Paint);
             // 
+            // Antrenman
+            // 
+            resources.ApplyResources(this.Antrenman, "Antrenman");
+            this.Antrenman.Name = "Antrenman";
+            // 
+            // AntTuru
+            // 
+            resources.ApplyResources(this.AntTuru, "AntTuru");
+            this.AntTuru.Name = "AntTuru";
+            // 
+            // AntrenmanTuru
+            // 
+            resources.ApplyResources(this.AntrenmanTuru, "AntrenmanTuru");
+            this.AntrenmanTuru.Name = "AntrenmanTuru";
+            // 
+            // AntrenmanSayisi
+            // 
+            resources.ApplyResources(this.AntrenmanSayisi, "AntrenmanSayisi");
+            this.AntrenmanSayisi.Name = "AntrenmanSayisi";
+            // 
+            // AtisSayisi
+            // 
+            resources.ApplyResources(this.AtisSayisi, "AtisSayisi");
+            this.AtisSayisi.Name = "AtisSayisi";
+            // 
+            // BasariliAtis
+            // 
+            resources.ApplyResources(this.BasariliAtis, "BasariliAtis");
+            this.BasariliAtis.Name = "BasariliAtis";
+            // 
+            // Sure
+            // 
+            resources.ApplyResources(this.Sure, "Sure");
+            this.Sure.Name = "Sure";
+            // 
+            // Tarih
+            // 
+            resources.ApplyResources(this.Tarih, "Tarih");
+            this.Tarih.Name = "Tarih";
+            // 
             // FrmTumAntrenmanlar
             // 
             resources.ApplyResources(this, "$this");
@@ -382,7 +389,8 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem detaylarıGörToolStripMenuItem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AntrenmanTuruId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Antrenman;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AntTuru;
         private System.Windows.Forms.DataGridViewTextBoxColumn AntrenmanTuru;
         private System.Windows.Forms.DataGridViewTextBoxColumn AntrenmanSayisi;
         private System.Windows.Forms.DataGridViewTextBoxColumn AtisSayisi;

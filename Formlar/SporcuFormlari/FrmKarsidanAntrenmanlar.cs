@@ -19,6 +19,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         private FrmAntrenmanSecenekleri _frmAntrenmanSecenekleri;
         private FrmAyarlar _frmAyarlar;
         private FrmGrafikler _frmGrafikler;
+        private FrmAntrenmanDetay _frmAntrenmanDetay;
 
         public int id;
         private int s;
@@ -79,6 +80,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                 {
                     gridViewAntrenmanlar.Rows.Add(new object[]
                     {
+                        item.antId,
                         item.AntrenmanId,
                         item.AntrenmanTurleri,
                         $"{item.AntrenmanSayisi}. Antrenman",
@@ -92,6 +94,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                 {
                     gridViewAntrenmanlar.Rows.Add(new object[]
                     {
+                        item.antId,
                         item.AntrenmanId,
                         item.EAntrenmanTurleri,
                         $"{item.AntrenmanSayisi}. Training",
@@ -208,6 +211,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             }
         }
         int antrenmanTuruId;
+        int antrenmanId;
         private void gridViewAntrenmanlar_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             btnGrafik.Enabled = true;
@@ -216,6 +220,30 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             int selectedrowindex = gridViewAntrenmanlar.SelectedCells[0].RowIndex;
             DataGridViewRow selectedRow = gridViewAntrenmanlar.Rows[selectedrowindex];
             antrenmanTuruId = Convert.ToInt32(selectedRow.Cells["AtuId"].Value);
+            antrenmanId = Convert.ToInt32(selectedRow.Cells["Antrenman"].Value);
+        }
+
+        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void detaylarıGörToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (antrenmanTuruId == 0)
+            {
+                if (systemLanguage == "Turkish")
+                    MessageBox.Show("Lütfen antrenman seçiniz.");
+                else if (systemLanguage == "English")
+                    MessageBox.Show("Please select training");
+            }
+            else
+            {
+                _frmAntrenmanDetay = new FrmAntrenmanDetay();
+                _frmAntrenmanDetay.antrenmanTuruId = antrenmanTuruId;
+                _frmAntrenmanDetay.antrenmanId = antrenmanId;
+                _frmAntrenmanDetay.Show();
+            }
         }
     }
 }

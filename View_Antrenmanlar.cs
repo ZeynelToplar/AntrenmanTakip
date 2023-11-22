@@ -25,5 +25,6 @@ namespace AntrenmanTakip
         public int AtisSayisi { get; set; }
         public int BasariliAtis { get; set; }
         public System.DateTime Tarih { get; set; }
+        public int antId { get; set; }
     }
 }

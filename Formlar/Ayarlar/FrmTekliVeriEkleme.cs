@@ -102,7 +102,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                                      Yas = s.Yas,
                                      Boy = s.Boy,
                                      Kilo = s.Kilo,
-                                     dogumTarihi= s.DogumTarihi,
+                                     dogumTarihi = s.DogumTarihi,
                                      Mevkiler = s.Mevkiler
                                  }).ToList();
                 //gridViewSporcular.DataSource = sporcular;
@@ -287,7 +287,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
 
         private void btnEkle_Click(object sender, EventArgs e)
         {
-            
+
             int tkId = 0, tgsId = 0, vbId = 0;
             decimal sure = 0m, basariliAtis = 0m;
             tkId = Convert.ToInt32(topKonumlari);
@@ -295,7 +295,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
             vbId = Convert.ToInt32(vurusBicimleri);
             sure = numSure.Value;
             //var bolge1 = comboBox1.SelectedText;
-            bool isSucceed1 =false, isSucceed2 = false, isSucceed3 = false, isSucceed4 = false, isSucceed5 = false, isSucceed6 = false, isSucceed7 = false, isSucceed8 = false, isSucceed9 = false, isSucceed10 = false ;
+            bool isSucceed1 = false, isSucceed2 = false, isSucceed3 = false, isSucceed4 = false, isSucceed5 = false, isSucceed6 = false, isSucceed7 = false, isSucceed8 = false, isSucceed9 = false, isSucceed10 = false;
             if (rdoBasarili1.Checked)
                 isSucceed1 = true;
             else if (rdoBasarisiz1.Checked)
@@ -320,21 +320,21 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                 isSucceed6 = true;
             else if (rdoBasarisiz6.Checked)
                 isSucceed6 = false;
-            if (rdoBasarisiz7.Checked)
+            if (rdoBasarili7.Checked)
                 isSucceed7 = true;
-            else if(rdoBasarisiz7.Checked)
+            else if (rdoBasarisiz7.Checked)
                 isSucceed7 = false;
             if (rdoBasarili8.Checked)
                 isSucceed8 = true;
-            else if(rdoBasarisiz8.Checked)
+            else if (rdoBasarisiz8.Checked)
                 isSucceed8 = false;
-            if(rdoBasarili9.Checked)
+            if (rdoBasarili9.Checked)
                 isSucceed9 = true;
-            else if(rdoBasarisiz9.Checked)
+            else if (rdoBasarisiz9.Checked)
                 isSucceed9 = false;
             if (rdoBasarili10.Checked)
                 isSucceed10 = true;
-            else if(rdoBasarisiz10.Checked)
+            else if (rdoBasarisiz10.Checked)
                 isSucceed10 = false;
             var bolge1 = comboBox1.SelectedItem.ToString();
             var bolge2 = comboBox2.SelectedItem.ToString();
@@ -347,16 +347,14 @@ namespace AntrenmanTakip.Formlar.Ayarlar
             var bolge9 = comboBox9.SelectedItem.ToString();
             var bolge10 = comboBox10.SelectedItem.ToString();
 
-            var basariliAtisSayisi = BolgeyeGoreAtisSayisiEkle(bolge1, bolge2, bolge3, bolge4, bolge5, bolge6, bolge7, bolge8, bolge9, bolge10,isSucceed1,isSucceed2,isSucceed3,isSucceed4,isSucceed5,isSucceed6,isSucceed7,isSucceed8,isSucceed9,isSucceed10, tkId, tgsId, vbId);
-
-            AntrenmanEkle(basariliAtisSayisi, tkId, tgsId, vbId, sure);
+            BolgeyeGoreAtisSayisiEkleWithAntrenman(bolge1, bolge2, bolge3, bolge4, bolge5, bolge6, bolge7, bolge8, bolge9, bolge10, isSucceed1, isSucceed2, isSucceed3, isSucceed4, isSucceed5, isSucceed6, isSucceed7, isSucceed8, isSucceed9, isSucceed10, tkId, tgsId, vbId, sure);
 
         }
 
-        private void AntrenmanEkle(decimal basariliAtis, int tkId, int tgsId, int vbId, decimal sure)
+        private int AntrenmanEkle(decimal basariliAtis, int tkId, int tgsId, int vbId, decimal sure)
         {
             AntrenmanTurleri antrenamTuru = antrenamTuru = Context._context.AntrenmanTurleri.FirstOrDefault(a => a.TopKonumId == tkId && a.TopGelisSekliId == tgsId && a.VurusBicimiId == vbId); ;
-           
+
 
             if (antrenamTuru == null)
             {
@@ -390,6 +388,8 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                             Tarih = DateTime.Now,
                         };
                         Context._context.Antrenmanlar.Add(antrenman);
+                        Context._context.SaveChanges();
+                        return antrenman.Id;
                     }
                     else
                     {
@@ -404,37 +404,53 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                             Tarih = DateTime.Now
                         };
                         Context._context.Antrenmanlar.Add(antrenman);
+                        Context._context.SaveChanges();
+                        return antrenman.Id;
                     }
-                    Context._context.SaveChanges();
-                    if (systemLanguage == "Turkish")
-                        MessageBox.Show("Antrenman kaydı eklendi.");
-                    else if (systemLanguage == "Turkish")
-                        MessageBox.Show("Training log added.");
                 }
             }
+            return 0;
 
         }
 
-        private int BolgeyeGoreAtisSayisiEkle(string atisBolge1, string atisBolge2, string atisBolge3, string atisBolge4, string atisBolge5, string atisBolge6, string atisBolge7, string atisBolge8, string atisBolge9, string atisBolge10,bool isSucceeded1, bool isSucceeded2, bool isSucceeded3, bool isSucceeded4, bool isSucceeded5, bool isSucceeded6, bool isSucceeded7, bool isSucceeded8,bool isSucceeded9,bool isSucceeded10,int tkId,int tgsId,int vbId)
+        private void BolgeyeGoreAtisSayisiEkleWithAntrenman(string atisBolge1, string atisBolge2, string atisBolge3, string atisBolge4, string atisBolge5, string atisBolge6, string atisBolge7, string atisBolge8, string atisBolge9, string atisBolge10, bool isSucceeded1, bool isSucceeded2, bool isSucceeded3, bool isSucceeded4, bool isSucceeded5, bool isSucceeded6, bool isSucceeded7, bool isSucceeded8, bool isSucceeded9, bool isSucceeded10, int tkId, int tgsId, int vbId, decimal sure)
         {
             AntrenmanTurleri antrenamTuru = antrenamTuru = Context._context.AntrenmanTurleri.FirstOrDefault(a => a.TopKonumId == tkId && a.TopGelisSekliId == tgsId && a.VurusBicimiId == vbId); ;
-            string[] bolgeler = new string[10] { atisBolge1,atisBolge2,atisBolge3,atisBolge4,atisBolge5,atisBolge6,atisBolge7,atisBolge8,atisBolge9,atisBolge10};
-            bool[] basariliMi = new bool[10] { isSucceeded1,isSucceeded2,isSucceeded3,isSucceeded4,isSucceeded5,isSucceeded6,isSucceeded7,isSucceeded8,isSucceeded9,isSucceeded10};
+            string[] bolgeler = new string[10] { atisBolge1, atisBolge2, atisBolge3, atisBolge4, atisBolge5, atisBolge6, atisBolge7, atisBolge8, atisBolge9, atisBolge10 };
+            bool[] basariliMi = new bool[10] { isSucceeded1, isSucceeded2, isSucceeded3, isSucceeded4, isSucceeded5, isSucceeded6, isSucceeded7, isSucceeded8, isSucceeded9, isSucceeded10 };
+
+            int basariliAtis = 0;
+
             for (int i = 0; i < 10; i++)
             {
+                if (basariliMi[i])
+                    ++basariliAtis;
+            }
+            int antrenmanId = AntrenmanEkle(basariliAtis, tkId, tgsId, vbId, sure);
+            Context._context.SaveChanges();
+            for (int i = 0; i < 10; i++)
+            {
+                if(antrenmanId == 0)
+                    break;
                 AntrenmanBolge antrenmanBolge = new AntrenmanBolge()
                 {
                     AntrenmanTuruId = antrenamTuru.Id,
                     Bolge = Convert.ToInt32(bolgeler[i]),
                     BasariliMi = basariliMi[i],
-                    SporcuId = sporcuId
+                    SporcuId = sporcuId,
+                    AntrenmanId = antrenmanId,
                 };
 
                 Context._context.AntrenmanBolge.Add(antrenmanBolge);
                 Context._context.SaveChanges();
             }
-            var basariliAtisSayisi = Context._context.AntrenmanBolge.Where(x => x.AntrenmanTuruId == antrenamTuru.Id && x.BasariliMi == true).Count();
-            return basariliAtisSayisi;
+            if(antrenmanId!= 0)
+            {
+                if (systemLanguage == "Turkish")
+                    MessageBox.Show("Antrenman kaydı eklendi.");
+                else if (systemLanguage == "Turkish")
+                    MessageBox.Show("Training log added.");
+            }
         }
         private void numBasariliAtis_ValueChanged(object sender, EventArgs e)
         {

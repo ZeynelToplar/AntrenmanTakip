@@ -14,6 +14,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
 {
     public partial class FrmAntrenmanDetay : Form
     {
+        public int antrenmanTuruId = 0;
         public int antrenmanId = 0;
         public FrmAntrenmanDetay()
         {
@@ -24,7 +25,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         private void FrmAntrenmanDetay_Load(object sender, EventArgs e)
         {
             systemLanguage = DbService.GetApplicationLanguage();
-            var sonuc = Context._context.AntrenmanBolge.Where(x => x.SporcuId == Context.sporcu.Id && x.AntrenmanTuruId == antrenmanId).ToList();
+            var sonuc = Context._context.AntrenmanBolge.Where(x => x.SporcuId == Context.sporcu.Id && x.AntrenmanTuruId == antrenmanTuruId && x.AntrenmanId == antrenmanId).ToList();
             var toplamSonuc = sonuc.Where(x => x.BasariliMi).Count();
             lblBolge1.Text = sonuc[0].Bolge.ToString();
             lblBolge2.Text = sonuc[1].Bolge.ToString();

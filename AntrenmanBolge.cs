@@ -19,5 +19,6 @@ namespace AntrenmanTakip
         public int AntrenmanTuruId { get; set; }
         public int Bolge { get; set; }
         public bool BasariliMi { get; set; }
+        public Nullable<int> AntrenmanId { get; set; }
     }
 }

@@ -54,6 +54,7 @@
             this.btnFiltrele = new System.Windows.Forms.Button();
             this.btnSifirla = new System.Windows.Forms.Button();
             this.gridViewAntrenmanlar = new System.Windows.Forms.DataGridView();
+            this.Antrenman = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AtuId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AntrenmanTuru = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AntrenmanSayisi = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,6 +66,8 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.detaylarıGörToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -72,6 +75,7 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnOturumKapat
@@ -237,6 +241,7 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gridViewAntrenmanlar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridViewAntrenmanlar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Antrenman,
             this.AtuId,
             this.AntrenmanTuru,
             this.AntrenmanSayisi,
@@ -267,6 +272,11 @@
             this.gridViewAntrenmanlar.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gridViewAntrenmanlar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridViewAntrenmanlar.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewAntrenmanlar_CellClick);
+            // 
+            // Antrenman
+            // 
+            resources.ApplyResources(this.Antrenman, "Antrenman");
+            this.Antrenman.Name = "Antrenman";
             // 
             // AtuId
             // 
@@ -324,10 +334,24 @@
             this.tableLayoutPanel3.Controls.Add(this.gridViewAntrenmanlar, 1, 0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.detaylarıGörToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
+            // 
+            // detaylarıGörToolStripMenuItem
+            // 
+            this.detaylarıGörToolStripMenuItem.Name = "detaylarıGörToolStripMenuItem";
+            resources.ApplyResources(this.detaylarıGörToolStripMenuItem, "detaylarıGörToolStripMenuItem");
+            this.detaylarıGörToolStripMenuItem.Click += new System.EventHandler(this.detaylarıGörToolStripMenuItem_Click);
+            // 
             // FrmSolAntrenman
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -342,6 +366,7 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -367,6 +392,11 @@
         private System.Windows.Forms.Button btnSifirla;
         private System.Windows.Forms.DataGridView gridViewAntrenmanlar;
         private System.Windows.Forms.Button btnGrafik;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Antrenman;
         private System.Windows.Forms.DataGridViewTextBoxColumn AtuId;
         private System.Windows.Forms.DataGridViewTextBoxColumn AntrenmanTuru;
         private System.Windows.Forms.DataGridViewTextBoxColumn AntrenmanSayisi;
@@ -374,9 +404,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn BasariliAtis;
         private System.Windows.Forms.DataGridViewTextBoxColumn Sure;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tarih;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem detaylarıGörToolStripMenuItem;
     }
 }

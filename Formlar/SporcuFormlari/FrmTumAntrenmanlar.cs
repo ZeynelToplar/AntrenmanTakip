@@ -160,7 +160,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                 string format2 = dtimeBaslangic.Value.GetDateTimeFormats(cultureInfo).First();
                 dtimeBitis.CustomFormat = format2;
             }
-            else if(systemLanguge == "Turkish")
+            else if (systemLanguge == "Turkish")
             {
                 CultureInfo cultureInfo_ = System.Globalization.CultureInfo.GetCultureInfo("tr-TR");
                 string format = dtimeBaslangic.Value.GetDateTimeFormats(cultureInfo_).First();
@@ -192,6 +192,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                 {
                     gridViewAntrenmanlar.Rows.Add(new object[]
                     {
+                        antrenman.antId,
                         antrenman.AntrenamTuruId,
                         antrenman.AntrenmanTurleri,
                         $"{antrenman.AntrenmanSayisi}. Antrenman",
@@ -205,6 +206,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                 {
                     gridViewAntrenmanlar.Rows.Add(new object[]
                     {
+                        antrenman.antId,
                         antrenman.AntrenamTuruId,
                         antrenman.EAntrenmanTurleri,
                         $"{antrenman.AntrenmanSayisi}. Training",
@@ -244,26 +246,29 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
 
         }
 
+        int antrenmanTuruId = 0;
         int antrenmanId = 0;
         private void gridViewAntrenmanlar_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int selectedrowindex = gridViewAntrenmanlar.SelectedCells[0].RowIndex;
             DataGridViewRow selectedRow = gridViewAntrenmanlar.Rows[selectedrowindex];
-            antrenmanId = Convert.ToInt32(selectedRow.Cells["AntrenmanTuruId"].Value);
+            antrenmanTuruId = Convert.ToInt32(selectedRow.Cells["AntTuru"].Value);
+            antrenmanId = Convert.ToInt32(selectedRow.Cells["Antrenman"].Value);
         }
 
         private void detaylarıGörToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if(antrenmanId == 0)
+            if (antrenmanTuruId == 0)
             {
-                if(systemLanguge == "Turkish")
+                if (systemLanguge == "Turkish")
                     MessageBox.Show("Lütfen antrenman seçiniz.");
-                else if(systemLanguge == "English")
+                else if (systemLanguge == "English")
                     MessageBox.Show("Please select training");
             }
             else
             {
                 _frmAntrenmanDetay = new FrmAntrenmanDetay();
+                _frmAntrenmanDetay.antrenmanTuruId = antrenmanTuruId;
                 _frmAntrenmanDetay.antrenmanId = antrenmanId;
                 _frmAntrenmanDetay.Show();
             }

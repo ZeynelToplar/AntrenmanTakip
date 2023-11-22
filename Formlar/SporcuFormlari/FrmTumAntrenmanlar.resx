@@ -327,13 +327,22 @@
   <data name="gridViewAntrenmanlar.ColumnHeadersHeight" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
-  <metadata name="AntrenmanTuruId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Antrenman.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="AntrenmanTuruId.HeaderText" xml:space="preserve">
-    <value>Antrenman Türü Id</value>
+  <data name="Antrenman.HeaderText" xml:space="preserve">
+    <value>Antrenman</value>
   </data>
-  <data name="AntrenmanTuruId.Visible" type="System.Boolean, mscorlib">
+  <data name="Antrenman.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="AntTuru.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="AntTuru.HeaderText" xml:space="preserve">
+    <value>Ant Turu</value>
+  </data>
+  <data name="AntTuru.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <metadata name="AntrenmanTuru.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -826,7 +835,7 @@
     <value>1</value>
   </data>
   <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="panel3" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="gridViewAntrenmanlar" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,17.40139,Percent,82.59861" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="panel3" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="gridViewAntrenmanlar" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,17,40139,Percent,82,59861" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1052,10 +1061,28 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Tüm Antrenmanlar</value>
   </data>
-  <data name="&gt;&gt;AntrenmanTuruId.Name" xml:space="preserve">
-    <value>AntrenmanTuruId</value>
+  <data name="&gt;&gt;detaylarıGörToolStripMenuItem.Name" xml:space="preserve">
+    <value>detaylarıGörToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;AntrenmanTuruId.Type" xml:space="preserve">
+  <data name="&gt;&gt;detaylarıGörToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
+    <value>toolTip1</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Antrenman.Name" xml:space="preserve">
+    <value>Antrenman</value>
+  </data>
+  <data name="&gt;&gt;Antrenman.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AntTuru.Name" xml:space="preserve">
+    <value>AntTuru</value>
+  </data>
+  <data name="&gt;&gt;AntTuru.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;AntrenmanTuru.Name" xml:space="preserve">
@@ -1093,18 +1120,6 @@
   </data>
   <data name="&gt;&gt;Tarih.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;detaylarıGörToolStripMenuItem.Name" xml:space="preserve">
-    <value>detaylarıGörToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;detaylarıGörToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
-    <value>toolTip1</value>
-  </data>
-  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FrmTumAntrenmanlar</value>

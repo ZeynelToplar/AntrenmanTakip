@@ -50,10 +50,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                 }
                 else
                 {
-                    if(systemLanguage == "Turkish")
-                        MessageBox.Show("Lütfen 64 piksek boyutunda resim seçiniz.");
-                    else if(systemLanguage == "English")
-                        MessageBox.Show("Please select a 64px image.");
+                    InfService.ShowMessage("Lütfen 64 piksek boyutunda resim seçiniz.", "Please select a 64px image.");
                 }
             }
         }
@@ -90,10 +87,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                 //todo log!
                 throw ex;
             }
-            if(systemLanguage == "Turkish")
-                MessageBox.Show("İşlem başarılı.");
-            else if(systemLanguage == "English")
-                MessageBox.Show("Process successful");
+            InfService.ShowMessage("İşlem başarılı.", "Process successful");
             this.Close();
         }
         string systemLanguage = "";

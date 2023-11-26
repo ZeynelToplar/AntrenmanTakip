@@ -33,10 +33,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             var dateBi = dtimeBitis.Value;
             if (dtimeBaslangic.Value.Date > dtimeBitis.Value.Date)
             {
-                if (systemLanguge == "Turkish")
-                    MessageBox.Show("Başlangıç tarihi bitiş tarihinden büyük olamaz!", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                else if (systemLanguge == "English")
-                    MessageBox.Show("The start date cannot be greater than the end date!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                InfService.ShowMessage("Başlangıç tarihi bitiş tarihinden büyük olamaz!", "The start date cannot be greater than the end date!");
             }
             else
             {
@@ -151,24 +148,24 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         {
             systemLanguge = DbService.GetApplicationLanguage();
 
-            CultureInfo cultureInfo = System.Globalization.CultureInfo.GetCultureInfo("en-US");
-            if (systemLanguge == "English")
-            {
-                string format = dtimeBaslangic.Value.GetDateTimeFormats(cultureInfo).First();
-                dtimeBaslangic.CustomFormat = format;
+            //CultureInfo cultureInfo = System.Globalization.CultureInfo.GetCultureInfo("en-US");
+            //if (systemLanguge == "English")
+            //{
+            //    string format = dtimeBaslangic.Value.GetDateTimeFormats(cultureInfo).First();
+            //    dtimeBaslangic.CustomFormat = format;
 
-                string format2 = dtimeBaslangic.Value.GetDateTimeFormats(cultureInfo).First();
-                dtimeBitis.CustomFormat = format2;
-            }
-            else if (systemLanguge == "Turkish")
-            {
-                CultureInfo cultureInfo_ = System.Globalization.CultureInfo.GetCultureInfo("tr-TR");
-                string format = dtimeBaslangic.Value.GetDateTimeFormats(cultureInfo_).First();
-                dtimeBaslangic.CustomFormat = format;
+            //    string format2 = dtimeBaslangic.Value.GetDateTimeFormats(cultureInfo).First();
+            //    dtimeBitis.CustomFormat = format2;
+            //}
+            //else if (systemLanguge == "Turkish")
+            //{
+            //    CultureInfo cultureInfo_ = System.Globalization.CultureInfo.GetCultureInfo("tr-TR");
+            //    string format = dtimeBaslangic.Value.GetDateTimeFormats(cultureInfo_).First();
+            //    dtimeBaslangic.CustomFormat = format;
 
-                string format2 = dtimeBaslangic.Value.GetDateTimeFormats(cultureInfo_).First();
-                dtimeBitis.CustomFormat = format2;
-            }
+            //    string format2 = dtimeBaslangic.Value.GetDateTimeFormats(cultureInfo_).First();
+            //    dtimeBitis.CustomFormat = format2;
+            //}
 
             dtimeBaslangic.Value = DateTime.Now.AddMonths(-1);
             //Sporcu Bilgileri
@@ -260,10 +257,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         {
             if (antrenmanTuruId == 0)
             {
-                if (systemLanguge == "Turkish")
-                    MessageBox.Show("Lütfen antrenman seçiniz.");
-                else if (systemLanguge == "English")
-                    MessageBox.Show("Please select training");
+                InfService.ShowMessage("Lütfen antrenman seçiniz.", "Please select training");
             }
             else
             {

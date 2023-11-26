@@ -138,6 +138,9 @@
   <data name="Mevki.HeaderText" xml:space="preserve">
     <value>Position</value>
   </data>
+  <data name="DogumTarihi.HeaderText" xml:space="preserve">
+    <value>Date Of Birth</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="ctxStrpSporcular.Size" type="System.Drawing.Size, System.Drawing">
     <value>133, 26</value>

@@ -30,10 +30,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
             int kod_ = Convert.ToInt32(txtOnayKodu.Text);
             if(kod_ == null)
             {
-                if(systemLanguage == "Turkish")
-                    MessageBox.Show("Lütfen mailinize gelen onay kodunu giriniz.");
-                else
-                    MessageBox.Show("Please enter the confirmation code sent to your e-mail.");
+                InfService.ShowMessage("Lütfen mailinize gelen onay kodunu giriniz.", "Please enter the confirmation code sent to your e-mail.");
             }
             else
             {
@@ -45,10 +42,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                 }
                 else
                 {
-                    if(systemLanguage == "Turkish")
-                        MessageBox.Show("Geçersiz kod");
-                    else
-                        MessageBox.Show("Invalid code");
+                    InfService.ShowMessage("Geçersiz kod", "Invalid code");
                 }
             }
         }

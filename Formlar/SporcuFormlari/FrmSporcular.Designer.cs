@@ -503,6 +503,8 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MaskedTextBox numBoy;
+        private System.Windows.Forms.MaskedTextBox numKilo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ulke;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ad;
@@ -512,7 +514,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Kilo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Mevki;
         private System.Windows.Forms.DataGridViewTextBoxColumn DogumTarihi;
-        private System.Windows.Forms.MaskedTextBox numBoy;
-        private System.Windows.Forms.MaskedTextBox numKilo;
     }
 }

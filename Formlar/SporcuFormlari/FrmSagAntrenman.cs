@@ -33,10 +33,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             List<View_Antrenmanlar> arananDeger = null;
             if (dtimeBaslangic.Value.Date > dtimeBitis.Value.Date)
             {
-                if(systemLanguage == "Turkish")
-                    MessageBox.Show("Başlangıç tarihi bitiş tarihinden büyük olamaz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                else if(systemLanguage == "English")
-                    MessageBox.Show("The start date cannot be greater than the end date!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                InfService.ShowMessage("Başlangıç tarihi bitiş tarihinden büyük olamaz!", "The start date cannot be greater than the end date!");
             }
             else
             {
@@ -75,15 +72,15 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             btnGrafik.BackColor = Color.DimGray;
             systemLanguage = DbService.GetApplicationLanguage();
 
-            CultureInfo cultureInfo = System.Globalization.CultureInfo.GetCultureInfo("en-US");
-            if (systemLanguage == "English")
-            {
-                string format = dtimeBaslangic.Value.GetDateTimeFormats(cultureInfo).First();
-                dtimeBaslangic.CustomFormat = format;
+            //CultureInfo cultureInfo = System.Globalization.CultureInfo.GetCultureInfo("en-US");
+            //if (systemLanguage == "English")
+            //{
+            //    string format = dtimeBaslangic.Value.GetDateTimeFormats(cultureInfo).First();
+            //    dtimeBaslangic.CustomFormat = format;
 
-                string format2 = dtimeBaslangic.Value.GetDateTimeFormats(cultureInfo).First();
-                dtimeBitis.CustomFormat = format2;
-            }
+            //    string format2 = dtimeBaslangic.Value.GetDateTimeFormats(cultureInfo).First();
+            //    dtimeBitis.CustomFormat = format2;
+            //}
 
             dtimeBaslangic.Value = DateTime.Now.AddMonths(-1);
             //Sporcu Bilgileri
@@ -186,10 +183,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             }
             else
             {
-                if(systemLanguage == "Turkish")
-                    MessageBox.Show("Gösterilecek antrenman kaydı bulunamadı.");
-                else if(systemLanguage == "English")
-                    MessageBox.Show("No training record found to display.");
+                InfService.ShowMessage("Gösterilecek antrenman kaydı bulunamadı.", "No training record found to display.");
             }
         }
         int antrenmanTuruId;
@@ -210,10 +204,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         {
             if (antrenmanTuruId == 0)
             {
-                if (systemLanguage == "Turkish")
-                    MessageBox.Show("Lütfen antrenman seçiniz.");
-                else if (systemLanguage == "English")
-                    MessageBox.Show("Please select training");
+                InfService.ShowMessage("Lütfen antrenman seçiniz.", "Please select training");
             }
             else
             {

@@ -44,16 +44,35 @@ namespace AntrenmanTakip.Formlar.Ayarlar
             var sporcular = Context._context.Sporcular.Include(x => x.Mevkiler).ToList();
             foreach (var item in sporcular)
             {
-                gridViewSporcular.Rows.Add(new object[]
+                string mevki = "";
+                if (systemLanguage == "English")
                 {
-                    item.Id,
-                    item.Adi,
-                    item.Soyadi,
-                    item.Yas,
-                    item.Kilo,
-                    item.Boy,
-                    item.Mevkiler.Adi,
-                });
+                    mevki = InfService.ConvertToEnglish(item.Mevkiler.Adi);
+                    gridViewSporcular.Rows.Add(new object[]
+                    {
+                        item.Id,
+                        item.Adi,
+                        item.Soyadi,
+                        item.Yas,
+                        item.Kilo,
+                        item.Boy,
+                        mevki,
+                    });
+                }
+                else if(systemLanguage == "Turkish")
+                {
+                    gridViewSporcular.Rows.Add(new object[]
+                    {
+                        item.Id,
+                        item.Adi,
+                        item.Soyadi,
+                        item.Yas,
+                        item.Kilo,
+                        item.Boy,
+                        item.Mevkiler.Adi,
+                    });
+                }
+                
             }
         }
 
@@ -81,29 +100,59 @@ namespace AntrenmanTakip.Formlar.Ayarlar
         }
         private void btnAtama_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < antrenorler.Count; i++)
+            if(antrenorler == null || sporcular == null)
             {
-                for (int j = 0; j < sporcular.Count; j++)
+                InfService.ShowMessage("Lütfen sporcu ve antrenör seçimini yapınız.", "Please select the player and coach.");
+            }
+            else
+            {
+                int result = 0;
+                for (int i = 0; i < antrenorler.Count; i++)
                 {
-                    int kullaniciId = Convert.ToInt32(antrenorler[i]);
-                    int sporcuId = Convert.ToInt32(sporcular[j]);
-                    var kSporcu = Context._context.KullaniciSporcular.FirstOrDefault(k => k.KullaniciId == kullaniciId && k.SporcuId == sporcuId);
-                    if(kSporcu == null)
+                    if(antrenorler.Count > 1)
                     {
-                        KullaniciSporcular kullaniciSporcular = new KullaniciSporcular()
+                        InfService.ShowMessage("Lütfen sadece bir tane antrenör seçiniz", "Please choose only one coach");
+                        break;
+                    }
+                    for (int j = 0; j < sporcular.Count; j++)
+                    {
+                        int kullaniciId = Convert.ToInt32(antrenorler[i]);
+                        int sporcuId = Convert.ToInt32(sporcular[j]);
+                        var kSporcu = Context._context.KullaniciSporcular.FirstOrDefault(k => k.KullaniciId == kullaniciId && k.SporcuId == sporcuId); // hem antrenor hem sporcu eslesmesi kontrol ediliyor 
+                        var kSporcu_ = Context._context.KullaniciSporcular.FirstOrDefault(k => k.SporcuId == sporcuId); // sadece sporcuyu cektigimiz kisim ki burada bu sporcu birine atanmis mi diye kontrol ediyoruz
+                        var sporcu = Context._context.Sporcular.FirstOrDefault(s => s.Id == sporcuId);
+                        if (kSporcu_ != null)
                         {
-                            KullaniciId = Convert.ToInt32(antrenorler[i]),
-                            SporcuId = Convert.ToInt32(sporcular[j])
-                        };
-                        Context._context.KullaniciSporcular.Add(kullaniciSporcular);
-                        Context._context.SaveChanges();
+                            if(kSporcu != null)
+                            {
+                                InfService.ShowMessage($"{sporcu.Adi} {sporcu.Soyadi} isimli sporcu zaten seçtiğiniz antrenöre atanmıştır.", $"The player named {sporcu.Adi} {sporcu.Soyadi} has already been assigned to the coach you selected.");
+                            }
+                            else
+                            {
+                                if (InfService.ShowMessage($"{sporcu.Adi} {sporcu.Soyadi} isimli sporcu farklı bir antrenöre atanmış durumda, değiştirmek istediğinize emin misiniz ?", $"The player named {sporcu.Adi} {sporcu.Soyadi} has been assigned to a different coach. Are you sure you want to change it ?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                                {
+                                    kSporcu_.KullaniciId = Convert.ToInt32(antrenorler[i]);
+                                }
+                                result = Context._context.SaveChanges();
+                            }
+                        }
+                        else
+                        {
+                            KullaniciSporcular kullaniciSporcular = new KullaniciSporcular()
+                            {
+                                KullaniciId = Convert.ToInt32(antrenorler[i]),
+                                SporcuId = Convert.ToInt32(sporcular[j])
+                            };
+                            Context._context.KullaniciSporcular.Add(kullaniciSporcular);
+                            result = Context._context.SaveChanges();
+                        }
+                    }
+                    if(result == 1)
+                    {
+                        InfService.ShowMessage("İşlem başarıyla gerçekleşti.", "the transaction was completed successfully");
                     }
                 }
             }
-            if(systemLanguage == "Turkish")
-                MessageBox.Show("Atama işlemi başarıyla gerçekleşti.");
-            else if(systemLanguage == "English")
-                MessageBox.Show("The assignment was successful.");
         }
 
         private void btnGeriGit_Click(object sender, EventArgs e)

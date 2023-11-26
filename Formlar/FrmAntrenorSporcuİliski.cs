@@ -52,6 +52,7 @@ namespace AntrenmanTakip.Formlar
                     sporcu.Sporcular.Yas,
                     sporcu.Sporcular.Boy,
                     sporcu.Sporcular.Kilo,
+                    sporcu.Sporcular.DogumTarihi,
                     sporcu.Sporcular.Mevkiler.Adi
                 });
             }
@@ -76,10 +77,7 @@ namespace AntrenmanTakip.Formlar
         {
             if(sporcular == null || sporcular[0] == 0) 
             {
-                if(systemLanguage=="Turkish")
-                    MessageBox.Show("Kaldırılacak sporcuları seçiniz.");
-                else if(systemLanguage == "English")
-                    MessageBox.Show("Please select the player whose assigments will be cancelled.");
+                InfService.ShowMessage("Kaldırılacak sporcuları seçiniz.", "Please select the player whose assigments will be cancelled.");
             }
             else
             {
@@ -91,10 +89,7 @@ namespace AntrenmanTakip.Formlar
                     Context._context.KullaniciSporcular.Remove(deletedEntity);
                     Context._context.SaveChanges();
                 }
-                if(systemLanguage == "Turkish")
-                    MessageBox.Show("İşlem başarılı.");
-                else if(systemLanguage == "English")
-                    MessageBox.Show("Process Succesfully");
+                InfService.ShowMessage("İşlem başarılı.", "Process Succesfully");
                 btnListele_Click(sender, e);
             }
             

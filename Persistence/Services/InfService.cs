@@ -51,5 +51,22 @@ namespace AntrenmanTakip.Persistence.Services
             string path = Path.Combine(currentDirectory + @"\Resources");
             return path;
         }
+        public static void ShowMessage(string turkishText,string englishText)
+        {
+            var systemLanguage = DbService.GetApplicationLanguage();
+            if (systemLanguage == "English")
+                MessageBox.Show(englishText);
+            else if (systemLanguage == "Turkish")
+                MessageBox.Show(turkishText);
+        }
+        public static DialogResult ShowMessage(string turkishText, string englishText, MessageBoxButtons buttonType = MessageBoxButtons.OK)
+        {
+            var systemLanguage = DbService.GetApplicationLanguage();
+            if (systemLanguage == "English")
+                return MessageBox.Show(englishText, "", buttonType);
+            else if (systemLanguage == "Turkish")
+               return  MessageBox.Show(turkishText, "", buttonType);
+            return DialogResult.No;
+        }
     }
 }

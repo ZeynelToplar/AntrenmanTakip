@@ -123,19 +123,6 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                 else if (systemLanguage == "English")
                     lblSoyad.Text = "Surname:";
                 // 
-                // label3
-                // 
-                lblYas.AutoSize = true;
-                lblYas.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-                lblYas.Location = new System.Drawing.Point(132, 181);
-                lblYas.Name = "lblYas";
-                lblYas.Size = new System.Drawing.Size(43, 28);
-                lblYas.TabIndex = 2;
-                if (systemLanguage == "Turkish")
-                    lblYas.Text = "Yaş:";
-                else if (systemLanguage == "English")
-                    lblYas.Text = "Age:";
-                //  
                 // txtAd
                 // 
                 txtAd.Location = new System.Drawing.Point(262, 126);
@@ -176,7 +163,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                 btnBilgiGuncelle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
                 btnBilgiGuncelle.Image = global::AntrenmanTakip.Properties.Resources.bilgiGuncelle24px;
                 btnBilgiGuncelle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-                btnBilgiGuncelle.Location = new System.Drawing.Point(262, 226);
+                btnBilgiGuncelle.Location = new System.Drawing.Point(262, 180);
                 btnBilgiGuncelle.Name = "btnBilgiGuncelle";
                 btnBilgiGuncelle.Size = new System.Drawing.Size(166, 47);
                 btnBilgiGuncelle.TabIndex = 8;
@@ -235,12 +222,8 @@ namespace AntrenmanTakip.Formlar.Ayarlar
 
         private void BtnBilgiGuncelle_Click(object sender, EventArgs e)
         {
-            string message = "";
-            if (systemLanguage == "Turkish")
-                message = "Bilgilerinizi güncellemek istediğinize emin misiniz ?";
-            else if (systemLanguage == "English")
-                message = "Are you sure you want to update your information?";
-            if (MessageBox.Show(message, "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            
+            if (InfService.ShowMessage("Bilgilerinizi güncellemek istediğinize emin misiniz ?", "Are you sure you want to update your information?",MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 int id_ = Convert.ToInt32(txtId.Text);
                 Kullanicilar kullanici = Context._context.Kullanicilar.FirstOrDefault(k => k.Id == id_);
@@ -250,11 +233,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                     kullanici.Ad = txtAd.Text;
                     kullanici.Soyad = txtSoyad.Text;
                     Context._context.SaveChanges();
-                    if (systemLanguage == "Turkish")
-                        MessageBox.Show("Bilgiler başarıyla güncellenmiştir.");
-                    else
-                        MessageBox.Show("The information has been successfully updated.");
-
+                    InfService.ShowMessage("Bilgiler başarıyla güncellenmiştir.", "The information has been successfully updated.");
                 }
             }
         }
@@ -382,20 +361,14 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                 {
                     if (yeniSifre != sifreTekrar)
                     {
-                        if (systemLanguage == "Turkish")
-                            MessageBox.Show("Şifreler uyuşmamaktadır.");
-                        else
-                            MessageBox.Show("Passwords do not match.");
+                        InfService.ShowMessage("Şifreler uyuşmamaktadır.", "Passwords do not match.");
                     }
                     else
                     {
                         kullanici.Sifre = yeniSifre;
                         Context._context.Entry(kullanici).State = EntityState.Modified;
                         Context._context.SaveChanges();
-                        if (systemLanguage == "Turkish")
-                            MessageBox.Show("Şifre değişikliği başarıyla gerçekleşmiştir.");
-                        else
-                            MessageBox.Show("Password change has been successful.");
+                        InfService.ShowMessage("Şifre değişikliği başarıyla gerçekleşmiştir.", "Password change has been successful.");
                         txtEskiSifre.Text = "";
                         txtYeniSifre.Text = "";
                         txtSifreTekrar.Text = "";
@@ -403,10 +376,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                 }
                 else
                 {
-                    if (systemLanguage == "Turkish")
-                        MessageBox.Show("Girmiş olduğunuz şifre hatalıdır. Lütfen mevcut şifrenizi kontrol ediniz.");
-                    else
-                        MessageBox.Show("The password you entered is incorrect. Please check your current password.");
+                    InfService.ShowMessage("Girmiş olduğunuz şifre hatalıdır. Lütfen mevcut şifrenizi kontrol ediniz.", "The password you entered is incorrect. Please check your current password.");
                 }
 
             }
@@ -434,7 +404,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                 // 
                 lblYetki.AutoSize = true;
                 lblYetki.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-                lblYetki.Location = new System.Drawing.Point(100, 224);
+                lblYetki.Location = new System.Drawing.Point(100, 195);
                 lblYetki.Name = "lblYetki";
                 lblYetki.Size = new System.Drawing.Size(69, 32);
                 lblYetki.TabIndex = 4;
@@ -442,19 +412,6 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                     lblYetki.Text = "Yetki:";
                 else
                     lblYetki.Text = "Authority:";
-                // 
-                // lblYYas
-                // 
-                lblYYas.AutoSize = true;
-                lblYYas.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-                lblYYas.Location = new System.Drawing.Point(100, 159);
-                lblYYas.Name = "lblYYas";
-                lblYYas.Size = new System.Drawing.Size(52, 32);
-                lblYYas.TabIndex = 3;
-                if (systemLanguage == "Turkish")
-                    lblYYas.Text = "Yaş:";
-                else
-                    lblYYas.Text = "Age:";
                 // 
                 // lblYSoyad
                 // 
@@ -488,7 +445,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                 // 
                 lblYMail.AutoSize = true;
                 lblYMail.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-                lblYMail.Location = new System.Drawing.Point(100, 191);
+                lblYMail.Location = new System.Drawing.Point(100, 160);
                 lblYMail.Name = "lblYMail";
                 lblYMail.Size = new System.Drawing.Size(48, 32);
                 lblYMail.TabIndex = 1;
@@ -511,18 +468,11 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                                             "Choose...",
                                             "Admin",
                                             "Coach"});
-                cmbYetki.Location = new System.Drawing.Point(256, 226);
+                cmbYetki.Location = new System.Drawing.Point(256, 198);
                 cmbYetki.Name = "cmbYetki";
                 cmbYetki.Size = new System.Drawing.Size(171, 23);
                 cmbYetki.TabIndex = 10;
                 cmbYetki.SelectedIndex = 0;
-                // 
-                // txtYYas
-                // 
-                txtYYas.Location = new System.Drawing.Point(256, 168);
-                txtYYas.Name = "txtYYas";
-                txtYYas.Size = new System.Drawing.Size(171, 23);
-                txtYYas.TabIndex = 8;
                 // 
                 // txtYSoyad
                 // 
@@ -547,7 +497,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                 // 
                 // txtYMail
                 // 
-                txtYMail.Location = new System.Drawing.Point(256, 202);
+                txtYMail.Location = new System.Drawing.Point(256, 163);
                 txtYMail.Name = "txtYMail";
                 txtYMail.Size = new System.Drawing.Size(171, 23);
                 txtYMail.TabIndex = 9;
@@ -557,7 +507,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                 btnKKaydet.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
                 btnKKaydet.Image = global::AntrenmanTakip.Properties.Resources.ekle48px;
                 btnKKaydet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-                btnKKaydet.Location = new System.Drawing.Point(256, 260);
+                btnKKaydet.Location = new System.Drawing.Point(256, 230);
                 btnKKaydet.Name = "btnKKaydet";
                 btnKKaydet.Size = new System.Drawing.Size(171, 59);
                 btnKKaydet.TabIndex = 5;
@@ -604,22 +554,16 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                 yetki = 0;
             else if (cmbYetki.SelectedIndex == 2)
                 yetki = 1;
-            if (txtYKullaniciAdi.Text == "" || txtYAd.Text == "" || txtYSoyad.Text == "" || txtYYas.Text == "" || yetki == -1 || txtYMail.Text == "")
+            if (txtYKullaniciAdi.Text == "" || txtYAd.Text == "" || txtYSoyad.Text == "" || yetki == -1 || txtYMail.Text == "")
             {
-                if (systemLanguage == "Turkish")
-                    MessageBox.Show("Lütfen bilgileri eksiksiz bir şekilde doldurunuz.");
-                else
-                    MessageBox.Show("Please fill in the information completely.");
+                InfService.ShowMessage("Lütfen bilgileri eksiksiz bir şekilde doldurunuz.", "Please fill in the information completely.");
             }
             else
             {
                 Kullanicilar varOlanKullanici = Context._context.Kullanicilar.FirstOrDefault(k => k.KullaniciAdi == txtYKullaniciAdi.Text);
                 if (varOlanKullanici != null)
                 {
-                    if (systemLanguage == "Turkish")
-                        MessageBox.Show("Bu kullanıcı adı zaten mevcut. Farklı bir kullanıcı adı deneyiniz.");
-                    else
-                        MessageBox.Show("Username already exists. Try a different username.");
+                    InfService.ShowMessage("Bu kullanıcı adı zaten mevcut. Farklı bir kullanıcı adı deneyiniz.", "Username already exists. Try a different username.");
 
                 }
                 else
@@ -635,10 +579,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                     };
                     Context._context.Kullanicilar.Add(kullanici);
                     Context._context.SaveChanges();
-                    if (systemLanguage == "Turkish")
-                        MessageBox.Show("Kullanıcı kayıt işlemi başarılı: Sistem tarafından atanan şifre: net1");
-                    else
-                        MessageBox.Show("User registration successful: System assigned password: net1");
+                    InfService.ShowMessage("Kullanıcı kayıt işlemi başarılı: Sistem tarafından atanan şifre: net1", "User registration successful: System assigned password: net1");
                     SayfayıYenile();
                 }
 
@@ -712,10 +653,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
         {
             if (kullanici == null)
             {
-                if(systemLanguage == "Turkish")
-                    MessageBox.Show("Lütfen düzenlemek istediğiniz kullanıcıyı önce seçiniz.");
-                else if(systemLanguage == "English")
-                    MessageBox.Show("Please select the user you want to edit first.");
+                InfService.ShowMessage("Lütfen düzenlemek istediğiniz kullanıcıyı önce seçiniz.", "Please select the user you want to edit first.");
             }
             else
             {
@@ -776,38 +714,25 @@ namespace AntrenmanTakip.Formlar.Ayarlar
         {
             if (KId == 0)
             {
-                if(systemLanguage == "Turkish")
-                    MessageBox.Show("Silmek istediğiniz kullanıcıyı seçiniz.");
-                else if(systemLanguage == "English")
-                    MessageBox.Show("Select the user you want to delete.");
+                InfService.ShowMessage("Silmek istediğiniz kullanıcıyı seçiniz.", "Select the user you want to delete.");
             }
             else
             {
                 Kullanicilar silinecekKullanici = Context._context.Kullanicilar.FirstOrDefault(k => k.Id == KId);
                 if (silinecekKullanici != null)
                 {
-                    string message = "";
-                    if (systemLanguage == "Turkish")
-                        message = $"{silinecekKullanici.Ad} {silinecekKullanici.Soyad} isimli kullanıcıyı silmek istediğinize emin misiniz ? ";
-                    else if (systemLanguage == "English")
-                        message = $"Are you sure you want to delete {silinecekKullanici.Ad} {silinecekKullanici.Soyad}";
-                    if (MessageBox.Show(message, "", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                    
+                    if (InfService.ShowMessage($"{silinecekKullanici.Ad} {silinecekKullanici.Soyad} isimli kullanıcıyı silmek istediğinize emin misiniz ? ", $"Are you sure you want to delete {silinecekKullanici.Ad} {silinecekKullanici.Soyad}",MessageBoxButtons.YesNo) == DialogResult.Yes)
                     {
                         Context._context.Kullanicilar.Remove(silinecekKullanici);
                         Context._context.SaveChanges();
-                        if(systemLanguage == "Turkish")
-                            MessageBox.Show("Kullanıcı başarılı bir şekilde silinmiştir.");
-                        else if(systemLanguage == "English")
-                            MessageBox.Show("The user has been successfully deleted.");
+                        InfService.ShowMessage("Kullanıcı başarılı bir şekilde silinmiştir.", "The user has been successfully deleted.");
                         SayfayıYenile();
                     }
                 }
                 else
                 {
-                    if(systemLanguage == "Turkish")
-                        MessageBox.Show("Böyle bir kullanıcı mevcut değil");
-                    else if(systemLanguage == "English")
-                        MessageBox.Show("No such user exists");
+                    InfService.ShowMessage("Böyle bir kullanıcı mevcut değil", "No such user exists");
                 }
             }
         }
@@ -816,20 +741,14 @@ namespace AntrenmanTakip.Formlar.Ayarlar
         {
             if(KId == 0)
             {
-                if(systemLanguage == "Turkish")
-                    MessageBox.Show("Lütfen şifresini sıfırlamak istediğiniz kullanıcıyı seçiniz.");
-                else if(systemLanguage =="English")
-                    MessageBox.Show("Please select the user whose password you want to reset.");
+                InfService.ShowMessage("Lütfen şifresini sıfırlamak istediğiniz kullanıcıyı seçiniz.", "Please select the user whose password you want to reset.");
             }
             else
             {
                 Kullanicilar kullanici = Context._context.Kullanicilar.FirstOrDefault(k => k.Id == KId);
                 kullanici.Sifre = "net1";
                 Context._context.SaveChanges();
-                if(systemLanguage == "Turkish")
-                    MessageBox.Show("Şifre sıfırlanmıştır. | Atanan şifre:net1");
-                else
-                    MessageBox.Show("The password has been reset. | Assigned password: net1");
+                InfService.ShowMessage("Şifre sıfırlanmıştır. | Atanan şifre:net1", "The password has been reset. | Assigned password: net1");
             }
         }
 

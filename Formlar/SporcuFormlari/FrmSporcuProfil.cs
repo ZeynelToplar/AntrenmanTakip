@@ -45,8 +45,8 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                 lblMevki.Text = sporcu.Mevkiler.Adi;
             else if (systemLanguage == "English")
                 lblMevki.Text = sporcu.Mevkiler.EAdi;
-            lblBoy.Text = sporcu.Boy.ToString();
-            lblKilo.Text = sporcu.Kilo.ToString();
+            lblBoy.Text = sporcu.Boy.ToString() + " cm";
+            lblKilo.Text = sporcu.Kilo.ToString() + " kg";
             lblYas.Text = sporcu.Yas.ToString();
             lblSporcuAdSoyad.Text = $"{sporcu.Adi} {sporcu.Soyadi}";
 
@@ -255,10 +255,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                 pdfDoc.Add(divPadding);
                 pdfDoc.Add(table);
                 pdfDoc.Close();
-                if(systemLanguage == "Turkish")
-                    MessageBox.Show("Dosya kaydedildi");
-                else if(systemLanguage == "English")
-                    MessageBox.Show("File saved");
+                InfService.ShowMessage("Dosya kaydedildi", "File saved");
             }
 
            

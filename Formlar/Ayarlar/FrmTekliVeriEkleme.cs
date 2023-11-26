@@ -45,7 +45,6 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                                      Boy = s.Boy,
                                      Kilo = s.Kilo,
                                      Ulke = s.Ulke,
-                                     dogumTarihi = s.DogumTarihi,
                                      Mevkiler = m
                                  }).ToList();
                 //gridViewSporcular.DataSource = sporcular;
@@ -64,7 +63,6 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                         sporcu.Yas,
                         sporcu.Boy,
                         sporcu.Kilo,
-                        sporcu.dogumTarihi,
                         mevki
                         });
                     }
@@ -79,7 +77,6 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                         sporcu.Yas,
                         sporcu.Boy,
                         sporcu.Kilo,
-                        sporcu.dogumTarihi,
                         sporcu.Mevkiler.Adi
                         });
                     }
@@ -102,7 +99,6 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                                      Yas = s.Yas,
                                      Boy = s.Boy,
                                      Kilo = s.Kilo,
-                                     dogumTarihi = s.DogumTarihi,
                                      Mevkiler = s.Mevkiler
                                  }).ToList();
                 //gridViewSporcular.DataSource = sporcular;
@@ -121,7 +117,6 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                         sporcu.Yas,
                         sporcu.Boy,
                         sporcu.Kilo,
-                        sporcu.dogumTarihi,
                         mevki
                         });
                     }
@@ -136,7 +131,6 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                         sporcu.Yas,
                         sporcu.Boy,
                         sporcu.Kilo,
-                        sporcu.dogumTarihi,
                         sporcu.Mevkiler.Adi
                         });
                     }
@@ -289,11 +283,13 @@ namespace AntrenmanTakip.Formlar.Ayarlar
         {
 
             int tkId = 0, tgsId = 0, vbId = 0;
+            DateTime tarih = dateTimePicker1.Value;
             decimal sure = 0m, basariliAtis = 0m;
             tkId = Convert.ToInt32(topKonumlari);
             tgsId = Convert.ToInt32(topGelisSekilleri);
             vbId = Convert.ToInt32(vurusBicimleri);
             sure = numSure.Value;
+
             //var bolge1 = comboBox1.SelectedText;
             bool isSucceed1 = false, isSucceed2 = false, isSucceed3 = false, isSucceed4 = false, isSucceed5 = false, isSucceed6 = false, isSucceed7 = false, isSucceed8 = false, isSucceed9 = false, isSucceed10 = false;
             if (rdoBasarili1.Checked)
@@ -347,31 +343,25 @@ namespace AntrenmanTakip.Formlar.Ayarlar
             var bolge9 = comboBox9.SelectedItem.ToString();
             var bolge10 = comboBox10.SelectedItem.ToString();
 
-            BolgeyeGoreAtisSayisiEkleWithAntrenman(bolge1, bolge2, bolge3, bolge4, bolge5, bolge6, bolge7, bolge8, bolge9, bolge10, isSucceed1, isSucceed2, isSucceed3, isSucceed4, isSucceed5, isSucceed6, isSucceed7, isSucceed8, isSucceed9, isSucceed10, tkId, tgsId, vbId, sure);
+            BolgeyeGoreAtisSayisiEkleWithAntrenman(bolge1, bolge2, bolge3, bolge4, bolge5, bolge6, bolge7, bolge8, bolge9, bolge10, isSucceed1, isSucceed2, isSucceed3, isSucceed4, isSucceed5, isSucceed6, isSucceed7, isSucceed8, isSucceed9, isSucceed10, tkId, tgsId, vbId, sure,tarih);
 
         }
 
-        private int AntrenmanEkle(decimal basariliAtis, int tkId, int tgsId, int vbId, decimal sure)
+        private int AntrenmanEkle(decimal basariliAtis, int tkId, int tgsId, int vbId, decimal sure,DateTime tarih)
         {
             AntrenmanTurleri antrenamTuru = antrenamTuru = Context._context.AntrenmanTurleri.FirstOrDefault(a => a.TopKonumId == tkId && a.TopGelisSekliId == tgsId && a.VurusBicimiId == vbId); ;
 
 
             if (antrenamTuru == null)
             {
-                if (systemLanguage == "Turkish")
-                    MessageBox.Show("Lütfen uyumlu antrenman türlerini seçiniz !");
-                else if (systemLanguage == "Enligsh")
-                    MessageBox.Show("Please choose compatible training types !");
+                InfService.ShowMessage("Lütfen uyumlu antrenman türlerini seçiniz !", "Please choose compatible training types !");
             }
             else
             {
                 Antrenmanlar antrenman_ = antrenman_ = Context._context.Antrenmanlar.Where(a => a.AntrenamTuruId == antrenamTuru.Id && a.SporcuId == sporcuId).OrderByDescending(a => a.AntrenmanSayisi).FirstOrDefault();
                 if (sporcuId == 0)
                 {
-                    if (systemLanguage == "Turkish")
-                        MessageBox.Show("Lütfen sporcuyu seçiniz !");
-                    else if (systemLanguage == "English")
-                        MessageBox.Show("Please choose the player !");
+                    InfService.ShowMessage("Lütfen sporcuyu seçiniz !", "Please choose the player !");
                 }
                 else
                 {
@@ -385,7 +375,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                             BasariliAtis = Convert.ToInt32(basariliAtis),
                             AntrenmanSuresi = Convert.ToInt32(sure),
                             AntrenmanSayisi = antrenman_.AntrenmanSayisi + 1,
-                            Tarih = DateTime.Now,
+                            Tarih = tarih,
                         };
                         Context._context.Antrenmanlar.Add(antrenman);
                         Context._context.SaveChanges();
@@ -401,7 +391,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                             BasariliAtis = Convert.ToInt32(basariliAtis),
                             AntrenmanSuresi = Convert.ToInt32(sure),
                             AntrenmanSayisi = 1,
-                            Tarih = DateTime.Now
+                            Tarih = tarih
                         };
                         Context._context.Antrenmanlar.Add(antrenman);
                         Context._context.SaveChanges();
@@ -413,7 +403,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
 
         }
 
-        private void BolgeyeGoreAtisSayisiEkleWithAntrenman(string atisBolge1, string atisBolge2, string atisBolge3, string atisBolge4, string atisBolge5, string atisBolge6, string atisBolge7, string atisBolge8, string atisBolge9, string atisBolge10, bool isSucceeded1, bool isSucceeded2, bool isSucceeded3, bool isSucceeded4, bool isSucceeded5, bool isSucceeded6, bool isSucceeded7, bool isSucceeded8, bool isSucceeded9, bool isSucceeded10, int tkId, int tgsId, int vbId, decimal sure)
+        private void BolgeyeGoreAtisSayisiEkleWithAntrenman(string atisBolge1, string atisBolge2, string atisBolge3, string atisBolge4, string atisBolge5, string atisBolge6, string atisBolge7, string atisBolge8, string atisBolge9, string atisBolge10, bool isSucceeded1, bool isSucceeded2, bool isSucceeded3, bool isSucceeded4, bool isSucceeded5, bool isSucceeded6, bool isSucceeded7, bool isSucceeded8, bool isSucceeded9, bool isSucceeded10, int tkId, int tgsId, int vbId, decimal sure,DateTime tarih)
         {
             AntrenmanTurleri antrenamTuru = antrenamTuru = Context._context.AntrenmanTurleri.FirstOrDefault(a => a.TopKonumId == tkId && a.TopGelisSekliId == tgsId && a.VurusBicimiId == vbId); ;
             string[] bolgeler = new string[10] { atisBolge1, atisBolge2, atisBolge3, atisBolge4, atisBolge5, atisBolge6, atisBolge7, atisBolge8, atisBolge9, atisBolge10 };
@@ -426,7 +416,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                 if (basariliMi[i])
                     ++basariliAtis;
             }
-            int antrenmanId = AntrenmanEkle(basariliAtis, tkId, tgsId, vbId, sure);
+            int antrenmanId = AntrenmanEkle(basariliAtis, tkId, tgsId, vbId, sure,tarih);
             Context._context.SaveChanges();
             for (int i = 0; i < 10; i++)
             {
@@ -446,10 +436,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
             }
             if(antrenmanId!= 0)
             {
-                if (systemLanguage == "Turkish")
-                    MessageBox.Show("Antrenman kaydı eklendi.");
-                else if (systemLanguage == "Turkish")
-                    MessageBox.Show("Training log added.");
+                InfService.ShowMessage("Antrenman kaydı eklendi.", "Training log added.");
             }
         }
         private void numBasariliAtis_ValueChanged(object sender, EventArgs e)

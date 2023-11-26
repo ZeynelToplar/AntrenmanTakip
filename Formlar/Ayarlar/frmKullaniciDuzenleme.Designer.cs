@@ -79,15 +79,15 @@
             // 
             // cmbYetki
             // 
-            resources.ApplyResources(this.cmbYetki, "cmbYetki");
             this.cmbYetki.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbYetki, "cmbYetki");
             this.cmbYetki.Name = "cmbYetki";
             // 
             // button1
             // 
-            resources.ApplyResources(this.button1, "button1");
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.button1, "button1");
             this.button1.Image = global::AntrenmanTakip.Properties.Resources.ekle2_48px;
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = true;

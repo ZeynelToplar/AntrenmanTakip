@@ -42,7 +42,6 @@
             this.Yas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Boy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Kilo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dogumTarihi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Mevki = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.cmbTopKonumlari = new System.Windows.Forms.ComboBox();
@@ -105,6 +104,8 @@
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewSporcular)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSure)).BeginInit();
@@ -150,7 +151,6 @@
             this.Yas,
             this.Boy,
             this.Kilo,
-            this.dogumTarihi,
             this.Mevki});
             this.gridViewSporcular.Cursor = System.Windows.Forms.Cursors.Default;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -212,11 +212,6 @@
             resources.ApplyResources(this.Kilo, "Kilo");
             this.Kilo.Name = "Kilo";
             // 
-            // dogumTarihi
-            // 
-            resources.ApplyResources(this.dogumTarihi, "dogumTarihi");
-            this.dogumTarihi.Name = "dogumTarihi";
-            // 
             // Mevki
             // 
             resources.ApplyResources(this.Mevki, "Mevki");
@@ -230,8 +225,8 @@
             // 
             // cmbTopKonumlari
             // 
-            this.cmbTopKonumlari.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.cmbTopKonumlari, "cmbTopKonumlari");
+            this.cmbTopKonumlari.Cursor = System.Windows.Forms.Cursors.Default;
             this.cmbTopKonumlari.FormattingEnabled = true;
             this.cmbTopKonumlari.Name = "cmbTopKonumlari";
             this.cmbTopKonumlari.SelectedIndexChanged += new System.EventHandler(this.cmbTopKonumlari_SelectedIndexChanged);
@@ -288,9 +283,9 @@
             // 
             // btnEkle
             // 
+            resources.ApplyResources(this.btnEkle, "btnEkle");
             this.btnEkle.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.btnEkle.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btnEkle, "btnEkle");
             this.btnEkle.Image = global::AntrenmanTakip.Properties.Resources.ekle2_48px;
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.UseVisualStyleBackColor = true;
@@ -298,6 +293,7 @@
             // 
             // comboBox1
             // 
+            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             resources.GetString("comboBox1.Items"),
@@ -306,11 +302,11 @@
             resources.GetString("comboBox1.Items3"),
             resources.GetString("comboBox1.Items4"),
             resources.GetString("comboBox1.Items5")});
-            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.Name = "comboBox1";
             // 
             // comboBox2
             // 
+            resources.ApplyResources(this.comboBox2, "comboBox2");
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             resources.GetString("comboBox2.Items"),
@@ -319,11 +315,11 @@
             resources.GetString("comboBox2.Items3"),
             resources.GetString("comboBox2.Items4"),
             resources.GetString("comboBox2.Items5")});
-            resources.ApplyResources(this.comboBox2, "comboBox2");
             this.comboBox2.Name = "comboBox2";
             // 
             // comboBox3
             // 
+            resources.ApplyResources(this.comboBox3, "comboBox3");
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
             resources.GetString("comboBox3.Items"),
@@ -332,11 +328,11 @@
             resources.GetString("comboBox3.Items3"),
             resources.GetString("comboBox3.Items4"),
             resources.GetString("comboBox3.Items5")});
-            resources.ApplyResources(this.comboBox3, "comboBox3");
             this.comboBox3.Name = "comboBox3";
             // 
             // comboBox4
             // 
+            resources.ApplyResources(this.comboBox4, "comboBox4");
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
             resources.GetString("comboBox4.Items"),
@@ -345,11 +341,11 @@
             resources.GetString("comboBox4.Items3"),
             resources.GetString("comboBox4.Items4"),
             resources.GetString("comboBox4.Items5")});
-            resources.ApplyResources(this.comboBox4, "comboBox4");
             this.comboBox4.Name = "comboBox4";
             // 
             // comboBox5
             // 
+            resources.ApplyResources(this.comboBox5, "comboBox5");
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
             resources.GetString("comboBox5.Items"),
@@ -358,11 +354,11 @@
             resources.GetString("comboBox5.Items3"),
             resources.GetString("comboBox5.Items4"),
             resources.GetString("comboBox5.Items5")});
-            resources.ApplyResources(this.comboBox5, "comboBox5");
             this.comboBox5.Name = "comboBox5";
             // 
             // comboBox6
             // 
+            resources.ApplyResources(this.comboBox6, "comboBox6");
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Items.AddRange(new object[] {
             resources.GetString("comboBox6.Items"),
@@ -371,11 +367,11 @@
             resources.GetString("comboBox6.Items3"),
             resources.GetString("comboBox6.Items4"),
             resources.GetString("comboBox6.Items5")});
-            resources.ApplyResources(this.comboBox6, "comboBox6");
             this.comboBox6.Name = "comboBox6";
             // 
             // comboBox7
             // 
+            resources.ApplyResources(this.comboBox7, "comboBox7");
             this.comboBox7.FormattingEnabled = true;
             this.comboBox7.Items.AddRange(new object[] {
             resources.GetString("comboBox7.Items"),
@@ -384,11 +380,11 @@
             resources.GetString("comboBox7.Items3"),
             resources.GetString("comboBox7.Items4"),
             resources.GetString("comboBox7.Items5")});
-            resources.ApplyResources(this.comboBox7, "comboBox7");
             this.comboBox7.Name = "comboBox7";
             // 
             // comboBox8
             // 
+            resources.ApplyResources(this.comboBox8, "comboBox8");
             this.comboBox8.FormattingEnabled = true;
             this.comboBox8.Items.AddRange(new object[] {
             resources.GetString("comboBox8.Items"),
@@ -397,11 +393,11 @@
             resources.GetString("comboBox8.Items3"),
             resources.GetString("comboBox8.Items4"),
             resources.GetString("comboBox8.Items5")});
-            resources.ApplyResources(this.comboBox8, "comboBox8");
             this.comboBox8.Name = "comboBox8";
             // 
             // comboBox9
             // 
+            resources.ApplyResources(this.comboBox9, "comboBox9");
             this.comboBox9.FormattingEnabled = true;
             this.comboBox9.Items.AddRange(new object[] {
             resources.GetString("comboBox9.Items"),
@@ -410,11 +406,11 @@
             resources.GetString("comboBox9.Items3"),
             resources.GetString("comboBox9.Items4"),
             resources.GetString("comboBox9.Items5")});
-            resources.ApplyResources(this.comboBox9, "comboBox9");
             this.comboBox9.Name = "comboBox9";
             // 
             // comboBox10
             // 
+            resources.ApplyResources(this.comboBox10, "comboBox10");
             this.comboBox10.FormattingEnabled = true;
             this.comboBox10.Items.AddRange(new object[] {
             resources.GetString("comboBox10.Items"),
@@ -423,7 +419,6 @@
             resources.GetString("comboBox10.Items3"),
             resources.GetString("comboBox10.Items4"),
             resources.GetString("comboBox10.Items5")});
-            resources.ApplyResources(this.comboBox10, "comboBox10");
             this.comboBox10.Name = "comboBox10";
             // 
             // label4
@@ -619,88 +614,100 @@
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.rdoBasarili1);
             this.groupBox1.Controls.Add(this.rdoBasarisiz1);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
             // groupBox2
             // 
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.rdoBasarili2);
             this.groupBox2.Controls.Add(this.rdoBasarisiz2);
-            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
             // groupBox3
             // 
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.rdoBasarili3);
             this.groupBox3.Controls.Add(this.rdoBasarisiz3);
-            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
             // groupBox4
             // 
+            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Controls.Add(this.rdoBasarili4);
             this.groupBox4.Controls.Add(this.rdoBasarisiz4);
-            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
             // 
             // groupBox5
             // 
+            resources.ApplyResources(this.groupBox5, "groupBox5");
             this.groupBox5.Controls.Add(this.rdoBasarili5);
             this.groupBox5.Controls.Add(this.rdoBasarisiz5);
-            resources.ApplyResources(this.groupBox5, "groupBox5");
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.TabStop = false;
             // 
             // groupBox6
             // 
+            resources.ApplyResources(this.groupBox6, "groupBox6");
             this.groupBox6.Controls.Add(this.rdoBasarili6);
             this.groupBox6.Controls.Add(this.rdoBasarisiz6);
-            resources.ApplyResources(this.groupBox6, "groupBox6");
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.TabStop = false;
             // 
             // groupBox7
             // 
+            resources.ApplyResources(this.groupBox7, "groupBox7");
             this.groupBox7.Controls.Add(this.rdoBasarili7);
             this.groupBox7.Controls.Add(this.rdoBasarisiz7);
-            resources.ApplyResources(this.groupBox7, "groupBox7");
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.TabStop = false;
             // 
             // groupBox8
             // 
+            resources.ApplyResources(this.groupBox8, "groupBox8");
             this.groupBox8.Controls.Add(this.rdoBasarili8);
             this.groupBox8.Controls.Add(this.rdoBasarisiz8);
-            resources.ApplyResources(this.groupBox8, "groupBox8");
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.TabStop = false;
             // 
             // groupBox9
             // 
+            resources.ApplyResources(this.groupBox9, "groupBox9");
             this.groupBox9.Controls.Add(this.rdoBasarili9);
             this.groupBox9.Controls.Add(this.rdoBasarisiz9);
-            resources.ApplyResources(this.groupBox9, "groupBox9");
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.TabStop = false;
             // 
             // groupBox10
             // 
+            resources.ApplyResources(this.groupBox10, "groupBox10");
             this.groupBox10.Controls.Add(this.rdoBasarili10);
             this.groupBox10.Controls.Add(this.rdoBasarisiz10);
-            resources.ApplyResources(this.groupBox10, "groupBox10");
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.TabStop = false;
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // dateTimePicker1
+            // 
+            resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Name = "dateTimePicker1";
             // 
             // FrmTekliVeriEkleme
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.groupBox10);
             this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.groupBox8);
@@ -736,6 +743,7 @@
             this.Controls.Add(this.cmbVurusBicimleri);
             this.Controls.Add(this.cmbTopGelisSekli);
             this.Controls.Add(this.cmbTopKonumlari);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -787,15 +795,6 @@
         private System.Windows.Forms.ComboBox cmbVurusBicimleri;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NumericUpDown numSure;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ulke;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Soyad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Yas;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Boy;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Kilo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dogumTarihi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Mevki;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
@@ -847,5 +846,15 @@
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.GroupBox groupBox10;
         public System.Windows.Forms.Button btnEkle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ulke;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Soyad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Yas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Boy;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Kilo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Mevki;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

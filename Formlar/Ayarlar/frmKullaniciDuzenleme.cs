@@ -57,12 +57,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string message = "";
-            if (systemLanguage == "Turkish")
-                message = $"Kullanıcının bilgilerini değiştirmek istediğinize emin misiniz ?";
-            else if (systemLanguage == "English")
-                message = $"Are you sure you want to change the user's information? ?";
-            if (MessageBox.Show(message, "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (InfService.ShowMessage($"Kullanıcının bilgilerini değiştirmek istediğinize emin misiniz ?", $"Are you sure you want to change the user's information?",MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 Kullanicilar kullanici = Context._context.Kullanicilar.FirstOrDefault(k => k.Id == _kullanici.Id);
                 kullanici.KullaniciAdi = txtKullaniciAdi.Text;
@@ -71,10 +66,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                 kullanici.YetkiId = cmbYetki.SelectedIndex;
                 kullanici.Mail = txtMail.Text;
                 Context._context.SaveChanges();
-                if(systemLanguage == "Turkish")
-                    MessageBox.Show("Kullanıcı bilgileri başarıyla düzenlenmiştir.");
-                else if(systemLanguage == "English")
-                    MessageBox.Show("User information has been successfully edited.");
+                InfService.ShowMessage("Kullanıcı bilgileri başarıyla düzenlenmiştir.", "User information has been successfully edited.");
                 this.Close();
             }
         }

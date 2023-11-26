@@ -73,10 +73,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                 //todo log!
                 throw ex;
             }
-            if(systemLanguage == "Turkish")
-                MessageBox.Show("İşlem başarılı.");
-            else
-                MessageBox.Show("Transaction successful");
+            InfService.ShowMessage("İşlem başarılı.", "Transaction successful");
             this.Close();
         }
     }

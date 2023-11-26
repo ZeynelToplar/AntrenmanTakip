@@ -28,14 +28,7 @@ namespace AntrenmanTakip.Formlar.AntrenmanFormlari
             int secilenAntrenman = cmbAntrenmanTuru.SelectedIndex;
             if (secilenAntrenman == 0)
             {
-                if (systemLanguage == "Turkish")
-                {
-                    MessageBox.Show("Lütfen antrenman türünü seçiniz!");
-                }
-                else
-                {
-                    MessageBox.Show("Please select the type of training!");
-                }
+                InfService.ShowMessage("Lütfen antrenman türünü seçiniz!", "Please select the type of training!");
             }
             else if (secilenAntrenman == 2)
             {

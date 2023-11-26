@@ -225,7 +225,7 @@ namespace AntrenmanTakip.Formlar.AntrenmanFormlari
                                   }).ToList();
             foreach (var vb in vurusBicimleri)
             {
-                if(systemLanguage == "Turkish")
+                if (systemLanguage == "Turkish")
                 {
                     if (button.Text == vb.Adi)
                     {
@@ -233,7 +233,7 @@ namespace AntrenmanTakip.Formlar.AntrenmanFormlari
                         break;
                     }
                 }
-               else if(systemLanguage == "English")
+                else if (systemLanguage == "English")
                 {
                     if (button.Text == vb.EAdi)
                     {
@@ -741,10 +741,7 @@ namespace AntrenmanTakip.Formlar.AntrenmanFormlari
             }
             else
             {
-                if (systemLanguage == "Turkish")
-                    MessageBox.Show("Lütfen Antrenman türünü ve sporcuyu seçiniz!", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                else if (systemLanguage == "English")
-                    MessageBox.Show("Please select Training type and player!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                InfService.ShowMessage("Lütfen Antrenman türünü ve sporcuyu seçiniz!", "Please select Training type and player!");
             }
         }
 
@@ -792,8 +789,6 @@ namespace AntrenmanTakip.Formlar.AntrenmanFormlari
         private void btnGeriGit_Click(object sender, EventArgs e)
         {
             this.Close();
-            _frm1 = new Form1();
-            _frm1.Show();
         }
 
         private void btnSettings_Click(object sender, EventArgs e)
@@ -888,10 +883,7 @@ namespace AntrenmanTakip.Formlar.AntrenmanFormlari
                 Context._context.Antrenmanlar.Add(antrenman);
             }
             Context._context.SaveChanges();
-            if (systemLanguage == "Turkish")
-                MessageBox.Show("Antrenman kaydı eklendi.");
-            else if (systemLanguage == "Turkish")
-                MessageBox.Show("Training log added.");
+            InfService.ShowMessage("Antrenman kaydı eklendi.", "Training log added.");
         }
     }
 }

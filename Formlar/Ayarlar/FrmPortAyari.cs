@@ -35,10 +35,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                 var updatedEntity = context.Entry(ayar);
                 updatedEntity.State = System.Data.Entity.EntityState.Modified;
                 await context.SaveChangesAsync();
-                if(systemLanguage == "Turkish")
-                    MessageBox.Show("Port başarıyla değiştirildi.");
-                else if(systemLanguage == "English")
-                    MessageBox.Show("The port has been successfully changed.");
+                InfService.ShowMessage("Port başarıyla değiştirildi.", "The port has been successfully changed.");
             }
         }
 

@@ -297,9 +297,6 @@
   <data name="&gt;&gt;txtId.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="lblKilo.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="btnEkle.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
@@ -486,9 +483,6 @@
   <data name="lblSoyad.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 29</value>
   </data>
-  <data name="&gt;&gt;lblYas.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
   <data name="&gt;&gt;numKilo.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
@@ -627,6 +621,9 @@
   <data name="&gt;&gt;lblMevki.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
+  <data name="btnSil.Text" xml:space="preserve">
+    <value>Sil</value>
+  </data>
   <data name="&gt;&gt;lblSoyad.Name" xml:space="preserve">
     <value>lblSoyad</value>
   </data>
@@ -687,8 +684,8 @@
   <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtAd.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="lblKilo.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lblYas.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 29</value>
@@ -753,8 +750,8 @@
   <data name="&gt;&gt;numKilo.Type" xml:space="preserve">
     <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Mevki.Name" xml:space="preserve">
-    <value>Mevki</value>
+  <data name="&gt;&gt;txtAd.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
   <data name="DogumTarihi.HeaderText" xml:space="preserve">
     <value>Doğum Tarihi</value>
@@ -1238,6 +1235,9 @@
   <data name="lblAd.Text" xml:space="preserve">
     <value>Ad:</value>
   </data>
+  <data name="&gt;&gt;Mevki.Name" xml:space="preserve">
+    <value>Mevki</value>
+  </data>
   <data name="txtId.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 584</value>
   </data>
@@ -1325,8 +1325,8 @@
   <data name="&gt;&gt;txtId.Name" xml:space="preserve">
     <value>txtId</value>
   </data>
-  <data name="btnSil.Text" xml:space="preserve">
-    <value>Sil</value>
+  <data name="&gt;&gt;lblYas.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;txtSoyad.Parent" xml:space="preserve">
     <value>panel1</value>

@@ -57,13 +57,13 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.gridViewAntrenmanlar = new System.Windows.Forms.DataGridView();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.AntrenmanTuru = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AntrenmanSayisi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AtisSayisi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BasariliAtis = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sure = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tarih = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -77,43 +77,36 @@
             // 
             resources.ApplyResources(this.lblSporcuAdSoyad, "lblSporcuAdSoyad");
             this.lblSporcuAdSoyad.Name = "lblSporcuAdSoyad";
-            this.toolTip1.SetToolTip(this.lblSporcuAdSoyad, resources.GetString("lblSporcuAdSoyad.ToolTip"));
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.toolTip1.SetToolTip(this.label2, resources.GetString("label2.ToolTip"));
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.toolTip1.SetToolTip(this.label1, resources.GetString("label1.ToolTip"));
             // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.toolTip1.SetToolTip(this.label3, resources.GetString("label3.ToolTip"));
             // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.toolTip1.SetToolTip(this.label4, resources.GetString("label4.ToolTip"));
             // 
             // label7
             // 
             resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.toolTip1.SetToolTip(this.label7, resources.GetString("label7.ToolTip"));
             // 
             // label13
             // 
             resources.ApplyResources(this.label13, "label13");
             this.label13.Name = "label13";
-            this.toolTip1.SetToolTip(this.label13, resources.GetString("label13.ToolTip"));
             // 
             // tableLayoutPanel2
             // 
@@ -124,7 +117,6 @@
             this.tableLayoutPanel2.Controls.Add(this.lblSporcuAdSoyad, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnPdf, 4, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.toolTip1.SetToolTip(this.tableLayoutPanel2, resources.GetString("tableLayoutPanel2.ToolTip"));
             // 
             // btnGeriGit
             // 
@@ -166,7 +158,6 @@
             this.btnPdf.FlatAppearance.BorderSize = 0;
             this.btnPdf.Image = global::AntrenmanTakip.Properties.Resources.pdf;
             this.btnPdf.Name = "btnPdf";
-            this.toolTip1.SetToolTip(this.btnPdf, resources.GetString("btnPdf.ToolTip"));
             this.btnPdf.UseVisualStyleBackColor = true;
             this.btnPdf.Click += new System.EventHandler(this.btnPdf_Click);
             // 
@@ -176,7 +167,6 @@
             this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 1, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.toolTip1.SetToolTip(this.tableLayoutPanel1, resources.GetString("tableLayoutPanel1.ToolTip"));
             // 
             // pictureBox1
             // 
@@ -184,7 +174,6 @@
             this.pictureBox1.Image = global::AntrenmanTakip.Properties.Resources.me;
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox1, resources.GetString("pictureBox1.ToolTip"));
             // 
             // tableLayoutPanel4
             // 
@@ -200,51 +189,43 @@
             this.tableLayoutPanel4.Controls.Add(this.lblKilo, 1, 3);
             this.tableLayoutPanel4.Controls.Add(this.lblYas, 1, 4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.toolTip1.SetToolTip(this.tableLayoutPanel4, resources.GetString("tableLayoutPanel4.ToolTip"));
             // 
             // lblUlke
             // 
             resources.ApplyResources(this.lblUlke, "lblUlke");
             this.lblUlke.Name = "lblUlke";
-            this.toolTip1.SetToolTip(this.lblUlke, resources.GetString("lblUlke.ToolTip"));
             // 
             // lblMevki
             // 
             resources.ApplyResources(this.lblMevki, "lblMevki");
             this.lblMevki.Name = "lblMevki";
-            this.toolTip1.SetToolTip(this.lblMevki, resources.GetString("lblMevki.ToolTip"));
             // 
             // lblBoy
             // 
             resources.ApplyResources(this.lblBoy, "lblBoy");
             this.lblBoy.Name = "lblBoy";
-            this.toolTip1.SetToolTip(this.lblBoy, resources.GetString("lblBoy.ToolTip"));
             // 
             // lblKilo
             // 
             resources.ApplyResources(this.lblKilo, "lblKilo");
             this.lblKilo.Name = "lblKilo";
-            this.toolTip1.SetToolTip(this.lblKilo, resources.GetString("lblKilo.ToolTip"));
             // 
             // lblYas
             // 
             resources.ApplyResources(this.lblYas, "lblYas");
             this.lblYas.Name = "lblYas";
-            this.toolTip1.SetToolTip(this.lblYas, resources.GetString("lblYas.ToolTip"));
             // 
             // tableLayoutPanel3
             // 
             resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
             this.tableLayoutPanel3.Controls.Add(this.label13, 0, 0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.toolTip1.SetToolTip(this.tableLayoutPanel3, resources.GetString("tableLayoutPanel3.ToolTip"));
             // 
             // tableLayoutPanel5
             // 
             resources.ApplyResources(this.tableLayoutPanel5, "tableLayoutPanel5");
             this.tableLayoutPanel5.Controls.Add(this.gridViewAntrenmanlar, 0, 0);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.toolTip1.SetToolTip(this.tableLayoutPanel5, resources.GetString("tableLayoutPanel5.ToolTip"));
             // 
             // gridViewAntrenmanlar
             // 
@@ -290,7 +271,6 @@
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.gridViewAntrenmanlar.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gridViewAntrenmanlar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.toolTip1.SetToolTip(this.gridViewAntrenmanlar, resources.GetString("gridViewAntrenmanlar.ToolTip"));
             // 
             // AntrenmanTuru
             // 
@@ -331,7 +311,6 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Name = "FrmSporcuProfil";
-            this.toolTip1.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.Load += new System.EventHandler(this.FrmSporcuProfil_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

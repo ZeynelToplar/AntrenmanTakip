@@ -25,8 +25,10 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         private void FrmGrafikler_Load(object sender, EventArgs e)
         {
             var antrenmanlar = Context._context.Antrenmanlar.Where(a => a.SporcuId == Context.sporcu.Id && a.AntrenamTuruId == antrenmanTuruId).ToList();
-           
-            chart1.Titles.Add("Antrenman İstatistikleri");
+           if(systemLanguage == "Turkish")
+                chart1.Titles.Add("Antrenman İstatistikleri");
+           else if(systemLanguage == "English")
+                chart1.Titles.Add("Training Statistics");
             foreach (var item in antrenmanlar)
             {
                 if(systemLanguage == "Turkish")

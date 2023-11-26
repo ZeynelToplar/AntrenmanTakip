@@ -358,10 +358,7 @@ namespace AntrenmanTakip.Formlar.AntrenmanFormlari
             }
             else
             {
-                if(systemLanguage == "Turkish")
-                    MessageBox.Show("Lütfen Antrenman türünü ve sporcuyu seçiniz!", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                else if(systemLanguage == "English")
-                    MessageBox.Show("Please select Training type and player!","Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                InfService.ShowMessage("Lütfen Antrenman türünü ve sporcuyu seçiniz!", "Please select Training type and player!");
             }
         }
         private void AntrenmanEkle(string basariliAtis)
@@ -406,8 +403,6 @@ namespace AntrenmanTakip.Formlar.AntrenmanFormlari
         private void btnGeriGit_Click(object sender, EventArgs e)
         {
             this.Close();
-            _frm1 = new Form1();
-            _frm1.Show();
         }
 
         private void btnSettings_Click(object sender, EventArgs e)

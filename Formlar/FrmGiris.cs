@@ -1,5 +1,6 @@
 ﻿using AntrenmanTakip.Formlar.Ayarlar;
 using AntrenmanTakip.Persistence;
+using AntrenmanTakip.Persistence.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -52,10 +53,7 @@ namespace AntrenmanTakip.Formlar
 
             if (txtKullaniciAdi.Text == "" || txtSifre.Text == "")
             {
-                if(dil.Language == "Turkish")
-                    MessageBox.Show("Lütfen bilgilerinizi giriniz...", "Uyarı");
-                else if(dil.Language == "English")
-                    MessageBox.Show("Please enter your information.", "Warning");
+                InfService.ShowMessage("Lütfen bilgilerinizi giriniz...", "Please enter your information.");
             }
             else
             {
@@ -70,10 +68,7 @@ namespace AntrenmanTakip.Formlar
                 }
                 else
                 {
-                    if(dil.Language == "Turkish")
-                        MessageBox.Show("Bilgiler hatalı, lütfen bilgilerinizi kontrol ediniz.", "Uyarı");
-                    else if(dil.Language == "English")
-                        MessageBox.Show("The information is incorrect, please check your information.","Warning");
+                    InfService.ShowMessage("Bilgiler hatalı, lütfen bilgilerinizi kontrol ediniz.", "The information is incorrect, please check your information.");
                 }
             }
         }
@@ -96,10 +91,7 @@ namespace AntrenmanTakip.Formlar
         {
             if (txtKullaniciAdi.Text == "" || txtSifre.Text == "")
             {
-                if (dil.Language == "Turkish")
-                    MessageBox.Show("Lütfen bilgilerinizi giriniz.", "Uyarı");
-                else if (dil.Language == "English")
-                    MessageBox.Show("Please enter your information.", "Warning");
+                InfService.ShowMessage("Lütfen bilgilerinizi giriniz.", "Please enter your information.");
             }
             else
             {
@@ -114,10 +106,7 @@ namespace AntrenmanTakip.Formlar
                 }
                 else
                 {
-                    if (dil.Language == "Turkish")
-                        MessageBox.Show("Bilgiler hatalı, lütfen bilgilerinizi kontrol ediniz.", "Uyarı");
-                    else if (dil.Language == "English")
-                        MessageBox.Show("The information is incorrect, please check your information.", "Warning");
+                    InfService.ShowMessage("Bilgiler hatalı, lütfen bilgilerinizi kontrol ediniz.", "The information is incorrect, please check your information.");
                 }
             }
         }
@@ -128,10 +117,7 @@ namespace AntrenmanTakip.Formlar
             {
                 if (txtKullaniciAdi.Text == "" || txtSifre.Text == "")
                 {
-                    if (dil.Language == "Turkish")
-                        MessageBox.Show("Lütfen bilgilerinizi giriniz.", "Uyarı");
-                    else if (dil.Language == "English")
-                        MessageBox.Show("Please enter your information.", "Warning");
+                    InfService.ShowMessage("Lütfen bilgilerinizi giriniz.", "Please enter your information.");
                 }
                 else
                 {
@@ -146,10 +132,7 @@ namespace AntrenmanTakip.Formlar
                     }
                     else
                     {
-                        if (dil.Language == "Turkish")
-                            MessageBox.Show("Bilgiler hatalı, lütfen bilgilerinizi kontrol ediniz.", "Uyarı");
-                        else if (dil.Language == "English")
-                            MessageBox.Show("The information is incorrect, please check your information.", "Warning");
+                        InfService.ShowMessage("Bilgiler hatalı, lütfen bilgilerinizi kontrol ediniz.", "The information is incorrect, please check your information.");
                     }
                 }
             }
@@ -161,10 +144,7 @@ namespace AntrenmanTakip.Formlar
             {
                 if (txtKullaniciAdi.Text == "" || txtSifre.Text == "")
                 {
-                    if (dil.Language == "Turkish")
-                        MessageBox.Show("Lütfen bilgilerinizi giriniz.", "Uyarı");
-                    else if (dil.Language == "English")
-                        MessageBox.Show("Please enter your information.", "Warning");
+                    InfService.ShowMessage("Lütfen bilgilerinizi giriniz.", "Please enter your information.");
                 }
                 else
                 {
@@ -179,10 +159,7 @@ namespace AntrenmanTakip.Formlar
                     }
                     else
                     {
-                        if (dil.Language == "Turkish")
-                            MessageBox.Show("Bilgiler hatalı, lütfen bilgilerinizi kontrol ediniz.", "Uyarı");
-                        else if (dil.Language == "English")
-                            MessageBox.Show("The information is incorrect, please check your information.", "Warning");
+                        InfService.ShowMessage("Bilgiler hatalı, lütfen bilgilerinizi kontrol ediniz.", "The information is incorrect, please check your information.");
                     }
                 }
             }

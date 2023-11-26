@@ -26,10 +26,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             Kullanicilar authenticateUser = DbService.GetUser(Context.kullanici.Id);
             if (txtAd.Text == "" || txtSoyad.Text == "" || numBoy.Text == "0" || numKilo.Text == "0" || txtUlke.Text == "")
             {
-                if (systemLanguage == "Turkish")
-                    MessageBox.Show("Lütfen gerekli bilgileri giriniz", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                else if (systemLanguage == "English")
-                    MessageBox.Show("Please enter the required information", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                InfService.ShowMessage("Lütfen gerekli bilgileri giriniz", "Please enter the required information");
             }
             else
             {
@@ -41,10 +38,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                         Sporcular _sporcu = Context._context.Sporcular.FirstOrDefault(s => s.Id == id);
                         if (_sporcu != null)
                         {
-                            if (systemLanguage == "Turkish")
-                                MessageBox.Show("Bu bilgilere sahip bir sporcu zaten mevcut.");
-                            else if (systemLanguage == "English")
-                                MessageBox.Show("A player with this information already exists.");
+                            InfService.ShowMessage("Bu bilgilere sahip bir sporcu zaten mevcut.", "A player with this information already exists.");
                         }
                     }
                     else
@@ -65,10 +59,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                         };
                         Context._context.Sporcular.Add(sporcu);
                         Context._context.SaveChanges();
-                        if (systemLanguage == "Turkish")
-                            MessageBox.Show($"{txtAd.Text} {txtSoyad.Text} isimli sporcu başarıyla eklendi.");
-                        else if (systemLanguage == "English")
-                            MessageBox.Show($"The player named {txtAd.Text} {txtSoyad.Text} has been successfully added.");
+                        InfService.ShowMessage($"{txtAd.Text} {txtSoyad.Text} isimli sporcu başarıyla eklendi.", $"The player named {txtAd.Text} {txtSoyad.Text} has been successfully added.");
                         gridViewSporcular.Rows.Clear();
                         FrmSporcular_Load(sender, e);
                         Clear();
@@ -82,10 +73,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                         Sporcular _sporcu = Context._context.Sporcular.FirstOrDefault(s => s.Id == Convert.ToInt32(txtId.Text));
                         if (_sporcu != null)
                         {
-                            if (systemLanguage == "Turkish")
-                                MessageBox.Show("Bu bilgilere sahip bir sporcu zaten mevcut.");
-                            else if (systemLanguage == "English")
-                                MessageBox.Show("A player with this information already exists.");
+                            InfService.ShowMessage("Bu bilgilere sahip bir sporcu zaten mevcut.", "A player with this information already exists.");
                         }
                     }
                     else
@@ -114,10 +102,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                         };
                         Context._context.KullaniciSporcular.Add(kullaniciSporcu);
                         Context._context.SaveChanges();
-                        if (systemLanguage == "Turkish")
-                            MessageBox.Show($"{txtAd.Text} {txtSoyad.Text} isimli sporcu başarıyla eklendi.");
-                        else if (systemLanguage == "English")
-                            MessageBox.Show($"The player named {txtAd.Text} {txtSoyad.Text} has been successfully added.");
+                        InfService.ShowMessage($"{txtAd.Text} {txtSoyad.Text} isimli sporcu başarıyla eklendi.", $"The player named {txtAd.Text} {txtSoyad.Text} has been successfully added.");
                         gridViewSporcular.Rows.Clear();
                         FrmSporcular_Load(sender, e);
                         Clear();
@@ -130,21 +115,13 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         {
             if (txtAd.Text == null || txtSoyad.Text == null ||  numBoy.Text == "0" || numKilo.Text == "0")
             {
-                if (systemLanguage == "Turkish")
-                    MessageBox.Show("Lütfen silmek istediğiniz sporcuyu seçiniz!", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                else if (systemLanguage == "English")
-                    MessageBox.Show("Please select the player you want to delete!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                InfService.ShowMessage("Lütfen silmek istediğiniz sporcuyu seçiniz!", "Please select the player you want to delete!");
             }
             else
             {
                 if (Context.kullanici.YetkiId == 1)
                 {
-                    string message = "";
-                    if (systemLanguage == "Turkish")
-                        message = $"{txtAd.Text} {txtSoyad.Text} isimli sporcuyu silmek istediğinize emin misiniz ?";
-                    else if (systemLanguage == "English")
-                        message = $"Are you sure you want to delete the player named {txtAd.Text} {txtSoyad.Text} ?";
-                    if (MessageBox.Show(message, "", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                    if (InfService.ShowMessage($"{txtAd.Text} {txtSoyad.Text} isimli sporcuyu silmek istediğinize emin misiniz ?", $"Are you sure you want to delete the player named {txtAd.Text} {txtSoyad.Text} ?",MessageBoxButtons.YesNo) == DialogResult.Yes)
                     {
                         int id = Convert.ToInt32(txtId.Text);
                         Sporcular sporcu = Context._context.Sporcular.FirstOrDefault(s => s.Id == id);
@@ -153,20 +130,12 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                             KullaniciSporcular kullaniciSporcu = Context._context.KullaniciSporcular.FirstOrDefault(ks => ks.KullaniciId == Context.kullanici.Id && ks.SporcuId == sporcu.Id);
                             Context._context.KullaniciSporcular.Remove(kullaniciSporcu);
                         }
-                        if (systemLanguage == "Turkish")
-                            MessageBox.Show($"{txtAd.Text} {txtSoyad.Text} isimli sporcu başarıyla silinmiştir.");
-                        else if (systemLanguage == "English")
-                            MessageBox.Show($"The player named {txtAd.Text} {txtSoyad.Text} has been deleted successfully.");
+                        InfService.ShowMessage($"{txtAd.Text} {txtSoyad.Text} isimli sporcu başarıyla silinmiştir.", $"The player named {txtAd.Text} {txtSoyad.Text} has been deleted successfully.");
                     }
                 }
                 else if (Context.kullanici.YetkiId == 0)
                 {
-                    string message = "";
-                    if (systemLanguage == "English")
-                        message = $"If you delete the athlete because you have admin authority, any coach in the system will not be able to see the athlete. Are you sure you want to delete it?";
-                    else if (systemLanguage == "Turkish")
-                        message = $"Admin yetkisine sahip olduğunuz için sporcuyu sildiğiniz takdirde sistemdeki herhangi bir antrenör sporcuyu göremeyecektir. Silmek istediğinize emin misiniz ?";
-                    if (MessageBox.Show(message, "", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                    if (InfService.ShowMessage($"Admin yetkisine sahip olduğunuz için sporcuyu sildiğiniz takdirde sistemdeki herhangi bir antrenör sporcuyu göremeyecektir. Silmek istediğinize emin misiniz ?", $"If you delete the player because you have admin authority, any coach in the system will not be able to see the athlete. Are you sure you want to delete it?",MessageBoxButtons.YesNo) == DialogResult.Yes)
                     {
                         int id = Convert.ToInt32(txtId.Text);
                         Sporcular sporcu = Context._context.Sporcular.FirstOrDefault(s => s.Id == id);
@@ -176,7 +145,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                             Context._context.Sporcular.Remove(sporcu);
                             Context._context.KullaniciSporcular.RemoveRange(kullaniciSporcu);
                         }
-                        MessageBox.Show($"{txtAd.Text} {txtSoyad.Text} isimli sporcu başarıyla silinmiştir.");
+                        InfService.ShowMessage($"{txtAd.Text} {txtSoyad.Text} isimli sporcu başarıyla silinmiştir.", $"The player named {txtAd.Text} {txtSoyad.Text} has been successfully deleted.");
                     }
                 }
                 Context._context.SaveChanges();
@@ -190,19 +159,11 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         {
             if (txtAd.Text == null || txtSoyad.Text == null || numBoy.Text == "0" || numKilo.Text == "0")
             {
-                if (systemLanguage == "Turkish")
-                    MessageBox.Show("Lütfen güncellemek istediğiniz sporcuyu seçiniz!", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                else if (systemLanguage == "English")
-                    MessageBox.Show("Please select the player you want to update!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                InfService.ShowMessage("Lütfen güncellemek istediğiniz sporcuyu seçiniz!", "Please select the player you want to update!");
             }
             else
             {
-                string message = "";
-                if (systemLanguage == "Turkish")
-                    message = $"{txtAd.Text} {txtSoyad.Text} isimli sporcunun bilgilerini güncellemek istediğinize emin misiniz ?";
-                else if (systemLanguage == "English")
-                    message = $"Are you sure you want to update the information of {txtAd.Text} {txtSoyad.Text} ?";
-                if (MessageBox.Show(message, "", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                if (InfService.ShowMessage($"{txtAd.Text} {txtSoyad.Text} isimli sporcunun bilgilerini güncellemek istediğinize emin misiniz ?", $"Are you sure you want to update the information of {txtAd.Text} {txtSoyad.Text} ?",MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     int txtId_ = Convert.ToInt32(txtId.Text);
                     Sporcular sporcu = Context._context.Sporcular.FirstOrDefault(s => s.Id == txtId_);
@@ -217,10 +178,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                         sporcu.DogumTarihi = dateTimePicker1.Value;
                         sporcu.Ulke = txtUlke.Text;
                         Context._context.SaveChanges();
-                        if (systemLanguage == "Turkish")
-                            MessageBox.Show("Güncelleme işlemi başarılı.");
-                        else if (systemLanguage == "English")
-                            MessageBox.Show("The update was successful.");
+                        InfService.ShowMessage("Güncelleme işlemi başarılı.", "The update was successful.");
                         gridViewSporcular.Rows.Clear();
                         FrmSporcular_Load(sender, e);
                         Clear();
@@ -233,10 +191,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         {
             if (txtId.Text == "")
             {
-                if (systemLanguage == "Turkish")
-                    MessageBox.Show("Görüntülemek istediğiniz sporcuyu seçiniz.");
-                else if (systemLanguage == "English")
-                    MessageBox.Show("Select the player you want to view.");
+                InfService.ShowMessage("Görüntülemek istediğiniz sporcuyu seçiniz.", "Select the player you want to view.");
             }
             else
             {
@@ -246,7 +201,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                     Context.sporcu = new Sporcular();
                     Context.sporcu.Id = Convert.ToInt32(txtId.Text);
                     _frmAntrenmanSecenekleri.Show();
-                    this.Hide();
+                    
                 }
             }
         }
@@ -467,10 +422,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         {
             if (txtId.Text == "")
             {
-                if (systemLanguage == "Turkish")
-                    MessageBox.Show("Görüntülemek istediğiniz sporcuyu seçiniz.");
-                else if (systemLanguage == "English")
-                    MessageBox.Show("Select the player you want to view.");
+                InfService.ShowMessage("Görüntülemek istediğiniz sporcuyu seçiniz.", "Select the player you want to view.");
             }
             else
             {
@@ -488,10 +440,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         {
             if (txtId.Text == "")
             {
-                if (systemLanguage == "Turkish")
-                    MessageBox.Show("Önce sporcuyu seçiniz.");
-                else if (systemLanguage == "English")
-                    MessageBox.Show("First select the player.");
+                InfService.ShowMessage("Önce sporcuyu seçiniz.", "First select the player.");
             }
             else
             {

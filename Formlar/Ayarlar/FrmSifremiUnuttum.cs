@@ -23,17 +23,11 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                     kullanici.Sifre = txtSifre.Text;
                     Context._context.SaveChanges();
                     this.Close();
-                    if (systemLanguage == "Turkish")
-                        MessageBox.Show("Şifre başarıyla sıfırlanmıştır.");
-                    else
-                        MessageBox.Show("The password has been reset successfully.");
+                    InfService.ShowMessage("Şifre başarıyla sıfırlanmıştır.", "The password has been reset successfully.");
                 }
                 else
                 {
-                    if(systemLanguage == "Turkish")
-                        MessageBox.Show("Şifreler uyuşmamaktadır.");
-                    else
-                        MessageBox.Show("Passwords do not match.");
+                    InfService.ShowMessage("Şifreler uyuşmamaktadır.", "Passwords do not match.");
                 }
             }
         }

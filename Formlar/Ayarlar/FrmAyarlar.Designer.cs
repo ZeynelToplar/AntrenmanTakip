@@ -58,13 +58,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.txtAra = new System.Windows.Forms.TextBox();
             this.gridViewKullanicilar = new System.Windows.Forms.DataGridView();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.KullaniciAdi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Soyad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Yas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Yetki = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.ayarlarMenuStrip.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.ayarlarTabControl.SuspendLayout();
@@ -263,7 +262,6 @@
             this.KullaniciAdi,
             this.Ad,
             this.Soyad,
-            this.Yas,
             this.Yetki});
             this.gridViewKullanicilar.ContextMenuStrip = this.contextMenuStrip1;
             this.gridViewKullanicilar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -310,11 +308,6 @@
             // 
             resources.ApplyResources(this.Soyad, "Soyad");
             this.Soyad.Name = "Soyad";
-            // 
-            // Yas
-            // 
-            resources.ApplyResources(this.Yas, "Yas");
-            this.Yas.Name = "Yas";
             // 
             // Yetki
             // 
@@ -365,12 +358,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtAra;
         private System.Windows.Forms.DataGridView gridViewKullanicilar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn KullaniciAdi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Soyad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Yas;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Yetki;
         private System.Windows.Forms.ToolStripMenuItem sporcuAtaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem şifreDeğişikliğiToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem serbestVeriToolStripMenuItem;
@@ -378,5 +365,10 @@
         private System.Windows.Forms.ToolStripMenuItem çokluVeriToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem portAyarıToolStripMenuItem;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn KullaniciAdi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Soyad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Yetki;
     }
 }

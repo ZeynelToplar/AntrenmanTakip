@@ -101,12 +101,8 @@ namespace AntrenmanTakip.Formlar.AntrenmanFormlari
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            string message = "";
-            if (systemLanguage == "Turkish")
-                message = "Yeni antrenman türünü eklemek istediğinize emin misiniz ?";
-            else if (systemLanguage == "English")
-                message = "Are you sure you want to add the new practice type?";
-            if (MessageBox.Show(message, "Uyarı", MessageBoxButtons.YesNo) == DialogResult.Yes)
+             
+            if (InfService.ShowMessage("Yeni antrenman türünü eklemek istediğinize emin misiniz ?", "Are you sure you want to add the new practice type?",MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 int topKonum = Convert.ToInt32(cmbTopKonum.SelectedValue);
                 int topGelisSekli = Convert.ToInt32(cmbTopGelisSekli.SelectedValue);
@@ -133,10 +129,7 @@ namespace AntrenmanTakip.Formlar.AntrenmanFormlari
 
                     Context._context.AntrenmanTurleri.Add(yeniAntrenmanTuru);
                     Context._context.SaveChanges();
-                    if(systemLanguage == "Turkish")
-                        MessageBox.Show("Kayıt işlemi başarılı.");
-                    else if(systemLanguage == "English")
-                        MessageBox.Show("Registration successful.");
+                    InfService.ShowMessage("Kayıt işlemi başarılı.", "Registration successful.");
                 }
                 else
                 {
@@ -154,10 +147,7 @@ namespace AntrenmanTakip.Formlar.AntrenmanFormlari
                     }
                     else
                     {
-                        if(systemLanguage == "Turkish")
-                            MessageBox.Show("Böyle bir antrenman türü zaten mevcut.");
-                        else if(systemLanguage == "English")
-                            MessageBox.Show("Such a type of practice already exists.");
+                        InfService.ShowMessage("Böyle bir antrenman türü zaten mevcut.", "Such a type of practice already exists.");
                     }
                 }
                 gridViewAntrenmanTurleri.Rows.Clear();
@@ -172,31 +162,21 @@ namespace AntrenmanTakip.Formlar.AntrenmanFormlari
             string vurusBicimi = txtVurusBicmiId.Text;
             if (topKonum != 0 || topGelisSekli != 0 || vurusBicimi != "")
             {
-                string message = "";
-                if (systemLanguage == "Turkish")
-                    message = "Silmek istediğinize emin misiniz ?";
-                else if (systemLanguage == "English")
-                    message = "Are you sure you want to delete ?";
-                if (MessageBox.Show(message,"", MessageBoxButtons.YesNo) == DialogResult.Yes)
+               
+                if (InfService.ShowMessage("Silmek istediğinize emin misiniz ?", "Are you sure you want to delete ?",MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     int vBicimi = Convert.ToInt32(vurusBicimi);
                     AntrenmanTurleri antrenmanTuru = Context._context.AntrenmanTurleri.Where(a => a.TopKonumId == topKonum && a.TopGelisSekliId == topGelisSekli && a.VurusBicimiId == vBicimi).FirstOrDefault();
                     var antrenmanlar = Context._context.Antrenmanlar.Where(a => a.AntrenamTuruId == antrenmanTuru.Id).ToList();
                     if (antrenmanlar.Count > 0)
                     {
-                        if(systemLanguage == "Turkish")
-                            MessageBox.Show("Bu antrenman türüne ait yapılan antrenman kayıtları olduğu için silme işlemi gerçekleştiremezsiniz.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        else if(systemLanguage == "English")
-                            MessageBox.Show("You cannot delete because there are training records for this practice type.","Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        InfService.ShowMessage("Bu antrenman türüne ait yapılan antrenman kayıtları olduğu için silme işlemi gerçekleştiremezsiniz.", "You cannot delete because there are training records for this practice type.");
                     }
                     else
                     {
                         Context._context.AntrenmanTurleri.Remove(antrenmanTuru);
                         Context._context.SaveChanges();
-                        if(systemLanguage == "Turkish")
-                            MessageBox.Show("Silme işlemi başarılı.");
-                        else if(systemLanguage == "English")
-                            MessageBox.Show("The deletion was successful.");
+                        InfService.ShowMessage("Silme işlemi başarılı.", "The deletion was successful.");
                         gridViewAntrenmanTurleri.Rows.Clear();
                         VerileriGetir();
                     }

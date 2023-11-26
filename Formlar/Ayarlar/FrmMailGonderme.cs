@@ -33,10 +33,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
            
             if(mail == "")
             {
-                if(systemLanguage == "Turkish")
-                    MessageBox.Show("Mail adresini alanını boş geçemezsiniz.");
-                else if(systemLanguage == "English")
-                    MessageBox.Show("You cannot leave the e-mail address field blank.");
+                InfService.ShowMessage("Mail adresini alanını boş geçemezsiniz.", "You cannot leave the e-mail address field blank.");
             }
             else
             {
@@ -59,10 +56,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                     smtpClient.Host = "smtp.outlook.com";
                     smtpClient.Port = 587;
                     smtpClient.Send(message);
-                    if (systemLanguage == "Turkish")
-                        MessageBox.Show("Onay kodu gönderildi.");
-                    else if (systemLanguage == "English")
-                        MessageBox.Show("Confirmation code sent.");
+                    InfService.ShowMessage("Onay kodu gönderildi.", "Confirmation code sent.");
                     this.Close();
                     _frmMailOnay = new FrmMailOnay();
                     _frmMailOnay.kod = kod;
@@ -70,10 +64,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                 }
                 else
                 {
-                    if(systemLanguage == "Turkish")
-                        MessageBox.Show("Var olan mail adresi giriniz.");
-                    else if(systemLanguage == "English")
-                        MessageBox.Show("Enter your existing e-mail address.");
+                    InfService.ShowMessage("Var olan mail adresi giriniz.", "Enter your existing e-mail address.");
                 }
             }
         }

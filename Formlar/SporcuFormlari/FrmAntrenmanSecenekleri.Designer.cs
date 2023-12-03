@@ -48,8 +48,8 @@
             // 
             // btnOturumKapat
             // 
-            resources.ApplyResources(this.btnOturumKapat, "btnOturumKapat");
             this.btnOturumKapat.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnOturumKapat, "btnOturumKapat");
             this.btnOturumKapat.FlatAppearance.BorderSize = 0;
             this.btnOturumKapat.Image = global::AntrenmanTakip.Properties.Resources.oturumKapat32px;
             this.btnOturumKapat.Name = "btnOturumKapat";
@@ -59,8 +59,8 @@
             // 
             // btnSettings
             // 
-            resources.ApplyResources(this.btnSettings, "btnSettings");
             this.btnSettings.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnSettings, "btnSettings");
             this.btnSettings.FlatAppearance.BorderSize = 0;
             this.btnSettings.Image = global::AntrenmanTakip.Properties.Resources.ayarlar2_32px;
             this.btnSettings.Name = "btnSettings";
@@ -70,8 +70,8 @@
             // 
             // btnGeriGit
             // 
-            resources.ApplyResources(this.btnGeriGit, "btnGeriGit");
             this.btnGeriGit.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnGeriGit, "btnGeriGit");
             this.btnGeriGit.FlatAppearance.BorderSize = 0;
             this.btnGeriGit.Image = global::AntrenmanTakip.Properties.Resources.geriGit2_32px;
             this.btnGeriGit.Name = "btnGeriGit";
@@ -87,7 +87,6 @@
             this.btnSol.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnSol.Image = global::AntrenmanTakip.Properties.Resources.sol;
             this.btnSol.Name = "btnSol";
-            this.toolTip1.SetToolTip(this.btnSol, resources.GetString("btnSol.ToolTip"));
             this.btnSol.UseVisualStyleBackColor = false;
             this.btnSol.Click += new System.EventHandler(this.btnSol_Click);
             // 
@@ -99,7 +98,6 @@
             this.btnKarsidan.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnKarsidan.Image = global::AntrenmanTakip.Properties.Resources.karsidan;
             this.btnKarsidan.Name = "btnKarsidan";
-            this.toolTip1.SetToolTip(this.btnKarsidan, resources.GetString("btnKarsidan.ToolTip"));
             this.btnKarsidan.UseVisualStyleBackColor = false;
             this.btnKarsidan.Click += new System.EventHandler(this.btnKarsidan_Click);
             // 
@@ -111,19 +109,17 @@
             this.btnSag.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnSag.Image = global::AntrenmanTakip.Properties.Resources.sagdan;
             this.btnSag.Name = "btnSag";
-            this.toolTip1.SetToolTip(this.btnSag, resources.GetString("btnSag.ToolTip"));
             this.btnSag.UseVisualStyleBackColor = false;
             this.btnSag.Click += new System.EventHandler(this.btnSag_Click);
             // 
             // btnTumGor
             // 
-            resources.ApplyResources(this.btnTumGor, "btnTumGor");
             this.btnTumGor.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.btnTumGor.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnTumGor, "btnTumGor");
             this.btnTumGor.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnTumGor.Image = global::AntrenmanTakip.Properties.Resources.TumAntrenmanlar;
             this.btnTumGor.Name = "btnTumGor";
-            this.toolTip1.SetToolTip(this.btnTumGor, resources.GetString("btnTumGor.ToolTip"));
             this.btnTumGor.UseVisualStyleBackColor = false;
             this.btnTumGor.Click += new System.EventHandler(this.btnTumGor_Click);
             // 
@@ -134,14 +130,12 @@
             this.tableLayoutPanel1.Controls.Add(this.btnGeriGit, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnSettings, 1, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.toolTip1.SetToolTip(this.tableLayoutPanel1, resources.GetString("tableLayoutPanel1.ToolTip"));
             // 
             // tableLayoutPanel2
             // 
             resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
             this.tableLayoutPanel2.Controls.Add(this.btnTumGor, 0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.toolTip1.SetToolTip(this.tableLayoutPanel2, resources.GetString("tableLayoutPanel2.ToolTip"));
             // 
             // tableLayoutPanel3
             // 
@@ -150,7 +144,6 @@
             this.tableLayoutPanel3.Controls.Add(this.btnKarsidan, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.btnSol, 2, 0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.toolTip1.SetToolTip(this.tableLayoutPanel3, resources.GetString("tableLayoutPanel3.ToolTip"));
             // 
             // FrmAntrenmanSecenekleri
             // 
@@ -162,7 +155,6 @@
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FrmAntrenmanSecenekleri";
-            this.toolTip1.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.Load += new System.EventHandler(this.FrmAntrenmanSecenekleri_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);

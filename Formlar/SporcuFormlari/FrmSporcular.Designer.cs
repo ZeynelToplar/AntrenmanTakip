@@ -57,8 +57,8 @@
             this.numYas = new System.Windows.Forms.NumericUpDown();
             this.cmbMevki = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.numBoy = new System.Windows.Forms.MaskedTextBox();
-            this.numKilo = new System.Windows.Forms.MaskedTextBox();
+            this.numBoy = new System.Windows.Forms.TextBox();
+            this.numKilo = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.txtUlke = new System.Windows.Forms.TextBox();
@@ -133,7 +133,6 @@
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.gridViewSporcular.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gridViewSporcular.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.toolTip1.SetToolTip(this.gridViewSporcular, resources.GetString("gridViewSporcular.ToolTip"));
             this.gridViewSporcular.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewSporcular_CellClick);
             this.gridViewSporcular.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewSporcular_CellContentClick);
             // 
@@ -184,78 +183,67 @@
             // 
             // ctxStrpSporcular
             // 
-            resources.ApplyResources(this.ctxStrpSporcular, "ctxStrpSporcular");
             this.ctxStrpSporcular.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.resimEkleToolStripMenuItem});
             this.ctxStrpSporcular.Name = "ctxStrpSporcular";
-            this.toolTip1.SetToolTip(this.ctxStrpSporcular, resources.GetString("ctxStrpSporcular.ToolTip"));
+            resources.ApplyResources(this.ctxStrpSporcular, "ctxStrpSporcular");
             // 
             // resimEkleToolStripMenuItem
             // 
-            resources.ApplyResources(this.resimEkleToolStripMenuItem, "resimEkleToolStripMenuItem");
             this.resimEkleToolStripMenuItem.Name = "resimEkleToolStripMenuItem";
+            resources.ApplyResources(this.resimEkleToolStripMenuItem, "resimEkleToolStripMenuItem");
             this.resimEkleToolStripMenuItem.Click += new System.EventHandler(this.resimEkleToolStripMenuItem_Click);
             // 
             // lblAd
             // 
             resources.ApplyResources(this.lblAd, "lblAd");
             this.lblAd.Name = "lblAd";
-            this.toolTip1.SetToolTip(this.lblAd, resources.GetString("lblAd.ToolTip"));
             // 
             // lblYas
             // 
             resources.ApplyResources(this.lblYas, "lblYas");
             this.lblYas.Name = "lblYas";
-            this.toolTip1.SetToolTip(this.lblYas, resources.GetString("lblYas.ToolTip"));
             // 
             // lblSoyad
             // 
             resources.ApplyResources(this.lblSoyad, "lblSoyad");
             this.lblSoyad.Name = "lblSoyad";
-            this.toolTip1.SetToolTip(this.lblSoyad, resources.GetString("lblSoyad.ToolTip"));
             // 
             // lblBoy
             // 
             resources.ApplyResources(this.lblBoy, "lblBoy");
             this.lblBoy.Name = "lblBoy";
-            this.toolTip1.SetToolTip(this.lblBoy, resources.GetString("lblBoy.ToolTip"));
             // 
             // lblMevki
             // 
             resources.ApplyResources(this.lblMevki, "lblMevki");
             this.lblMevki.Name = "lblMevki";
-            this.toolTip1.SetToolTip(this.lblMevki, resources.GetString("lblMevki.ToolTip"));
             // 
             // lblKilo
             // 
             resources.ApplyResources(this.lblKilo, "lblKilo");
             this.lblKilo.Name = "lblKilo";
-            this.toolTip1.SetToolTip(this.lblKilo, resources.GetString("lblKilo.ToolTip"));
             // 
             // txtAd
             // 
             resources.ApplyResources(this.txtAd, "txtAd");
             this.txtAd.Name = "txtAd";
-            this.toolTip1.SetToolTip(this.txtAd, resources.GetString("txtAd.ToolTip"));
             // 
             // txtSoyad
             // 
             resources.ApplyResources(this.txtSoyad, "txtSoyad");
             this.txtSoyad.Name = "txtSoyad";
-            this.toolTip1.SetToolTip(this.txtSoyad, resources.GetString("txtSoyad.ToolTip"));
             // 
             // numYas
             // 
             resources.ApplyResources(this.numYas, "numYas");
             this.numYas.Name = "numYas";
-            this.toolTip1.SetToolTip(this.numYas, resources.GetString("numYas.ToolTip"));
             // 
             // cmbMevki
             // 
-            resources.ApplyResources(this.cmbMevki, "cmbMevki");
             this.cmbMevki.FormattingEnabled = true;
+            resources.ApplyResources(this.cmbMevki, "cmbMevki");
             this.cmbMevki.Name = "cmbMevki";
-            this.toolTip1.SetToolTip(this.cmbMevki, resources.GetString("cmbMevki.ToolTip"));
             // 
             // panel1
             // 
@@ -285,112 +273,100 @@
             this.panel1.Controls.Add(this.lblYas);
             this.panel1.Controls.Add(this.lblAd);
             this.panel1.Name = "panel1";
-            this.toolTip1.SetToolTip(this.panel1, resources.GetString("panel1.ToolTip"));
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // numBoy
             // 
             resources.ApplyResources(this.numBoy, "numBoy");
             this.numBoy.Name = "numBoy";
-            this.toolTip1.SetToolTip(this.numBoy, resources.GetString("numBoy.ToolTip"));
+            this.numBoy.TextChanged += new System.EventHandler(this.numBoy_TextChanged);
             // 
             // numKilo
             // 
             resources.ApplyResources(this.numKilo, "numKilo");
             this.numKilo.Name = "numKilo";
-            this.toolTip1.SetToolTip(this.numKilo, resources.GetString("numKilo.ToolTip"));
-            this.numKilo.ValidatingType = typeof(int);
+            this.numKilo.TextChanged += new System.EventHandler(this.numKilo_TextChanged);
             // 
             // dateTimePicker1
             // 
-            resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.toolTip1.SetToolTip(this.dateTimePicker1, resources.GetString("dateTimePicker1.ToolTip"));
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.toolTip1.SetToolTip(this.label1, resources.GetString("label1.ToolTip"));
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtUlke
             // 
             resources.ApplyResources(this.txtUlke, "txtUlke");
             this.txtUlke.Name = "txtUlke";
-            this.toolTip1.SetToolTip(this.txtUlke, resources.GetString("txtUlke.ToolTip"));
             // 
             // txtId
             // 
             resources.ApplyResources(this.txtId, "txtId");
             this.txtId.Name = "txtId";
-            this.toolTip1.SetToolTip(this.txtId, resources.GetString("txtId.ToolTip"));
             // 
             // btnProfilGor
             // 
-            resources.ApplyResources(this.btnProfilGor, "btnProfilGor");
             this.btnProfilGor.BackColor = System.Drawing.Color.IndianRed;
             this.btnProfilGor.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnProfilGor, "btnProfilGor");
             this.btnProfilGor.Image = global::AntrenmanTakip.Properties.Resources.profil1;
             this.btnProfilGor.Name = "btnProfilGor";
-            this.toolTip1.SetToolTip(this.btnProfilGor, resources.GetString("btnProfilGor.ToolTip"));
             this.btnProfilGor.UseVisualStyleBackColor = false;
             this.btnProfilGor.Click += new System.EventHandler(this.btnProfilGor_Click);
             // 
             // btnSifirla
             // 
-            resources.ApplyResources(this.btnSifirla, "btnSifirla");
             this.btnSifirla.BackColor = System.Drawing.Color.IndianRed;
             this.btnSifirla.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnSifirla, "btnSifirla");
             this.btnSifirla.Image = global::AntrenmanTakip.Properties.Resources.sifirla3_48px;
             this.btnSifirla.Name = "btnSifirla";
-            this.toolTip1.SetToolTip(this.btnSifirla, resources.GetString("btnSifirla.ToolTip"));
             this.btnSifirla.UseVisualStyleBackColor = false;
             this.btnSifirla.Click += new System.EventHandler(this.btnSifirla_Click);
             // 
             // btnAntrenmanGor
             // 
-            resources.ApplyResources(this.btnAntrenmanGor, "btnAntrenmanGor");
             this.btnAntrenmanGor.BackColor = System.Drawing.Color.IndianRed;
             this.btnAntrenmanGor.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnAntrenmanGor, "btnAntrenmanGor");
             this.btnAntrenmanGor.Image = global::AntrenmanTakip.Properties.Resources.goruntule2_48px;
             this.btnAntrenmanGor.Name = "btnAntrenmanGor";
-            this.toolTip1.SetToolTip(this.btnAntrenmanGor, resources.GetString("btnAntrenmanGor.ToolTip"));
             this.btnAntrenmanGor.UseVisualStyleBackColor = false;
             this.btnAntrenmanGor.Click += new System.EventHandler(this.btnAntrenmanGor_Click);
             // 
             // btnGuncelle
             // 
-            resources.ApplyResources(this.btnGuncelle, "btnGuncelle");
             this.btnGuncelle.BackColor = System.Drawing.Color.IndianRed;
             this.btnGuncelle.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnGuncelle, "btnGuncelle");
             this.btnGuncelle.Image = global::AntrenmanTakip.Properties.Resources.guncelle2_48px;
             this.btnGuncelle.Name = "btnGuncelle";
-            this.toolTip1.SetToolTip(this.btnGuncelle, resources.GetString("btnGuncelle.ToolTip"));
             this.btnGuncelle.UseVisualStyleBackColor = false;
             this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnSil
             // 
-            resources.ApplyResources(this.btnSil, "btnSil");
             this.btnSil.BackColor = System.Drawing.Color.IndianRed;
             this.btnSil.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnSil, "btnSil");
             this.btnSil.Image = global::AntrenmanTakip.Properties.Resources.sil2_48px;
             this.btnSil.Name = "btnSil";
-            this.toolTip1.SetToolTip(this.btnSil, resources.GetString("btnSil.ToolTip"));
             this.btnSil.UseVisualStyleBackColor = false;
             this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnEkle
             // 
-            resources.ApplyResources(this.btnEkle, "btnEkle");
             this.btnEkle.BackColor = System.Drawing.Color.IndianRed;
             this.btnEkle.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnEkle, "btnEkle");
             this.btnEkle.Image = global::AntrenmanTakip.Properties.Resources.ekle2_48px;
             this.btnEkle.Name = "btnEkle";
-            this.toolTip1.SetToolTip(this.btnEkle, resources.GetString("btnEkle.ToolTip"));
             this.btnEkle.UseVisualStyleBackColor = false;
             this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
@@ -398,7 +374,6 @@
             // 
             resources.ApplyResources(this.lblUlke, "lblUlke");
             this.lblUlke.Name = "lblUlke";
-            this.toolTip1.SetToolTip(this.lblUlke, resources.GetString("lblUlke.ToolTip"));
             // 
             // tableLayoutPanel1
             // 
@@ -407,7 +382,6 @@
             this.tableLayoutPanel1.Controls.Add(this.btnOturumKapat, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnSettings, 1, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.toolTip1.SetToolTip(this.tableLayoutPanel1, resources.GetString("tableLayoutPanel1.ToolTip"));
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // btnGeriGit
@@ -446,7 +420,6 @@
             this.tableLayoutPanel2.Controls.Add(this.panel1, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.gridViewSporcular, 0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.toolTip1.SetToolTip(this.tableLayoutPanel2, resources.GetString("tableLayoutPanel2.ToolTip"));
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // FrmSporcular
@@ -456,7 +429,6 @@
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmSporcular";
-            this.toolTip1.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.Load += new System.EventHandler(this.FrmSporcular_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridViewSporcular)).EndInit();
             this.ctxStrpSporcular.ResumeLayout(false);
@@ -503,8 +475,6 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MaskedTextBox numBoy;
-        private System.Windows.Forms.MaskedTextBox numKilo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ulke;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ad;
@@ -514,5 +484,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Kilo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Mevki;
         private System.Windows.Forms.DataGridViewTextBoxColumn DogumTarihi;
+        private System.Windows.Forms.TextBox numKilo;
+        private System.Windows.Forms.TextBox numBoy;
     }
 }

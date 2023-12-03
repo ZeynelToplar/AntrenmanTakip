@@ -124,29 +124,14 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Username:</value>
   </data>
-  <data name="label1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 24</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Password:</value>
   </data>
-  <data name="label2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtKullaniciAdi.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtSifre.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="button1.Text" xml:space="preserve">
     <value>Login</value>
-  </data>
-  <data name="button1.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
     <value>71, 174</value>
@@ -157,17 +142,8 @@
   <data name="label4.Text" xml:space="preserve">
     <value>Login Your Account</value>
   </data>
-  <data name="label4.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="btnSifremiUnuttum.Text" xml:space="preserve">
     <value>Forgot Password ? </value>
-  </data>
-  <data name="btnSifremiUnuttum.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pictureBox1.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="btnKapat.ToolTip" xml:space="preserve">
     <value>Log out</value>
@@ -387,8 +363,5 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Login Page</value>
-  </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
   </data>
 </root>

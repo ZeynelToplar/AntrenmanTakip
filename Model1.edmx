@@ -209,6 +209,49 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_Antrenorler' does not h
           <Property Name="YetkiId" Type="int" Nullable="false" />
         </EntityType>
         <!--Errors Found During Generation:
+warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_AylikBasariliAtis' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="View_AylikBasariliAtis">
+          <Key>
+            <PropertyRef Name="AdSoyad" />
+            <PropertyRef Name="AntrenmanTurleri" />
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="AdSoyad" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="AntrenmanTurleri" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="AntrenamTuruId" Type="int" />
+          <Property Name="OcakBasariliAtisSayisi" Type="int" />
+          <Property Name="SubatBasariliAtisSayisi" Type="int" />
+          <Property Name="MartBasariliAtisSayisi" Type="int" />
+          <Property Name="NisanBasariliAtisSayisi" Type="int" />
+          <Property Name="MayisBasariliAtisSayisi" Type="int" />
+          <Property Name="HaziranBasariliAtisSayisi" Type="int" />
+          <Property Name="TemmuzBasariliAtisSayisi" Type="int" />
+          <Property Name="AgustosBasariliAtisSayisi" Type="int" />
+          <Property Name="EylulBasariliAtisSayisi" Type="int" />
+          <Property Name="EkimBasariliAtisSayisi" Type="int" />
+          <Property Name="KasimBasariliAtisSayisi" Type="int" />
+          <Property Name="AralikBasariliAtisSayisi" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_HaftalikBasariliAtis' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="View_HaftalikBasariliAtis">
+          <Key>
+            <PropertyRef Name="AdSoyad" />
+            <PropertyRef Name="AntrenmanTurleri" />
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="AdSoyad" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="AntrenmanTurleri" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="AntrenamTuruId" Type="int" />
+          <Property Name="BirHaftaBasariliAtisSayisi" Type="int" />
+          <Property Name="IkiHaftaBasariliAtisSayisi" Type="int" />
+          <Property Name="UcHaftaBasariliAtisSayisi" Type="int" />
+          <Property Name="DortHaftaBasariliAtisSayisi" Type="int" />
+          <Property Name="BesHaftaBasariliAtisSayisi" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
 warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="View_VurusBicimleri">
           <Key>
@@ -476,6 +519,39 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
     [View_Antrenorler].[AdSoyad] AS [AdSoyad], 
     [View_Antrenorler].[YetkiId] AS [YetkiId]
     FROM [dbo].[View_Antrenorler] AS [View_Antrenorler]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="View_AylikBasariliAtis" EntityType="Self.View_AylikBasariliAtis" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [View_AylikBasariliAtis].[AdSoyad] AS [AdSoyad], 
+    [View_AylikBasariliAtis].[AntrenmanTurleri] AS [AntrenmanTurleri], 
+    [View_AylikBasariliAtis].[Id] AS [Id], 
+    [View_AylikBasariliAtis].[AntrenamTuruId] AS [AntrenamTuruId], 
+    [View_AylikBasariliAtis].[OcakBasariliAtisSayisi] AS [OcakBasariliAtisSayisi], 
+    [View_AylikBasariliAtis].[SubatBasariliAtisSayisi] AS [SubatBasariliAtisSayisi], 
+    [View_AylikBasariliAtis].[MartBasariliAtisSayisi] AS [MartBasariliAtisSayisi], 
+    [View_AylikBasariliAtis].[NisanBasariliAtisSayisi] AS [NisanBasariliAtisSayisi], 
+    [View_AylikBasariliAtis].[MayisBasariliAtisSayisi] AS [MayisBasariliAtisSayisi], 
+    [View_AylikBasariliAtis].[HaziranBasariliAtisSayisi] AS [HaziranBasariliAtisSayisi], 
+    [View_AylikBasariliAtis].[TemmuzBasariliAtisSayisi] AS [TemmuzBasariliAtisSayisi], 
+    [View_AylikBasariliAtis].[AgustosBasariliAtisSayisi] AS [AgustosBasariliAtisSayisi], 
+    [View_AylikBasariliAtis].[EylulBasariliAtisSayisi] AS [EylulBasariliAtisSayisi], 
+    [View_AylikBasariliAtis].[EkimBasariliAtisSayisi] AS [EkimBasariliAtisSayisi], 
+    [View_AylikBasariliAtis].[KasimBasariliAtisSayisi] AS [KasimBasariliAtisSayisi], 
+    [View_AylikBasariliAtis].[AralikBasariliAtisSayisi] AS [AralikBasariliAtisSayisi]
+    FROM [dbo].[View_AylikBasariliAtis] AS [View_AylikBasariliAtis]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="View_HaftalikBasariliAtis" EntityType="Self.View_HaftalikBasariliAtis" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [View_HaftalikBasariliAtis].[AdSoyad] AS [AdSoyad], 
+    [View_HaftalikBasariliAtis].[AntrenmanTurleri] AS [AntrenmanTurleri], 
+    [View_HaftalikBasariliAtis].[Id] AS [Id], 
+    [View_HaftalikBasariliAtis].[AntrenamTuruId] AS [AntrenamTuruId], 
+    [View_HaftalikBasariliAtis].[BirHaftaBasariliAtisSayisi] AS [BirHaftaBasariliAtisSayisi], 
+    [View_HaftalikBasariliAtis].[IkiHaftaBasariliAtisSayisi] AS [IkiHaftaBasariliAtisSayisi], 
+    [View_HaftalikBasariliAtis].[UcHaftaBasariliAtisSayisi] AS [UcHaftaBasariliAtisSayisi], 
+    [View_HaftalikBasariliAtis].[DortHaftaBasariliAtisSayisi] AS [DortHaftaBasariliAtisSayisi], 
+    [View_HaftalikBasariliAtis].[BesHaftaBasariliAtisSayisi] AS [BesHaftaBasariliAtisSayisi]
+    FROM [dbo].[View_HaftalikBasariliAtis] AS [View_HaftalikBasariliAtis]</DefiningQuery>
           </EntitySet>
           <EntitySet Name="View_VurusBicimleri" EntityType="Self.View_VurusBicimleri" store:Type="Views" store:Schema="dbo">
             <DefiningQuery>SELECT 
@@ -1054,6 +1130,8 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
             <Parameter Name="new_diagramname" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="sp_upgraddiagrams" />
+          <EntitySet Name="View_HaftalikBasariliAtis" EntityType="DbAntrenmanTakip2Model.View_HaftalikBasariliAtis" />
+          <EntitySet Name="View_AylikBasariliAtis" EntityType="DbAntrenmanTakip2Model.View_AylikBasariliAtis" />
         </EntityContainer>
         <ComplexType Name="sp_helpdiagramdefinition_Result">
           <Property Type="Int32" Name="version" Nullable="true" />
@@ -1066,6 +1144,45 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
           <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
           <Property Type="Int32" Name="OwnerID" Nullable="false" />
         </ComplexType>
+        <EntityType Name="View_HaftalikBasariliAtis">
+          <Key>
+            <PropertyRef Name="AdSoyad" />
+            <PropertyRef Name="AntrenmanTurleri" />
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="AdSoyad" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AntrenmanTurleri" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BirHaftaBasariliAtisSayisi" Type="Int32" />
+          <Property Name="IkiHaftaBasariliAtisSayisi" Type="Int32" />
+          <Property Name="UcHaftaBasariliAtisSayisi" Type="Int32" />
+          <Property Name="DortHaftaBasariliAtisSayisi" Type="Int32" />
+          <Property Name="BesHaftaBasariliAtisSayisi" Type="Int32" />
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="AntrenamTuruId" Type="Int32" />
+        </EntityType>
+        <EntityType Name="View_AylikBasariliAtis">
+          <Key>
+            <PropertyRef Name="AdSoyad" />
+            <PropertyRef Name="AntrenmanTurleri" />
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="AdSoyad" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AntrenmanTurleri" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="OcakBasariliAtisSayisi" Type="Int32" />
+          <Property Name="SubatBasariliAtisSayisi" Type="Int32" />
+          <Property Name="MartBasariliAtisSayisi" Type="Int32" />
+          <Property Name="NisanBasariliAtisSayisi" Type="Int32" />
+          <Property Name="MayisBasariliAtisSayisi" Type="Int32" />
+          <Property Name="HaziranBasariliAtisSayisi" Type="Int32" />
+          <Property Name="TemmuzBasariliAtisSayisi" Type="Int32" />
+          <Property Name="AgustosBasariliAtisSayisi" Type="Int32" />
+          <Property Name="EylulBasariliAtisSayisi" Type="Int32" />
+          <Property Name="EkimBasariliAtisSayisi" Type="Int32" />
+          <Property Name="KasimBasariliAtisSayisi" Type="Int32" />
+          <Property Name="AralikBasariliAtisSayisi" Type="Int32" />
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="AntrenamTuruId" Type="Int32" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1308,6 +1425,43 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
           </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="DbAntrenmanTakip2Model.Store.sp_renamediagram" />
           <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="DbAntrenmanTakip2Model.Store.sp_upgraddiagrams" />
+          <EntitySetMapping Name="View_HaftalikBasariliAtis">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.View_HaftalikBasariliAtis">
+              <MappingFragment StoreEntitySet="View_HaftalikBasariliAtis">
+                <ScalarProperty Name="AntrenamTuruId" ColumnName="AntrenamTuruId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="BesHaftaBasariliAtisSayisi" ColumnName="BesHaftaBasariliAtisSayisi" />
+                <ScalarProperty Name="DortHaftaBasariliAtisSayisi" ColumnName="DortHaftaBasariliAtisSayisi" />
+                <ScalarProperty Name="UcHaftaBasariliAtisSayisi" ColumnName="UcHaftaBasariliAtisSayisi" />
+                <ScalarProperty Name="IkiHaftaBasariliAtisSayisi" ColumnName="IkiHaftaBasariliAtisSayisi" />
+                <ScalarProperty Name="BirHaftaBasariliAtisSayisi" ColumnName="BirHaftaBasariliAtisSayisi" />
+                <ScalarProperty Name="AntrenmanTurleri" ColumnName="AntrenmanTurleri" />
+                <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="View_AylikBasariliAtis">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.View_AylikBasariliAtis">
+              <MappingFragment StoreEntitySet="View_AylikBasariliAtis">
+                <ScalarProperty Name="AntrenamTuruId" ColumnName="AntrenamTuruId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="AralikBasariliAtisSayisi" ColumnName="AralikBasariliAtisSayisi" />
+                <ScalarProperty Name="KasimBasariliAtisSayisi" ColumnName="KasimBasariliAtisSayisi" />
+                <ScalarProperty Name="EkimBasariliAtisSayisi" ColumnName="EkimBasariliAtisSayisi" />
+                <ScalarProperty Name="EylulBasariliAtisSayisi" ColumnName="EylulBasariliAtisSayisi" />
+                <ScalarProperty Name="AgustosBasariliAtisSayisi" ColumnName="AgustosBasariliAtisSayisi" />
+                <ScalarProperty Name="TemmuzBasariliAtisSayisi" ColumnName="TemmuzBasariliAtisSayisi" />
+                <ScalarProperty Name="HaziranBasariliAtisSayisi" ColumnName="HaziranBasariliAtisSayisi" />
+                <ScalarProperty Name="MayisBasariliAtisSayisi" ColumnName="MayisBasariliAtisSayisi" />
+                <ScalarProperty Name="NisanBasariliAtisSayisi" ColumnName="NisanBasariliAtisSayisi" />
+                <ScalarProperty Name="MartBasariliAtisSayisi" ColumnName="MartBasariliAtisSayisi" />
+                <ScalarProperty Name="SubatBasariliAtisSayisi" ColumnName="SubatBasariliAtisSayisi" />
+                <ScalarProperty Name="OcakBasariliAtisSayisi" ColumnName="OcakBasariliAtisSayisi" />
+                <ScalarProperty Name="AntrenmanTurleri" ColumnName="AntrenmanTurleri" />
+                <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

@@ -40,9 +40,9 @@
             // 
             // btnKaydet
             // 
-            resources.ApplyResources(this.btnKaydet, "btnKaydet");
             this.btnKaydet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnKaydet.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnKaydet, "btnKaydet");
             this.btnKaydet.Image = global::AntrenmanTakip.Properties.Resources.kaydet24px;
             this.btnKaydet.Name = "btnKaydet";
             this.toolTip1.SetToolTip(this.btnKaydet, resources.GetString("btnKaydet.ToolTip"));
@@ -51,11 +51,10 @@
             // 
             // btnResim
             // 
-            resources.ApplyResources(this.btnResim, "btnResim");
             this.btnResim.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnResim.Image = global::AntrenmanTakip.Properties.Resources.yükle24px;
+            resources.ApplyResources(this.btnResim, "btnResim");
             this.btnResim.Name = "btnResim";
-            this.toolTip1.SetToolTip(this.btnResim, resources.GetString("btnResim.ToolTip"));
             this.btnResim.UseVisualStyleBackColor = true;
             this.btnResim.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -64,7 +63,6 @@
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox1, resources.GetString("pictureBox1.ToolTip"));
             // 
             // FrmSporcuResimEkle
             // 
@@ -76,7 +74,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FrmSporcuResimEkle";
-            this.toolTip1.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.Load += new System.EventHandler(this.FrmSporcuResimEkle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

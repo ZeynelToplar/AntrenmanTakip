@@ -142,26 +142,17 @@
   <data name="btnSol.Text" xml:space="preserve">
     <value>FROM THE LEFT</value>
   </data>
-  <data name="btnSol.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="btnKarsidan.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnKarsidan.Text" xml:space="preserve">
     <value>FROM THE ACROSS</value>
   </data>
-  <data name="btnKarsidan.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="btnSag.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnSag.Text" xml:space="preserve">
     <value>FROM THE RIGHT</value>
-  </data>
-  <data name="btnSag.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="btnTumGor.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
@@ -175,18 +166,6 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnTumGor.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="btnTumGor.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tableLayoutPanel1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tableLayoutPanel2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tableLayoutPanel3.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -396,8 +375,5 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Practice Options</value>
-  </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
   </data>
 </root>

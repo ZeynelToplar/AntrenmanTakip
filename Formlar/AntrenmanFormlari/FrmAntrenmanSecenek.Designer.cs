@@ -41,17 +41,17 @@
             // 
             // panel2
             // 
-            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Controls.Add(this.btnOturumKapat);
             this.panel2.Controls.Add(this.btnSettings);
             this.panel2.Controls.Add(this.btnGeriGit);
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
             // btnOturumKapat
             // 
-            resources.ApplyResources(this.btnOturumKapat, "btnOturumKapat");
             this.btnOturumKapat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOturumKapat.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnOturumKapat, "btnOturumKapat");
             this.btnOturumKapat.Image = global::AntrenmanTakip.Properties.Resources.oturumKapat32px;
             this.btnOturumKapat.Name = "btnOturumKapat";
             this.btnOturumKapat.UseVisualStyleBackColor = true;
@@ -59,9 +59,9 @@
             // 
             // btnSettings
             // 
-            resources.ApplyResources(this.btnSettings, "btnSettings");
             this.btnSettings.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSettings.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnSettings, "btnSettings");
             this.btnSettings.Image = global::AntrenmanTakip.Properties.Resources.ayarlar2_32px;
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.UseVisualStyleBackColor = true;
@@ -69,9 +69,9 @@
             // 
             // btnGeriGit
             // 
-            resources.ApplyResources(this.btnGeriGit, "btnGeriGit");
             this.btnGeriGit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGeriGit.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnGeriGit, "btnGeriGit");
             this.btnGeriGit.Image = global::AntrenmanTakip.Properties.Resources.geriGit2_32px;
             this.btnGeriGit.Name = "btnGeriGit";
             this.btnGeriGit.UseVisualStyleBackColor = true;
@@ -84,18 +84,18 @@
             // 
             // cmbAntrenmanTuru
             // 
-            resources.ApplyResources(this.cmbAntrenmanTuru, "cmbAntrenmanTuru");
             this.cmbAntrenmanTuru.FormattingEnabled = true;
             this.cmbAntrenmanTuru.Items.AddRange(new object[] {
             resources.GetString("cmbAntrenmanTuru.Items"),
             resources.GetString("cmbAntrenmanTuru.Items1"),
             resources.GetString("cmbAntrenmanTuru.Items2")});
+            resources.ApplyResources(this.cmbAntrenmanTuru, "cmbAntrenmanTuru");
             this.cmbAntrenmanTuru.Name = "cmbAntrenmanTuru";
             // 
             // btnİlerle
             // 
-            resources.ApplyResources(this.btnİlerle, "btnİlerle");
             this.btnİlerle.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnİlerle, "btnİlerle");
             this.btnİlerle.Name = "btnİlerle";
             this.btnİlerle.UseVisualStyleBackColor = true;
             this.btnİlerle.Click += new System.EventHandler(this.btnİlerle_Click);

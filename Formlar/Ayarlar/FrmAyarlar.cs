@@ -780,5 +780,10 @@ namespace AntrenmanTakip.Formlar.Ayarlar
 
             }
         }
+
+        private void raporAlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

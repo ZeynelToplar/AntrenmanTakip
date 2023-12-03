@@ -68,7 +68,6 @@
             this.tableLayoutPanel1.Controls.Add(this.btnOturumKapat, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnSettings, 1, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.toolTip1.SetToolTip(this.tableLayoutPanel1, resources.GetString("tableLayoutPanel1.ToolTip"));
             // 
             // btnGeriGit
             // 
@@ -105,21 +104,18 @@
             resources.ApplyResources(this.cmbAntrenorler, "cmbAntrenorler");
             this.cmbAntrenorler.FormattingEnabled = true;
             this.cmbAntrenorler.Name = "cmbAntrenorler";
-            this.toolTip1.SetToolTip(this.cmbAntrenorler, resources.GetString("cmbAntrenorler.ToolTip"));
             this.cmbAntrenorler.SelectedIndexChanged += new System.EventHandler(this.cmbAntrenorler_SelectedIndexChanged);
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.toolTip1.SetToolTip(this.label1, resources.GetString("label1.ToolTip"));
             // 
             // btnListele
             // 
             resources.ApplyResources(this.btnListele, "btnListele");
             this.btnListele.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnListele.Name = "btnListele";
-            this.toolTip1.SetToolTip(this.btnListele, resources.GetString("btnListele.ToolTip"));
             this.btnListele.UseVisualStyleBackColor = true;
             this.btnListele.Click += new System.EventHandler(this.btnListele_Click);
             // 
@@ -128,7 +124,6 @@
             resources.ApplyResources(this.btnAtamaKaldir, "btnAtamaKaldir");
             this.btnAtamaKaldir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAtamaKaldir.Name = "btnAtamaKaldir";
-            this.toolTip1.SetToolTip(this.btnAtamaKaldir, resources.GetString("btnAtamaKaldir.ToolTip"));
             this.btnAtamaKaldir.UseVisualStyleBackColor = true;
             this.btnAtamaKaldir.Click += new System.EventHandler(this.btnAtamaKaldir_Click);
             // 
@@ -140,14 +135,12 @@
             this.tableLayoutPanel2.Controls.Add(this.btnAtamaKaldir, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnListele, 2, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.toolTip1.SetToolTip(this.tableLayoutPanel2, resources.GetString("tableLayoutPanel2.ToolTip"));
             // 
             // tableLayoutPanel3
             // 
             resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
             this.tableLayoutPanel3.Controls.Add(this.gridViewSporcular, 0, 0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.toolTip1.SetToolTip(this.tableLayoutPanel3, resources.GetString("tableLayoutPanel3.ToolTip"));
             // 
             // gridViewSporcular
             // 
@@ -195,7 +188,6 @@
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.gridViewSporcular.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gridViewSporcular.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.toolTip1.SetToolTip(this.gridViewSporcular, resources.GetString("gridViewSporcular.ToolTip"));
             this.gridViewSporcular.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewSporcular_CellClick);
             // 
             // Id
@@ -251,7 +243,6 @@
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmAntrenorSporcuİliski";
-            this.toolTip1.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.Load += new System.EventHandler(this.FrmAntrenorSporcuİliski_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);

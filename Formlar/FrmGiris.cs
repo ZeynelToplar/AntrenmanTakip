@@ -19,6 +19,7 @@ namespace AntrenmanTakip.Formlar
     {
         private Form1 frm1;
         private FrmMailGonderme _frmMailGonderme;
+        private DenemeGrafik dnm;
         public FrmGiris()
         {
             InitializeComponent();
@@ -163,6 +164,12 @@ namespace AntrenmanTakip.Formlar
                     }
                 }
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            dnm = new DenemeGrafik();
+            dnm.Show();
         }
     }
 }

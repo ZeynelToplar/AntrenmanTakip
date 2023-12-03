@@ -53,7 +53,8 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         private void btnSifirla_Click(object sender, EventArgs e)
         {
             gridViewAntrenmanlar.Rows.Clear();
-            dtimeBaslangic.Value = DateTime.Now.AddMonths(-1);
+            int year = DateTime.Now.Year;
+            dtimeBaslangic.Value = new DateTime(year, 1, 1);
             dtimeBitis.Value = DateTime.Now;
             var antrenmanlar = DbService.GetPractices(Context.sporcu.Id, 2);
             GridviewEkle(antrenmanlar);
@@ -68,7 +69,9 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
 
         private void FrmSagAntrenman_Load(object sender, EventArgs e)
         {
-            btnGrafik.Enabled = false;
+            int year = DateTime.Now.Year;
+            dtimeBaslangic.Value = new DateTime(year, 1, 1);
+            //btnGrafik.Enabled = false;
             btnGrafik.BackColor = Color.DimGray;
             systemLanguage = DbService.GetApplicationLanguage();
 
@@ -111,6 +114,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                     gridViewAntrenmanlar.Rows.Add(new object[]
                     {
                         item.antId,
+                        item.AntrenamTuruId,
                         item.AntrenmanId,
                         item.AntrenmanTurleri,
                         $"{item.AntrenmanSayisi}. Antrenman",
@@ -125,6 +129,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                     gridViewAntrenmanlar.Rows.Add(new object[]
                     {
                         item.antId,
+                        item.AntrenamTuruId,
                         item.AntrenmanId,
                         item.EAntrenmanTurleri,
                         $"{item.AntrenmanSayisi}. Training",
@@ -172,19 +177,21 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
 
         private void btnGrafik_Click(object sender, EventArgs e)
         {
-            if (gridViewAntrenmanlar.Rows.Count > 0)
-            {
-                if (_frmGrafikler == null || _frmGrafikler.IsDisposed)
-                {
-                    _frmGrafikler = new FrmGrafikler();
-                    _frmGrafikler.antrenmanTuruId = antrenmanTuruId;
-                    _frmGrafikler.Show();
-                }
-            }
-            else
-            {
-                InfService.ShowMessage("Gösterilecek antrenman kaydı bulunamadı.", "No training record found to display.");
-            }
+            //if (gridViewAntrenmanlar.Rows.Count > 0)
+            //{
+            //    if (_frmGrafikler == null || _frmGrafikler.IsDisposed)
+            //    {
+            //        _frmGrafikler = new FrmGrafikler();
+            //        _frmGrafikler.antrenmanTuruId = antrenmanTuruId;
+            //        _frmGrafikler.Show();
+            //    }
+            //}
+            //else
+            //{
+            //    InfService.ShowMessage("Gösterilecek antrenman kaydı bulunamadı.", "No training record found to display.");
+            //}
+
+            InfService.OpenExcelFile();
         }
         int antrenmanTuruId;
         int antrenmanId = 0;

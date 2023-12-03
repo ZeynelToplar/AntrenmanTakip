@@ -62,20 +62,20 @@
             this.BasariliAtis = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sure = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tarih = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.detaylarıGörToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.detaylarıGörToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewAntrenmanlar)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnOturumKapat
@@ -314,6 +314,19 @@
             resources.ApplyResources(this.Tarih, "Tarih");
             this.Tarih.Name = "Tarih";
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.detaylarıGörToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
+            // 
+            // detaylarıGörToolStripMenuItem
+            // 
+            this.detaylarıGörToolStripMenuItem.Name = "detaylarıGörToolStripMenuItem";
+            resources.ApplyResources(this.detaylarıGörToolStripMenuItem, "detaylarıGörToolStripMenuItem");
+            this.detaylarıGörToolStripMenuItem.Click += new System.EventHandler(this.detaylarıGörToolStripMenuItem_Click);
+            // 
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
@@ -335,19 +348,6 @@
             this.tableLayoutPanel3.Controls.Add(this.gridViewAntrenmanlar, 1, 0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.detaylarıGörToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
-            // 
-            // detaylarıGörToolStripMenuItem
-            // 
-            this.detaylarıGörToolStripMenuItem.Name = "detaylarıGörToolStripMenuItem";
-            resources.ApplyResources(this.detaylarıGörToolStripMenuItem, "detaylarıGörToolStripMenuItem");
-            this.detaylarıGörToolStripMenuItem.Click += new System.EventHandler(this.detaylarıGörToolStripMenuItem_Click);
-            // 
             // FrmSagAntrenman
             // 
             resources.ApplyResources(this, "$this");
@@ -363,10 +363,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewAntrenmanlar)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
-            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

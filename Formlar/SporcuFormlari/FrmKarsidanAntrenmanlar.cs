@@ -20,6 +20,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         private FrmAyarlar _frmAyarlar;
         private FrmGrafikler _frmGrafikler;
         private FrmAntrenmanDetay _frmAntrenmanDetay;
+        private FrmRaporlama _frmRaporlama;
 
         public int id;
         private int s;
@@ -54,7 +55,8 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         private void btnSifirla_Click(object sender, EventArgs e)
         {
             gridViewAntrenmanlar.Rows.Clear();
-            dtimeBaslangic.Value = DateTime.Now.AddMonths(-1);
+            int year = DateTime.Now.Year;
+            dtimeBaslangic.Value = new DateTime(year, 1, 1);
             dtimeBitis.Value = DateTime.Now;
             var antrenmanlar = DbService.GetPractices(Context.sporcu.Id, 1);
             GridviewEkle(antrenmanlar);
@@ -79,6 +81,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                     {
                         item.antId,
                         item.AntrenmanId,
+                        item.AntrenamTuruId,
                         item.AntrenmanTurleri,
                         $"{item.AntrenmanSayisi}. Antrenman",
                         item.AtisSayisi,
@@ -93,6 +96,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                     {
                         item.antId,
                         item.AntrenmanId,
+                        item.AntrenamTuruId,
                         item.EAntrenmanTurleri,
                         $"{item.AntrenmanSayisi}. Training",
                         item.AtisSayisi,
@@ -143,9 +147,9 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
 
         private void FrmKarsidanAntrenmanlar_Load(object sender, EventArgs e)
         {
-            btnGrafik.Enabled = false;
-            btnGrafik.BackColor = Color.DimGray;
             systemLanguage = DbService.GetApplicationLanguage();
+            int year = DateTime.Now.Year;
+            dtimeBaslangic.Value = new DateTime(year, 1, 1);
 
             //CultureInfo cultureInfo = System.Globalization.CultureInfo.GetCultureInfo("en-US");
             //if (systemLanguage == "English")
@@ -192,11 +196,11 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         {
             if(gridViewAntrenmanlar.Rows.Count > 0)
             {
-                if (_frmGrafikler == null || _frmGrafikler.IsDisposed)
+                if (_frmRaporlama == null || _frmRaporlama.IsDisposed)
                 {
-                    _frmGrafikler = new FrmGrafikler();
-                    _frmGrafikler.antrenmanTuruId = antrenmanTuruId;
-                    _frmGrafikler.Show();
+                    _frmRaporlama = new FrmRaporlama();
+                    _frmRaporlama.antrenmanTuruId = antrenmanTuruId;
+                    _frmRaporlama.Show();
                 }
             }
             else
@@ -208,8 +212,6 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         int antrenmanId;
         private void gridViewAntrenmanlar_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            btnGrafik.Enabled = true;
-            btnGrafik.BackColor = SystemColors.GradientInactiveCaption;
             btnGrafik.Cursor = Cursors.Hand;
             int selectedrowindex = gridViewAntrenmanlar.SelectedCells[0].RowIndex;
             DataGridViewRow selectedRow = gridViewAntrenmanlar.Rows[selectedrowindex];

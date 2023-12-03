@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSporcuAtama));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSporcuAtama));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -39,12 +39,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gridViewAntrenorler = new System.Windows.Forms.DataGridView();
-            this.aId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.KullaniciAdi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Soyad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Yas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Yetki = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gridViewSporcular = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,6 +54,11 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.aId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KullaniciAdi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Soyad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Yetki = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewAntrenorler)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewSporcular)).BeginInit();
             this.panel2.SuspendLayout();
@@ -69,7 +68,6 @@
             // 
             // gridViewAntrenorler
             // 
-            resources.ApplyResources(this.gridViewAntrenorler, "gridViewAntrenorler");
             this.gridViewAntrenorler.BackgroundColor = System.Drawing.Color.White;
             this.gridViewAntrenorler.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridViewAntrenorler.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -81,12 +79,12 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gridViewAntrenorler.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            resources.ApplyResources(this.gridViewAntrenorler, "gridViewAntrenorler");
             this.gridViewAntrenorler.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.aId,
             this.KullaniciAdi,
             this.Ad,
             this.Soyad,
-            this.Yas,
             this.Yetki});
             this.gridViewAntrenorler.Cursor = System.Windows.Forms.Cursors.Hand;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -109,42 +107,10 @@
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.gridViewAntrenorler.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gridViewAntrenorler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.toolTip1.SetToolTip(this.gridViewAntrenorler, resources.GetString("gridViewAntrenorler.ToolTip"));
             this.gridViewAntrenorler.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewAntrenorler_CellClick);
-            // 
-            // aId
-            // 
-            resources.ApplyResources(this.aId, "aId");
-            this.aId.Name = "aId";
-            // 
-            // KullaniciAdi
-            // 
-            resources.ApplyResources(this.KullaniciAdi, "KullaniciAdi");
-            this.KullaniciAdi.Name = "KullaniciAdi";
-            // 
-            // Ad
-            // 
-            resources.ApplyResources(this.Ad, "Ad");
-            this.Ad.Name = "Ad";
-            // 
-            // Soyad
-            // 
-            resources.ApplyResources(this.Soyad, "Soyad");
-            this.Soyad.Name = "Soyad";
-            // 
-            // Yas
-            // 
-            resources.ApplyResources(this.Yas, "Yas");
-            this.Yas.Name = "Yas";
-            // 
-            // Yetki
-            // 
-            resources.ApplyResources(this.Yetki, "Yetki");
-            this.Yetki.Name = "Yetki";
             // 
             // gridViewSporcular
             // 
-            resources.ApplyResources(this.gridViewSporcular, "gridViewSporcular");
             this.gridViewSporcular.BackgroundColor = System.Drawing.Color.White;
             this.gridViewSporcular.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridViewSporcular.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -156,6 +122,7 @@
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gridViewSporcular.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            resources.ApplyResources(this.gridViewSporcular, "gridViewSporcular");
             this.gridViewSporcular.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
             this.dataGridViewTextBoxColumn1,
@@ -185,7 +152,6 @@
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.gridViewSporcular.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.gridViewSporcular.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.toolTip1.SetToolTip(this.gridViewSporcular, resources.GetString("gridViewSporcular.ToolTip"));
             this.gridViewSporcular.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewSporcular_CellClick);
             // 
             // Id
@@ -225,27 +191,25 @@
             // 
             // btnAtama
             // 
-            resources.ApplyResources(this.btnAtama, "btnAtama");
             this.btnAtama.BackColor = System.Drawing.Color.IndianRed;
             this.btnAtama.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnAtama, "btnAtama");
             this.btnAtama.ForeColor = System.Drawing.Color.Maroon;
             this.btnAtama.Name = "btnAtama";
-            this.toolTip1.SetToolTip(this.btnAtama, resources.GetString("btnAtama.ToolTip"));
             this.btnAtama.UseVisualStyleBackColor = false;
             this.btnAtama.Click += new System.EventHandler(this.btnAtama_Click);
             // 
             // panel2
             // 
-            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Controls.Add(this.btnOturumKapat);
             this.panel2.Controls.Add(this.btnGeriGit);
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
-            this.toolTip1.SetToolTip(this.panel2, resources.GetString("panel2.ToolTip"));
             // 
             // btnOturumKapat
             // 
-            resources.ApplyResources(this.btnOturumKapat, "btnOturumKapat");
             this.btnOturumKapat.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnOturumKapat, "btnOturumKapat");
             this.btnOturumKapat.Image = global::AntrenmanTakip.Properties.Resources.oturumKapat32px;
             this.btnOturumKapat.Name = "btnOturumKapat";
             this.toolTip1.SetToolTip(this.btnOturumKapat, resources.GetString("btnOturumKapat.ToolTip"));
@@ -254,8 +218,8 @@
             // 
             // btnGeriGit
             // 
-            resources.ApplyResources(this.btnGeriGit, "btnGeriGit");
             this.btnGeriGit.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnGeriGit, "btnGeriGit");
             this.btnGeriGit.Image = global::AntrenmanTakip.Properties.Resources.geriGit2_32px;
             this.btnGeriGit.Name = "btnGeriGit";
             this.toolTip1.SetToolTip(this.btnGeriGit, resources.GetString("btnGeriGit.ToolTip"));
@@ -264,19 +228,42 @@
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.gridViewAntrenorler);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
-            this.toolTip1.SetToolTip(this.groupBox1, resources.GetString("groupBox1.ToolTip"));
             // 
             // groupBox2
             // 
-            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.gridViewSporcular);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
-            this.toolTip1.SetToolTip(this.groupBox2, resources.GetString("groupBox2.ToolTip"));
+            // 
+            // aId
+            // 
+            resources.ApplyResources(this.aId, "aId");
+            this.aId.Name = "aId";
+            // 
+            // KullaniciAdi
+            // 
+            resources.ApplyResources(this.KullaniciAdi, "KullaniciAdi");
+            this.KullaniciAdi.Name = "KullaniciAdi";
+            // 
+            // Ad
+            // 
+            resources.ApplyResources(this.Ad, "Ad");
+            this.Ad.Name = "Ad";
+            // 
+            // Soyad
+            // 
+            resources.ApplyResources(this.Soyad, "Soyad");
+            this.Soyad.Name = "Soyad";
+            // 
+            // Yetki
+            // 
+            resources.ApplyResources(this.Yetki, "Yetki");
+            this.Yetki.Name = "Yetki";
             // 
             // FrmSporcuAtama
             // 
@@ -290,7 +277,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FrmSporcuAtama";
-            this.toolTip1.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.Load += new System.EventHandler(this.FrmSporcuAtama_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridViewAntrenorler)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewSporcular)).EndInit();
@@ -311,12 +297,6 @@
         private System.Windows.Forms.Button btnGeriGit;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn aId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn KullaniciAdi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Soyad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Yas;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Yetki;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -325,5 +305,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Kilo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Mevki;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn aId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn KullaniciAdi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Soyad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Yetki;
     }
 }

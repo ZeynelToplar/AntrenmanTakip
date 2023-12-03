@@ -119,13 +119,13 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bilgilerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>168, 22</value>
   </data>
   <data name="bilgilerToolStripMenuItem.Text" xml:space="preserve">
     <value>Informations</value>
   </data>
   <data name="şifreDeğişikliğiToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>168, 22</value>
   </data>
   <data name="şifreDeğişikliğiToolStripMenuItem.Text" xml:space="preserve">
     <value>Change Password</value>

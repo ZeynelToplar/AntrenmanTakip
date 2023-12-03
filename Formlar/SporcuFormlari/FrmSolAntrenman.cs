@@ -30,9 +30,11 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         string systemLanguage = ""; 
         private void FrmSolAntrenman_Load(object sender, EventArgs e)
         {
-            btnGrafik.Enabled = false;
-            btnGrafik.BackColor = Color.DimGray;
+            //btnGrafik.Enabled = false;
+            //btnGrafik.BackColor = Color.DimGray;
             systemLanguage = DbService.GetApplicationLanguage();
+            int year = DateTime.Now.Year;
+            dtimeBaslangic.Value = new DateTime(year, 1, 1);
 
             //CultureInfo cultureInfo = System.Globalization.CultureInfo.GetCultureInfo("en-US");
             //if (systemLanguage == "English")
@@ -72,6 +74,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                     gridViewAntrenmanlar.Rows.Add(new object[]
                     {
                         item.AntrenmanId,
+                        item.AntrenamTuruId,
                         item.AntrenmanTurleri,
                         $"{item.AntrenmanSayisi}. Antrenman",
                         item.AtisSayisi,
@@ -85,6 +88,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                     gridViewAntrenmanlar.Rows.Add(new object[]
                     {
                         item.AntrenmanId,
+                        item.AntrenamTuruId,
                         item.EAntrenmanTurleri,
                         $"{item.AntrenmanSayisi}. Training",
                         item.AtisSayisi,
@@ -121,7 +125,8 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         private void btnSifirla_Click(object sender, EventArgs e)
         {
             gridViewAntrenmanlar.Rows.Clear();
-            dtimeBaslangic.Value = DateTime.Now.AddMonths(-1);
+            int year = DateTime.Now.Year;
+            dtimeBaslangic.Value = new DateTime(year, 1, 1);
             dtimeBitis.Value = DateTime.Now;
             var antrenmanlar = DbService.GetPractices(Context.sporcu.Id, 3);
             GridviewEkle(antrenmanlar);

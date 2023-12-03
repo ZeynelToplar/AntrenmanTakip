@@ -130,14 +130,14 @@
     <value>Image</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 26</value>
-  </data>
   <data name="görselEkleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 22</value>
   </data>
   <data name="görselEkleToolStripMenuItem.Text" xml:space="preserve">
     <value>Add Image</value>
+  </data>
+  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 26</value>
   </data>
   <data name="lblTopKonum.Size" type="System.Drawing.Size, System.Drawing">
     <value>119, 25</value>

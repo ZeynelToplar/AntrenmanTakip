@@ -142,17 +142,17 @@
     <value>Date Of Birth</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="ctxStrpSporcular.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 26</value>
-  </data>
-  <data name="gridViewSporcular.Size" type="System.Drawing.Size, System.Drawing">
-    <value>817, 608</value>
-  </data>
   <data name="resimEkleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 22</value>
   </data>
   <data name="resimEkleToolStripMenuItem.Text" xml:space="preserve">
     <value>Add Image</value>
+  </data>
+  <data name="ctxStrpSporcular.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 26</value>
+  </data>
+  <data name="gridViewSporcular.Size" type="System.Drawing.Size, System.Drawing">
+    <value>817, 608</value>
   </data>
   <data name="lblAd.Location" type="System.Drawing.Point, System.Drawing">
     <value>69, 7</value>

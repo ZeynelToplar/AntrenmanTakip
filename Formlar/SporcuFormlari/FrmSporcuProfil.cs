@@ -174,7 +174,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                 Paragraph ulke = new Paragraph(new Phrase($"{ulke_}: {sporcu.Ulke}", fontNormal));
 
                 Paragraph mevki = new Paragraph(new Phrase($"{mevki_}: {mevkiAdi}", fontNormal));
-                Paragraph boy = new Paragraph(new Phrase($"{boy_}: {sporcu.Boy} m", fontNormal));
+                Paragraph boy = new Paragraph(new Phrase($"{boy_}: {sporcu.Boy} cm", fontNormal));
                 Paragraph kilo = new Paragraph(new Phrase($"{kilo_}: {sporcu.Kilo} kg", fontNormal));
                 Paragraph yas = new Paragraph(new Phrase($"{yas_}: {sporcu.Yas}", fontNormal));
 

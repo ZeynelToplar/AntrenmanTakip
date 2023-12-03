@@ -55,9 +55,10 @@ namespace AntrenmanTakip.Formlar.Ayarlar
             Context._context.SaveChanges();
             var selectedLanguage = Context._context.Diller.Where(d => d.Selected).First();
             if (selectedLanguage.Language == "Turkish")
-                FrmCustomMessageBox.Show("Dil değişikliği başarılı. Dil değişikliğini uygulamak için programı yeniden başlatın.");
+                FrmCustomMessageBox.Show("Dil değişikliği başarılı. Dil değişikliğini uygulamak için programı yeniden başlatmak ister misin ?");
+
             else if (selectedLanguage.Language == "English")
-                FrmCustomMessageBox.Show("Language change successful. Restart the program to apply the language change.");
+                FrmCustomMessageBox.Show("Language change successful. Do you want to restart the program to apply the language change?");
             // this.Close();
 
 

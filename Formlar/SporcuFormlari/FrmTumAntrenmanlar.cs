@@ -54,6 +54,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                     {
                         gridViewAntrenmanlar.Rows.Add(new object[]
                         {
+                            aranan.antId,
                             aranan.AntrenamTuruId,
                             aranan.AntrenmanTurleri,
                             $"{aranan.AntrenmanSayisi}. Antrenman",
@@ -67,6 +68,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                     {
                         gridViewAntrenmanlar.Rows.Add(new object[]
                         {
+                            aranan.antId,
                             aranan.AntrenamTuruId,
                             aranan.EAntrenmanTurleri,
                             $"{aranan.AntrenmanSayisi}. Training",
@@ -84,7 +86,8 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         private void btnSifirla_Click(object sender, EventArgs e)
         {
             gridViewAntrenmanlar.Rows.Clear();
-            dtimeBaslangic.Value = DateTime.Now.AddMonths(-1);
+            int year = DateTime.Now.Year;
+            dtimeBaslangic.Value = new DateTime(year, 1, 1);
             dtimeBitis.Value = DateTime.Now;
             var antrenmanlar = GetViewAntrenmans(Context.sporcu.Id);
             //gridViewAntrenmanlar.DataSource = antrenmanlar;
@@ -95,6 +98,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                 {
                     gridViewAntrenmanlar.Rows.Add(new object[]
                     {
+                        antrenman.antId,
                         antrenman.AntrenamTuruId,
                         antrenman.AntrenmanTurleri,
                         $"{antrenman.AntrenmanSayisi}. Antrenman",
@@ -108,6 +112,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                 {
                     gridViewAntrenmanlar.Rows.Add(new object[]
                     {
+                        antrenman.antId,
                         antrenman.AntrenamTuruId,
                         antrenman.EAntrenmanTurleri,
                         $"{antrenman.AntrenmanSayisi}. Training",
@@ -147,6 +152,8 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         private void FrmTumAntrenmanlar_Load(object sender, EventArgs e)
         {
             systemLanguge = DbService.GetApplicationLanguage();
+            int year = DateTime.Now.Year;
+            dtimeBaslangic.Value = new DateTime(year, 1, 1);
 
             //CultureInfo cultureInfo = System.Globalization.CultureInfo.GetCultureInfo("en-US");
             //if (systemLanguge == "English")

@@ -131,70 +131,130 @@
     <value>Target</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 20</value>
+    <value>69, 20</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>1. Shoot</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 20</value>
+    <value>69, 20</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>2. Shoot</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 20</value>
+    <value>69, 20</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>3. Shoot</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 20</value>
+    <value>69, 20</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
     <value>4. Shoot</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 20</value>
+    <value>69, 20</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
     <value>5. Shoot</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 20</value>
+    <value>69, 20</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
     <value>6. Shoot</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 20</value>
+    <value>69, 20</value>
   </data>
   <data name="label9.Text" xml:space="preserve">
     <value>7. Shoot</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 20</value>
+    <value>69, 20</value>
   </data>
   <data name="label10.Text" xml:space="preserve">
     <value>8. Shoot</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 20</value>
+    <value>69, 20</value>
   </data>
   <data name="label11.Text" xml:space="preserve">
     <value>9. Shoot</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 20</value>
+    <value>78, 20</value>
   </data>
   <data name="label12.Text" xml:space="preserve">
     <value>10. Shoot</value>
+  </data>
+  <data name="lblBolge1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="lblBolge2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="lblBolge3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="lblBolge4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="lblBolge5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="lblBolge6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="lblBolge7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="lblBolge8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="lblBolge9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="lblBolge10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
   </data>
   <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 25</value>
   </data>
   <data name="label23.Text" xml:space="preserve">
     <value>Result</value>
+  </data>
+  <data name="sonuc1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="sonuc2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="sonuc3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="sonuc4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="sonuc5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="sonuc6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="sonuc7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="sonuc8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="sonuc9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="sonuc10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 20</value>
   </data>
   <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
     <value>133, 25</value>

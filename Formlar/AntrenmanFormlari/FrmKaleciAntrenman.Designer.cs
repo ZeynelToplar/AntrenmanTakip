@@ -71,18 +71,17 @@
             // 
             // panel2
             // 
-            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Controls.Add(this.btnOturumKapat);
             this.panel2.Controls.Add(this.btnSettings);
             this.panel2.Controls.Add(this.btnGeriGit);
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
-            this.toolTip1.SetToolTip(this.panel2, resources.GetString("panel2.ToolTip"));
             // 
             // btnOturumKapat
             // 
-            resources.ApplyResources(this.btnOturumKapat, "btnOturumKapat");
             this.btnOturumKapat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOturumKapat.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnOturumKapat, "btnOturumKapat");
             this.btnOturumKapat.Image = global::AntrenmanTakip.Properties.Resources.oturumKapat32px;
             this.btnOturumKapat.Name = "btnOturumKapat";
             this.toolTip1.SetToolTip(this.btnOturumKapat, resources.GetString("btnOturumKapat.ToolTip"));
@@ -91,9 +90,9 @@
             // 
             // btnSettings
             // 
-            resources.ApplyResources(this.btnSettings, "btnSettings");
             this.btnSettings.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSettings.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnSettings, "btnSettings");
             this.btnSettings.Image = global::AntrenmanTakip.Properties.Resources.ayarlar2_32px;
             this.btnSettings.Name = "btnSettings";
             this.toolTip1.SetToolTip(this.btnSettings, resources.GetString("btnSettings.ToolTip"));
@@ -102,9 +101,9 @@
             // 
             // btnGeriGit
             // 
-            resources.ApplyResources(this.btnGeriGit, "btnGeriGit");
             this.btnGeriGit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGeriGit.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnGeriGit, "btnGeriGit");
             this.btnGeriGit.Image = global::AntrenmanTakip.Properties.Resources.geriGit2_32px;
             this.btnGeriGit.Name = "btnGeriGit";
             this.toolTip1.SetToolTip(this.btnGeriGit, resources.GetString("btnGeriGit.ToolTip"));
@@ -113,7 +112,6 @@
             // 
             // gridViewSporcular
             // 
-            resources.ApplyResources(this.gridViewSporcular, "gridViewSporcular");
             this.gridViewSporcular.BackgroundColor = System.Drawing.Color.White;
             this.gridViewSporcular.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridViewSporcular.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -125,6 +123,7 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gridViewSporcular.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            resources.ApplyResources(this.gridViewSporcular, "gridViewSporcular");
             this.gridViewSporcular.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
             this.Ad,
@@ -155,7 +154,6 @@
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.gridViewSporcular.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gridViewSporcular.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.toolTip1.SetToolTip(this.gridViewSporcular, resources.GetString("gridViewSporcular.ToolTip"));
             this.gridViewSporcular.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewSporcular_CellClick);
             // 
             // Id
@@ -195,80 +193,73 @@
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.btnFalsolu);
             this.groupBox1.Controls.Add(this.btnSag);
             this.groupBox1.Controls.Add(this.btnYerden);
             this.groupBox1.Controls.Add(this.btnSol);
             this.groupBox1.Controls.Add(this.btnHavadan);
             this.groupBox1.Controls.Add(this.btnKarsidan);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
-            this.toolTip1.SetToolTip(this.groupBox1, resources.GetString("groupBox1.ToolTip"));
             // 
             // btnFalsolu
             // 
-            resources.ApplyResources(this.btnFalsolu, "btnFalsolu");
             this.btnFalsolu.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnFalsolu.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnFalsolu, "btnFalsolu");
             this.btnFalsolu.Image = global::AntrenmanTakip.Properties.Resources.karsidan64px;
             this.btnFalsolu.Name = "btnFalsolu";
-            this.toolTip1.SetToolTip(this.btnFalsolu, resources.GetString("btnFalsolu.ToolTip"));
             this.btnFalsolu.UseVisualStyleBackColor = false;
             this.btnFalsolu.Click += new System.EventHandler(this.btnFalsolu_Click);
             // 
             // btnSag
             // 
-            resources.ApplyResources(this.btnSag, "btnSag");
             this.btnSag.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnSag.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnSag, "btnSag");
             this.btnSag.Image = global::AntrenmanTakip.Properties.Resources.karsidan64px;
             this.btnSag.Name = "btnSag";
-            this.toolTip1.SetToolTip(this.btnSag, resources.GetString("btnSag.ToolTip"));
             this.btnSag.UseVisualStyleBackColor = false;
             this.btnSag.Click += new System.EventHandler(this.btnSag_Click);
             // 
             // btnYerden
             // 
-            resources.ApplyResources(this.btnYerden, "btnYerden");
             this.btnYerden.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnYerden.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnYerden, "btnYerden");
             this.btnYerden.Image = global::AntrenmanTakip.Properties.Resources.karsidan64px;
             this.btnYerden.Name = "btnYerden";
-            this.toolTip1.SetToolTip(this.btnYerden, resources.GetString("btnYerden.ToolTip"));
             this.btnYerden.UseVisualStyleBackColor = false;
             this.btnYerden.Click += new System.EventHandler(this.btnYerden_Click);
             // 
             // btnSol
             // 
-            resources.ApplyResources(this.btnSol, "btnSol");
             this.btnSol.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnSol.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnSol, "btnSol");
             this.btnSol.Image = global::AntrenmanTakip.Properties.Resources.karsidan64px;
             this.btnSol.Name = "btnSol";
-            this.toolTip1.SetToolTip(this.btnSol, resources.GetString("btnSol.ToolTip"));
             this.btnSol.UseVisualStyleBackColor = false;
             this.btnSol.Click += new System.EventHandler(this.btnSol_Click);
             // 
             // btnHavadan
             // 
-            resources.ApplyResources(this.btnHavadan, "btnHavadan");
             this.btnHavadan.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnHavadan.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnHavadan, "btnHavadan");
             this.btnHavadan.Image = global::AntrenmanTakip.Properties.Resources.karsidan64px;
             this.btnHavadan.Name = "btnHavadan";
-            this.toolTip1.SetToolTip(this.btnHavadan, resources.GetString("btnHavadan.ToolTip"));
             this.btnHavadan.UseVisualStyleBackColor = false;
             this.btnHavadan.Click += new System.EventHandler(this.btnHavadan_Click);
             // 
             // btnKarsidan
             // 
-            resources.ApplyResources(this.btnKarsidan, "btnKarsidan");
             this.btnKarsidan.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnKarsidan.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnKarsidan, "btnKarsidan");
             this.btnKarsidan.Image = global::AntrenmanTakip.Properties.Resources.karsidan64px;
             this.btnKarsidan.Name = "btnKarsidan";
-            this.toolTip1.SetToolTip(this.btnKarsidan, resources.GetString("btnKarsidan.ToolTip"));
             this.btnKarsidan.UseVisualStyleBackColor = false;
             this.btnKarsidan.Click += new System.EventHandler(this.btnKarsidan_Click);
             // 
@@ -276,20 +267,17 @@
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.toolTip1.SetToolTip(this.label1, resources.GetString("label1.ToolTip"));
             // 
             // lblAntrenmanTuru
             // 
             resources.ApplyResources(this.lblAntrenmanTuru, "lblAntrenmanTuru");
             this.lblAntrenmanTuru.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.lblAntrenmanTuru.Name = "lblAntrenmanTuru";
-            this.toolTip1.SetToolTip(this.lblAntrenmanTuru, resources.GetString("lblAntrenmanTuru.ToolTip"));
             // 
             // lblZaman
             // 
             resources.ApplyResources(this.lblZaman, "lblZaman");
             this.lblZaman.Name = "lblZaman";
-            this.toolTip1.SetToolTip(this.lblZaman, resources.GetString("lblZaman.ToolTip"));
             this.lblZaman.Click += new System.EventHandler(this.lblZaman_Click);
             // 
             // timerAntrenman
@@ -305,40 +293,35 @@
             // 
             resources.ApplyResources(this.txtBasariliAtis, "txtBasariliAtis");
             this.txtBasariliAtis.Name = "txtBasariliAtis";
-            this.toolTip1.SetToolTip(this.txtBasariliAtis, resources.GetString("txtBasariliAtis.ToolTip"));
             this.txtBasariliAtis.TextChanged += new System.EventHandler(this.txtBasariliAtis_TextChanged);
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.toolTip1.SetToolTip(this.label2, resources.GetString("label2.ToolTip"));
             // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.toolTip1.SetToolTip(this.label3, resources.GetString("label3.ToolTip"));
             // 
             // btnKaydet
             // 
-            resources.ApplyResources(this.btnKaydet, "btnKaydet");
             this.btnKaydet.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnKaydet.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnKaydet, "btnKaydet");
             this.btnKaydet.Image = global::AntrenmanTakip.Properties.Resources.save48px;
             this.btnKaydet.Name = "btnKaydet";
-            this.toolTip1.SetToolTip(this.btnKaydet, resources.GetString("btnKaydet.ToolTip"));
             this.btnKaydet.UseVisualStyleBackColor = false;
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // btnAntrenmanBaslat
             // 
-            resources.ApplyResources(this.btnAntrenmanBaslat, "btnAntrenmanBaslat");
             this.btnAntrenmanBaslat.BackColor = System.Drawing.Color.ForestGreen;
             this.btnAntrenmanBaslat.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnAntrenmanBaslat, "btnAntrenmanBaslat");
             this.btnAntrenmanBaslat.Image = global::AntrenmanTakip.Properties.Resources.baslat4_48px;
             this.btnAntrenmanBaslat.Name = "btnAntrenmanBaslat";
-            this.toolTip1.SetToolTip(this.btnAntrenmanBaslat, resources.GetString("btnAntrenmanBaslat.ToolTip"));
             this.btnAntrenmanBaslat.UseVisualStyleBackColor = false;
             this.btnAntrenmanBaslat.Click += new System.EventHandler(this.btnAntrenmanBaslat_Click);
             // 
@@ -360,7 +343,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FrmKaleciAntrenman";
-            this.toolTip1.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.Load += new System.EventHandler(this.FrmKaleciAntrenman_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridViewSporcular)).EndInit();

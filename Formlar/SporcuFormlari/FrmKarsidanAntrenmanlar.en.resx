@@ -135,6 +135,16 @@
   <data name="Tarih.HeaderText" xml:space="preserve">
     <value>Date</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 26</value>
+  </data>
+  <data name="detaylarıGörToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 22</value>
+  </data>
+  <data name="detaylarıGörToolStripMenuItem.Text" xml:space="preserve">
+    <value>Show Details</value>
+  </data>
   <data name="cmbAra.Items" xml:space="preserve">
     <value>Choose...</value>
   </data>
@@ -148,7 +158,6 @@
   <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
   </data>
@@ -180,7 +189,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnGrafik.Text" xml:space="preserve">
-    <value>View Graph</value>
+    <value>Reporting</value>
   </data>
   <data name="lblSporcu.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -205,15 +214,6 @@
   </data>
   <data name="btnGeriGit.ToolTip" xml:space="preserve">
     <value>Go back</value>
-  </data>
-  <data name="detaylarıGörToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 22</value>
-  </data>
-  <data name="detaylarıGörToolStripMenuItem.Text" xml:space="preserve">
-    <value>Show Details</value>
-  </data>
-  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 26</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

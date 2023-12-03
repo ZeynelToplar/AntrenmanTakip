@@ -43,6 +43,8 @@
             this.BasariliAtis = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sure = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tarih = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.detaylarıGörToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cmbAra = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -58,24 +60,22 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnGrafik = new System.Windows.Forms.Button();
             this.lblSporcu = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnOturumKapat = new System.Windows.Forms.Button();
-            this.btnSettings = new System.Windows.Forms.Button();
-            this.btnGeriGit = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.detaylarıGörToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnOturumKapat = new System.Windows.Forms.Button();
+            this.btnSettings = new System.Windows.Forms.Button();
+            this.btnGeriGit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewAntrenmanlar)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gridViewAntrenmanlar
@@ -167,6 +167,19 @@
             resources.ApplyResources(this.Tarih, "Tarih");
             this.Tarih.Name = "Tarih";
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.detaylarıGörToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
+            // 
+            // detaylarıGörToolStripMenuItem
+            // 
+            this.detaylarıGörToolStripMenuItem.Name = "detaylarıGörToolStripMenuItem";
+            resources.ApplyResources(this.detaylarıGörToolStripMenuItem, "detaylarıGörToolStripMenuItem");
+            this.detaylarıGörToolStripMenuItem.Click += new System.EventHandler(this.detaylarıGörToolStripMenuItem_Click);
+            // 
             // panel1
             // 
             resources.ApplyResources(this.panel1, "panel1");
@@ -204,6 +217,7 @@
             this.dtimeBaslangic.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             resources.ApplyResources(this.dtimeBaslangic, "dtimeBaslangic");
             this.dtimeBaslangic.Name = "dtimeBaslangic";
+            this.dtimeBaslangic.Value = new System.DateTime(2023, 1, 1, 0, 0, 0, 0);
             // 
             // dtimeBitis
             // 
@@ -225,6 +239,7 @@
             resources.ApplyResources(this.btnSifirla, "btnSifirla");
             this.btnSifirla.Name = "btnSifirla";
             this.btnSifirla.UseVisualStyleBackColor = true;
+            this.btnSifirla.Click += new System.EventHandler(this.btnSifirla_Click);
             // 
             // lblKilo
             // 
@@ -273,6 +288,28 @@
             resources.ApplyResources(this.lblSporcu, "lblSporcu");
             this.lblSporcu.Name = "lblSporcu";
             // 
+            // tableLayoutPanel1
+            // 
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.btnOturumKapat, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnGeriGit, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnSettings, 1, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            // 
+            // tableLayoutPanel2
+            // 
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
+            this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            // 
+            // tableLayoutPanel3
+            // 
+            resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
+            this.tableLayoutPanel3.Controls.Add(this.panel3, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.gridViewAntrenmanlar, 1, 0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel3_Paint);
+            // 
             // pictureBox1
             // 
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
@@ -313,41 +350,6 @@
             this.btnGeriGit.UseVisualStyleBackColor = true;
             this.btnGeriGit.Click += new System.EventHandler(this.btnGeriGit_Click);
             // 
-            // tableLayoutPanel1
-            // 
-            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.btnOturumKapat, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnGeriGit, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnSettings, 1, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            // 
-            // tableLayoutPanel2
-            // 
-            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
-            this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            // 
-            // tableLayoutPanel3
-            // 
-            resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
-            this.tableLayoutPanel3.Controls.Add(this.panel3, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.gridViewAntrenmanlar, 1, 0);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel3_Paint);
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.detaylarıGörToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
-            // 
-            // detaylarıGörToolStripMenuItem
-            // 
-            this.detaylarıGörToolStripMenuItem.Name = "detaylarıGörToolStripMenuItem";
-            resources.ApplyResources(this.detaylarıGörToolStripMenuItem, "detaylarıGörToolStripMenuItem");
-            this.detaylarıGörToolStripMenuItem.Click += new System.EventHandler(this.detaylarıGörToolStripMenuItem_Click);
-            // 
             // FrmKarsidanAntrenmanlar
             // 
             resources.ApplyResources(this, "$this");
@@ -358,15 +360,15 @@
             this.Name = "FrmKarsidanAntrenmanlar";
             this.Load += new System.EventHandler(this.FrmKarsidanAntrenmanlar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridViewAntrenmanlar)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
-            this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

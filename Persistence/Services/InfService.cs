@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace AntrenmanTakip.Persistence.Services
 {
@@ -67,6 +68,27 @@ namespace AntrenmanTakip.Persistence.Services
             else if (systemLanguage == "Turkish")
                return  MessageBox.Show(turkishText, "", buttonType);
             return DialogResult.No;
+        }
+
+        public static void OpenExcelFile()
+        {
+            // Excel uygulamasını başlat
+            Excel.Application excelApp = new Excel.Application();
+
+            // Yeni bir çalışma kitabı oluştur
+            Excel.Workbook workbook = excelApp.Workbooks.Add();
+
+            // Aktif sayfa üzerinde çalışmak için bir çalışma sayfası al
+            Excel.Worksheet worksheet = workbook.ActiveSheet;
+
+            // Sayfa adını değiştirebilirsiniz
+            worksheet.Name = "Asil";
+
+            // Excel uygulamasını göster
+            excelApp.Visible = true;
+
+            // Excel uygulamasını kapatın
+            // excelApp.Quit();
         }
     }
 }

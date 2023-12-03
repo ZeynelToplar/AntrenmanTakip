@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AntrenmanTakip.Persistence.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,7 @@ namespace AntrenmanTakip
             InitializeComponent();
         }
 
+        DialogResult result = DialogResult.OK;
         public static DialogResult Show(string text)
         {
             FrmCustomMessageBox messageBox = new FrmCustomMessageBox();
@@ -25,12 +27,17 @@ namespace AntrenmanTakip
 
             messageBox.ShowDialog();
 
-            return messageBox.DialogResult;
+            return messageBox.result;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DialogResult = DialogResult.OK;
+            Application.Restart();
+        }
+
+        private void btnNo_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

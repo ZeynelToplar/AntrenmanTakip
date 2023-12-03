@@ -38,6 +38,8 @@
         <AssociationConnector Association="DbAntrenmanTakip2Model.FK_Sporcular_Mevkiler_MevkiId" ManuallyRouted="false" />
         <AssociationConnector Association="DbAntrenmanTakip2Model.FK_Sporcular_Resimler" ManuallyRouted="false" />
         <AssociationConnector Association="DbAntrenmanTakip2Model.FK_VurusBicimleri_Resimler_ResimId" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.View_HaftalikBasariliAtis" Width="1.5" PointX="12.375" PointY="9.75" />
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.View_AylikBasariliAtis" Width="1.5" PointX="5.375" PointY="12.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

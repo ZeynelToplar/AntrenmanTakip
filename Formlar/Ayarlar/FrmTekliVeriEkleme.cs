@@ -458,5 +458,48 @@ namespace AntrenmanTakip.Formlar.Ayarlar
         {
 
         }
+
+        private void btnTemizle_Click(object sender, EventArgs e)
+        {
+
+            cmbTopKonumlari.SelectedIndex = 0;
+            cmbTopGelisSekli.SelectedIndex = 0;
+            cmbVurusBicimleri.SelectedIndex = 0;
+            numSure.Value = 0;
+            dateTimePicker1.Value = DateTime.Now;
+
+            comboBox1.SelectedIndex = 0;
+            comboBox2.SelectedIndex = 0;
+            comboBox3.SelectedIndex = 0;
+            comboBox4.SelectedIndex = 0;
+            comboBox5.SelectedIndex = 0;
+            comboBox6.SelectedIndex = 0;
+            comboBox7.SelectedIndex = 0;
+            comboBox8.SelectedIndex = 0;
+            comboBox9.SelectedIndex = 0;
+            comboBox10.SelectedIndex = 0;
+
+            rdoBasarili1.Checked = false;
+            rdoBasarili2.Checked = false;
+            rdoBasarili3.Checked = false;
+            rdoBasarili4.Checked = false;
+            rdoBasarili5.Checked = false;
+            rdoBasarili6.Checked = false;
+            rdoBasarili7.Checked = false;
+            rdoBasarili8.Checked = false;
+            rdoBasarili9.Checked = false;
+            rdoBasarili10.Checked = false;
+
+            rdoBasarisiz1.Checked = false;
+            rdoBasarisiz2.Checked = false;
+            rdoBasarisiz3.Checked = false;
+            rdoBasarisiz4.Checked = false;
+            rdoBasarisiz5.Checked = false;
+            rdoBasarisiz6.Checked = false;
+            rdoBasarisiz7.Checked = false;
+            rdoBasarisiz8.Checked = false;
+            rdoBasarisiz9.Checked = false;
+            rdoBasarisiz10.Checked = false;
+        }
     }
 }

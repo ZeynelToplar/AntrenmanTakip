@@ -136,9 +136,6 @@
   <data name="btnGeriGit.ToolTip" xml:space="preserve">
     <value>Go back</value>
   </data>
-  <data name="panel2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="Ad.HeaderText" xml:space="preserve">
     <value>Name</value>
   </data>
@@ -157,17 +154,11 @@
   <data name="Mevki.HeaderText" xml:space="preserve">
     <value>Position</value>
   </data>
-  <data name="gridViewSporcular.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="btnFalsolu.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnFalsolu.Text" xml:space="preserve">
     <value>CURVEBALL</value>
-  </data>
-  <data name="btnFalsolu.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="btnSag.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -175,17 +166,11 @@
   <data name="btnSag.Text" xml:space="preserve">
     <value>RIGHT</value>
   </data>
-  <data name="btnSag.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="btnYerden.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnYerden.Text" xml:space="preserve">
     <value>FROM THE GROUND</value>
-  </data>
-  <data name="btnYerden.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="btnSol.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -193,17 +178,11 @@
   <data name="btnSol.Text" xml:space="preserve">
     <value>LEFT</value>
   </data>
-  <data name="btnSol.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="btnHavadan.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnHavadan.Text" xml:space="preserve">
     <value>FROM THE AIR</value>
-  </data>
-  <data name="btnHavadan.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="btnKarsidan.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -211,24 +190,15 @@
   <data name="btnKarsidan.Text" xml:space="preserve">
     <value>ACROSS</value>
   </data>
-  <data name="btnKarsidan.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 28</value>
+    <value>353, 29</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Please select the player to train.</value>
-  </data>
-  <data name="label1.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="lblAntrenmanTuru.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -239,20 +209,11 @@
   <data name="lblAntrenmanTuru.Text" xml:space="preserve">
     <value>No training type selected.</value>
   </data>
-  <data name="lblAntrenmanTuru.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="lblZaman.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lblZaman.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="txtBasariliAtis.Location" type="System.Drawing.Point, System.Drawing">
     <value>658, 437</value>
-  </data>
-  <data name="txtBasariliAtis.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 24</value>
@@ -260,32 +221,20 @@
   <data name="label2.Text" xml:space="preserve">
     <value>Time:</value>
   </data>
-  <data name="label2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 24</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Successfull Shoot:</value>
   </data>
-  <data name="label3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="btnKaydet.Text" xml:space="preserve">
     <value>Save</value>
-  </data>
-  <data name="btnKaydet.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="btnAntrenmanBaslat.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnAntrenmanBaslat.Text" xml:space="preserve">
     <value>Start</value>
-  </data>
-  <data name="btnAntrenmanBaslat.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -495,8 +444,5 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Goalkeeper Practice</value>
-  </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
   </data>
 </root>

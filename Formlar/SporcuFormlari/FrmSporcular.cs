@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace AntrenmanTakip.Formlar.SporcuFormlari
@@ -259,7 +260,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                         sporcu.Boy,
                         sporcu.Kilo,
                         mevki,
-                        sporcu.DogumTarihi
+                        sporcu.DogumTarihi?.ToString("dddd, dd MMMM yyyy")
                         });
                     }
                     else
@@ -274,7 +275,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                         sporcu.Boy,
                         sporcu.Kilo,
                         sporcu.Mevkiler.Adi,
-                        sporcu.DogumTarihi
+                        sporcu.DogumTarihi?.ToString("dddd, dd MMMM yyyy")
                         });
                     }
                 }
@@ -316,7 +317,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                         sporcu.Boy,
                         sporcu.Kilo,
                         mevki,
-                        sporcu.DogumTarihi
+                        sporcu.DogumTarihi?.ToString("dddd, dd MMMM yyyy")
                         });
                     }
                     else
@@ -331,7 +332,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                         sporcu.Boy,
                         sporcu.Kilo,
                         sporcu.Mevkiler.Adi,
-                        sporcu.DogumTarihi
+                        sporcu.DogumTarihi?.ToString("dddd, dd MMMM yyyy")
                         });
                     }
                 }
@@ -496,9 +497,22 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             return 0;
         }
 
-        private void numKilo_Click(object sender, EventArgs e)
+        private void numKilo_TextChanged(object sender, EventArgs e)
         {
-            
+            if (Regex.IsMatch(numKilo.Text, "[^0-9]"))
+            {
+                InfService.ShowMessage("Lütfen sadece sayı girişi yapınız.", "Please enter only numbers.");
+                numKilo.Text = numKilo.Text.Remove(numKilo.Text.Length - 1);
+            }
+        }
+
+        private void numBoy_TextChanged(object sender, EventArgs e)
+        {
+            if (Regex.IsMatch(numBoy.Text, "[^0-9]"))
+            {
+                InfService.ShowMessage("Lütfen sadece sayı girişi yapınız.", "Please enter only numbers.");
+                numBoy.Text = numBoy.Text.Remove(numBoy.Text.Length - 1);
+            }
         }
     }
 }

@@ -12,20 +12,18 @@ namespace AntrenmanTakip
     using System;
     using System.Collections.Generic;
     
-    public partial class Resimler
+    public partial class ulkeler
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Resimler()
+        public ulkeler()
         {
-            this.VurusBicimleri = new HashSet<VurusBicimleri>();
             this.Sporcular = new HashSet<Sporcular>();
         }
     
         public int Id { get; set; }
-        public string Path { get; set; }
+        public string UlkeAdi { get; set; }
+        public string EUlkeAdi { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<VurusBicimleri> VurusBicimleri { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Sporcular> Sporcular { get; set; }
     }

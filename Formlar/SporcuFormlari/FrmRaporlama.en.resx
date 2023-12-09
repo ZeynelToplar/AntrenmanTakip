@@ -118,171 +118,43 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="cmbGrafikTuru.Items" xml:space="preserve">
-    <value>Çizgi</value>
+    <value>Line</value>
   </data>
   <data name="cmbGrafikTuru.Items1" xml:space="preserve">
-    <value>Sütun</value>
+    <value>Column</value>
   </data>
   <data name="cmbGrafikTuru.Items2" xml:space="preserve">
-    <value>Satır</value>
+    <value>Row</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="cmbGrafikTuru.Location" type="System.Drawing.Point, System.Drawing">
-    <value>183, 39</value>
-  </data>
-  <data name="cmbGrafikTuru.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 21</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="cmbGrafikTuru.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;cmbGrafikTuru.Name" xml:space="preserve">
-    <value>cmbGrafikTuru</value>
-  </data>
-  <data name="&gt;&gt;cmbGrafikTuru.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmbGrafikTuru.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;cmbGrafikTuru.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>196, 39</value>
   </data>
   <data name="cmbIstatistikTuru.Items" xml:space="preserve">
-    <value>Aylık Başarı İstatistiği</value>
+    <value>Monthly Success Statistics</value>
   </data>
   <data name="cmbIstatistikTuru.Items1" xml:space="preserve">
-    <value>Haftalık Başarı İstatistiği</value>
+    <value>Weekly Success Statistics</value>
   </data>
   <data name="cmbIstatistikTuru.Location" type="System.Drawing.Point, System.Drawing">
-    <value>183, 99</value>
-  </data>
-  <data name="cmbIstatistikTuru.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 21</value>
-  </data>
-  <data name="cmbIstatistikTuru.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;cmbIstatistikTuru.Name" xml:space="preserve">
-    <value>cmbIstatistikTuru</value>
-  </data>
-  <data name="&gt;&gt;cmbIstatistikTuru.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmbIstatistikTuru.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;cmbIstatistikTuru.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 16pt</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 34</value>
+    <value>196, 99</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 26</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>124, 26</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Grafik Türü:</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 16pt</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 94</value>
+    <value>Chart Type:</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 26</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>159, 26</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>İstatistik Türü:</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnRaporAl.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Baskerville Old Face, 14pt</value>
-  </data>
-  <data name="btnRaporAl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>183, 147</value>
-  </data>
-  <data name="btnRaporAl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 48</value>
-  </data>
-  <data name="btnRaporAl.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>Statistics Type:</value>
   </data>
   <data name="btnRaporAl.Text" xml:space="preserve">
-    <value>Rapor Al</value>
-  </data>
-  <data name="&gt;&gt;btnRaporAl.Name" xml:space="preserve">
-    <value>btnRaporAl</value>
-  </data>
-  <data name="&gt;&gt;btnRaporAl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnRaporAl.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnRaporAl.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>446, 244</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+    <value>Get Report</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Raporlama</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FrmRaporlama</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Reporting</value>
   </data>
 </root>

@@ -16,7 +16,6 @@
         <EntityTypeShape EntityType="DbAntrenmanTakip2Model.Mevkiler" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
         <EntityTypeShape EntityType="DbAntrenmanTakip2Model.PortAyari" Width="1.5" PointX="9.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DbAntrenmanTakip2Model.Resimler" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.Sporcular" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
         <EntityTypeShape EntityType="DbAntrenmanTakip2Model.sysdiagrams" Width="1.5" PointX="9.75" PointY="6.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DbAntrenmanTakip2Model.TopGelisSekilleri" Width="1.5" PointX="3" PointY="13.125" IsExpanded="true" />
         <EntityTypeShape EntityType="DbAntrenmanTakip2Model.TopKonumlari" Width="1.5" PointX="3" PointY="15.875" IsExpanded="true" />
@@ -27,19 +26,22 @@
         <EntityTypeShape EntityType="DbAntrenmanTakip2Model.View_VurusBicimleri" Width="1.5" PointX="11.75" PointY="6.75" IsExpanded="true" />
         <AssociationConnector Association="DbAntrenmanTakip2Model.FK_Antrenmanlar_AntrenmanTurleri_AntrenamTuruId" ManuallyRouted="false" />
         <AssociationConnector Association="DbAntrenmanTakip2Model.FK_Antrenmanlar_KaleciAntrenmanTurleri_KAntrenmanTuruId" ManuallyRouted="false" />
-        <AssociationConnector Association="DbAntrenmanTakip2Model.FK_Antrenmanlar_Sporcular_SporcuId" ManuallyRouted="false" />
         <AssociationConnector Association="DbAntrenmanTakip2Model.FK_AntrenmanTurleri_TopGelisSekilleri_TopGelisSekliId" ManuallyRouted="false" />
         <AssociationConnector Association="DbAntrenmanTakip2Model.FK_AntrenmanTurleri_TopKonumlari_TopKonumId" ManuallyRouted="false" />
         <AssociationConnector Association="DbAntrenmanTakip2Model.FK_AntrenmanTurleri_VurusBicimleri_VurusBicimiId" ManuallyRouted="false" />
         <AssociationConnector Association="DbAntrenmanTakip2Model.FK_KaleciAntrenmanTurleri_TopGelisSekilleri_TopGelisSekliId" ManuallyRouted="false" />
         <AssociationConnector Association="DbAntrenmanTakip2Model.FK_KaleciAntrenmanTurleri_TopKonumlari_TopKonumId" ManuallyRouted="false" />
         <AssociationConnector Association="DbAntrenmanTakip2Model.FK_KullaniciSporcular_Kullanicilar_KullaniciId" ManuallyRouted="false" />
-        <AssociationConnector Association="DbAntrenmanTakip2Model.FK_KullaniciSporcular_Sporcular_SporcuId" ManuallyRouted="false" />
-        <AssociationConnector Association="DbAntrenmanTakip2Model.FK_Sporcular_Mevkiler_MevkiId" ManuallyRouted="false" />
-        <AssociationConnector Association="DbAntrenmanTakip2Model.FK_Sporcular_Resimler" ManuallyRouted="false" />
         <AssociationConnector Association="DbAntrenmanTakip2Model.FK_VurusBicimleri_Resimler_ResimId" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.View_HaftalikBasariliAtis" Width="1.5" PointX="12.375" PointY="9.75" />
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.ulkeler" Width="1.5" PointX="12.375" PointY="13.75" />
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.Sporcular" Width="1.5" PointX="3" PointY="4.625" />
+        <AssociationConnector Association="DbAntrenmanTakip2Model.FK_Antrenmanlar_Sporcular_SporcuId" />
+        <AssociationConnector Association="DbAntrenmanTakip2Model.FK_KullaniciSporcular_Sporcular_SporcuId" />
+        <AssociationConnector Association="DbAntrenmanTakip2Model.FK_Sporcular_Mevkiler_MevkiId" />
+        <AssociationConnector Association="DbAntrenmanTakip2Model.FK_Sporcular_Resimler" />
+        <AssociationConnector Association="DbAntrenmanTakip2Model.FK_Sporcular_ulkeler" />
         <EntityTypeShape EntityType="DbAntrenmanTakip2Model.View_AylikBasariliAtis" Width="1.5" PointX="5.375" PointY="12.75" />
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.View_HaftalikBasariliAtis" Width="1.5" PointX="12.375" PointY="9.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

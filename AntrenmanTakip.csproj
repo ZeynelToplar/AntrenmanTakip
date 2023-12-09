@@ -466,6 +466,9 @@
     <Compile Include="TopKonumlari.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="ulkeler.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="View_Antrenmanlar.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -621,6 +624,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\SporcuFormlari\FrmKarsidanAntrenmanlar.resx">
       <DependentUpon>FrmKarsidanAntrenmanlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\SporcuFormlari\FrmRaporlama.en.resx">
+      <DependentUpon>FrmRaporlama.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\SporcuFormlari\FrmRaporlama.resx">
       <DependentUpon>FrmRaporlama.cs</DependentUpon>

@@ -20,6 +20,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         private FrmAyarlar _frmAyarlar;
         private FrmGrafikler _frmGrafikler;
         private FrmAntrenmanDetay _frmAntrenmanDetay;
+        private FrmRaporlama _frmRaporlama;
 
         public int id;
         private int s;
@@ -30,8 +31,6 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         string systemLanguage = ""; 
         private void FrmSolAntrenman_Load(object sender, EventArgs e)
         {
-            //btnGrafik.Enabled = false;
-            //btnGrafik.BackColor = Color.DimGray;
             systemLanguage = DbService.GetApplicationLanguage();
             int year = DateTime.Now.Year;
             dtimeBaslangic.Value = new DateTime(year, 1, 1);
@@ -73,7 +72,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                 {
                     gridViewAntrenmanlar.Rows.Add(new object[]
                     {
-                        item.AntrenmanId,
+                        item.antId,
                         item.AntrenamTuruId,
                         item.AntrenmanTurleri,
                         $"{item.AntrenmanSayisi}. Antrenman",
@@ -87,7 +86,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                 {
                     gridViewAntrenmanlar.Rows.Add(new object[]
                     {
-                        item.AntrenmanId,
+                        item.antId,
                         item.AntrenamTuruId,
                         item.EAntrenmanTurleri,
                         $"{item.AntrenmanSayisi}. Training",
@@ -174,26 +173,24 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
 
         private void btnGrafik_Click(object sender, EventArgs e)
         {
-            if (gridViewAntrenmanlar.Rows.Count > 0)
+            if (antrenmanTuruId != 0)
             {
-                if (_frmGrafikler == null || _frmGrafikler.IsDisposed)
+                if (_frmRaporlama == null || _frmRaporlama.IsDisposed)
                 {
-                    _frmGrafikler = new FrmGrafikler();
-                    _frmGrafikler.antrenmanTuruId = antrenmanTuruId;
-                    _frmGrafikler.Show();
+                    _frmRaporlama = new FrmRaporlama();
+                    _frmRaporlama.antrenmanTuruId = antrenmanTuruId;
+                    _frmRaporlama.Show();
                 }
             }
             else
             {
-                InfService.ShowMessage("Gösterilecek antrenman kaydı bulunamadı.", "No training record found to display.");
+                InfService.ShowMessage("Lütfen antrenman türünü seçiniz.", "Please select the training type.");
             }
         }
         int antrenmanTuruId;
         int antrenmanId = 0;
         private void gridViewAntrenmanlar_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            btnGrafik.Enabled = true;
-            btnGrafik.BackColor = SystemColors.GradientInactiveCaption;
             btnGrafik.Cursor = Cursors.Hand;
             int selectedrowindex = gridViewAntrenmanlar.SelectedCells[0].RowIndex;
             DataGridViewRow selectedRow = gridViewAntrenmanlar.Rows[selectedrowindex];

@@ -28,7 +28,7 @@ namespace AntrenmanTakip
         public int Yas { get; set; }
         public int Kilo { get; set; }
         public int Boy { get; set; }
-        public string Ulke { get; set; }
+        public Nullable<int> Ulke { get; set; }
         public Nullable<int> ResimId { get; set; }
         public Nullable<System.DateTime> DogumTarihi { get; set; }
     
@@ -38,5 +38,6 @@ namespace AntrenmanTakip
         public virtual ICollection<KullaniciSporcular> KullaniciSporcular { get; set; }
         public virtual Mevkiler Mevkiler { get; set; }
         public virtual Resimler Resimler { get; set; }
+        public virtual ulkeler ulkeler { get; set; }
     }
 }

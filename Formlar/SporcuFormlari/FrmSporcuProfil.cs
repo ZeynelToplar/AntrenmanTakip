@@ -27,7 +27,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         private void FrmSporcuProfil_Load(object sender, EventArgs e)
         {
             systemLanguage = DbService.GetApplicationLanguage();
-            var sporcu = Context._context.Sporcular.Include(s => s.Resimler).Include(s => s.Mevkiler).FirstOrDefault(s => s.Id == Context.sporcu.Id);
+            var sporcu = Context._context.Sporcular.Include(s => s.Resimler).Include(s => s.Mevkiler).Include(s => s.ulkeler).FirstOrDefault(s => s.Id == Context.sporcu.Id);
             if (sporcu.Resimler != null)
             {
                 pictureBox1.Image = System.Drawing.Image.FromFile($@"{InfService.GetCurrentDirectory()}\{sporcu.Resimler.Path}");
@@ -40,11 +40,16 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
 
             //Kullanıcı bilgilerini label'lara yazdırma
-            lblUlke.Text = sporcu.Ulke;
+            if (systemLanguage == "Turkish")
+                lblUlke.Text = sporcu.ulkeler.UlkeAdi;
+            else if (systemLanguage == "English")
+                lblUlke.Text = sporcu.ulkeler.EUlkeAdi;
+
             if (systemLanguage == "Turkish")
                 lblMevki.Text = sporcu.Mevkiler.Adi;
             else if (systemLanguage == "English")
                 lblMevki.Text = sporcu.Mevkiler.EAdi;
+
             lblBoy.Text = sporcu.Boy.ToString() + " cm";
             lblKilo.Text = sporcu.Kilo.ToString() + " kg";
             lblYas.Text = sporcu.Yas.ToString();
@@ -118,7 +123,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                 iTextSharp.text.Font fontNormal = new iTextSharp.text.Font(STF_Helvetica_Turkish, 12, iTextSharp.text.Font.NORMAL);
 
                 //Sporcu bilgilerini getirme
-                var sporcu = Context._context.Sporcular.Include(s => s.Resimler).Include(s => s.Mevkiler).FirstOrDefault(s => s.Id == Context.sporcu.Id);
+                var sporcu = Context._context.Sporcular.Include(s => s.Resimler).Include(s => s.Mevkiler).Include(s => s.ulkeler).FirstOrDefault(s => s.Id == Context.sporcu.Id);
 
                 var antrenmanlar = GetViewAntrenmans(Context.sporcu.Id);
 
@@ -171,7 +176,15 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                     mevkiAdi = sporcu.Mevkiler.Adi;
                     sure2_ = "saniye";
                 }
-                Paragraph ulke = new Paragraph(new Phrase($"{ulke_}: {sporcu.Ulke}", fontNormal));
+                Paragraph ulke = null;
+                if(systemLanguage == "Turkish")
+                {
+                     ulke = new Paragraph(new Phrase($"{ulke_}: {sporcu.ulkeler.UlkeAdi}", fontNormal));
+                }
+                else if(systemLanguage == "English")
+                {
+                     ulke = new Paragraph(new Phrase($"{ulke_}: {sporcu.ulkeler.EUlkeAdi}", fontNormal));
+                }
 
                 Paragraph mevki = new Paragraph(new Phrase($"{mevki_}: {mevkiAdi}", fontNormal));
                 Paragraph boy = new Paragraph(new Phrase($"{boy_}: {sporcu.Boy} cm", fontNormal));

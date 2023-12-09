@@ -115,7 +115,7 @@
           <Property Name="Yas" Type="int" Nullable="false" />
           <Property Name="Kilo" Type="int" Nullable="false" />
           <Property Name="Boy" Type="int" Nullable="false" />
-          <Property Name="Ulke" Type="nvarchar(max)" />
+          <Property Name="Ulke" Type="int" />
           <Property Name="ResimId" Type="int" />
           <Property Name="DogumTarihi" Type="datetime" />
         </EntityType>
@@ -144,6 +144,14 @@
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Adi" Type="nvarchar(max)" Nullable="false" />
           <Property Name="EAdi" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="ulkeler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UlkeAdi" Type="nvarchar(max)" />
+          <Property Name="EUlkeAdi" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="VurusBicimleri">
           <Key>
@@ -218,8 +226,9 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_AylikBasariliAtis' does
           </Key>
           <Property Name="AdSoyad" Type="nvarchar(max)" Nullable="false" />
           <Property Name="AntrenmanTurleri" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Yil" Type="int" />
           <Property Name="AntrenamTuruId" Type="int" />
+          <Property Name="Id" Type="int" Nullable="false" />
           <Property Name="OcakBasariliAtisSayisi" Type="int" />
           <Property Name="SubatBasariliAtisSayisi" Type="int" />
           <Property Name="MartBasariliAtisSayisi" Type="int" />
@@ -245,6 +254,8 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_HaftalikBasariliAtis' d
           <Property Name="AntrenmanTurleri" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Id" Type="int" Nullable="false" />
           <Property Name="AntrenamTuruId" Type="int" />
+          <Property Name="Ay" Type="int" />
+          <Property Name="Yil" Type="int" />
           <Property Name="BirHaftaBasariliAtisSayisi" Type="int" />
           <Property Name="IkiHaftaBasariliAtisSayisi" Type="int" />
           <Property Name="UcHaftaBasariliAtisSayisi" Type="int" />
@@ -426,6 +437,18 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_Sporcular_ulkeler">
+          <End Role="ulkeler" Type="Self.ulkeler" Multiplicity="0..1" />
+          <End Role="Sporcular" Type="Self.Sporcular" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ulkeler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Sporcular">
+              <PropertyRef Name="Ulke" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_VurusBicimleri_Resimler_ResimId">
           <End Role="Resimler" Type="Self.Resimler" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
@@ -487,6 +510,7 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TopGelisSekilleri" EntityType="Self.TopGelisSekilleri" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TopKonumlari" EntityType="Self.TopKonumlari" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ulkeler" EntityType="Self.ulkeler" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="VurusBicimleri" EntityType="Self.VurusBicimleri" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="View_Antrenmanlar" EntityType="Self.View_Antrenmanlar" store:Type="Views" store:Schema="dbo">
             <DefiningQuery>SELECT 
@@ -524,8 +548,9 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
             <DefiningQuery>SELECT 
     [View_AylikBasariliAtis].[AdSoyad] AS [AdSoyad], 
     [View_AylikBasariliAtis].[AntrenmanTurleri] AS [AntrenmanTurleri], 
-    [View_AylikBasariliAtis].[Id] AS [Id], 
+    [View_AylikBasariliAtis].[Yil] AS [Yil], 
     [View_AylikBasariliAtis].[AntrenamTuruId] AS [AntrenamTuruId], 
+    [View_AylikBasariliAtis].[Id] AS [Id], 
     [View_AylikBasariliAtis].[OcakBasariliAtisSayisi] AS [OcakBasariliAtisSayisi], 
     [View_AylikBasariliAtis].[SubatBasariliAtisSayisi] AS [SubatBasariliAtisSayisi], 
     [View_AylikBasariliAtis].[MartBasariliAtisSayisi] AS [MartBasariliAtisSayisi], 
@@ -546,6 +571,8 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
     [View_HaftalikBasariliAtis].[AntrenmanTurleri] AS [AntrenmanTurleri], 
     [View_HaftalikBasariliAtis].[Id] AS [Id], 
     [View_HaftalikBasariliAtis].[AntrenamTuruId] AS [AntrenamTuruId], 
+    [View_HaftalikBasariliAtis].[Ay] AS [Ay], 
+    [View_HaftalikBasariliAtis].[Yil] AS [Yil], 
     [View_HaftalikBasariliAtis].[BirHaftaBasariliAtisSayisi] AS [BirHaftaBasariliAtisSayisi], 
     [View_HaftalikBasariliAtis].[IkiHaftaBasariliAtisSayisi] AS [IkiHaftaBasariliAtisSayisi], 
     [View_HaftalikBasariliAtis].[UcHaftaBasariliAtisSayisi] AS [UcHaftaBasariliAtisSayisi], 
@@ -608,6 +635,10 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
             <End Role="Resimler" EntitySet="Resimler" />
             <End Role="Sporcular" EntitySet="Sporcular" />
           </AssociationSet>
+          <AssociationSet Name="FK_Sporcular_ulkeler" Association="Self.FK_Sporcular_ulkeler">
+            <End Role="ulkeler" EntitySet="ulkeler" />
+            <End Role="Sporcular" EntitySet="Sporcular" />
+          </AssociationSet>
           <AssociationSet Name="FK_VurusBicimleri_Resimler_ResimId" Association="Self.FK_VurusBicimleri_Resimler_ResimId">
             <End Role="Resimler" EntitySet="Resimler" />
             <End Role="VurusBicimleri" EntitySet="VurusBicimleri" />
@@ -650,7 +681,7 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
           <Property Name="KAntrenmanTuruId" Type="Int32" />
           <NavigationProperty Name="AntrenmanTurleri" Relationship="Self.FK_Antrenmanlar_AntrenmanTurleri_AntrenamTuruId" FromRole="Antrenmanlar" ToRole="AntrenmanTurleri" />
           <NavigationProperty Name="KaleciAntrenmanTurleri" Relationship="Self.FK_Antrenmanlar_KaleciAntrenmanTurleri_KAntrenmanTuruId" FromRole="Antrenmanlar" ToRole="KaleciAntrenmanTurleri" />
-          <NavigationProperty Name="Sporcular" Relationship="Self.FK_Antrenmanlar_Sporcular_SporcuId" FromRole="Antrenmanlar" ToRole="Sporcular" />
+          <NavigationProperty Name="Sporcular" Relationship="DbAntrenmanTakip2Model.FK_Antrenmanlar_Sporcular_SporcuId" FromRole="Antrenmanlar" ToRole="Sporcular" />
         </EntityType>
         <EntityType Name="AntrenmanTurleri">
           <Key>
@@ -705,7 +736,7 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
           <Property Name="SporcuId" Type="Int32" Nullable="false" />
           <Property Name="KullaniciId" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Kullanicilar" Relationship="Self.FK_KullaniciSporcular_Kullanicilar_KullaniciId" FromRole="KullaniciSporcular" ToRole="Kullanicilar" />
-          <NavigationProperty Name="Sporcular" Relationship="Self.FK_KullaniciSporcular_Sporcular_SporcuId" FromRole="KullaniciSporcular" ToRole="Sporcular" />
+          <NavigationProperty Name="Sporcular" Relationship="DbAntrenmanTakip2Model.FK_KullaniciSporcular_Sporcular_SporcuId" FromRole="KullaniciSporcular" ToRole="Sporcular" />
         </EntityType>
         <EntityType Name="Mevkiler">
           <Key>
@@ -714,7 +745,7 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Adi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="EAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="Sporcular" Relationship="Self.FK_Sporcular_Mevkiler_MevkiId" FromRole="Mevkiler" ToRole="Sporcular" />
+          <NavigationProperty Name="Sporcular" Relationship="DbAntrenmanTakip2Model.FK_Sporcular_Mevkiler_MevkiId" FromRole="Mevkiler" ToRole="Sporcular" />
         </EntityType>
         <EntityType Name="PortAyari">
           <Key>
@@ -729,27 +760,8 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Path" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="Sporcular" Relationship="Self.FK_Sporcular_Resimler" FromRole="Resimler" ToRole="Sporcular" />
           <NavigationProperty Name="VurusBicimleri" Relationship="Self.FK_VurusBicimleri_Resimler_ResimId" FromRole="Resimler" ToRole="VurusBicimleri" />
-        </EntityType>
-        <EntityType Name="Sporcular">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="MevkiId" Type="Int32" Nullable="false" />
-          <Property Name="Adi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Soyadi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Yas" Type="Int32" Nullable="false" />
-          <Property Name="Kilo" Type="Int32" Nullable="false" />
-          <Property Name="Boy" Type="Int32" Nullable="false" />
-          <Property Name="Ulke" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="ResimId" Type="Int32" />
-          <Property Name="DogumTarihi" Type="DateTime" Precision="3" />
-          <NavigationProperty Name="Antrenmanlar" Relationship="Self.FK_Antrenmanlar_Sporcular_SporcuId" FromRole="Sporcular" ToRole="Antrenmanlar" />
-          <NavigationProperty Name="KullaniciSporcular" Relationship="Self.FK_KullaniciSporcular_Sporcular_SporcuId" FromRole="Sporcular" ToRole="KullaniciSporcular" />
-          <NavigationProperty Name="Mevkiler" Relationship="Self.FK_Sporcular_Mevkiler_MevkiId" FromRole="Sporcular" ToRole="Mevkiler" />
-          <NavigationProperty Name="Resimler" Relationship="Self.FK_Sporcular_Resimler" FromRole="Sporcular" ToRole="Resimler" />
+          <NavigationProperty Name="Sporcular" Relationship="DbAntrenmanTakip2Model.FK_Sporcular_Resimler" FromRole="Resimler" ToRole="Sporcular" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -875,20 +887,6 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_Antrenmanlar_Sporcular_SporcuId">
-          <End Role="Sporcular" Type="Self.Sporcular" Multiplicity="1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="Antrenmanlar" Type="Self.Antrenmanlar" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Sporcular">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Antrenmanlar">
-              <PropertyRef Name="SporcuId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_AntrenmanTurleri_TopGelisSekilleri_TopGelisSekliId">
           <End Role="TopGelisSekilleri" Type="Self.TopGelisSekilleri" Multiplicity="1">
             <OnDelete Action="Cascade" />
@@ -973,46 +971,6 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_KullaniciSporcular_Sporcular_SporcuId">
-          <End Role="Sporcular" Type="Self.Sporcular" Multiplicity="1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="KullaniciSporcular" Type="Self.KullaniciSporcular" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Sporcular">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="KullaniciSporcular">
-              <PropertyRef Name="SporcuId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Sporcular_Mevkiler_MevkiId">
-          <End Role="Mevkiler" Type="Self.Mevkiler" Multiplicity="1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="Sporcular" Type="Self.Sporcular" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Mevkiler">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Sporcular">
-              <PropertyRef Name="MevkiId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Sporcular_Resimler">
-          <End Role="Resimler" Type="Self.Resimler" Multiplicity="0..1" />
-          <End Role="Sporcular" Type="Self.Sporcular" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Resimler">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Sporcular">
-              <PropertyRef Name="ResimId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_VurusBicimleri_Resimler_ResimId">
           <End Role="Resimler" Type="Self.Resimler" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
@@ -1039,7 +997,6 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
           <EntitySet Name="Mevkiler" EntityType="Self.Mevkiler" />
           <EntitySet Name="PortAyari" EntityType="Self.PortAyari" />
           <EntitySet Name="Resimler" EntityType="Self.Resimler" />
-          <EntitySet Name="Sporcular" EntityType="Self.Sporcular" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
           <EntitySet Name="TopGelisSekilleri" EntityType="Self.TopGelisSekilleri" />
           <EntitySet Name="TopKonumlari" EntityType="Self.TopKonumlari" />
@@ -1054,10 +1011,6 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
           </AssociationSet>
           <AssociationSet Name="FK_Antrenmanlar_KaleciAntrenmanTurleri_KAntrenmanTuruId" Association="Self.FK_Antrenmanlar_KaleciAntrenmanTurleri_KAntrenmanTuruId">
             <End Role="KaleciAntrenmanTurleri" EntitySet="KaleciAntrenmanTurleri" />
-            <End Role="Antrenmanlar" EntitySet="Antrenmanlar" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Antrenmanlar_Sporcular_SporcuId" Association="Self.FK_Antrenmanlar_Sporcular_SporcuId">
-            <End Role="Sporcular" EntitySet="Sporcular" />
             <End Role="Antrenmanlar" EntitySet="Antrenmanlar" />
           </AssociationSet>
           <AssociationSet Name="FK_AntrenmanTurleri_TopGelisSekilleri_TopGelisSekliId" Association="Self.FK_AntrenmanTurleri_TopGelisSekilleri_TopGelisSekliId">
@@ -1083,18 +1036,6 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
           <AssociationSet Name="FK_KullaniciSporcular_Kullanicilar_KullaniciId" Association="Self.FK_KullaniciSporcular_Kullanicilar_KullaniciId">
             <End Role="Kullanicilar" EntitySet="Kullanicilar" />
             <End Role="KullaniciSporcular" EntitySet="KullaniciSporcular" />
-          </AssociationSet>
-          <AssociationSet Name="FK_KullaniciSporcular_Sporcular_SporcuId" Association="Self.FK_KullaniciSporcular_Sporcular_SporcuId">
-            <End Role="Sporcular" EntitySet="Sporcular" />
-            <End Role="KullaniciSporcular" EntitySet="KullaniciSporcular" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Sporcular_Mevkiler_MevkiId" Association="Self.FK_Sporcular_Mevkiler_MevkiId">
-            <End Role="Mevkiler" EntitySet="Mevkiler" />
-            <End Role="Sporcular" EntitySet="Sporcular" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Sporcular_Resimler" Association="Self.FK_Sporcular_Resimler">
-            <End Role="Resimler" EntitySet="Resimler" />
-            <End Role="Sporcular" EntitySet="Sporcular" />
           </AssociationSet>
           <AssociationSet Name="FK_VurusBicimleri_Resimler_ResimId" Association="Self.FK_VurusBicimleri_Resimler_ResimId">
             <End Role="Resimler" EntitySet="Resimler" />
@@ -1130,8 +1071,30 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
             <Parameter Name="new_diagramname" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="sp_upgraddiagrams" />
-          <EntitySet Name="View_HaftalikBasariliAtis" EntityType="DbAntrenmanTakip2Model.View_HaftalikBasariliAtis" />
+          <EntitySet Name="ulkeler" EntityType="DbAntrenmanTakip2Model.ulkeler" />
+          <EntitySet Name="Sporcular" EntityType="DbAntrenmanTakip2Model.Sporcular" />
+          <AssociationSet Name="FK_Antrenmanlar_Sporcular_SporcuId" Association="DbAntrenmanTakip2Model.FK_Antrenmanlar_Sporcular_SporcuId">
+            <End Role="Sporcular" EntitySet="Sporcular" />
+            <End Role="Antrenmanlar" EntitySet="Antrenmanlar" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KullaniciSporcular_Sporcular_SporcuId" Association="DbAntrenmanTakip2Model.FK_KullaniciSporcular_Sporcular_SporcuId">
+            <End Role="Sporcular" EntitySet="Sporcular" />
+            <End Role="KullaniciSporcular" EntitySet="KullaniciSporcular" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sporcular_Mevkiler_MevkiId" Association="DbAntrenmanTakip2Model.FK_Sporcular_Mevkiler_MevkiId">
+            <End Role="Mevkiler" EntitySet="Mevkiler" />
+            <End Role="Sporcular" EntitySet="Sporcular" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sporcular_Resimler" Association="DbAntrenmanTakip2Model.FK_Sporcular_Resimler">
+            <End Role="Resimler" EntitySet="Resimler" />
+            <End Role="Sporcular" EntitySet="Sporcular" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sporcular_ulkeler" Association="DbAntrenmanTakip2Model.FK_Sporcular_ulkeler">
+            <End Role="ulkeler" EntitySet="ulkeler" />
+            <End Role="Sporcular" EntitySet="Sporcular" />
+          </AssociationSet>
           <EntitySet Name="View_AylikBasariliAtis" EntityType="DbAntrenmanTakip2Model.View_AylikBasariliAtis" />
+          <EntitySet Name="View_HaftalikBasariliAtis" EntityType="DbAntrenmanTakip2Model.View_HaftalikBasariliAtis" />
         </EntityContainer>
         <ComplexType Name="sp_helpdiagramdefinition_Result">
           <Property Type="Int32" Name="version" Nullable="true" />
@@ -1144,22 +1107,101 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
           <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
           <Property Type="Int32" Name="OwnerID" Nullable="false" />
         </ComplexType>
-        <EntityType Name="View_HaftalikBasariliAtis">
+        <EntityType Name="ulkeler">
           <Key>
-            <PropertyRef Name="AdSoyad" />
-            <PropertyRef Name="AntrenmanTurleri" />
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="AdSoyad" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="AntrenmanTurleri" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="BirHaftaBasariliAtisSayisi" Type="Int32" />
-          <Property Name="IkiHaftaBasariliAtisSayisi" Type="Int32" />
-          <Property Name="UcHaftaBasariliAtisSayisi" Type="Int32" />
-          <Property Name="DortHaftaBasariliAtisSayisi" Type="Int32" />
-          <Property Name="BesHaftaBasariliAtisSayisi" Type="Int32" />
-          <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="AntrenamTuruId" Type="Int32" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UlkeAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EUlkeAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Sporcular" Relationship="DbAntrenmanTakip2Model.FK_Sporcular_ulkeler" FromRole="ulkeler" ToRole="Sporcular" />
         </EntityType>
+        <EntityType Name="Sporcular">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MevkiId" Type="Int32" Nullable="false" />
+          <Property Name="Adi" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Soyadi" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Yas" Type="Int32" Nullable="false" />
+          <Property Name="Kilo" Type="Int32" Nullable="false" />
+          <Property Name="Boy" Type="Int32" Nullable="false" />
+          <Property Name="Ulke" Type="Int32" />
+          <Property Name="ResimId" Type="Int32" />
+          <Property Name="DogumTarihi" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Antrenmanlar" Relationship="DbAntrenmanTakip2Model.FK_Antrenmanlar_Sporcular_SporcuId" FromRole="Sporcular" ToRole="Antrenmanlar" />
+          <NavigationProperty Name="KullaniciSporcular" Relationship="DbAntrenmanTakip2Model.FK_KullaniciSporcular_Sporcular_SporcuId" FromRole="Sporcular" ToRole="KullaniciSporcular" />
+          <NavigationProperty Name="Mevkiler" Relationship="DbAntrenmanTakip2Model.FK_Sporcular_Mevkiler_MevkiId" FromRole="Sporcular" ToRole="Mevkiler" />
+          <NavigationProperty Name="Resimler" Relationship="DbAntrenmanTakip2Model.FK_Sporcular_Resimler" FromRole="Sporcular" ToRole="Resimler" />
+          <NavigationProperty Name="ulkeler" Relationship="DbAntrenmanTakip2Model.FK_Sporcular_ulkeler" FromRole="Sporcular" ToRole="ulkeler" />
+        </EntityType>
+        <Association Name="FK_Antrenmanlar_Sporcular_SporcuId">
+          <End Type="DbAntrenmanTakip2Model.Sporcular" Role="Sporcular" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="DbAntrenmanTakip2Model.Antrenmanlar" Role="Antrenmanlar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sporcular">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Antrenmanlar">
+              <PropertyRef Name="SporcuId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KullaniciSporcular_Sporcular_SporcuId">
+          <End Type="DbAntrenmanTakip2Model.Sporcular" Role="Sporcular" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="DbAntrenmanTakip2Model.KullaniciSporcular" Role="KullaniciSporcular" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sporcular">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="KullaniciSporcular">
+              <PropertyRef Name="SporcuId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sporcular_Mevkiler_MevkiId">
+          <End Type="DbAntrenmanTakip2Model.Mevkiler" Role="Mevkiler" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="DbAntrenmanTakip2Model.Sporcular" Role="Sporcular" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Mevkiler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Sporcular">
+              <PropertyRef Name="MevkiId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sporcular_Resimler">
+          <End Type="DbAntrenmanTakip2Model.Resimler" Role="Resimler" Multiplicity="0..1" />
+          <End Type="DbAntrenmanTakip2Model.Sporcular" Role="Sporcular" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Resimler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Sporcular">
+              <PropertyRef Name="ResimId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sporcular_ulkeler">
+          <End Type="DbAntrenmanTakip2Model.ulkeler" Role="ulkeler" Multiplicity="0..1" />
+          <End Type="DbAntrenmanTakip2Model.Sporcular" Role="Sporcular" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ulkeler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Sporcular">
+              <PropertyRef Name="Ulke" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityType Name="View_AylikBasariliAtis">
           <Key>
             <PropertyRef Name="AdSoyad" />
@@ -1168,6 +1210,9 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
           </Key>
           <Property Name="AdSoyad" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="AntrenmanTurleri" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Yil" Type="Int32" />
+          <Property Name="AntrenamTuruId" Type="Int32" />
+          <Property Name="Id" Type="Int32" Nullable="false" />
           <Property Name="OcakBasariliAtisSayisi" Type="Int32" />
           <Property Name="SubatBasariliAtisSayisi" Type="Int32" />
           <Property Name="MartBasariliAtisSayisi" Type="Int32" />
@@ -1180,8 +1225,24 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
           <Property Name="EkimBasariliAtisSayisi" Type="Int32" />
           <Property Name="KasimBasariliAtisSayisi" Type="Int32" />
           <Property Name="AralikBasariliAtisSayisi" Type="Int32" />
+        </EntityType>
+        <EntityType Name="View_HaftalikBasariliAtis">
+          <Key>
+            <PropertyRef Name="AdSoyad" />
+            <PropertyRef Name="AntrenmanTurleri" />
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="AdSoyad" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AntrenmanTurleri" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Id" Type="Int32" Nullable="false" />
           <Property Name="AntrenamTuruId" Type="Int32" />
+          <Property Name="Ay" Type="Int32" />
+          <Property Name="Yil" Type="Int32" />
+          <Property Name="BirHaftaBasariliAtisSayisi" Type="Int32" />
+          <Property Name="IkiHaftaBasariliAtisSayisi" Type="Int32" />
+          <Property Name="UcHaftaBasariliAtisSayisi" Type="Int32" />
+          <Property Name="DortHaftaBasariliAtisSayisi" Type="Int32" />
+          <Property Name="BesHaftaBasariliAtisSayisi" Type="Int32" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -1299,22 +1360,6 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Sporcular">
-            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.Sporcular">
-              <MappingFragment StoreEntitySet="Sporcular">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="MevkiId" ColumnName="MevkiId" />
-                <ScalarProperty Name="Adi" ColumnName="Adi" />
-                <ScalarProperty Name="Soyadi" ColumnName="Soyadi" />
-                <ScalarProperty Name="Yas" ColumnName="Yas" />
-                <ScalarProperty Name="Kilo" ColumnName="Kilo" />
-                <ScalarProperty Name="Boy" ColumnName="Boy" />
-                <ScalarProperty Name="Ulke" ColumnName="Ulke" />
-                <ScalarProperty Name="ResimId" ColumnName="ResimId" />
-                <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="sysdiagrams">
             <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.sysdiagrams">
               <MappingFragment StoreEntitySet="sysdiagrams">
@@ -1425,26 +1470,34 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
           </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="DbAntrenmanTakip2Model.Store.sp_renamediagram" />
           <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="DbAntrenmanTakip2Model.Store.sp_upgraddiagrams" />
-          <EntitySetMapping Name="View_HaftalikBasariliAtis">
-            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.View_HaftalikBasariliAtis">
-              <MappingFragment StoreEntitySet="View_HaftalikBasariliAtis">
-                <ScalarProperty Name="AntrenamTuruId" ColumnName="AntrenamTuruId" />
+          <EntitySetMapping Name="ulkeler">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.ulkeler">
+              <MappingFragment StoreEntitySet="ulkeler">
+                <ScalarProperty Name="EUlkeAdi" ColumnName="EUlkeAdi" />
+                <ScalarProperty Name="UlkeAdi" ColumnName="UlkeAdi" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="BesHaftaBasariliAtisSayisi" ColumnName="BesHaftaBasariliAtisSayisi" />
-                <ScalarProperty Name="DortHaftaBasariliAtisSayisi" ColumnName="DortHaftaBasariliAtisSayisi" />
-                <ScalarProperty Name="UcHaftaBasariliAtisSayisi" ColumnName="UcHaftaBasariliAtisSayisi" />
-                <ScalarProperty Name="IkiHaftaBasariliAtisSayisi" ColumnName="IkiHaftaBasariliAtisSayisi" />
-                <ScalarProperty Name="BirHaftaBasariliAtisSayisi" ColumnName="BirHaftaBasariliAtisSayisi" />
-                <ScalarProperty Name="AntrenmanTurleri" ColumnName="AntrenmanTurleri" />
-                <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sporcular">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.Sporcular">
+              <MappingFragment StoreEntitySet="Sporcular">
+                <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
+                <ScalarProperty Name="ResimId" ColumnName="ResimId" />
+                <ScalarProperty Name="Ulke" ColumnName="Ulke" />
+                <ScalarProperty Name="Boy" ColumnName="Boy" />
+                <ScalarProperty Name="Kilo" ColumnName="Kilo" />
+                <ScalarProperty Name="Yas" ColumnName="Yas" />
+                <ScalarProperty Name="Soyadi" ColumnName="Soyadi" />
+                <ScalarProperty Name="Adi" ColumnName="Adi" />
+                <ScalarProperty Name="MevkiId" ColumnName="MevkiId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="View_AylikBasariliAtis">
             <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.View_AylikBasariliAtis">
               <MappingFragment StoreEntitySet="View_AylikBasariliAtis">
-                <ScalarProperty Name="AntrenamTuruId" ColumnName="AntrenamTuruId" />
-                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="AralikBasariliAtisSayisi" ColumnName="AralikBasariliAtisSayisi" />
                 <ScalarProperty Name="KasimBasariliAtisSayisi" ColumnName="KasimBasariliAtisSayisi" />
                 <ScalarProperty Name="EkimBasariliAtisSayisi" ColumnName="EkimBasariliAtisSayisi" />
@@ -1457,6 +1510,26 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
                 <ScalarProperty Name="MartBasariliAtisSayisi" ColumnName="MartBasariliAtisSayisi" />
                 <ScalarProperty Name="SubatBasariliAtisSayisi" ColumnName="SubatBasariliAtisSayisi" />
                 <ScalarProperty Name="OcakBasariliAtisSayisi" ColumnName="OcakBasariliAtisSayisi" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="AntrenamTuruId" ColumnName="AntrenamTuruId" />
+                <ScalarProperty Name="Yil" ColumnName="Yil" />
+                <ScalarProperty Name="AntrenmanTurleri" ColumnName="AntrenmanTurleri" />
+                <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="View_HaftalikBasariliAtis">
+            <EntityTypeMapping TypeName="DbAntrenmanTakip2Model.View_HaftalikBasariliAtis">
+              <MappingFragment StoreEntitySet="View_HaftalikBasariliAtis">
+                <ScalarProperty Name="BesHaftaBasariliAtisSayisi" ColumnName="BesHaftaBasariliAtisSayisi" />
+                <ScalarProperty Name="DortHaftaBasariliAtisSayisi" ColumnName="DortHaftaBasariliAtisSayisi" />
+                <ScalarProperty Name="UcHaftaBasariliAtisSayisi" ColumnName="UcHaftaBasariliAtisSayisi" />
+                <ScalarProperty Name="IkiHaftaBasariliAtisSayisi" ColumnName="IkiHaftaBasariliAtisSayisi" />
+                <ScalarProperty Name="BirHaftaBasariliAtisSayisi" ColumnName="BirHaftaBasariliAtisSayisi" />
+                <ScalarProperty Name="Yil" ColumnName="Yil" />
+                <ScalarProperty Name="Ay" ColumnName="Ay" />
+                <ScalarProperty Name="AntrenamTuruId" ColumnName="AntrenamTuruId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="AntrenmanTurleri" ColumnName="AntrenmanTurleri" />
                 <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
               </MappingFragment>

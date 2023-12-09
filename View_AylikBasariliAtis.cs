@@ -16,6 +16,9 @@ namespace AntrenmanTakip
     {
         public string AdSoyad { get; set; }
         public string AntrenmanTurleri { get; set; }
+        public Nullable<int> Yil { get; set; }
+        public Nullable<int> AntrenamTuruId { get; set; }
+        public int Id { get; set; }
         public Nullable<int> OcakBasariliAtisSayisi { get; set; }
         public Nullable<int> SubatBasariliAtisSayisi { get; set; }
         public Nullable<int> MartBasariliAtisSayisi { get; set; }
@@ -28,7 +31,5 @@ namespace AntrenmanTakip
         public Nullable<int> EkimBasariliAtisSayisi { get; set; }
         public Nullable<int> KasimBasariliAtisSayisi { get; set; }
         public Nullable<int> AralikBasariliAtisSayisi { get; set; }
-        public int Id { get; set; }
-        public Nullable<int> AntrenamTuruId { get; set; }
     }
 }

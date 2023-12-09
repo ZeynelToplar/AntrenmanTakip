@@ -54,6 +54,12 @@
             this.btnFiltrele = new System.Windows.Forms.Button();
             this.btnSifirla = new System.Windows.Forms.Button();
             this.gridViewAntrenmanlar = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.detaylarıGörToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.Antrenman = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AtuId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AntrenmanTuru = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,12 +68,6 @@
             this.BasariliAtis = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sure = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tarih = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.detaylarıGörToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -274,6 +274,40 @@
             this.gridViewAntrenmanlar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridViewAntrenmanlar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewAntrenmanlar_CellContentClick);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.detaylarıGörToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
+            // 
+            // detaylarıGörToolStripMenuItem
+            // 
+            this.detaylarıGörToolStripMenuItem.Name = "detaylarıGörToolStripMenuItem";
+            resources.ApplyResources(this.detaylarıGörToolStripMenuItem, "detaylarıGörToolStripMenuItem");
+            this.detaylarıGörToolStripMenuItem.Click += new System.EventHandler(this.detaylarıGörToolStripMenuItem_Click);
+            // 
+            // tableLayoutPanel1
+            // 
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.btnOturumKapat, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnGeriGit, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnSettings, 1, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            // 
+            // tableLayoutPanel2
+            // 
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
+            this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            // 
+            // tableLayoutPanel3
+            // 
+            resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
+            this.tableLayoutPanel3.Controls.Add(this.panel3, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.gridViewAntrenmanlar, 1, 0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            // 
             // Antrenman
             // 
             resources.ApplyResources(this.Antrenman, "Antrenman");
@@ -313,40 +347,6 @@
             // 
             resources.ApplyResources(this.Tarih, "Tarih");
             this.Tarih.Name = "Tarih";
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.detaylarıGörToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
-            // 
-            // detaylarıGörToolStripMenuItem
-            // 
-            this.detaylarıGörToolStripMenuItem.Name = "detaylarıGörToolStripMenuItem";
-            resources.ApplyResources(this.detaylarıGörToolStripMenuItem, "detaylarıGörToolStripMenuItem");
-            this.detaylarıGörToolStripMenuItem.Click += new System.EventHandler(this.detaylarıGörToolStripMenuItem_Click);
-            // 
-            // tableLayoutPanel1
-            // 
-            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.btnOturumKapat, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnGeriGit, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnSettings, 1, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            // 
-            // tableLayoutPanel2
-            // 
-            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
-            this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            // 
-            // tableLayoutPanel3
-            // 
-            resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
-            this.tableLayoutPanel3.Controls.Add(this.panel3, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.gridViewAntrenmanlar, 1, 0);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             // 
             // FrmSagAntrenman
             // 

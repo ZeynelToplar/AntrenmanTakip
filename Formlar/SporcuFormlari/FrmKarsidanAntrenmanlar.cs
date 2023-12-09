@@ -80,7 +80,6 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                     gridViewAntrenmanlar.Rows.Add(new object[]
                     {
                         item.antId,
-                        item.AntrenmanId,
                         item.AntrenamTuruId,
                         item.AntrenmanTurleri,
                         $"{item.AntrenmanSayisi}. Antrenman",
@@ -95,7 +94,6 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                     gridViewAntrenmanlar.Rows.Add(new object[]
                     {
                         item.antId,
-                        item.AntrenmanId,
                         item.AntrenamTuruId,
                         item.EAntrenmanTurleri,
                         $"{item.AntrenmanSayisi}. Training",
@@ -151,6 +149,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             int year = DateTime.Now.Year;
             dtimeBaslangic.Value = new DateTime(year, 1, 1);
 
+            #region culture Info
             //CultureInfo cultureInfo = System.Globalization.CultureInfo.GetCultureInfo("en-US");
             //if (systemLanguage == "English")
             //{
@@ -160,6 +159,8 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             //    string format2 = dtimeBaslangic.Value.GetDateTimeFormats(cultureInfo).First();
             //    dtimeBitis.CustomFormat = format2;
             //}
+            #endregion
+
 
             dtimeBaslangic.Value = DateTime.Now.AddMonths(-1);
             //Sporcu Bilgileri
@@ -194,7 +195,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
 
         private void btnGrafik_Click(object sender, EventArgs e)
         {
-            if(gridViewAntrenmanlar.Rows.Count > 0)
+            if (antrenmanTuruId != 0)
             {
                 if (_frmRaporlama == null || _frmRaporlama.IsDisposed)
                 {
@@ -205,14 +206,13 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             }
             else
             {
-                InfService.ShowMessage("Gösterilecek antrenman kaydı bulunamadı.", "No training record found to display.");
+                InfService.ShowMessage("Lütfen antrenman türünü seçiniz.", "Please select the training type.");
             }
         }
         int antrenmanTuruId;
         int antrenmanId;
         private void gridViewAntrenmanlar_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            btnGrafik.Cursor = Cursors.Hand;
             int selectedrowindex = gridViewAntrenmanlar.SelectedCells[0].RowIndex;
             DataGridViewRow selectedRow = gridViewAntrenmanlar.Rows[selectedrowindex];
             antrenmanTuruId = Convert.ToInt32(selectedRow.Cells["AtuId"].Value);

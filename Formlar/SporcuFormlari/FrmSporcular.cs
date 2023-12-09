@@ -25,7 +25,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         private void btnEkle_Click(object sender, EventArgs e)
         {
             Kullanicilar authenticateUser = DbService.GetUser(Context.kullanici.Id);
-            if (txtAd.Text == "" || txtSoyad.Text == "" || numBoy.Text == "0" || numKilo.Text == "0" || txtUlke.Text == "")
+            if (txtAd.Text == "" || txtSoyad.Text == "" || numBoy.Text == "0" || numKilo.Text == "0")
             {
                 InfService.ShowMessage("Lütfen gerekli bilgileri giriniz", "Please enter the required information");
             }
@@ -53,7 +53,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                             Yas = yas,
                             Kilo = Convert.ToInt32(numKilo.Text),
                             Boy = Convert.ToInt32(numBoy.Text),
-                            Ulke = txtUlke.Text,
+                            Ulke = Convert.ToInt32(txtUlke.SelectedValue),
                             MevkiId = mevki,
                             ResimId = 14,
                             DogumTarihi = dateTimePicker1.Value
@@ -89,7 +89,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                             Yas = yas,
                             Kilo = Convert.ToInt32(numKilo.Text),
                             Boy = Convert.ToInt32(numBoy.Text),
-                            Ulke = txtUlke.Text,
+                            Ulke = Convert.ToInt32(txtUlke.SelectedValue),
                             MevkiId = mevki,
                             ResimId = 14,
                             DogumTarihi = dateTimePicker1.Value
@@ -177,7 +177,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                         sporcu.Kilo = Convert.ToInt32(numKilo.Text);
                         sporcu.MevkiId = Convert.ToInt32(cmbMevki.SelectedValue);
                         sporcu.DogumTarihi = dateTimePicker1.Value;
-                        sporcu.Ulke = txtUlke.Text;
+                        sporcu.Ulke = Convert.ToInt32(txtUlke.SelectedValue);
                         Context._context.SaveChanges();
                         InfService.ShowMessage("Güncelleme işlemi başarılı.", "The update was successful.");
                         gridViewSporcular.Rows.Clear();
@@ -219,7 +219,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             numBoy.Text = "";
             numKilo.Text = "";
             numYas.Value = 0;
-            txtUlke.Clear();
+            txtUlke.SelectedIndex = 0;
             cmbMevki.SelectedIndex = 0;
         }
         string systemLanguage = "";
@@ -231,6 +231,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             {
                 var sporcular = (from s in Context._context.Sporcular
                                  join m in Context._context.Mevkiler on s.MevkiId equals m.Id
+                                 join u in Context._context.ulkeler on s.Ulke equals u.Id
                                  select new
                                  {
                                      Id = s.Id,
@@ -239,7 +240,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                                      Yas = s.Yas,
                                      Boy = s.Boy,
                                      Kilo = s.Kilo,
-                                     Ulke = s.Ulke,
+                                     Ulke = u,
                                      DogumTarihi = s.DogumTarihi,
                                      Mevkiler = m
                                  }).ToList();
@@ -253,7 +254,8 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                         gridViewSporcular.Rows.Add(new object[]
                         {
                         sporcu.Id,
-                        sporcu.Ulke,
+                        sporcu.Ulke.Id,
+                        sporcu.Ulke.EUlkeAdi,
                         sporcu.Adi,
                         sporcu.Soyadi,
                         sporcu.Yas,
@@ -268,7 +270,8 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                         gridViewSporcular.Rows.Add(new object[]
                         {
                         sporcu.Id,
-                        sporcu.Ulke,
+                        sporcu.Ulke.Id,
+                        sporcu.Ulke.UlkeAdi,
                         sporcu.Adi,
                         sporcu.Soyadi,
                         sporcu.Yas,
@@ -287,11 +290,12 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                 var sporcular = (from ks in Context._context.KullaniciSporcular
                                  join s in Context._context.Sporcular on ks.SporcuId equals s.Id
                                  join m in Context._context.Mevkiler on s.MevkiId equals m.Id
+                                 join u in Context._context.ulkeler on s.Ulke equals u.Id
                                  where ks.KullaniciId == authenticateUser.Id
                                  select new
                                  {
                                      Id = s.Id,
-                                     Ulke = s.Ulke,
+                                     Ulke = u,
                                      Adi = s.Adi,
                                      Soyadi = s.Soyadi,
                                      Yas = s.Yas,
@@ -310,7 +314,8 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                         gridViewSporcular.Rows.Add(new object[]
                         {
                         sporcu.Id,
-                        sporcu.Ulke,
+                        sporcu.Ulke.Id,
+                        sporcu.Ulke.EUlkeAdi,
                         sporcu.Adi,
                         sporcu.Soyadi,
                         sporcu.Yas,
@@ -325,7 +330,8 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                         gridViewSporcular.Rows.Add(new object[]
                         {
                         sporcu.Id,
-                        sporcu.Ulke,
+                        sporcu.Ulke.Id,
+                        sporcu.Ulke.UlkeAdi,
                         sporcu.Adi,
                         sporcu.Soyadi,
                         sporcu.Yas,
@@ -347,6 +353,14 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             else if(systemLanguage == "English")
                 cmbMevki.DisplayMember = "EAdi";
 
+            //Ulkeler 
+            var ulkeler = Context._context.ulkeler.ToList();
+            txtUlke.DataSource = ulkeler;
+            txtUlke.ValueMember = "Id";
+            if (systemLanguage == "Turkish")
+                txtUlke.DisplayMember = "UlkeAdi";
+            else if (systemLanguage == "English")
+                txtUlke.DisplayMember = "EUlkeAdi";
         }
 
         private void gridViewSporcular_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -384,15 +398,24 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                     break;
             }
 
-            txtId.Text = Convert.ToString(selectedRow.Cells["Id"].Value);
-            txtAd.Text = Convert.ToString(selectedRow.Cells["Ad"].Value);
-            txtSoyad.Text = Convert.ToString(selectedRow.Cells["Soyad"].Value);
-            numBoy.Text = (selectedRow.Cells["Boy"].Value).ToString();
-            numKilo.Text = (selectedRow.Cells["Kilo"].Value).ToString();
-            numYas.Value = Convert.ToInt32(selectedRow.Cells["Yas"].Value);
-            txtUlke.Text = Convert.ToString(selectedRow.Cells["Ulke"].Value);
-            dateTimePicker1.Value = Convert.ToDateTime(selectedRow.Cells["DogumTarihi"].Value);
-            cmbMevki.SelectedValue = mevkiId;
+            try
+            {
+                txtId.Text = Convert.ToString(selectedRow.Cells["Id"].Value);
+                txtAd.Text = Convert.ToString(selectedRow.Cells["Ad"].Value);
+                txtSoyad.Text = Convert.ToString(selectedRow.Cells["Soyad"].Value);
+                numBoy.Text = (selectedRow.Cells["Boy"].Value).ToString();
+                numKilo.Text = (selectedRow.Cells["Kilo"].Value).ToString();
+                numYas.Value = Convert.ToInt32(selectedRow.Cells["Yas"].Value);
+                txtUlke.SelectedValue = (selectedRow.Cells["UlkeId"].Value);
+                dateTimePicker1.Value = Convert.ToDateTime(selectedRow.Cells["DogumTarihi"].Value);
+                cmbMevki.SelectedValue = mevkiId;
+            }
+            catch (Exception)
+            {
+
+                InfService.ShowMessage("Beklenmeyen bir hata ile karşılaşıldı", "An unexpected error was encountered");
+
+            }
         }
 
         private void btnGeriGit_Click(object sender, EventArgs e)
@@ -469,11 +492,6 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
 
         }
 
-        private void gridViewSporcular_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             if (txtAd.Text != null || txtSoyad.Text != null || numBoy.Text != "0" || numKilo.Text != "0")
@@ -513,6 +531,11 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                 InfService.ShowMessage("Lütfen sadece sayı girişi yapınız.", "Please enter only numbers.");
                 numBoy.Text = numBoy.Text.Remove(numBoy.Text.Length - 1);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var a = txtUlke.SelectedValue;
         }
     }
 }

@@ -402,9 +402,6 @@
   <data name="button2.Text" xml:space="preserve">
     <value>button2</value>
   </data>
-  <data name="button2.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="&gt;&gt;button2.Name" xml:space="preserve">
     <value>button2</value>
   </data>

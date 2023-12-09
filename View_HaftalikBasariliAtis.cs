@@ -16,12 +16,14 @@ namespace AntrenmanTakip
     {
         public string AdSoyad { get; set; }
         public string AntrenmanTurleri { get; set; }
+        public int Id { get; set; }
+        public Nullable<int> AntrenamTuruId { get; set; }
+        public Nullable<int> Ay { get; set; }
+        public Nullable<int> Yil { get; set; }
         public Nullable<int> BirHaftaBasariliAtisSayisi { get; set; }
         public Nullable<int> IkiHaftaBasariliAtisSayisi { get; set; }
         public Nullable<int> UcHaftaBasariliAtisSayisi { get; set; }
         public Nullable<int> DortHaftaBasariliAtisSayisi { get; set; }
         public Nullable<int> BesHaftaBasariliAtisSayisi { get; set; }
-        public int Id { get; set; }
-        public Nullable<int> AntrenamTuruId { get; set; }
     }
 }

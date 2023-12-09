@@ -36,6 +36,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gridViewSporcular = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UlkeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ulke = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Soyad = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,11 +58,11 @@
             this.numYas = new System.Windows.Forms.NumericUpDown();
             this.cmbMevki = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtUlke = new System.Windows.Forms.ComboBox();
             this.numBoy = new System.Windows.Forms.TextBox();
             this.numKilo = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtUlke = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.btnProfilGor = new System.Windows.Forms.Button();
             this.btnSifirla = new System.Windows.Forms.Button();
@@ -87,6 +88,8 @@
             // 
             // gridViewSporcular
             // 
+            this.gridViewSporcular.AllowUserToAddRows = false;
+            this.gridViewSporcular.AllowUserToDeleteRows = false;
             resources.ApplyResources(this.gridViewSporcular, "gridViewSporcular");
             this.gridViewSporcular.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridViewSporcular.BackgroundColor = System.Drawing.Color.White;
@@ -102,6 +105,7 @@
             this.gridViewSporcular.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridViewSporcular.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
+            this.UlkeId,
             this.Ulke,
             this.Ad,
             this.Soyad,
@@ -122,6 +126,7 @@
             this.gridViewSporcular.DefaultCellStyle = dataGridViewCellStyle2;
             this.gridViewSporcular.MultiSelect = false;
             this.gridViewSporcular.Name = "gridViewSporcular";
+            this.gridViewSporcular.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -134,52 +139,66 @@
             this.gridViewSporcular.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gridViewSporcular.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridViewSporcular.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewSporcular_CellClick);
-            this.gridViewSporcular.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewSporcular_CellContentClick);
             // 
             // Id
             // 
             resources.ApplyResources(this.Id, "Id");
             this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            // 
+            // UlkeId
+            // 
+            resources.ApplyResources(this.UlkeId, "UlkeId");
+            this.UlkeId.Name = "UlkeId";
+            this.UlkeId.ReadOnly = true;
             // 
             // Ulke
             // 
             resources.ApplyResources(this.Ulke, "Ulke");
             this.Ulke.Name = "Ulke";
+            this.Ulke.ReadOnly = true;
             // 
             // Ad
             // 
             resources.ApplyResources(this.Ad, "Ad");
             this.Ad.Name = "Ad";
+            this.Ad.ReadOnly = true;
             // 
             // Soyad
             // 
             resources.ApplyResources(this.Soyad, "Soyad");
             this.Soyad.Name = "Soyad";
+            this.Soyad.ReadOnly = true;
             // 
             // Yas
             // 
             resources.ApplyResources(this.Yas, "Yas");
             this.Yas.Name = "Yas";
+            this.Yas.ReadOnly = true;
             // 
             // Boy
             // 
             resources.ApplyResources(this.Boy, "Boy");
             this.Boy.Name = "Boy";
+            this.Boy.ReadOnly = true;
             // 
             // Kilo
             // 
             resources.ApplyResources(this.Kilo, "Kilo");
             this.Kilo.Name = "Kilo";
+            this.Kilo.ReadOnly = true;
             // 
             // Mevki
             // 
             resources.ApplyResources(this.Mevki, "Mevki");
             this.Mevki.Name = "Mevki";
+            this.Mevki.ReadOnly = true;
             // 
             // DogumTarihi
             // 
             resources.ApplyResources(this.DogumTarihi, "DogumTarihi");
             this.DogumTarihi.Name = "DogumTarihi";
+            this.DogumTarihi.ReadOnly = true;
             // 
             // ctxStrpSporcular
             // 
@@ -249,11 +268,11 @@
             // 
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel1.Controls.Add(this.txtUlke);
             this.panel1.Controls.Add(this.numBoy);
             this.panel1.Controls.Add(this.numKilo);
             this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.txtUlke);
             this.panel1.Controls.Add(this.txtId);
             this.panel1.Controls.Add(this.btnProfilGor);
             this.panel1.Controls.Add(this.btnSifirla);
@@ -274,6 +293,12 @@
             this.panel1.Controls.Add(this.lblAd);
             this.panel1.Name = "panel1";
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // txtUlke
+            // 
+            this.txtUlke.FormattingEnabled = true;
+            resources.ApplyResources(this.txtUlke, "txtUlke");
+            this.txtUlke.Name = "txtUlke";
             // 
             // numBoy
             // 
@@ -299,11 +324,6 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // txtUlke
-            // 
-            resources.ApplyResources(this.txtUlke, "txtUlke");
-            this.txtUlke.Name = "txtUlke";
             // 
             // txtId
             // 
@@ -470,12 +490,15 @@
         private System.Windows.Forms.Button btnProfilGor;
         private System.Windows.Forms.ContextMenuStrip ctxStrpSporcular;
         private System.Windows.Forms.ToolStripMenuItem resimEkleToolStripMenuItem;
-        private System.Windows.Forms.TextBox txtUlke;
         private System.Windows.Forms.Label lblUlke;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox numKilo;
+        private System.Windows.Forms.TextBox numBoy;
+        private System.Windows.Forms.ComboBox txtUlke;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UlkeId;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ulke;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Soyad;
@@ -484,7 +507,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Kilo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Mevki;
         private System.Windows.Forms.DataGridViewTextBoxColumn DogumTarihi;
-        private System.Windows.Forms.TextBox numKilo;
-        private System.Windows.Forms.TextBox numBoy;
     }
 }

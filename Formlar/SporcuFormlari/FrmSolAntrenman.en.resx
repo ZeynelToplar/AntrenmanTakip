@@ -137,7 +137,7 @@
     <value>Go back</value>
   </data>
   <data name="btnGrafik.Text" xml:space="preserve">
-    <value>View Graph</value>
+    <value>Reporting</value>
   </data>
   <data name="lblMevki.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -206,14 +206,14 @@
   <data name="Tarih.HeaderText" xml:space="preserve">
     <value>Date</value>
   </data>
+  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 26</value>
+  </data>
   <data name="detaylarıGörToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>141, 22</value>
   </data>
   <data name="detaylarıGörToolStripMenuItem.Text" xml:space="preserve">
     <value>Show Details</value>
-  </data>
-  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 26</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

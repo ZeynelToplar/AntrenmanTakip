@@ -75,8 +75,8 @@ namespace AntrenmanTakip
             //values2.Add((int)(values.DortHaftaBasariliAtisSayisi));
             //values2.Add((int)(values.BesHaftaBasariliAtisSayisi));
 
-            series.Add(new LineSeries() { Title = "Toplam Basarili Atis Sayisi", Values = new ChartValues<int>(values2) });
-            series.Add(new LineSeries() { Title = "Toplam Atis Sayisi", Values = new ChartValues<int>(new[] { 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, }) });
+            series.Add(new ColumnSeries() { Title = "Toplam Basarili Atis Sayisi", Values = new ChartValues<int>(values2) });
+            series.Add(new ColumnSeries() { Title = "Toplam Atis Sayisi", Values = new ChartValues<int>(new[] { 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, }) });
             cartesianChart1.Series = series;
         }
     }

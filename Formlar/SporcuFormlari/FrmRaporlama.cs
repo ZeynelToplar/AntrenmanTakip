@@ -17,6 +17,9 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
     {
         public int sporcuId = Context.sporcu.Id;
         public int antrenmanTuruId;
+
+        private FrmGrafikler _frmGrafikler;
+
         public FrmRaporlama()
         {
             InitializeComponent();
@@ -24,12 +27,20 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
 
         private void FrmRaporlama_Load(object sender, EventArgs e)
         {
-
+            cmbGrafikTuru.SelectedIndex = 0;
+            cmbIstatistikTuru.SelectedIndex = 0;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnRaporAl_Click(object sender, EventArgs e)
         {
-            
+            if(_frmGrafikler == null || _frmGrafikler.IsDisposed)
+            {
+                _frmGrafikler = new FrmGrafikler();
+                _frmGrafikler.antrenmanTuruId = antrenmanTuruId;
+                _frmGrafikler.chartType = cmbGrafikTuru.SelectedIndex;
+                _frmGrafikler.statisticType = cmbIstatistikTuru.SelectedIndex;
+                _frmGrafikler.Show();
+            }
         }
     }
 }

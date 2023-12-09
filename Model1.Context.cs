@@ -38,7 +38,6 @@ namespace AntrenmanTakip
         public virtual DbSet<Mevkiler> Mevkiler { get; set; }
         public virtual DbSet<PortAyari> PortAyari { get; set; }
         public virtual DbSet<Resimler> Resimler { get; set; }
-        public virtual DbSet<Sporcular> Sporcular { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<TopGelisSekilleri> TopGelisSekilleri { get; set; }
         public virtual DbSet<TopKonumlari> TopKonumlari { get; set; }
@@ -47,8 +46,10 @@ namespace AntrenmanTakip
         public virtual DbSet<View_AntrenmanlarCMB> View_AntrenmanlarCMB { get; set; }
         public virtual DbSet<View_Antrenorler> View_Antrenorler { get; set; }
         public virtual DbSet<View_VurusBicimleri> View_VurusBicimleri { get; set; }
-        public virtual DbSet<View_HaftalikBasariliAtis> View_HaftalikBasariliAtis { get; set; }
+        public virtual DbSet<ulkeler> ulkeler { get; set; }
+        public virtual DbSet<Sporcular> Sporcular { get; set; }
         public virtual DbSet<View_AylikBasariliAtis> View_AylikBasariliAtis { get; set; }
+        public virtual DbSet<View_HaftalikBasariliAtis> View_HaftalikBasariliAtis { get; set; }
     
         public virtual int sp_alterdiagram(string diagramname, Nullable<int> owner_id, Nullable<int> version, byte[] definition)
         {

@@ -220,12 +220,6 @@
     <Compile Include="C__EFMigrationsHistory.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="DenemeGrafik.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DenemeGrafik.Designer.cs">
-      <DependentUpon>DenemeGrafik.cs</DependentUpon>
-    </Compile>
     <Compile Include="Diller.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -270,6 +264,12 @@
     </Compile>
     <Compile Include="Formlar\Ayarlar\FrmAyarlar.Designer.cs">
       <DependentUpon>FrmAyarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Ayarlar\FrmAyarlarRaporlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Ayarlar\FrmAyarlarRaporlama.Designer.cs">
+      <DependentUpon>FrmAyarlarRaporlama.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlar\Ayarlar\frmCokluVeriEkleme.cs">
       <SubType>Form</SubType>
@@ -490,9 +490,6 @@
     <Compile Include="VurusBicimleri.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DenemeGrafik.resx">
-      <DependentUpon>DenemeGrafik.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.en.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -534,6 +531,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Ayarlar\FrmAyarlar.resx">
       <DependentUpon>FrmAyarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Ayarlar\FrmAyarlarRaporlama.en.resx">
+      <DependentUpon>FrmAyarlarRaporlama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Ayarlar\FrmAyarlarRaporlama.resx">
+      <DependentUpon>FrmAyarlarRaporlama.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Ayarlar\frmCokluVeriEkleme.resx">
       <DependentUpon>frmCokluVeriEkleme.cs</DependentUpon>

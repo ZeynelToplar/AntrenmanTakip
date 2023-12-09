@@ -117,4 +117,126 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Ulke.HeaderText" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="Ad.HeaderText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Soyad.HeaderText" xml:space="preserve">
+    <value>Surname</value>
+  </data>
+  <data name="Yas.HeaderText" xml:space="preserve">
+    <value>Age</value>
+  </data>
+  <data name="Boy.HeaderText" xml:space="preserve">
+    <value>Height</value>
+  </data>
+  <data name="Kilo.HeaderText" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+  <data name="Mevki.HeaderText" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="DogumTarihi.HeaderText" xml:space="preserve">
+    <value>Date Of Birth</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="gridViewSporcular.Size" type="System.Drawing.Size, System.Drawing">
+    <value>903, 282</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 25</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Practice Type:</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 25</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Selected player:</value>
+  </data>
+  <data name="lblSecilenSporcu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 25</value>
+  </data>
+  <data name="lblSecilenSporcu.Text" xml:space="preserve">
+    <value>No one selected.</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 25</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Chart Type:</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 25</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Ball Position</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 25</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Ball Arrival Type</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>482, 323</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 25</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Shoot Type:</value>
+  </data>
+  <data name="cmbTGS.Location" type="System.Drawing.Point, System.Drawing">
+    <value>342, 351</value>
+  </data>
+  <data name="cmbVB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>478, 351</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 25</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Statistic Type:</value>
+  </data>
+  <data name="lblAy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 478</value>
+  </data>
+  <data name="lblAy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 25</value>
+  </data>
+  <data name="lblAy.Text" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="lblYil.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 478</value>
+  </data>
+  <data name="lblYil.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 25</value>
+  </data>
+  <data name="lblYil.Text" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="btnRaporAl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>419, 461</value>
+  </data>
+  <data name="btnRaporAl.Text" xml:space="preserve">
+    <value>Get Report</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>429, 65</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Note: The month data you enter in the weekly success statistics is only valid for that month.
+It will bring the weekly data.
+
+Note: The year data you entered in the monthly success statistics is only valid for that year.
+It will bring the relevant monthly data.</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Reporting</value>
+  </data>
 </root>

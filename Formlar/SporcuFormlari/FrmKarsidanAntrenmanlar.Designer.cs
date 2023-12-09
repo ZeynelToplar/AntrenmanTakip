@@ -35,6 +35,14 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gridViewAntrenmanlar = new System.Windows.Forms.DataGridView();
+            this.Antrenman = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AtuId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AntrenmanTuru = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AntrenmanSayisi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AtisSayisi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BasariliAtis = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sure = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tarih = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.detaylarıGörToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -60,14 +68,6 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.Antrenman = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AtuId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AntrenmanTuru = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AntrenmanSayisi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AtisSayisi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BasariliAtis = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sure = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tarih = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewAntrenmanlar)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -128,7 +128,55 @@
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.gridViewAntrenmanlar.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gridViewAntrenmanlar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridViewAntrenmanlar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewAntrenmanlar_CellClick);
+            this.gridViewAntrenmanlar.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewAntrenmanlar_CellClick);
+            // 
+            // Antrenman
+            // 
+            resources.ApplyResources(this.Antrenman, "Antrenman");
+            this.Antrenman.Name = "Antrenman";
+            this.Antrenman.ReadOnly = true;
+            // 
+            // AtuId
+            // 
+            resources.ApplyResources(this.AtuId, "AtuId");
+            this.AtuId.Name = "AtuId";
+            this.AtuId.ReadOnly = true;
+            // 
+            // AntrenmanTuru
+            // 
+            resources.ApplyResources(this.AntrenmanTuru, "AntrenmanTuru");
+            this.AntrenmanTuru.Name = "AntrenmanTuru";
+            this.AntrenmanTuru.ReadOnly = true;
+            // 
+            // AntrenmanSayisi
+            // 
+            resources.ApplyResources(this.AntrenmanSayisi, "AntrenmanSayisi");
+            this.AntrenmanSayisi.Name = "AntrenmanSayisi";
+            this.AntrenmanSayisi.ReadOnly = true;
+            // 
+            // AtisSayisi
+            // 
+            resources.ApplyResources(this.AtisSayisi, "AtisSayisi");
+            this.AtisSayisi.Name = "AtisSayisi";
+            this.AtisSayisi.ReadOnly = true;
+            // 
+            // BasariliAtis
+            // 
+            resources.ApplyResources(this.BasariliAtis, "BasariliAtis");
+            this.BasariliAtis.Name = "BasariliAtis";
+            this.BasariliAtis.ReadOnly = true;
+            // 
+            // Sure
+            // 
+            resources.ApplyResources(this.Sure, "Sure");
+            this.Sure.Name = "Sure";
+            this.Sure.ReadOnly = true;
+            // 
+            // Tarih
+            // 
+            resources.ApplyResources(this.Tarih, "Tarih");
+            this.Tarih.Name = "Tarih";
+            this.Tarih.ReadOnly = true;
             // 
             // contextMenuStrip1
             // 
@@ -312,54 +360,6 @@
             this.tableLayoutPanel3.Controls.Add(this.gridViewAntrenmanlar, 1, 0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel3_Paint);
-            // 
-            // Antrenman
-            // 
-            resources.ApplyResources(this.Antrenman, "Antrenman");
-            this.Antrenman.Name = "Antrenman";
-            this.Antrenman.ReadOnly = true;
-            // 
-            // AtuId
-            // 
-            resources.ApplyResources(this.AtuId, "AtuId");
-            this.AtuId.Name = "AtuId";
-            this.AtuId.ReadOnly = true;
-            // 
-            // AntrenmanTuru
-            // 
-            resources.ApplyResources(this.AntrenmanTuru, "AntrenmanTuru");
-            this.AntrenmanTuru.Name = "AntrenmanTuru";
-            this.AntrenmanTuru.ReadOnly = true;
-            // 
-            // AntrenmanSayisi
-            // 
-            resources.ApplyResources(this.AntrenmanSayisi, "AntrenmanSayisi");
-            this.AntrenmanSayisi.Name = "AntrenmanSayisi";
-            this.AntrenmanSayisi.ReadOnly = true;
-            // 
-            // AtisSayisi
-            // 
-            resources.ApplyResources(this.AtisSayisi, "AtisSayisi");
-            this.AtisSayisi.Name = "AtisSayisi";
-            this.AtisSayisi.ReadOnly = true;
-            // 
-            // BasariliAtis
-            // 
-            resources.ApplyResources(this.BasariliAtis, "BasariliAtis");
-            this.BasariliAtis.Name = "BasariliAtis";
-            this.BasariliAtis.ReadOnly = true;
-            // 
-            // Sure
-            // 
-            resources.ApplyResources(this.Sure, "Sure");
-            this.Sure.Name = "Sure";
-            this.Sure.ReadOnly = true;
-            // 
-            // Tarih
-            // 
-            resources.ApplyResources(this.Tarih, "Tarih");
-            this.Tarih.Name = "Tarih";
-            this.Tarih.ReadOnly = true;
             // 
             // FrmKarsidanAntrenmanlar
             // 

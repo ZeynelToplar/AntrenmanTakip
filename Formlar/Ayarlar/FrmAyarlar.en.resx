@@ -179,16 +179,10 @@
     <value>Practices</value>
   </data>
   <data name="ekleToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 22</value>
+    <value>133, 22</value>
   </data>
   <data name="ekleToolStripMenuItem1.Text" xml:space="preserve">
     <value>Single Data</value>
-  </data>
-  <data name="çokluVeriToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 22</value>
-  </data>
-  <data name="çokluVeriToolStripMenuItem.Text" xml:space="preserve">
-    <value>Multiple Data</value>
   </data>
   <data name="serbestVeriToolStripMenuItem.Text" xml:space="preserve">
     <value>Import Data</value>
@@ -198,6 +192,18 @@
   </data>
   <data name="portAyarıToolStripMenuItem.Text" xml:space="preserve">
     <value>Port Setting</value>
+  </data>
+  <data name="raporAlToolStripMenuItem.Text" xml:space="preserve">
+    <value>Get Report</value>
+  </data>
+  <data name="raporlamaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 20</value>
+  </data>
+  <data name="raporlamaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Reporting</value>
+  </data>
+  <data name="ayarlarMenuStrip.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="düzenleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>155, 22</value>
@@ -220,11 +226,17 @@
   <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>156, 70</value>
   </data>
+  <data name="contextMenuStrip1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="button1.ToolTip" xml:space="preserve">
     <value>Refresh</value>
   </data>
   <data name="txtAra.Text" xml:space="preserve">
     <value>Search...</value>
+  </data>
+  <data name="txtAra.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="KullaniciAdi.HeaderText" xml:space="preserve">
     <value>Username</value>
@@ -238,8 +250,17 @@
   <data name="Yetki.HeaderText" xml:space="preserve">
     <value>Authority</value>
   </data>
+  <data name="gridViewKullanicilar.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="tabPageDigerAyarlar.Text" xml:space="preserve">
     <value>User Settings</value>
+  </data>
+  <data name="tabPageDigerAyarlar.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ayarlarTabControl.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -449,5 +470,8 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Settings</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
   </data>
 </root>

@@ -349,7 +349,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
 
         private int AntrenmanEkle(decimal basariliAtis, int tkId, int tgsId, int vbId, decimal sure,DateTime tarih)
         {
-            AntrenmanTurleri antrenamTuru = antrenamTuru = Context._context.AntrenmanTurleri.FirstOrDefault(a => a.TopKonumId == tkId && a.TopGelisSekliId == tgsId && a.VurusBicimiId == vbId); ;
+            AntrenmanTurleri antrenamTuru = antrenamTuru = Context._context.AntrenmanTurleri.FirstOrDefault(a => a.TopKonumId == tkId && a.TopGelisSekliId == tgsId && a.VurusBicimiId == vbId);
 
 
             if (antrenamTuru == null)

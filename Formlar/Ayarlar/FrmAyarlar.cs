@@ -63,6 +63,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
         private FrmTekliVeriEkleme _frmTekliVeriEkleme;
         private frmCokluVeriEkleme _frmCokluVeriEkleme;
         private FrmPortAyari _frmPortAyari;
+        private FrmAyarlarRaporlama _frmAyarlarRaporlama;
         #endregion
         public Kullanicilar kullanici;
         public FrmAyarlar()
@@ -781,9 +782,14 @@ namespace AntrenmanTakip.Formlar.Ayarlar
             }
         }
 
-        private void raporAlToolStripMenuItem_Click(object sender, EventArgs e)
+        private void raporAlToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
+            if (_frmAyarlarRaporlama == null || _frmAyarlarRaporlama.IsDisposed)
+            {
+                _frmAyarlarRaporlama = new FrmAyarlarRaporlama();
+                _frmAyarlarRaporlama.Show();
 
+            }
         }
     }
 }

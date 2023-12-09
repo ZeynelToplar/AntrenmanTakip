@@ -40,7 +40,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnKapat = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,19 +111,11 @@
             this.btnKapat.UseVisualStyleBackColor = true;
             this.btnKapat.Click += new System.EventHandler(this.btnKapat_Click);
             // 
-            // button2
-            // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // FrmGiris
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnKapat);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
@@ -159,6 +150,5 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnKapat;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.Button button2;
     }
 }

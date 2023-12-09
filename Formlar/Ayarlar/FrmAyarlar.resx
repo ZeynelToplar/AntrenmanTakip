@@ -117,362 +117,320 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="ayarlarMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="kişiselAyarlarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 20</value>
-  </data>
-  <data name="kişiselAyarlarToolStripMenuItem.Text" xml:space="preserve">
-    <value>Kişisel Ayarlar</value>
-  </data>
-  <data name="dilSeçenekleriToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 20</value>
-  </data>
-  <data name="dilSeçenekleriToolStripMenuItem.Text" xml:space="preserve">
-    <value>Dil Seçenekleri</value>
-  </data>
-  <data name="kullanıcıToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 20</value>
-  </data>
-  <data name="kullanıcıToolStripMenuItem.Text" xml:space="preserve">
-    <value>Kullanıcı</value>
-  </data>
-  <data name="antrenmanlarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 20</value>
-  </data>
-  <data name="antrenmanlarToolStripMenuItem.Text" xml:space="preserve">
-    <value>Antrenmanlar</value>
-  </data>
-  <data name="serbestVeriToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 20</value>
-  </data>
-  <data name="serbestVeriToolStripMenuItem.Text" xml:space="preserve">
-    <value>Serbest Veri </value>
-  </data>
-  <data name="portAyarıToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 20</value>
-  </data>
-  <data name="portAyarıToolStripMenuItem.Text" xml:space="preserve">
-    <value>Port Ayarı</value>
-  </data>
-  <data name="ayarlarMenuStrip.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="ayarlarMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>639, 24</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ayarlarMenuStrip.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="ayarlarMenuStrip.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;ayarlarMenuStrip.Name" xml:space="preserve">
-    <value>ayarlarMenuStrip</value>
-  </data>
-  <data name="&gt;&gt;ayarlarMenuStrip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ayarlarMenuStrip.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>639, 499</value>
   </data>
   <data name="&gt;&gt;ayarlarMenuStrip.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="bilgilerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gridViewKullanicilar.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>50</value>
   </data>
-  <data name="bilgilerToolStripMenuItem.Text" xml:space="preserve">
-    <value>Bilgiler</value>
+  <data name="ayarlarMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>639, 24</value>
   </data>
-  <data name="şifreDeğişikliğiToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="şifreDeğişikliğiToolStripMenuItem.Text" xml:space="preserve">
-    <value>Şifre Değişikliği</value>
-  </data>
-  <data name="ekleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 22</value>
-  </data>
-  <data name="ekleToolStripMenuItem.Text" xml:space="preserve">
-    <value>Ekle</value>
-  </data>
-  <data name="diğerAyarlarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 22</value>
-  </data>
-  <data name="diğerAyarlarToolStripMenuItem.Text" xml:space="preserve">
-    <value>Diğer Ayarlar</value>
-  </data>
-  <data name="sporcuAtaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 22</value>
-  </data>
-  <data name="sporcuAtaToolStripMenuItem.Text" xml:space="preserve">
-    <value>Antrenöre Sporcu Atama</value>
-  </data>
-  <data name="görüntüleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 22</value>
-  </data>
-  <data name="görüntüleToolStripMenuItem.Text" xml:space="preserve">
-    <value>Görüntüle</value>
-  </data>
-  <data name="ekleToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 22</value>
-  </data>
-  <data name="ekleToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Tekli Veri</value>
-  </data>
-  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>132, 17</value>
-  </metadata>
-  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 70</value>
-  </data>
-  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
-    <value>contextMenuStrip1</value>
-  </data>
-  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="düzenleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 22</value>
-  </data>
-  <data name="düzenleToolStripMenuItem.Text" xml:space="preserve">
-    <value>Düzenle</value>
-  </data>
-  <data name="silToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 22</value>
-  </data>
-  <data name="silToolStripMenuItem.Text" xml:space="preserve">
-    <value>Sil</value>
-  </data>
-  <data name="şifreDeğişikliğiToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 22</value>
-  </data>
-  <data name="şifreDeğişikliğiToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Şifre Sıfırlama</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;ayarlarTabControl.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;button1.Parent" xml:space="preserve">
     <value>tabPageDigerAyarlar</value>
   </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+  <data name="tabPageDigerAyarlar.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;txtAra.Name" xml:space="preserve">
-    <value>txtAra</value>
+  <data name="button1.ToolTip" xml:space="preserve">
+    <value>Yenile</value>
   </data>
-  <data name="&gt;&gt;txtAra.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtAra.Parent" xml:space="preserve">
-    <value>tabPageDigerAyarlar</value>
-  </data>
-  <data name="&gt;&gt;txtAra.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;gridViewKullanicilar.Name" xml:space="preserve">
-    <value>gridViewKullanicilar</value>
-  </data>
-  <data name="&gt;&gt;gridViewKullanicilar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gridViewKullanicilar.Parent" xml:space="preserve">
-    <value>tabPageDigerAyarlar</value>
-  </data>
-  <data name="&gt;&gt;gridViewKullanicilar.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tabPageDigerAyarlar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+  <data name="&gt;&gt;raporAlToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tabPageDigerAyarlar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="tabPageDigerAyarlar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>631, 445</value>
-  </data>
-  <data name="tabPageDigerAyarlar.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tabPageDigerAyarlar.Text" xml:space="preserve">
-    <value>Kullanıcı Ayarları</value>
-  </data>
-  <data name="&gt;&gt;tabPageDigerAyarlar.Name" xml:space="preserve">
-    <value>tabPageDigerAyarlar</value>
-  </data>
-  <data name="&gt;&gt;tabPageDigerAyarlar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageDigerAyarlar.Parent" xml:space="preserve">
-    <value>ayarlarTabControl</value>
-  </data>
-  <data name="&gt;&gt;tabPageDigerAyarlar.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="ayarlarTabControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 27</value>
-  </data>
-  <data name="ayarlarTabControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>639, 471</value>
-  </data>
-  <data name="ayarlarTabControl.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;ayarlarTabControl.Name" xml:space="preserve">
-    <value>ayarlarTabControl</value>
-  </data>
   <data name="&gt;&gt;ayarlarTabControl.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ayarlarTabControl.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="dilSeçenekleriToolStripMenuItem.Text" xml:space="preserve">
+    <value>Dil Seçenekleri</value>
   </data>
-  <data name="&gt;&gt;ayarlarTabControl.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="Id.HeaderText" xml:space="preserve">
+    <value>Id</value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>287, 17</value>
-  </metadata>
-  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="kullanıcıToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 20</value>
   </data>
-  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;silToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 8</value>
+  <data name="kişiselAyarlarToolStripMenuItem.Text" xml:space="preserve">
+    <value>Kişisel Ayarlar</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 51</value>
+  <data name="&gt;&gt;serbestVeriToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="&gt;&gt;şifreDeğişikliğiToolStripMenuItem1.Name" xml:space="preserve">
+    <value>şifreDeğişikliğiToolStripMenuItem1</value>
   </data>
-  <data name="button1.ToolTip" xml:space="preserve">
-    <value>Yenile</value>
+  <data name="&gt;&gt;diğerAyarlarToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>tabPageDigerAyarlar</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="txtAra.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="txtAra.Location" type="System.Drawing.Point, System.Drawing">
-    <value>487, 19</value>
+  <data name="&gt;&gt;bilgilerToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="txtAra.Size" type="System.Drawing.Size, System.Drawing">
     <value>141, 26</value>
   </data>
+  <data name="&gt;&gt;portAyarıToolStripMenuItem.Name" xml:space="preserve">
+    <value>portAyarıToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="düzenleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 22</value>
+  </data>
+  <data name="ekleToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Tekli Veri</value>
+  </data>
   <data name="txtAra.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="txtAra.Text" xml:space="preserve">
-    <value>Ara...</value>
+  <data name="kullanıcıToolStripMenuItem.Text" xml:space="preserve">
+    <value>Kullanıcı</value>
   </data>
-  <data name="&gt;&gt;txtAra.Name" xml:space="preserve">
-    <value>txtAra</value>
+  <data name="ayarlarMenuStrip.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;txtAra.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtAra.Parent" xml:space="preserve">
-    <value>tabPageDigerAyarlar</value>
+  <data name="&gt;&gt;KullaniciAdi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtAra.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="gridViewKullanicilar.ColumnHeadersHeight" type="System.Int32, mscorlib">
-    <value>50</value>
+  <data name="antrenmanlarToolStripMenuItem.Text" xml:space="preserve">
+    <value>Antrenmanlar</value>
   </data>
-  <metadata name="Id.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Id.HeaderText" xml:space="preserve">
-    <value>Id</value>
+  <data name="serbestVeriToolStripMenuItem.Text" xml:space="preserve">
+    <value>Serbest Veri </value>
   </data>
-  <data name="Id.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;tabPageDigerAyarlar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <metadata name="KullaniciAdi.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="KullaniciAdi.HeaderText" xml:space="preserve">
-    <value>Kullanıcı Adı</value>
-  </data>
-  <metadata name="Ad.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Ad.HeaderText" xml:space="preserve">
-    <value>Ad</value>
-  </data>
-  <metadata name="Soyad.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Soyad.HeaderText" xml:space="preserve">
-    <value>Soyad</value>
-  </data>
-  <metadata name="Yetki.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Yetki.HeaderText" xml:space="preserve">
-    <value>Yetki</value>
-  </data>
-  <data name="gridViewKullanicilar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 63</value>
-  </data>
-  <data name="gridViewKullanicilar.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
-    <value>Vertical</value>
-  </data>
-  <data name="gridViewKullanicilar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>635, 386</value>
-  </data>
-  <data name="gridViewKullanicilar.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;gridViewKullanicilar.Name" xml:space="preserve">
-    <value>gridViewKullanicilar</value>
-  </data>
-  <data name="&gt;&gt;gridViewKullanicilar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gridViewKullanicilar.Parent" xml:space="preserve">
-    <value>tabPageDigerAyarlar</value>
-  </data>
-  <data name="&gt;&gt;gridViewKullanicilar.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>287, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  <data name="sporcuAtaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Antrenöre Sporcu Atama</value>
   </data>
   <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>639, 499</value>
+  <data name="raporlamaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Raporlama</value>
+  </data>
+  <data name="portAyarıToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 20</value>
+  </data>
+  <data name="&gt;&gt;ekleToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gridViewKullanicilar.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewKullanicilar.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Soyad.HeaderText" xml:space="preserve">
+    <value>Soyad</value>
+  </data>
+  <data name="&gt;&gt;raporlamaToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPageDigerAyarlar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>631, 445</value>
+  </data>
+  <data name="&gt;&gt;tabPageDigerAyarlar.Name" xml:space="preserve">
+    <value>tabPageDigerAyarlar</value>
+  </data>
+  <data name="ayarlarTabControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>639, 471</value>
+  </data>
+  <data name="&gt;&gt;ayarlarMenuStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;antrenmanlarToolStripMenuItem.Name" xml:space="preserve">
+    <value>antrenmanlarToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;sporcuAtaToolStripMenuItem.Name" xml:space="preserve">
+    <value>sporcuAtaToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;Id.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Ad.HeaderText" xml:space="preserve">
+    <value>Ad</value>
+  </data>
+  <data name="txtAra.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="ekleToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 22</value>
+  </data>
+  <data name="&gt;&gt;ekleToolStripMenuItem1.Name" xml:space="preserve">
+    <value>ekleToolStripMenuItem1</value>
+  </data>
+  <data name="serbestVeriToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 20</value>
+  </data>
+  <data name="silToolStripMenuItem.Text" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 51</value>
+  </data>
+  <data name="&gt;&gt;dilSeçenekleriToolStripMenuItem.Name" xml:space="preserve">
+    <value>dilSeçenekleriToolStripMenuItem</value>
+  </data>
+  <data name="düzenleToolStripMenuItem.Text" xml:space="preserve">
+    <value>Düzenle</value>
+  </data>
+  <data name="&gt;&gt;diğerAyarlarToolStripMenuItem.Name" xml:space="preserve">
+    <value>diğerAyarlarToolStripMenuItem</value>
+  </data>
+  <data name="txtAra.Location" type="System.Drawing.Point, System.Drawing">
+    <value>487, 19</value>
+  </data>
+  <data name="&gt;&gt;txtAra.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="diğerAyarlarToolStripMenuItem.Text" xml:space="preserve">
+    <value>Diğer Ayarlar</value>
+  </data>
+  <data name="ayarlarTabControl.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FrmAyarlar</value>
+  </data>
+  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;kişiselAyarlarToolStripMenuItem.Name" xml:space="preserve">
+    <value>kişiselAyarlarToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;gridViewKullanicilar.Name" xml:space="preserve">
+    <value>gridViewKullanicilar</value>
+  </data>
+  <data name="tabPageDigerAyarlar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;serbestVeriToolStripMenuItem.Name" xml:space="preserve">
+    <value>serbestVeriToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;raporlamaToolStripMenuItem.Name" xml:space="preserve">
+    <value>raporlamaToolStripMenuItem</value>
+  </data>
+  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="txtAra.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Ayarlar</value>
+  </data>
+  <data name="&gt;&gt;Ad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Id.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tabPageDigerAyarlar.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="antrenmanlarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 20</value>
+  </data>
+  <data name="&gt;&gt;ayarlarTabControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;kişiselAyarlarToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ayarlarTabControl.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="ekleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 22</value>
+  </data>
+  <data name="&gt;&gt;tabPageDigerAyarlar.Parent" xml:space="preserve">
+    <value>ayarlarTabControl</value>
+  </data>
+  <data name="tabPageDigerAyarlar.Text" xml:space="preserve">
+    <value>Kullanıcı Ayarları</value>
+  </data>
+  <data name="şifreDeğişikliğiToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 22</value>
+  </data>
+  <data name="&gt;&gt;antrenmanlarToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="KullaniciAdi.HeaderText" xml:space="preserve">
+    <value>Kullanıcı Adı</value>
+  </data>
+  <data name="&gt;&gt;dilSeçenekleriToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;silToolStripMenuItem.Name" xml:space="preserve">
+    <value>silToolStripMenuItem</value>
+  </data>
+  <data name="bilgilerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 22</value>
+  </data>
+  <data name="&gt;&gt;ayarlarTabControl.Name" xml:space="preserve">
+    <value>ayarlarTabControl</value>
+  </data>
+  <data name="&gt;&gt;Soyad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bilgilerToolStripMenuItem.Text" xml:space="preserve">
+    <value>Bilgiler</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ekleToolStripMenuItem.Name" xml:space="preserve">
+    <value>ekleToolStripMenuItem</value>
+  </data>
+  <data name="raporlamaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 20</value>
+  </data>
+  <data name="&gt;&gt;Soyad.Name" xml:space="preserve">
+    <value>Soyad</value>
+  </data>
+  <data name="&gt;&gt;düzenleToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ayarlarMenuStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ayarlarMenuStrip.Name" xml:space="preserve">
+    <value>ayarlarMenuStrip</value>
+  </data>
+  <data name="şifreDeğişikliğiToolStripMenuItem.Text" xml:space="preserve">
+    <value>Şifre Değişikliği</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -680,148 +638,199 @@
         UWjhtIuG3/gfzQGa+2QwjpcAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Ayarlar</value>
-  </data>
-  <data name="&gt;&gt;kişiselAyarlarToolStripMenuItem.Name" xml:space="preserve">
-    <value>kişiselAyarlarToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;kişiselAyarlarToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bilgilerToolStripMenuItem.Name" xml:space="preserve">
-    <value>bilgilerToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;bilgilerToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;şifreDeğişikliğiToolStripMenuItem.Name" xml:space="preserve">
-    <value>şifreDeğişikliğiToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;şifreDeğişikliğiToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dilSeçenekleriToolStripMenuItem.Name" xml:space="preserve">
-    <value>dilSeçenekleriToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;dilSeçenekleriToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;kullanıcıToolStripMenuItem.Name" xml:space="preserve">
-    <value>kullanıcıToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;kullanıcıToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ekleToolStripMenuItem.Name" xml:space="preserve">
-    <value>ekleToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;ekleToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;diğerAyarlarToolStripMenuItem.Name" xml:space="preserve">
-    <value>diğerAyarlarToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;diğerAyarlarToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;sporcuAtaToolStripMenuItem.Name" xml:space="preserve">
-    <value>sporcuAtaToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;sporcuAtaToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;antrenmanlarToolStripMenuItem.Name" xml:space="preserve">
-    <value>antrenmanlarToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;antrenmanlarToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;görüntüleToolStripMenuItem.Name" xml:space="preserve">
-    <value>görüntüleToolStripMenuItem</value>
-  </data>
   <data name="&gt;&gt;görüntüleToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;serbestVeriToolStripMenuItem.Name" xml:space="preserve">
-    <value>serbestVeriToolStripMenuItem</value>
+  <data name="şifreDeğişikliğiToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 22</value>
   </data>
-  <data name="&gt;&gt;serbestVeriToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Yetki.HeaderText" xml:space="preserve">
+    <value>Yetki</value>
   </data>
-  <data name="&gt;&gt;ekleToolStripMenuItem1.Name" xml:space="preserve">
-    <value>ekleToolStripMenuItem1</value>
+  <data name="gridViewKullanicilar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>635, 386</value>
   </data>
-  <data name="&gt;&gt;ekleToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;portAyarıToolStripMenuItem.Name" xml:space="preserve">
-    <value>portAyarıToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;portAyarıToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;düzenleToolStripMenuItem.Name" xml:space="preserve">
-    <value>düzenleToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;düzenleToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;silToolStripMenuItem.Name" xml:space="preserve">
-    <value>silToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;silToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;şifreDeğişikliğiToolStripMenuItem1.Name" xml:space="preserve">
-    <value>şifreDeğişikliğiToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;şifreDeğişikliğiToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Id.Name" xml:space="preserve">
-    <value>Id</value>
-  </data>
-  <data name="&gt;&gt;Id.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;txtAra.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;KullaniciAdi.Name" xml:space="preserve">
     <value>KullaniciAdi</value>
   </data>
-  <data name="&gt;&gt;KullaniciAdi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="portAyarıToolStripMenuItem.Text" xml:space="preserve">
+    <value>Port Ayarı</value>
   </data>
-  <data name="&gt;&gt;Ad.Name" xml:space="preserve">
-    <value>Ad</value>
+  <data name="&gt;&gt;gridViewKullanicilar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Ad.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;şifreDeğişikliğiToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Soyad.Name" xml:space="preserve">
-    <value>Soyad</value>
+  <data name="gridViewKullanicilar.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
   </data>
-  <data name="&gt;&gt;Soyad.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;şifreDeğişikliğiToolStripMenuItem.Name" xml:space="preserve">
+    <value>şifreDeğişikliğiToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;Yetki.Name" xml:space="preserve">
-    <value>Yetki</value>
+  <data name="&gt;&gt;gridViewKullanicilar.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;Yetki.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 70</value>
+  </data>
+  <data name="silToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 22</value>
+  </data>
+  <data name="ayarlarTabControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="sporcuAtaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 22</value>
+  </data>
+  <data name="görüntüleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 22</value>
+  </data>
+  <data name="dilSeçenekleriToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 20</value>
+  </data>
+  <data name="&gt;&gt;gridViewKullanicilar.Parent" xml:space="preserve">
+    <value>tabPageDigerAyarlar</value>
+  </data>
+  <data name="diğerAyarlarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 22</value>
+  </data>
+  <data name="&gt;&gt;tabPageDigerAyarlar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ayarlarMenuStrip.Text" xml:space="preserve">
+    <value>menuStrip1</value>
   </data>
   <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
     <value>toolTip1</value>
   </data>
-  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="görüntüleToolStripMenuItem.Text" xml:space="preserve">
+    <value>Görüntüle</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FrmAyarlar</value>
+  <data name="kişiselAyarlarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 20</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;Id.Name" xml:space="preserve">
+    <value>Id</value>
   </data>
+  <data name="contextMenuStrip1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;sporcuAtaToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;şifreDeğişikliğiToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;ekleToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gridViewKullanicilar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 63</value>
+  </data>
+  <data name="&gt;&gt;txtAra.Parent" xml:space="preserve">
+    <value>tabPageDigerAyarlar</value>
+  </data>
+  <data name="ayarlarMenuStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ekleToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ekle</value>
+  </data>
+  <data name="&gt;&gt;ayarlarMenuStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="txtAra.Text" xml:space="preserve">
+    <value>Ara...</value>
+  </data>
+  <data name="&gt;&gt;Yetki.Name" xml:space="preserve">
+    <value>Yetki</value>
+  </data>
+  <data name="şifreDeğişikliğiToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Şifre Sıfırlama</value>
+  </data>
+  <data name="&gt;&gt;bilgilerToolStripMenuItem.Name" xml:space="preserve">
+    <value>bilgilerToolStripMenuItem</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="raporAlToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;kullanıcıToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 8</value>
+  </data>
+  <data name="&gt;&gt;düzenleToolStripMenuItem.Name" xml:space="preserve">
+    <value>düzenleToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;portAyarıToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="raporAlToolStripMenuItem.Text" xml:space="preserve">
+    <value>Rapor Al</value>
+  </data>
+  <data name="&gt;&gt;görüntüleToolStripMenuItem.Name" xml:space="preserve">
+    <value>görüntüleToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
+    <value>contextMenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;txtAra.Name" xml:space="preserve">
+    <value>txtAra</value>
+  </data>
+  <data name="&gt;&gt;Yetki.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;raporAlToolStripMenuItem.Name" xml:space="preserve">
+    <value>raporAlToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;Ad.Name" xml:space="preserve">
+    <value>Ad</value>
+  </data>
+  <data name="&gt;&gt;kullanıcıToolStripMenuItem.Name" xml:space="preserve">
+    <value>kullanıcıToolStripMenuItem</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <metadata name="KullaniciAdi.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>132, 17</value>
+  </metadata>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>287, 17</value>
+  </metadata>
+  <metadata name="Id.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Soyad.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ayarlarMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="Ad.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en</value>
+  </metadata>
+  <metadata name="Yetki.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

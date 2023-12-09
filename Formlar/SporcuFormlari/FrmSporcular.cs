@@ -517,11 +517,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
 
         private void numKilo_TextChanged(object sender, EventArgs e)
         {
-            if (Regex.IsMatch(numKilo.Text, "[^0-9]"))
-            {
-                InfService.ShowMessage("Lütfen sadece sayı girişi yapınız.", "Please enter only numbers.");
-                numKilo.Text = numKilo.Text.Remove(numKilo.Text.Length - 1);
-            }
+
         }
 
         private void numBoy_TextChanged(object sender, EventArgs e)

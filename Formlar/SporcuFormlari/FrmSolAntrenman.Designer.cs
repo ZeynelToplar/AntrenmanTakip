@@ -54,12 +54,6 @@
             this.btnFiltrele = new System.Windows.Forms.Button();
             this.btnSifirla = new System.Windows.Forms.Button();
             this.gridViewAntrenmanlar = new System.Windows.Forms.DataGridView();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.detaylarıGörToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Antrenman = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AtuId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AntrenmanTuru = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,6 +62,12 @@
             this.BasariliAtis = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sure = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tarih = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.detaylarıGörToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -227,6 +227,8 @@
             // 
             // gridViewAntrenmanlar
             // 
+            this.gridViewAntrenmanlar.AllowUserToAddRows = false;
+            this.gridViewAntrenmanlar.AllowUserToDeleteRows = false;
             resources.ApplyResources(this.gridViewAntrenmanlar, "gridViewAntrenmanlar");
             this.gridViewAntrenmanlar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridViewAntrenmanlar.BackgroundColor = System.Drawing.Color.White;
@@ -260,6 +262,7 @@
             this.gridViewAntrenmanlar.DefaultCellStyle = dataGridViewCellStyle2;
             this.gridViewAntrenmanlar.MultiSelect = false;
             this.gridViewAntrenmanlar.Name = "gridViewAntrenmanlar";
+            this.gridViewAntrenmanlar.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -271,7 +274,55 @@
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.gridViewAntrenmanlar.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gridViewAntrenmanlar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridViewAntrenmanlar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewAntrenmanlar_CellClick);
+            this.gridViewAntrenmanlar.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewAntrenmanlar_CellClick);
+            // 
+            // Antrenman
+            // 
+            resources.ApplyResources(this.Antrenman, "Antrenman");
+            this.Antrenman.Name = "Antrenman";
+            this.Antrenman.ReadOnly = true;
+            // 
+            // AtuId
+            // 
+            resources.ApplyResources(this.AtuId, "AtuId");
+            this.AtuId.Name = "AtuId";
+            this.AtuId.ReadOnly = true;
+            // 
+            // AntrenmanTuru
+            // 
+            resources.ApplyResources(this.AntrenmanTuru, "AntrenmanTuru");
+            this.AntrenmanTuru.Name = "AntrenmanTuru";
+            this.AntrenmanTuru.ReadOnly = true;
+            // 
+            // AntrenmanSayisi
+            // 
+            resources.ApplyResources(this.AntrenmanSayisi, "AntrenmanSayisi");
+            this.AntrenmanSayisi.Name = "AntrenmanSayisi";
+            this.AntrenmanSayisi.ReadOnly = true;
+            // 
+            // AtisSayisi
+            // 
+            resources.ApplyResources(this.AtisSayisi, "AtisSayisi");
+            this.AtisSayisi.Name = "AtisSayisi";
+            this.AtisSayisi.ReadOnly = true;
+            // 
+            // BasariliAtis
+            // 
+            resources.ApplyResources(this.BasariliAtis, "BasariliAtis");
+            this.BasariliAtis.Name = "BasariliAtis";
+            this.BasariliAtis.ReadOnly = true;
+            // 
+            // Sure
+            // 
+            resources.ApplyResources(this.Sure, "Sure");
+            this.Sure.Name = "Sure";
+            this.Sure.ReadOnly = true;
+            // 
+            // Tarih
+            // 
+            resources.ApplyResources(this.Tarih, "Tarih");
+            this.Tarih.Name = "Tarih";
+            this.Tarih.ReadOnly = true;
             // 
             // tableLayoutPanel1
             // 
@@ -306,46 +357,6 @@
             this.detaylarıGörToolStripMenuItem.Name = "detaylarıGörToolStripMenuItem";
             resources.ApplyResources(this.detaylarıGörToolStripMenuItem, "detaylarıGörToolStripMenuItem");
             this.detaylarıGörToolStripMenuItem.Click += new System.EventHandler(this.detaylarıGörToolStripMenuItem_Click);
-            // 
-            // Antrenman
-            // 
-            resources.ApplyResources(this.Antrenman, "Antrenman");
-            this.Antrenman.Name = "Antrenman";
-            // 
-            // AtuId
-            // 
-            resources.ApplyResources(this.AtuId, "AtuId");
-            this.AtuId.Name = "AtuId";
-            // 
-            // AntrenmanTuru
-            // 
-            resources.ApplyResources(this.AntrenmanTuru, "AntrenmanTuru");
-            this.AntrenmanTuru.Name = "AntrenmanTuru";
-            // 
-            // AntrenmanSayisi
-            // 
-            resources.ApplyResources(this.AntrenmanSayisi, "AntrenmanSayisi");
-            this.AntrenmanSayisi.Name = "AntrenmanSayisi";
-            // 
-            // AtisSayisi
-            // 
-            resources.ApplyResources(this.AtisSayisi, "AtisSayisi");
-            this.AtisSayisi.Name = "AtisSayisi";
-            // 
-            // BasariliAtis
-            // 
-            resources.ApplyResources(this.BasariliAtis, "BasariliAtis");
-            this.BasariliAtis.Name = "BasariliAtis";
-            // 
-            // Sure
-            // 
-            resources.ApplyResources(this.Sure, "Sure");
-            this.Sure.Name = "Sure";
-            // 
-            // Tarih
-            // 
-            resources.ApplyResources(this.Tarih, "Tarih");
-            this.Tarih.Name = "Tarih";
             // 
             // FrmSolAntrenman
             // 

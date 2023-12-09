@@ -1115,18 +1115,6 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Karşıdan Antrenmanlar</value>
   </data>
-  <data name="&gt;&gt;detaylarıGörToolStripMenuItem.Name" xml:space="preserve">
-    <value>detaylarıGörToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;detaylarıGörToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
-    <value>toolTip1</value>
-  </data>
-  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;Antrenman.Name" xml:space="preserve">
     <value>Antrenman</value>
   </data>
@@ -1174,6 +1162,18 @@
   </data>
   <data name="&gt;&gt;Tarih.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;detaylarıGörToolStripMenuItem.Name" xml:space="preserve">
+    <value>detaylarıGörToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;detaylarıGörToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
+    <value>toolTip1</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FrmKarsidanAntrenmanlar</value>

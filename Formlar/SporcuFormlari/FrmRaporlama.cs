@@ -17,7 +17,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
     {
         public int sporcuId = Context.sporcu.Id;
         public int antrenmanTuruId;
-
+        public DateTime tarih;
         private FrmGrafikler _frmGrafikler;
 
         public FrmRaporlama()
@@ -37,6 +37,8 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             {
                 _frmGrafikler = new FrmGrafikler();
                 _frmGrafikler.antrenmanTuruId = antrenmanTuruId;
+                _frmGrafikler.month = tarih.Month;
+                _frmGrafikler.year = tarih.Year;
                 _frmGrafikler.chartType = cmbGrafikTuru.SelectedIndex;
                 _frmGrafikler.statisticType = cmbIstatistikTuru.SelectedIndex;
                 _frmGrafikler.Show();

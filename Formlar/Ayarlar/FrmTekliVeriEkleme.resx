@@ -161,9 +161,6 @@
   <data name="rdoBasarisiz1.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="groupBox9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 62</value>
-  </data>
   <data name="&gt;&gt;rdoBasarili8.Parent" xml:space="preserve">
     <value>groupBox8</value>
   </data>
@@ -176,17 +173,14 @@
   <data name="comboBox9.Items5" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;btnEkle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="comboBox1.Items1" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;rdoBasarili2.Name" xml:space="preserve">
     <value>rdoBasarili2</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Süre (Saniye):</value>
-  </data>
-  <data name="label12.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
   </data>
   <data name="rdoBasarisiz10.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 17</value>
@@ -249,9 +243,6 @@
   <data name="btnTemizle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 20pt</value>
   </data>
-  <data name="label10.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
     <value>590, 538</value>
   </data>
@@ -264,8 +255,8 @@
   <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
     <value>textBox1</value>
   </data>
-  <data name="&gt;&gt;cmbVurusBicimleri.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;Kilo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>152, 37</value>
@@ -294,14 +285,8 @@
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="&gt;&gt;Kilo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Myanmar Text, 15.75pt</value>
-  </data>
-  <data name="btnTemizle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 57</value>
   </data>
   <data name="rdoBasarisiz2.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 17</value>
@@ -315,14 +300,17 @@
   <data name="rdoBasarisiz7.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
+  <data name="&gt;&gt;btnEkle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="rdoBasarisiz10.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
   <data name="rdoBasarisiz9.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 42</value>
   </data>
-  <data name="rdoBasarili3.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cmbTopKonumlari.ZOrder" xml:space="preserve">
     <value>36</value>
@@ -332,6 +320,9 @@
   </data>
   <data name="groupBox6.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
+  </data>
+  <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -351,8 +342,8 @@
   <data name="&gt;&gt;label11.Name" xml:space="preserve">
     <value>label11</value>
   </data>
-  <data name="rdoBasarili10.Text" xml:space="preserve">
-    <value>Başarılı</value>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
   </data>
   <data name="rdoBasarisiz7.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 17</value>
@@ -393,14 +384,17 @@
   <data name="&gt;&gt;groupBox7.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
   <data name="comboBox8.Location" type="System.Drawing.Point, System.Drawing">
     <value>594, 561</value>
   </data>
   <data name="comboBox10.Items" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="comboBox8.Items3" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="&gt;&gt;rdoBasarisiz5.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -423,6 +417,9 @@
   <data name="rdoBasarili7.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
+  <data name="&gt;&gt;comboBox8.Name" xml:space="preserve">
+    <value>comboBox8</value>
+  </data>
   <data name="&gt;&gt;rdoBasarili4.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
@@ -435,8 +432,8 @@
   <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;rdoBasarili1.Name" xml:space="preserve">
-    <value>rdoBasarili1</value>
+  <data name="&gt;&gt;groupBox9.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="rdoBasarili4.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 17</value>
@@ -483,8 +480,8 @@
   <data name="&gt;&gt;comboBox7.Name" xml:space="preserve">
     <value>comboBox7</value>
   </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FrmTekliVeriEkleme</value>
   </data>
   <data name="&gt;&gt;groupBox6.Name" xml:space="preserve">
     <value>groupBox6</value>
@@ -495,8 +492,8 @@
   <data name="rdoBasarili9.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 17</value>
   </data>
-  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>15</value>
+  <data name="&gt;&gt;Mevki.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -534,8 +531,8 @@
   <data name="&gt;&gt;Yas.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;rdoBasarisiz4.Parent" xml:space="preserve">
-    <value>groupBox4</value>
+  <data name="&gt;&gt;btnTemizle.ZOrder" xml:space="preserve">
+    <value>31</value>
   </data>
   <data name="rdoBasarili9.Text" xml:space="preserve">
     <value>Başarılı</value>
@@ -552,8 +549,8 @@
   <data name="rdoBasarili1.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="btnEkle.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
+  <data name="&gt;&gt;cmbVurusBicimleri.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="rdoBasarili6.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 19</value>
@@ -566,6 +563,9 @@
   </data>
   <data name="comboBox5.Items2" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="&gt;&gt;rdoBasarisiz9.Parent" xml:space="preserve">
+    <value>groupBox9</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
     <value>267, 538</value>
@@ -657,9 +657,6 @@
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 670</value>
   </data>
-  <data name="rdoBasarisiz6.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
   <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
@@ -711,14 +708,23 @@
   <data name="&gt;&gt;cmbVurusBicimleri.Name" xml:space="preserve">
     <value>cmbVurusBicimleri</value>
   </data>
+  <data name="btnEkle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20pt</value>
+  </data>
   <data name="&gt;&gt;comboBox3.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="btnEkle.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
   </data>
   <data name="&gt;&gt;comboBox9.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>507, 538</value>
+  <data name="&gt;&gt;rdoBasarili1.Name" xml:space="preserve">
+    <value>rdoBasarili1</value>
+  </data>
+  <data name="comboBox10.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="&gt;&gt;Kilo.Name" xml:space="preserve">
     <value>Kilo</value>
@@ -771,17 +777,14 @@
   <data name="&gt;&gt;numSure.Name" xml:space="preserve">
     <value>numSure</value>
   </data>
-  <data name="&gt;&gt;label13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
   <data name="comboBox4.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="groupBox9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>677, 588</value>
+  <data name="&gt;&gt;rdoBasarisiz10.Name" xml:space="preserve">
+    <value>rdoBasarisiz10</value>
   </data>
   <data name="&gt;&gt;gridViewSporcular.Name" xml:space="preserve">
     <value>gridViewSporcular</value>
@@ -813,11 +816,8 @@
   <data name="rdoBasarili6.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 17</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="comboBox6.Items5" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;rdoBasarili10.Parent" xml:space="preserve">
+    <value>groupBox10</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -837,12 +837,6 @@
   <data name="rdoBasarisiz4.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 42</value>
   </data>
-  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 62</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
   <data name="&gt;&gt;rdoBasarisiz4.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -854,6 +848,9 @@
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
+  </data>
+  <data name="groupBox9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>677, 588</value>
   </data>
   <data name="numSure.Location" type="System.Drawing.Point, System.Drawing">
     <value>159, 674</value>
@@ -936,9 +933,6 @@
   <data name="&gt;&gt;rdoBasarili9.Parent" xml:space="preserve">
     <value>groupBox9</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FrmTekliVeriEkleme</value>
-  </data>
   <data name="&gt;&gt;groupBox8.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -975,8 +969,8 @@
   <data name="&gt;&gt;btnEkle.ZOrder" xml:space="preserve">
     <value>32</value>
   </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 62</value>
   </data>
   <data name="&gt;&gt;rdoBasarisiz9.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -999,8 +993,8 @@
   <data name="&gt;&gt;comboBox2.Name" xml:space="preserve">
     <value>comboBox2</value>
   </data>
-  <data name="&gt;&gt;comboBox8.Name" xml:space="preserve">
-    <value>comboBox8</value>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cmbVurusBicimleri.ZOrder" xml:space="preserve">
     <value>34</value>
@@ -1032,9 +1026,6 @@
   <data name="label2.Text" xml:space="preserve">
     <value>Antrenman Türünü Seçiniz:</value>
   </data>
-  <data name="&gt;&gt;rdoBasarili2.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
   <data name="comboBox9.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
@@ -1052,9 +1043,6 @@
   </data>
   <data name="cmbTopGelisSekli.Location" type="System.Drawing.Point, System.Drawing">
     <value>494, 484</value>
-  </data>
-  <data name="&gt;&gt;cmbVurusBicimleri.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="rdoBasarili8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1089,14 +1077,17 @@
   <data name="groupBox8.Location" type="System.Drawing.Point, System.Drawing">
     <value>594, 588</value>
   </data>
-  <data name="comboBox1.Items1" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="&gt;&gt;gridViewSporcular.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="comboBox6.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="rdoBasarili3.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="rdoBasarili6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1124,6 +1115,9 @@
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>41</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="rdoBasarisiz7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1167,8 +1161,8 @@
   <data name="&gt;&gt;rdoBasarisiz2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+  <data name="cmbTopKonumlari.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="rdoBasarisiz8.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 42</value>
@@ -1181,9 +1175,6 @@
   </data>
   <data name="comboBox2.Items1" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="&gt;&gt;rdoBasarili10.Parent" xml:space="preserve">
-    <value>groupBox10</value>
   </data>
   <data name="&gt;&gt;dateTimePicker1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1236,8 +1227,8 @@
   <data name="&gt;&gt;Boy.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnEkle.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 62</value>
   </data>
   <data name="comboBox8.Items5" xml:space="preserve">
     <value>6</value>
@@ -1260,6 +1251,9 @@
   <data name="&gt;&gt;comboBox6.Name" xml:space="preserve">
     <value>comboBox6</value>
   </data>
+  <data name="comboBox8.Items3" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="&gt;&gt;groupBox8.Name" xml:space="preserve">
     <value>groupBox8</value>
   </data>
@@ -1278,11 +1272,11 @@
   <data name="&gt;&gt;rdoBasarisiz2.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 62</value>
-  </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;rdoBasarili5.Name" xml:space="preserve">
+    <value>rdoBasarili5</value>
   </data>
   <data name="groupBox7.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -1293,17 +1287,17 @@
   <data name="&gt;&gt;rdoBasarili5.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="comboBox6.Items5" xml:space="preserve">
+    <value>6</value>
+  </data>
   <data name="rdoBasarili9.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 19</value>
   </data>
   <data name="&gt;&gt;rdoBasarili6.Name" xml:space="preserve">
     <value>rdoBasarili6</value>
   </data>
-  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;btnTemizle.ZOrder" xml:space="preserve">
-    <value>31</value>
+  <data name="btnTemizle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>475, 670</value>
   </data>
   <data name="&gt;&gt;cmbTopGelisSekli.Name" xml:space="preserve">
     <value>cmbTopGelisSekli</value>
@@ -1320,6 +1314,9 @@
   <data name="comboBox6.Location" type="System.Drawing.Point, System.Drawing">
     <value>428, 561</value>
   </data>
+  <data name="&gt;&gt;rdoBasarisiz4.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
   <data name="label15.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
@@ -1328,9 +1325,6 @@
   </data>
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
     <value>14</value>
-  </data>
-  <data name="comboBox10.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
   </data>
   <data name="groupBox10.Location" type="System.Drawing.Point, System.Drawing">
     <value>764, 588</value>
@@ -1395,8 +1389,8 @@
   <data name="cmbVurusBicimleri.Size" type="System.Drawing.Size, System.Drawing">
     <value>217, 33</value>
   </data>
-  <data name="btnEkle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 20pt</value>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
   <data name="&gt;&gt;rdoBasarili4.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1425,14 +1419,14 @@
   <data name="&gt;&gt;Boy.Name" xml:space="preserve">
     <value>Boy</value>
   </data>
-  <data name="comboBox9.Items3" xml:space="preserve">
-    <value>4</value>
+  <data name="btnTemizle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 57</value>
   </data>
   <data name="comboBox9.Items1" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;rdoBasarisiz9.Parent" xml:space="preserve">
-    <value>groupBox9</value>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -1578,14 +1572,17 @@
   <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;rdoBasarili5.Name" xml:space="preserve">
-    <value>rdoBasarili5</value>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="comboBox7.Items1" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="&gt;&gt;groupBox6.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox9.Items3" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1595,6 +1592,9 @@
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>926, 3</value>
+  </data>
+  <data name="rdoBasarisiz9.Text" xml:space="preserve">
+    <value>Başarısız</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 20</value>
@@ -1616,9 +1616,6 @@
   </data>
   <data name="rdoBasarili2.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
-  </data>
-  <data name="&gt;&gt;Mevki.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;rdoBasarili7.Parent" xml:space="preserve">
     <value>groupBox7</value>
@@ -1674,9 +1671,6 @@
   <data name="rdoBasarili3.Text" xml:space="preserve">
     <value>Başarılı</value>
   </data>
-  <data name="&gt;&gt;label16.Name" xml:space="preserve">
-    <value>label16</value>
-  </data>
   <data name="comboBox4.Items2" xml:space="preserve">
     <value>3</value>
   </data>
@@ -1704,8 +1698,8 @@
   <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="cmbTopKonumlari.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="rdoBasarisiz6.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="&gt;&gt;numSure.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1743,8 +1737,8 @@
   <data name="cmbVurusBicimleri.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 15pt</value>
   </data>
-  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="groupBox9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 62</value>
   </data>
   <data name="&gt;&gt;Soyad.Name" xml:space="preserve">
     <value>Soyad</value>
@@ -1830,8 +1824,8 @@
   <data name="textBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 15pt</value>
   </data>
-  <data name="&gt;&gt;groupBox9.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="rdoBasarili10.Text" xml:space="preserve">
+    <value>Başarılı</value>
   </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="gridViewSporcular" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBox1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50" /&gt;&lt;Rows Styles="Percent,11,62791,Percent,88,37209" /&gt;&lt;/TableLayoutSettings&gt;</value>
@@ -1841,6 +1835,9 @@
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>181, 538</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>15</value>
   </data>
   <data name="&gt;&gt;label5.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1859,6 +1856,9 @@
   </data>
   <data name="comboBox7.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
+  </data>
+  <data name="btnEkle.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="comboBox9.Items" xml:space="preserve">
     <value>1</value>
@@ -1929,6 +1929,9 @@
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>-3, 484</value>
   </data>
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
   <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
     <value>345, 588</value>
   </data>
@@ -1941,11 +1944,11 @@
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="comboBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>261, 561</value>
   </data>
-  <data name="rdoBasarisiz9.Text" xml:space="preserve">
-    <value>Başarısız</value>
+  <data name="&gt;&gt;cmbVurusBicimleri.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1980,6 +1983,9 @@
   <data name="groupBox8.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
+  <data name="&gt;&gt;rdoBasarili2.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
   <data name="&gt;&gt;cmbTopGelisSekli.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1991,9 +1997,6 @@
   </data>
   <data name="rdoBasarisiz1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="btnTemizle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>475, 670</value>
   </data>
   <data name="rdoBasarili3.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 19</value>
@@ -2045,9 +2048,6 @@
   </data>
   <data name="&gt;&gt;groupBox9.Name" xml:space="preserve">
     <value>groupBox9</value>
-  </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="rdoBasarisiz6.Text" xml:space="preserve">
     <value>Başarısız</value>
@@ -2276,9 +2276,6 @@
         UWjhtIuG3/gfzQGa+2QwjpcAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="comboBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>261, 561</value>
-  </data>
   <data name="rdoBasarisiz9.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
@@ -2315,20 +2312,23 @@
   <data name="rdoBasarili7.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 19</value>
   </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
   <data name="&gt;&gt;Id.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 20</value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>507, 538</value>
   </data>
   <data name="label13.Text" xml:space="preserve">
     <value>7. Atış</value>
   </data>
-  <data name="&gt;&gt;rdoBasarisiz10.Name" xml:space="preserve">
-    <value>rdoBasarisiz10</value>
+  <data name="&gt;&gt;comboBox2.ZOrder" xml:space="preserve">
+    <value>29</value>
   </data>
   <data name="rdoBasarisiz8.Text" xml:space="preserve">
     <value>Başarısız</value>
@@ -2357,8 +2357,8 @@
   <data name="rdoBasarili3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;comboBox2.ZOrder" xml:space="preserve">
-    <value>29</value>
+  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;rdoBasarisiz5.Parent" xml:space="preserve">
     <value>groupBox5</value>

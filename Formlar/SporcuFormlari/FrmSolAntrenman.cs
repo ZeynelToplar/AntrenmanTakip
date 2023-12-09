@@ -179,6 +179,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                 {
                     _frmRaporlama = new FrmRaporlama();
                     _frmRaporlama.antrenmanTuruId = antrenmanTuruId;
+                    _frmRaporlama.tarih = tarih;
                     _frmRaporlama.Show();
                 }
             }
@@ -189,6 +190,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         }
         int antrenmanTuruId;
         int antrenmanId = 0;
+        DateTime tarih;
         private void gridViewAntrenmanlar_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             btnGrafik.Cursor = Cursors.Hand;
@@ -196,6 +198,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             DataGridViewRow selectedRow = gridViewAntrenmanlar.Rows[selectedrowindex];
             antrenmanTuruId = Convert.ToInt32(selectedRow.Cells["AtuId"].Value);
             antrenmanId = Convert.ToInt32(selectedRow.Cells["Antrenman"].Value);
+            tarih = Convert.ToDateTime(selectedRow.Cells["Tarih"].Value);
         }
 
         private void detaylarıGörToolStripMenuItem_Click(object sender, EventArgs e)

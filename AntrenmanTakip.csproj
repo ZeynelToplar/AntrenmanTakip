@@ -692,6 +692,7 @@
     </None>
     <None Include="NLog.config" />
     <None Include="packages.config" />
+    <None Include="Persistence\Database Files\backupAntrenman.bak" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -816,9 +817,8 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Content Include="Persistence\Database Files\SonHaliDb.sql" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Persistence\Database Files\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

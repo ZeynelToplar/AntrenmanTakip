@@ -160,7 +160,7 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                 });
             }
         }
-        private List<int> GetMonthlyRecords()
+        private List<int> GetMonthlySuccessRecords()
         {
             var records = Context._context.View_AylikBasariliAtis.FirstOrDefault(x => x.Id == Context.sporcu.Id && x.AntrenamTuruId == antrenmanTuruId && x.Yil == year);
             List<int> values = new List<int>();
@@ -179,7 +179,26 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             values.Add((int)(records.AralikBasariliAtisSayisi));
             return values;
         }
-        private List<int> GetWeeklyRecords()
+        private List<int> GetMonthlyRecords()
+        {
+            var records = Context._context.View_AylikAtis.FirstOrDefault(x => x.Id == Context.sporcu.Id && x.AntrenamTuruId == antrenmanTuruId && x.Yil == year);
+            List<int> values = new List<int>();
+
+            values.Add((int)(records.OcakAtisSayisi));
+            values.Add((int)(records.SubatAtisSayisi));
+            values.Add((int)(records.MartAtisSayisi));
+            values.Add((int)(records.NisanAtisSayisi));
+            values.Add((int)(records.MayisAtisSayisi));
+            values.Add((int)(records.HaziranAtisSayisi));
+            values.Add((int)(records.TemmuzAtisSayisi));
+            values.Add((int)(records.AgustosAtisSayisi));
+            values.Add((int)(records.EylulAtisSayisi));
+            values.Add((int)(records.EkimAtisSayisi));
+            values.Add((int)(records.KasimAtisSayisi));
+            values.Add((int)(records.AralikAtisSayisi));
+            return values;
+        }
+        private List<int> GetWeeklySuccessRecords()
         {
             var records = Context._context.View_HaftalikBasariliAtis.FirstOrDefault(x => x.Id == 2 && x.AntrenamTuruId == 1 && x.Ay == month && x.Yil == year);
             List<int> values = new List<int>();
@@ -190,7 +209,17 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             values.Add((int)(records.BesHaftaBasariliAtisSayisi));
             return values;
         }
-        
+        private List<int> GetWeeklyRecords()
+        {
+            var records = Context._context.View_HaftalikAtis.FirstOrDefault(x => x.Id == 2 && x.AntrenamTuruId == 1 && x.Ay == month && x.Yil == year);
+            List<int> values = new List<int>();
+            values.Add((int)(records.BirHaftaAtisSayisi));
+            values.Add((int)(records.IkiHaftaAtisSayisi));
+            values.Add((int)(records.UcHaftaAtisSayisi));
+            values.Add((int)(records.DortHaftaAtisSayisi));
+            values.Add((int)(records.BesHaftaAtisSayisi));
+            return values;
+        }
         private (string, string) SeriesTitleConverted()
         {
             string titleBasarili = "", titleToplam = "";
@@ -217,12 +246,13 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
 
             cartesianChart1.Series.Clear();
             SeriesCollection series = new SeriesCollection();
-            List<int> values = GetMonthlyRecords();
+            List<int> values = GetMonthlySuccessRecords();
+            List<int> values2 = GetMonthlyRecords();
 
             var (titleBasarili, titleToplam) = SeriesTitleConverted();
 
             series.Add(new LineSeries() { Title = titleBasarili, Values = new ChartValues<int>(values) });
-            series.Add(new LineSeries() { Title = titleToplam, Values = new ChartValues<int>(new[] { 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, }) });
+            series.Add(new LineSeries() { Title = titleToplam, Values = new ChartValues<int>(values2) });
             cartesianChart1.Series = series;
         }
         public void LineChartWithWeek()
@@ -234,11 +264,12 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             cartesianChart1.Series.Clear();
             SeriesCollection series = new SeriesCollection();
 
-            List<int> values = GetWeeklyRecords();
+            List<int> values = GetWeeklySuccessRecords();
+            List<int> values2 = GetWeeklyRecords();
 
             var (titleBasarili, titleToplam) = SeriesTitleConverted();
             series.Add(new LineSeries() { Title = titleBasarili, Values = new ChartValues<int>(values) });
-            series.Add(new LineSeries() { Title = titleToplam, Values = new ChartValues<int>(new[] { 80, 80, 80, 80, 80 }) });
+            series.Add(new LineSeries() { Title = titleToplam, Values = new ChartValues<int>(values2) });
             cartesianChart1.Series = series;
         }
         public void ColumnChartWithWeek()
@@ -251,10 +282,11 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
 
             SeriesCollection series = new SeriesCollection();
 
-            List<int> values = GetWeeklyRecords();
+            List<int> values = GetWeeklySuccessRecords();
+            List<int> values2 = GetWeeklyRecords();
 
             var (titleBasarili, titleToplam) = SeriesTitleConverted();
-            series.Add(new ColumnSeries() { Title = titleToplam, Values = new ChartValues<int>(new[] { 80, 80, 80, 80, 80 }) });
+            series.Add(new ColumnSeries() { Title = titleToplam, Values = new ChartValues<int>(values2) });
             series.Add(new ColumnSeries() { Title = titleBasarili, Values = new ChartValues<int>(values) });
             cartesianChart1.Series = series;
         }
@@ -266,10 +298,11 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             cartesianChart1.Series.Clear();
             SeriesCollection series = new SeriesCollection();
 
-            var values = GetMonthlyRecords();
+            var values = GetMonthlySuccessRecords();
+            var values2 = GetMonthlyRecords();
 
             var (titleBasarili, titleToplam) = SeriesTitleConverted();
-            series.Add(new ColumnSeries() { Title = titleToplam, Values = new ChartValues<int>(new[] { 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, }) });
+            series.Add(new ColumnSeries() { Title = titleToplam, Values = new ChartValues<int>(values2) });
             series.Add(new ColumnSeries() { Title = titleBasarili, Values = new ChartValues<int>(values) });
             cartesianChart1.Series = series;
         }
@@ -307,10 +340,11 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             cartesianChart1.Series.Clear();
             SeriesCollection series = new SeriesCollection();
 
-            var values = GetWeeklyRecords();
+            var values = GetWeeklySuccessRecords();
+            var values2 = GetWeeklyRecords();
 
             var (titleBasarili, titleToplam) = SeriesTitleConverted();
-            series.Add(new RowSeries() { Title = titleToplam, Values = new ChartValues<int>(new[] { 80, 80, 80, 80, 80 }) });
+            series.Add(new RowSeries() { Title = titleToplam, Values = new ChartValues<int>(values2) });
             series.Add(new RowSeries() { Title = titleBasarili, Values = new ChartValues<int>(values) });
             cartesianChart1.Series = series;
         }
@@ -348,10 +382,11 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             cartesianChart1.Series.Clear();
             SeriesCollection series = new SeriesCollection();
 
-            var values = GetMonthlyRecords();
+            var values = GetMonthlySuccessRecords();
+            var values2 = GetMonthlyRecords();
 
             var (titleBasarili, titleToplam) = SeriesTitleConverted();
-            series.Add(new RowSeries() { Title = titleToplam, Values = new ChartValues<int>(new[] { 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, }) });
+            series.Add(new RowSeries() { Title = titleToplam, Values = new ChartValues<int>(values2) });
             series.Add(new RowSeries() { Title = titleBasarili, Values = new ChartValues<int>(values) });
             cartesianChart1.Series = series;
 

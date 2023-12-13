@@ -283,6 +283,12 @@
     <Compile Include="Formlar\Ayarlar\FrmDilSecenekleri.Designer.cs">
       <DependentUpon>FrmDilSecenekleri.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\Ayarlar\frmKayitliSablon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Ayarlar\frmKayitliSablon.Designer.cs">
+      <DependentUpon>frmKayitliSablon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\Ayarlar\frmKullaniciDuzenleme.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -410,6 +416,9 @@
       <DependentUpon>FrmCustomMessageBox.cs</DependentUpon>
     </Compile>
     <Compile Include="KaleciAntrenmanTurleri.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KayitSablonu.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Kullanicilar.cs">
@@ -552,6 +561,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Ayarlar\FrmDilSecenekleri.resx">
       <DependentUpon>FrmDilSecenekleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Ayarlar\frmKayitliSablon.resx">
+      <DependentUpon>frmKayitliSablon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Ayarlar\frmKullaniciDuzenleme.en.resx">
       <DependentUpon>frmKullaniciDuzenleme.cs</DependentUpon>

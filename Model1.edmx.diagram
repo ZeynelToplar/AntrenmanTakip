@@ -44,6 +44,10 @@
         <EntityTypeShape EntityType="DbAntrenmanTakip2Model.View_HaftalikBasariliAtis" Width="1.5" PointX="12.375" PointY="9.75" />
         <EntityTypeShape EntityType="DbAntrenmanTakip2Model.View_AylikAtis" Width="1.5" PointX="14.375" PointY="0.75" />
         <EntityTypeShape EntityType="DbAntrenmanTakip2Model.View_HaftalikAtis" Width="1.5" PointX="14.375" PointY="6.75" />
+        <EntityTypeShape EntityType="DbAntrenmanTakip2Model.KayitSablonu" Width="1.5" PointX="7.375" PointY="14.75" />
+        <AssociationConnector Association="DbAntrenmanTakip2Model.FK_KayitSablonu_TopGelisSekilleri" />
+        <AssociationConnector Association="DbAntrenmanTakip2Model.FK_KayitSablonu_TopKonumlari" />
+        <AssociationConnector Association="DbAntrenmanTakip2Model.FK_KayitSablonu_VurusBicimleri" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

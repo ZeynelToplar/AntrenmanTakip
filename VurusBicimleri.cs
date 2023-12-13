@@ -18,6 +18,7 @@ namespace AntrenmanTakip
         public VurusBicimleri()
         {
             this.AntrenmanTurleri = new HashSet<AntrenmanTurleri>();
+            this.KayitSablonu = new HashSet<KayitSablonu>();
         }
     
         public int Id { get; set; }
@@ -28,5 +29,7 @@ namespace AntrenmanTakip
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<AntrenmanTurleri> AntrenmanTurleri { get; set; }
         public virtual Resimler Resimler { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<KayitSablonu> KayitSablonu { get; set; }
     }
 }

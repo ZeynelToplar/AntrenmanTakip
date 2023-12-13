@@ -135,6 +135,8 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                         });
                     }
                 }
+
+                
             }
 
             var topKonumlari = Context._context.TopKonumlari.Select(tk => new
@@ -184,6 +186,16 @@ namespace AntrenmanTakip.Formlar.Ayarlar
             cmbTopGelisSekli.SelectedIndex = 0;
             cmbVurusBicimleri.SelectedIndex = 0;
 
+            comboBox1.SelectedIndex = 0;
+            comboBox2.SelectedIndex = 0;
+            comboBox3.SelectedIndex = 0;
+            comboBox4.SelectedIndex = 0;
+            comboBox5.SelectedIndex = 0;
+            comboBox6.SelectedIndex = 0;
+            comboBox7.SelectedIndex = 0;
+            comboBox8.SelectedIndex = 0;
+            comboBox9.SelectedIndex = 0;
+            comboBox10.SelectedIndex = 0;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -500,6 +512,59 @@ namespace AntrenmanTakip.Formlar.Ayarlar
             rdoBasarisiz8.Checked = false;
             rdoBasarisiz9.Checked = false;
             rdoBasarisiz10.Checked = false;
+        }
+
+        private void btnSablonKaydet_Click(object sender, EventArgs e)
+        {
+            int tkId = 0, tgsId = 0, vbId = 0;
+            tkId = Convert.ToInt32(topKonumlari);
+            tgsId = Convert.ToInt32(topGelisSekilleri);
+            vbId = Convert.ToInt32(vurusBicimleri);
+            int vk1, vk2, vk3, vk4, vk5, vk6, vk7, vk8, vk9, vk10;
+            vk1 = Convert.ToInt32(comboBox1.SelectedItem);
+            vk2 = Convert.ToInt32(comboBox2.SelectedItem);
+            vk3 = Convert.ToInt32(comboBox3.SelectedItem);
+            vk4 = Convert.ToInt32(comboBox4.SelectedItem);
+            vk5 = Convert.ToInt32(comboBox5.SelectedItem);
+            vk6 = Convert.ToInt32(comboBox6.SelectedItem);
+            vk7 = Convert.ToInt32(comboBox7.SelectedItem);
+            vk8 = Convert.ToInt32(comboBox8.SelectedItem);
+            vk9 = Convert.ToInt32(comboBox9.SelectedItem);
+            vk10 = Convert.ToInt32(comboBox10.SelectedItem);
+
+            AntrenmanTurleri antrenamTuru = antrenamTuru = Context._context.AntrenmanTurleri.FirstOrDefault(a => a.TopKonumId == tkId && a.TopGelisSekliId == tgsId && a.VurusBicimiId == vbId);
+            if(antrenamTuru != null)
+            {
+                KayitSablonu kayitSablonu = new KayitSablonu()
+                {
+                    TK = tkId,
+                    TGS = tgsId,
+                    VB = vbId,
+                    VK1 = vk1,
+                    VK2 = vk2,
+                    VK3 = vk3,
+                    VK4 = vk4,
+                    VK5 = vk5,
+                    VK6 = vk6,
+                    VK7 = vk7,
+                    VK8 = vk8,
+                    VK9 = vk9,
+                    VK10 = vk10
+                };
+
+                Context._context.KayitSablonu.Add(kayitSablonu);
+                Context._context.SaveChanges();
+                InfService.ShowMessage("Şablon kaydedildi.", "The template has been saved.");
+            }
+            else
+            {
+                InfService.ShowMessage("Lütfen uyumlu antrenman türlerini seçiniz !", "Please choose compatible training types !");
+            }
+        }
+
+        private void btnSablonSec_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

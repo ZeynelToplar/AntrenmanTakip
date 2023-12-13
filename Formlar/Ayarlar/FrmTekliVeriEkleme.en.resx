@@ -530,6 +530,21 @@
   <data name="btnTemizle.Text" xml:space="preserve">
     <value>Clear   </value>
   </data>
+  <data name="btnSablonKaydet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>721, 666</value>
+  </data>
+  <data name="btnSablonKaydet.Text" xml:space="preserve">
+    <value>Save Template        </value>
+  </data>
+  <data name="btnSablonSec.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1059, 469</value>
+  </data>
+  <data name="btnSablonSec.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 52</value>
+  </data>
+  <data name="btnSablonSec.Text" xml:space="preserve">
+    <value>Select registered template</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAAAAAAAEAIAAjLwAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAEAAAABAAgGAAAAXHKoZgAAAAlw

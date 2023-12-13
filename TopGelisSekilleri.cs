@@ -19,6 +19,7 @@ namespace AntrenmanTakip
         {
             this.AntrenmanTurleri = new HashSet<AntrenmanTurleri>();
             this.KaleciAntrenmanTurleri = new HashSet<KaleciAntrenmanTurleri>();
+            this.KayitSablonu = new HashSet<KayitSablonu>();
         }
     
         public int Id { get; set; }
@@ -29,5 +30,7 @@ namespace AntrenmanTakip
         public virtual ICollection<AntrenmanTurleri> AntrenmanTurleri { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<KaleciAntrenmanTurleri> KaleciAntrenmanTurleri { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<KayitSablonu> KayitSablonu { get; set; }
     }
 }

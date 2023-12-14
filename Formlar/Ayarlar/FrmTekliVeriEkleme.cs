@@ -20,15 +20,20 @@ namespace AntrenmanTakip.Formlar.Ayarlar
 {
     public partial class FrmTekliVeriEkleme : Form
     {
+        private frmKayitliSablon _frmKayitliSablon;
+        List<TopKonumlari> topKonumlari_;
+        List<TopGelisSekilleri> topGelisSekilleri_;
+        List<VurusBicimleri> vurusBicimleri_;
+
         public FrmTekliVeriEkleme()
         {
             InitializeComponent();
         }
         string systemLanguage = "";
-        object topKonumlari = null;
-        object topGelisSekilleri = null;
-        object vurusBicimleri = null;
-        private void FrmTekliVeriEkleme_Load(object sender, EventArgs e)
+        public object topKonumlari = null;
+        public object topGelisSekilleri = null;
+        public object vurusBicimleri = null;
+        public void FrmTekliVeriEkleme_Load(object sender, EventArgs e)
         {
             systemLanguage = DbService.GetApplicationLanguage();
             Kullanicilar authenticateUser = DbService.GetUser(Context.kullanici.Id);
@@ -139,42 +144,27 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                 
             }
 
-            var topKonumlari = Context._context.TopKonumlari.Select(tk => new
-            {
-                Id = tk.Id,
-                Adi = tk.Adi,
-                EAdi = tk.EAdi
-            }).ToList();
+             topKonumlari_ = Context._context.TopKonumlari.ToList();
 
-            var topGelisSekilleri = Context._context.TopGelisSekilleri.Select(tgs => new
-            {
-                Id = tgs.Id,
-                Adi = tgs.Adi,
-                EAdi = tgs.EAdi,
-            }).ToList();
+             topGelisSekilleri_ = Context._context.TopGelisSekilleri.ToList();
 
-            var vurusBicimleri = Context._context.VurusBicimleri.Select(vb => new
-            {
-                Id = vb.Id,
-                Adi = vb.Adi,
-                EAdi = vb.EAdi,
-            }).ToList();
+             vurusBicimleri_ = Context._context.VurusBicimleri.ToList();
 
-            cmbTopKonumlari.DataSource = topKonumlari;
+            cmbTopKonumlari.DataSource = topKonumlari_;
             cmbTopKonumlari.ValueMember = "Id";
             if (systemLanguage == "Turkish")
                 cmbTopKonumlari.DisplayMember = "Adi";
             else if (systemLanguage == "English")
                 cmbTopKonumlari.DisplayMember = "EAdi";
 
-            cmbTopGelisSekli.DataSource = topGelisSekilleri;
+            cmbTopGelisSekli.DataSource = topGelisSekilleri_;
             cmbTopGelisSekli.ValueMember = "Id";
             if (systemLanguage == "Turkish")
                 cmbTopGelisSekli.DisplayMember = "Adi";
             else if (systemLanguage == "English")
                 cmbTopGelisSekli.DisplayMember = "Eadi";
 
-            cmbVurusBicimleri.DataSource = vurusBicimleri;
+            cmbVurusBicimleri.DataSource = vurusBicimleri_;
             cmbVurusBicimleri.ValueMember = "Id";
             if (systemLanguage == "Turkish")
                 cmbVurusBicimleri.DisplayMember = "Adi";
@@ -182,20 +172,20 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                 cmbVurusBicimleri.DisplayMember = "EAdi";
 
 
-            cmbTopKonumlari.SelectedIndex = 0;
-            cmbTopGelisSekli.SelectedIndex = 0;
-            cmbVurusBicimleri.SelectedIndex = 0;
+            //cmbTopKonumlari.SelectedIndex = 0;
+            //cmbTopGelisSekli.SelectedIndex = 0;
+            //cmbVurusBicimleri.SelectedIndex = 0;
 
-            comboBox1.SelectedIndex = 0;
-            comboBox2.SelectedIndex = 0;
-            comboBox3.SelectedIndex = 0;
-            comboBox4.SelectedIndex = 0;
-            comboBox5.SelectedIndex = 0;
-            comboBox6.SelectedIndex = 0;
-            comboBox7.SelectedIndex = 0;
-            comboBox8.SelectedIndex = 0;
-            comboBox9.SelectedIndex = 0;
-            comboBox10.SelectedIndex = 0;
+            //comboBox1.SelectedIndex = 0;
+            //comboBox2.SelectedIndex = 0;
+            //comboBox3.SelectedIndex = 0;
+            //comboBox4.SelectedIndex = 0;
+            //comboBox5.SelectedIndex = 0;
+            //comboBox6.SelectedIndex = 0;
+            //comboBox7.SelectedIndex = 0;
+            //comboBox8.SelectedIndex = 0;
+            //comboBox9.SelectedIndex = 0;
+            //comboBox10.SelectedIndex = 0;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -563,6 +553,19 @@ namespace AntrenmanTakip.Formlar.Ayarlar
         }
 
         private void btnSablonSec_Click(object sender, EventArgs e)
+        {
+            if(_frmKayitliSablon == null || _frmKayitliSablon.IsDisposed)
+            {
+                this.Close();
+                _frmKayitliSablon = new frmKayitliSablon();
+                _frmKayitliSablon.topKonumlari = topKonumlari_;
+                _frmKayitliSablon.topGelisSekilleri = topGelisSekilleri_;
+                _frmKayitliSablon.vurusBicimleri = vurusBicimleri_;
+                _frmKayitliSablon.Show();
+            }
+        }
+
+        private void FrmTekliVeriEkleme_FormClosing(object sender, FormClosingEventArgs e)
         {
 
         }

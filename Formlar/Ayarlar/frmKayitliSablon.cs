@@ -87,8 +87,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
 
         private void frmKayitliSablon_FormClosing(object sender, FormClosingEventArgs e)
         {
-            _frmTekliVeriEkleme = new FrmTekliVeriEkleme();
-            _frmTekliVeriEkleme.Show();
+            btnAktar_Click(sender, e);
         }
 
         private void btnAktar_Click(object sender, EventArgs e)

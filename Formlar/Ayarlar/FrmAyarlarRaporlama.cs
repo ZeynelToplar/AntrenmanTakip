@@ -239,6 +239,8 @@ namespace AntrenmanTakip.Formlar.Ayarlar
             tkId = Convert.ToInt32(cmbTK.SelectedValue);
             tgsId = Convert.ToInt32(cmbTGS.SelectedValue);
             vbId = Convert.ToInt32(cmbVB.SelectedValue);
+            chartType = cmbGrafikTuru.SelectedIndex;
+            statType = cmbIstatistikTuru.SelectedIndex;
             AntrenmanTurleri antrenamTuru = antrenamTuru = Context._context.AntrenmanTurleri.FirstOrDefault(a => a.TopKonumId == tkId && a.TopGelisSekliId == tgsId && a.VurusBicimiId == vbId);
             if (antrenamTuru == null)
             {
@@ -282,6 +284,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                     _frmGrafikler.month = month;
                     _frmGrafikler.year = year;
                     _frmGrafikler.chartType = chartType;
+                    _frmGrafikler.statisticType = statType;
                     _frmGrafikler.antrenmanTuruId = antrenamTuru.Id;
                     _frmGrafikler.Show();
                 }

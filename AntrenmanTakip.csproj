@@ -562,6 +562,9 @@
     <EmbeddedResource Include="Formlar\Ayarlar\FrmDilSecenekleri.resx">
       <DependentUpon>FrmDilSecenekleri.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Ayarlar\frmKayitliSablon.en.resx">
+      <DependentUpon>frmKayitliSablon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Ayarlar\frmKayitliSablon.resx">
       <DependentUpon>frmKayitliSablon.cs</DependentUpon>
     </EmbeddedResource>

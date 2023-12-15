@@ -19,8 +19,8 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         public int antrenmanTuruId;
         public int chartType;
         public int statisticType;
-        public int year = DateTime.Now.Year;
-        public int month = DateTime.Now.Month;
+        public int year;
+        public int month;
         public FrmGrafikler()
         {
             InitializeComponent();
@@ -164,60 +164,90 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         {
             var records = Context._context.View_AylikBasariliAtis.FirstOrDefault(x => x.Id == Context.sporcu.Id && x.AntrenamTuruId == antrenmanTuruId && x.Yil == year);
             List<int> values = new List<int>();
-
-            values.Add((int)(records.OcakBasariliAtisSayisi));
-            values.Add((int)(records.SubatBasariliAtisSayisi));
-            values.Add((int)(records.MartBasariliAtisSayisi));
-            values.Add((int)(records.NisanBasariliAtisSayisi));
-            values.Add((int)(records.MayisBasariliAtisSayisi));
-            values.Add((int)(records.HaziranBasariliAtisSayisi));
-            values.Add((int)(records.TemmuzBasariliAtisSayisi));
-            values.Add((int)(records.AgustosBasariliAtisSayisi));
-            values.Add((int)(records.EylulBasariliAtisSayisi));
-            values.Add((int)(records.EkimBasariliAtisSayisi));
-            values.Add((int)(records.KasimBasariliAtisSayisi));
-            values.Add((int)(records.AralikBasariliAtisSayisi));
+            if (records == null)
+            {
+                
+                values = null;
+            }
+            else
+            {
+                values.Add((int)(records.OcakBasariliAtisSayisi));
+                values.Add((int)(records.SubatBasariliAtisSayisi));
+                values.Add((int)(records.MartBasariliAtisSayisi));
+                values.Add((int)(records.NisanBasariliAtisSayisi));
+                values.Add((int)(records.MayisBasariliAtisSayisi));
+                values.Add((int)(records.HaziranBasariliAtisSayisi));
+                values.Add((int)(records.TemmuzBasariliAtisSayisi));
+                values.Add((int)(records.AgustosBasariliAtisSayisi));
+                values.Add((int)(records.EylulBasariliAtisSayisi));
+                values.Add((int)(records.EkimBasariliAtisSayisi));
+                values.Add((int)(records.KasimBasariliAtisSayisi));
+                values.Add((int)(records.AralikBasariliAtisSayisi));
+            }
             return values;
         }
         private List<int> GetMonthlyRecords()
         {
             var records = Context._context.View_AylikAtis.FirstOrDefault(x => x.Id == Context.sporcu.Id && x.AntrenamTuruId == antrenmanTuruId && x.Yil == year);
             List<int> values = new List<int>();
-
-            values.Add((int)(records.OcakAtisSayisi));
-            values.Add((int)(records.SubatAtisSayisi));
-            values.Add((int)(records.MartAtisSayisi));
-            values.Add((int)(records.NisanAtisSayisi));
-            values.Add((int)(records.MayisAtisSayisi));
-            values.Add((int)(records.HaziranAtisSayisi));
-            values.Add((int)(records.TemmuzAtisSayisi));
-            values.Add((int)(records.AgustosAtisSayisi));
-            values.Add((int)(records.EylulAtisSayisi));
-            values.Add((int)(records.EkimAtisSayisi));
-            values.Add((int)(records.KasimAtisSayisi));
-            values.Add((int)(records.AralikAtisSayisi));
+            if(records == null)
+            {
+                values = null;
+            }
+            else
+            {
+                values.Add((int)(records.OcakAtisSayisi));
+                values.Add((int)(records.SubatAtisSayisi));
+                values.Add((int)(records.MartAtisSayisi));
+                values.Add((int)(records.NisanAtisSayisi));
+                values.Add((int)(records.MayisAtisSayisi));
+                values.Add((int)(records.HaziranAtisSayisi));
+                values.Add((int)(records.TemmuzAtisSayisi));
+                values.Add((int)(records.AgustosAtisSayisi));
+                values.Add((int)(records.EylulAtisSayisi));
+                values.Add((int)(records.EkimAtisSayisi));
+                values.Add((int)(records.KasimAtisSayisi));
+                values.Add((int)(records.AralikAtisSayisi));
+            }
+            
             return values;
         }
         private List<int> GetWeeklySuccessRecords()
         {
-            var records = Context._context.View_HaftalikBasariliAtis.FirstOrDefault(x => x.Id == 2 && x.AntrenamTuruId == 1 && x.Ay == month && x.Yil == year);
+            var records = Context._context.View_HaftalikBasariliAtis.FirstOrDefault(x => x.Id == Context.sporcu.Id && x.AntrenamTuruId == antrenmanTuruId && x.Ay == month && x.Yil == year);
             List<int> values = new List<int>();
-            values.Add((int)(records.BirHaftaBasariliAtisSayisi));
-            values.Add((int)(records.IkiHaftaBasariliAtisSayisi));
-            values.Add((int)(records.UcHaftaBasariliAtisSayisi));
-            values.Add((int)(records.DortHaftaBasariliAtisSayisi));
-            values.Add((int)(records.BesHaftaBasariliAtisSayisi));
+            if(records == null)
+            {
+                values = null;
+            }
+            else
+            {
+                values.Add((int)(records.BirHaftaBasariliAtisSayisi));
+                values.Add((int)(records.IkiHaftaBasariliAtisSayisi));
+                values.Add((int)(records.UcHaftaBasariliAtisSayisi));
+                values.Add((int)(records.DortHaftaBasariliAtisSayisi));
+                values.Add((int)(records.BesHaftaBasariliAtisSayisi));
+            }
+            
             return values;
         }
         private List<int> GetWeeklyRecords()
         {
-            var records = Context._context.View_HaftalikAtis.FirstOrDefault(x => x.Id == 2 && x.AntrenamTuruId == 1 && x.Ay == month && x.Yil == year);
+            var records = Context._context.View_HaftalikAtis.FirstOrDefault(x => x.Id == Context.sporcu.Id && x.AntrenamTuruId == antrenmanTuruId && x.Ay == month && x.Yil == year);
             List<int> values = new List<int>();
-            values.Add((int)(records.BirHaftaAtisSayisi));
-            values.Add((int)(records.IkiHaftaAtisSayisi));
-            values.Add((int)(records.UcHaftaAtisSayisi));
-            values.Add((int)(records.DortHaftaAtisSayisi));
-            values.Add((int)(records.BesHaftaAtisSayisi));
+            if(records == null)
+            {
+                values = null;
+            }
+            else
+            {
+                values.Add((int)(records.BirHaftaAtisSayisi));
+                values.Add((int)(records.IkiHaftaAtisSayisi));
+                values.Add((int)(records.UcHaftaAtisSayisi));
+                values.Add((int)(records.DortHaftaAtisSayisi));
+                values.Add((int)(records.BesHaftaAtisSayisi));
+            }
+            
             return values;
         }
         private (string, string) SeriesTitleConverted()
@@ -248,12 +278,19 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             SeriesCollection series = new SeriesCollection();
             List<int> values = GetMonthlySuccessRecords();
             List<int> values2 = GetMonthlyRecords();
+            if(values == null || values2 == null)
+            {
+                InfService.ShowMessage("Antrenman kaydı bulunamadı.", "No training records found");
+                this.Close();
+            }
+            else
+            {
+                var (titleBasarili, titleToplam) = SeriesTitleConverted();
 
-            var (titleBasarili, titleToplam) = SeriesTitleConverted();
-
-            series.Add(new LineSeries() { Title = titleBasarili, Values = new ChartValues<int>(values) });
-            series.Add(new LineSeries() { Title = titleToplam, Values = new ChartValues<int>(values2) });
-            cartesianChart1.Series = series;
+                series.Add(new LineSeries() { Title = titleBasarili, Values = new ChartValues<int>(values) });
+                series.Add(new LineSeries() { Title = titleToplam, Values = new ChartValues<int>(values2) });
+                cartesianChart1.Series = series;
+            }
         }
         public void LineChartWithWeek()
         {
@@ -267,10 +304,18 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             List<int> values = GetWeeklySuccessRecords();
             List<int> values2 = GetWeeklyRecords();
 
-            var (titleBasarili, titleToplam) = SeriesTitleConverted();
-            series.Add(new LineSeries() { Title = titleBasarili, Values = new ChartValues<int>(values) });
-            series.Add(new LineSeries() { Title = titleToplam, Values = new ChartValues<int>(values2) });
-            cartesianChart1.Series = series;
+            if (values == null || values2 == null)
+            {
+                InfService.ShowMessage("Antrenman kaydı bulunamadı.", "No training records found");
+                this.Close();
+            }
+            else
+            {
+                var (titleBasarili, titleToplam) = SeriesTitleConverted();
+                series.Add(new LineSeries() { Title = titleBasarili, Values = new ChartValues<int>(values) });
+                series.Add(new LineSeries() { Title = titleToplam, Values = new ChartValues<int>(values2) });
+                cartesianChart1.Series = series;
+            } 
         }
         public void ColumnChartWithWeek()
         {
@@ -284,12 +329,18 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
 
             List<int> values = GetWeeklySuccessRecords();
             List<int> values2 = GetWeeklyRecords();
-
-            var (titleBasarili, titleToplam) = SeriesTitleConverted();
-            series.Add(new ColumnSeries() { Title = titleToplam, Values = new ChartValues<int>(values2) });
-            series.Add(new ColumnSeries() { Title = titleBasarili, Values = new ChartValues<int>(values) });
-            cartesianChart1.Series = series;
-        }
+            if (values == null || values2 == null)
+            {
+                InfService.ShowMessage("Antrenman kaydı bulunamadı.", "No training records found");
+                this.Close();
+            }
+            else
+            {
+                var (titleBasarili, titleToplam) = SeriesTitleConverted();
+                series.Add(new ColumnSeries() { Title = titleToplam, Values = new ChartValues<int>(values2) });
+                series.Add(new ColumnSeries() { Title = titleBasarili, Values = new ChartValues<int>(values) });
+                cartesianChart1.Series = series;
+            }        }
         public void ColumnChartWithMonth()
         {
             ChartNamingWithMonth();
@@ -301,10 +352,18 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             var values = GetMonthlySuccessRecords();
             var values2 = GetMonthlyRecords();
 
-            var (titleBasarili, titleToplam) = SeriesTitleConverted();
-            series.Add(new ColumnSeries() { Title = titleToplam, Values = new ChartValues<int>(values2) });
-            series.Add(new ColumnSeries() { Title = titleBasarili, Values = new ChartValues<int>(values) });
-            cartesianChart1.Series = series;
+            if (values == null || values2 == null)
+            {
+                InfService.ShowMessage("Antrenman kaydı bulunamadı.", "No training records found");
+                this.Close();
+            }
+            else
+            {
+                var (titleBasarili, titleToplam) = SeriesTitleConverted();
+                series.Add(new ColumnSeries() { Title = titleToplam, Values = new ChartValues<int>(values2) });
+                series.Add(new ColumnSeries() { Title = titleBasarili, Values = new ChartValues<int>(values) });
+                cartesianChart1.Series = series;
+            }
         }
         public void RowChartWithWeek()
         {
@@ -343,10 +402,19 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             var values = GetWeeklySuccessRecords();
             var values2 = GetWeeklyRecords();
 
-            var (titleBasarili, titleToplam) = SeriesTitleConverted();
-            series.Add(new RowSeries() { Title = titleToplam, Values = new ChartValues<int>(values2) });
-            series.Add(new RowSeries() { Title = titleBasarili, Values = new ChartValues<int>(values) });
-            cartesianChart1.Series = series;
+
+            if (values == null || values2 == null)
+            {
+                InfService.ShowMessage("Antrenman kaydı bulunamadı.", "No training records found");
+                this.Close();
+            }
+            else
+            {
+                var (titleBasarili, titleToplam) = SeriesTitleConverted();
+                series.Add(new RowSeries() { Title = titleToplam, Values = new ChartValues<int>(values2) });
+                series.Add(new RowSeries() { Title = titleBasarili, Values = new ChartValues<int>(values) });
+                cartesianChart1.Series = series;
+            }
         }
         public void RowChartWithMonth()
         {
@@ -385,11 +453,18 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             var values = GetMonthlySuccessRecords();
             var values2 = GetMonthlyRecords();
 
-            var (titleBasarili, titleToplam) = SeriesTitleConverted();
-            series.Add(new RowSeries() { Title = titleToplam, Values = new ChartValues<int>(values2) });
-            series.Add(new RowSeries() { Title = titleBasarili, Values = new ChartValues<int>(values) });
-            cartesianChart1.Series = series;
-
+            if (values == null || values2 == null)
+            {
+                InfService.ShowMessage("Antrenman kaydı bulunamadı.", "No training records found");
+                this.Close();
+            }
+            else
+            {
+                var (titleBasarili, titleToplam) = SeriesTitleConverted();
+                series.Add(new RowSeries() { Title = titleToplam, Values = new ChartValues<int>(values2) });
+                series.Add(new RowSeries() { Title = titleBasarili, Values = new ChartValues<int>(values) });
+                cartesianChart1.Series = series;
+            }
         }
     }
 }

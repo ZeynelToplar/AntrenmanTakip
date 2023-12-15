@@ -72,8 +72,6 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
         {
             int year = DateTime.Now.Year;
             dtimeBaslangic.Value = new DateTime(year, 1, 1);
-            btnGrafik.Enabled = false;
-            btnGrafik.BackColor = Color.DimGray;
             systemLanguage = DbService.GetApplicationLanguage();
 
             //CultureInfo cultureInfo = System.Globalization.CultureInfo.GetCultureInfo("en-US");

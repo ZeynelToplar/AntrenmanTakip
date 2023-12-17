@@ -29,10 +29,26 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGrafikler));
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnPDF = new System.Windows.Forms.Button();
             this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // btnPDF
+            // 
+            this.btnPDF.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPDF.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnPDF, "btnPDF");
+            this.btnPDF.Image = global::AntrenmanTakip.Properties.Resources.pdf;
+            this.btnPDF.Name = "btnPDF";
+            this.btnPDF.UseVisualStyleBackColor = true;
+            this.btnPDF.Click += new System.EventHandler(this.btnPDF_Click);
+            // 
+            // cartesianChart1
+            // 
+            resources.ApplyResources(this.cartesianChart1, "cartesianChart1");
+            this.cartesianChart1.Name = "cartesianChart1";
             // 
             // tableLayoutPanel1
             // 
@@ -40,15 +56,11 @@
             this.tableLayoutPanel1.Controls.Add(this.cartesianChart1, 0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
-            // cartesianChart1
-            // 
-            resources.ApplyResources(this.cartesianChart1, "cartesianChart1");
-            this.cartesianChart1.Name = "cartesianChart1";
-            // 
             // FrmGrafikler
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnPDF);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmGrafikler";
             this.Load += new System.EventHandler(this.FrmGrafikler_Load);
@@ -58,7 +70,9 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnPDF;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private LiveCharts.WinForms.CartesianChart cartesianChart1;
+        public LiveCharts.WinForms.CartesianChart cartesianChart1;
     }
 }

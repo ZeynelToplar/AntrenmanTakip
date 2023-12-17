@@ -13,6 +13,7 @@ using System.Windows.Forms;
 using System.Xml.Linq;
 using Image = iTextSharp.text.Image;
 
+
 namespace AntrenmanTakip.Formlar.SporcuFormlari
 {
     public partial class FrmSporcuProfil : Form
@@ -190,6 +191,8 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                 Paragraph boy = new Paragraph(new Phrase($"{boy_}: {sporcu.Boy} cm", fontNormal));
                 Paragraph kilo = new Paragraph(new Phrase($"{kilo_}: {sporcu.Kilo} kg", fontNormal));
                 Paragraph yas = new Paragraph(new Phrase($"{yas_}: {sporcu.Yas}", fontNormal));
+
+                iTextSharp.text.
 
                 Paragraph pHeading2 = new Paragraph(new Phrase(antStats_, fontNormal));
                 pHeading2.Alignment = Element.ALIGN_CENTER;

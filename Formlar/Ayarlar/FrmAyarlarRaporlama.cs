@@ -1,6 +1,7 @@
 ﻿using AntrenmanTakip.Formlar.SporcuFormlari;
 using AntrenmanTakip.Persistence;
 using AntrenmanTakip.Persistence.Services;
+using Microsoft.Office.Interop.Excel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -210,13 +211,51 @@ namespace AntrenmanTakip.Formlar.Ayarlar
                 txtAy.Visible = false;
                 lblYil.Visible = true;
                 txtYıl.Visible = true;
+                lblBaslangic.Visible = false;
+                lblBitis.Visible = false;
+                dtBaslangic.Visible = false;
+                dtBitis.Visible = false;
+                lblSira.Visible = false;
+                txtSira.Visible = false;
             }
-            if(cmbIstatistikTuru.SelectedIndex == 1)
+            else if(cmbIstatistikTuru.SelectedIndex == 1)
             {
                 lblAy.Visible = true;
                 txtAy.Visible = true;
                 lblYil.Visible = true;
                 txtYıl.Visible = true;
+                lblBaslangic.Visible = false;
+                lblBitis.Visible = false;
+                dtBaslangic.Visible = false;
+                dtBitis.Visible = false;
+                lblSira.Visible = false;
+                txtSira.Visible = false;
+            }
+            else if (cmbIstatistikTuru.SelectedIndex == 2)
+            {
+                lblAy.Visible = false;
+                txtAy.Visible = false;
+                lblYil.Visible = false;
+                txtYıl.Visible = false;
+                lblBaslangic.Visible = true;
+                lblBitis.Visible = true;
+                dtBaslangic.Visible = true;
+                dtBitis.Visible = true;
+                lblSira.Visible = false;
+                txtSira.Visible = false;
+            }
+            else if(cmbIstatistikTuru.SelectedIndex == 3)
+            {
+                lblAy.Visible = false;
+                txtAy.Visible = false;
+                lblYil.Visible = false;
+                txtYıl.Visible = false;
+                lblBaslangic.Visible = false;
+                lblBitis.Visible = false;
+                dtBaslangic.Visible = false;
+                dtBitis.Visible = false;
+                lblSira.Visible = true;
+                txtSira.Visible = true;
             }
         }
 
@@ -266,29 +305,77 @@ namespace AntrenmanTakip.Formlar.Ayarlar
             {
                 InfService.ShowMessage("Lütfen yıl ve ay bilgisini giriniz.", "Please enter year and month information.");
             }
-            else if (Convert.ToInt32(txtYıl.Text) < 1923 && Convert.ToInt32(txtYıl.Text) > DateTime.Now.Year)
+            else if (cmbIstatistikTuru.SelectedIndex == 1 && Convert.ToInt32(txtYıl.Text) <= 1923 && Convert.ToInt32(txtYıl.Text) >= DateTime.Now.Year)
             {
                 InfService.ShowMessage("Lütfen geçerli bir yıl giriniz.", "Please enter a valid year.");
             }
-            else
+            else if (cmbIstatistikTuru.SelectedIndex == 2 && dtBaslangic.Value == dtBitis.Value)
             {
-                
-                Context.sporcu = new Sporcular();
-                Context.sporcu.Id = Convert.ToInt32(txtId.Text);
-                year = Convert.ToInt32(txtYıl.Text);
-                if (txtAy.Visible == true)
-                    month = Convert.ToInt32(txtAy.Text);
+                InfService.ShowMessage("Tarihler birbiriyle aynı olamaz.", "It cannot be the same between dates.");
+            }
+            else if(cmbIstatistikTuru.SelectedIndex == 3 && txtSira.Text == "")
+            {
+                InfService.ShowMessage("Lütfen getirmek istediğiniz antrenman aralığını giriniz.", "Please enter the training interval you would like to bring.");
+            }
+            else if (cmbIstatistikTuru.SelectedIndex == 3 && !txtSira.Text.Contains('-'))
+            {
+                InfService.ShowMessage("Lütfen örnekteki gibi veri girişi yapınız. (1-20)", "Please enter data as in the example. (1-20)");
+            }
+            else if(cmbIstatistikTuru.SelectedIndex == 2)
+            {
                 if (_frmGrafikler == null || _frmGrafikler.IsDisposed)
                 {
-                    _frmGrafikler = new FrmGrafikler();
-                    _frmGrafikler.month = month;
-                    _frmGrafikler.year = year;
-                    _frmGrafikler.chartType = chartType;
-                    _frmGrafikler.statisticType = statType;
-                    _frmGrafikler.antrenmanTuruId = antrenamTuru.Id;
+                    grafikSayfasinaVeriGonderme(chartType, statType, antrenamTuru.Id);
+                    _frmGrafikler.baslangic = dtBaslangic.Value;
+                    _frmGrafikler.bitis = dtBitis.Value;
                     _frmGrafikler.Show();
                 }
             }
+            else if(cmbIstatistikTuru.SelectedIndex == 1)
+            {
+                if (_frmGrafikler == null || _frmGrafikler.IsDisposed)
+                {
+                    if (txtAy.Visible == true)
+                        month = Convert.ToInt32(txtAy.Text);
+                    grafikSayfasinaVeriGonderme(chartType,statType, antrenamTuru.Id);
+                    _frmGrafikler.month = month;
+                    _frmGrafikler.year = year;
+                    _frmGrafikler.Show();
+
+                }
+            }
+            else if (cmbIstatistikTuru.SelectedIndex == 0)
+            {
+                if (_frmGrafikler == null || _frmGrafikler.IsDisposed)
+                {
+                    grafikSayfasinaVeriGonderme(chartType, statType, antrenamTuru.Id);
+                    _frmGrafikler.year = year;
+                    _frmGrafikler.Show();
+                }
+            }
+            else if(cmbIstatistikTuru.SelectedIndex == 3)
+            {
+                if (_frmGrafikler == null || _frmGrafikler.IsDisposed)
+                {
+                    int sira1, sira2;
+                    var str = txtSira.Text.Split('-');
+                    sira1 = Convert.ToInt32(str[0]);
+                    sira2= Convert.ToInt32(str[1]);
+                    grafikSayfasinaVeriGonderme(chartType, statType, antrenamTuru.Id);
+                    _frmGrafikler.sira1 = sira1;
+                    _frmGrafikler.sira2 = sira2;
+                    _frmGrafikler.Show();
+                }
+            }
+        }
+        private void grafikSayfasinaVeriGonderme(int chartType,int statType,int antrenmanTuruId)
+        {
+            Context.sporcu = new Sporcular();
+            Context.sporcu.Id = Convert.ToInt32(txtId.Text);
+            _frmGrafikler = new FrmGrafikler();
+            _frmGrafikler.chartType = chartType;
+            _frmGrafikler.statisticType = statType;
+            _frmGrafikler.antrenmanTuruId = antrenmanTuruId;
         }
     }
 }

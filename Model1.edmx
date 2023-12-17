@@ -32,7 +32,7 @@
           <Property Name="AntrenamTuruId" Type="int" />
           <Property Name="AtisSayisi" Type="int" Nullable="false" />
           <Property Name="BasariliAtis" Type="int" Nullable="false" />
-          <Property Name="Tarih" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="Tarih" Type="date" Nullable="false" />
           <Property Name="AntrenmanSayisi" Type="int" Nullable="false" />
           <Property Name="AntrenmanSuresi" Type="int" />
           <Property Name="KAntrenmanTuruId" Type="int" />
@@ -825,7 +825,7 @@ warning 6002: The table/view 'DbAntrenmanTakip2.dbo.View_VurusBicimleri' does no
           <Property Name="AntrenamTuruId" Type="Int32" />
           <Property Name="AtisSayisi" Type="Int32" Nullable="false" />
           <Property Name="BasariliAtis" Type="Int32" Nullable="false" />
-          <Property Name="Tarih" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="Tarih" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="AntrenmanSayisi" Type="Int32" Nullable="false" />
           <Property Name="AntrenmanSuresi" Type="Int32" />
           <Property Name="KAntrenmanTuruId" Type="Int32" />

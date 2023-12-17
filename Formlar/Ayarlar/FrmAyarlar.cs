@@ -787,7 +787,7 @@ namespace AntrenmanTakip.Formlar.Ayarlar
             if (_frmAyarlarRaporlama == null || _frmAyarlarRaporlama.IsDisposed)
             {
                 _frmAyarlarRaporlama = new FrmAyarlarRaporlama();
-                _frmAyarlarRaporlama.Show();
+                _frmAyarlarRaporlama.ShowDialog();
 
             }
         }

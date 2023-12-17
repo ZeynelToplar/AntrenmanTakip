@@ -142,9 +142,6 @@
     <value>Date Of Birth</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="gridViewSporcular.Size" type="System.Drawing.Size, System.Drawing">
-    <value>903, 282</value>
-  </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 25</value>
   </data>
@@ -227,14 +224,48 @@
     <value>Get Report</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>429, 65</value>
+    <value>435, 143</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Note: The month data you enter in the weekly success statistics is only valid for that month.
 It will bring the weekly data.
 
 Note: The year data you entered in the monthly success statistics is only valid for that year.
-It will bring the relevant monthly data.</value>
+It will bring the relevant monthly data.
+
+Note: Depending on the date range you entered in the time range statistics
+It will return how many records have data.
+
+Note: The order information you entered in the sequential training statistics, for example 1-20
+If you write as follows, it will bring the first 20 training.</value>
+  </data>
+  <data name="lblBaslangic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 25</value>
+  </data>
+  <data name="lblBaslangic.Text" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="lblBitis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 25</value>
+  </data>
+  <data name="lblBitis.Text" xml:space="preserve">
+    <value>End</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 25</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="txtSira.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 20</value>
+  </data>
+  <data name="txtSira.ToolTip" xml:space="preserve">
+    <value>Example : 1-20 </value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtSira.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Reporting</value>

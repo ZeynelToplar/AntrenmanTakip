@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAyarlarRaporlama));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gridViewSporcular = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UlkeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,6 +65,13 @@
             this.btnRaporAl = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
+            this.lblBaslangic = new System.Windows.Forms.Label();
+            this.lblBitis = new System.Windows.Forms.Label();
+            this.dtBaslangic = new System.Windows.Forms.DateTimePicker();
+            this.dtBitis = new System.Windows.Forms.DateTimePicker();
+            this.lblSira = new System.Windows.Forms.Label();
+            this.txtSira = new System.Windows.Forms.TextBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.gridViewSporcular)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,14 +84,14 @@
             this.gridViewSporcular.BackgroundColor = System.Drawing.Color.White;
             this.gridViewSporcular.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridViewSporcular.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridViewSporcular.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridViewSporcular.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.gridViewSporcular.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
             this.UlkeId,
@@ -96,27 +104,27 @@
             this.Mevki,
             this.DogumTarihi});
             this.gridViewSporcular.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridViewSporcular.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridViewSporcular.DefaultCellStyle = dataGridViewCellStyle6;
             this.gridViewSporcular.MultiSelect = false;
             this.gridViewSporcular.Name = "gridViewSporcular";
             this.gridViewSporcular.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridViewSporcular.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.gridViewSporcular.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridViewSporcular.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.gridViewSporcular.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.gridViewSporcular.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridViewSporcular.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewSporcular_CellClick);
             // 
@@ -253,7 +261,9 @@
             this.cmbIstatistikTuru.FormattingEnabled = true;
             this.cmbIstatistikTuru.Items.AddRange(new object[] {
             resources.GetString("cmbIstatistikTuru.Items"),
-            resources.GetString("cmbIstatistikTuru.Items1")});
+            resources.GetString("cmbIstatistikTuru.Items1"),
+            resources.GetString("cmbIstatistikTuru.Items2"),
+            resources.GetString("cmbIstatistikTuru.Items3")});
             resources.ApplyResources(this.cmbIstatistikTuru, "cmbIstatistikTuru");
             this.cmbIstatistikTuru.Name = "cmbIstatistikTuru";
             this.cmbIstatistikTuru.SelectedIndexChanged += new System.EventHandler(this.cmbIstatistikTuru_SelectedIndexChanged);
@@ -299,10 +309,46 @@
             resources.ApplyResources(this.txtId, "txtId");
             this.txtId.Name = "txtId";
             // 
+            // lblBaslangic
+            // 
+            resources.ApplyResources(this.lblBaslangic, "lblBaslangic");
+            this.lblBaslangic.Name = "lblBaslangic";
+            // 
+            // lblBitis
+            // 
+            resources.ApplyResources(this.lblBitis, "lblBitis");
+            this.lblBitis.Name = "lblBitis";
+            // 
+            // dtBaslangic
+            // 
+            this.dtBaslangic.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            resources.ApplyResources(this.dtBaslangic, "dtBaslangic");
+            this.dtBaslangic.Name = "dtBaslangic";
+            // 
+            // dtBitis
+            // 
+            this.dtBitis.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            resources.ApplyResources(this.dtBitis, "dtBitis");
+            this.dtBitis.Name = "dtBitis";
+            // 
+            // lblSira
+            // 
+            resources.ApplyResources(this.lblSira, "lblSira");
+            this.lblSira.Name = "lblSira";
+            // 
+            // txtSira
+            // 
+            resources.ApplyResources(this.txtSira, "txtSira");
+            this.txtSira.Name = "txtSira";
+            this.toolTip1.SetToolTip(this.txtSira, resources.GetString("txtSira.ToolTip"));
+            // 
             // FrmAyarlarRaporlama
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txtSira);
+            this.Controls.Add(this.dtBitis);
+            this.Controls.Add(this.dtBaslangic);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnRaporAl);
@@ -316,6 +362,9 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblBitis);
+            this.Controls.Add(this.lblSira);
+            this.Controls.Add(this.lblBaslangic);
             this.Controls.Add(this.lblYil);
             this.Controls.Add(this.lblAy);
             this.Controls.Add(this.label8);
@@ -365,5 +414,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn DogumTarihi;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Label lblBaslangic;
+        private System.Windows.Forms.Label lblBitis;
+        private System.Windows.Forms.DateTimePicker dtBaslangic;
+        private System.Windows.Forms.DateTimePicker dtBitis;
+        private System.Windows.Forms.Label lblSira;
+        private System.Windows.Forms.TextBox txtSira;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

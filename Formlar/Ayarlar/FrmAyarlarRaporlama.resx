@@ -199,7 +199,7 @@
     <value>Vertical</value>
   </data>
   <data name="gridViewSporcular.Size" type="System.Drawing.Size, System.Drawing">
-    <value>903, 282</value>
+    <value>903, 285</value>
   </data>
   <data name="gridViewSporcular.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -214,7 +214,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;gridViewSporcular.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>26</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -244,7 +244,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>25</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -274,7 +274,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>24</value>
   </data>
   <data name="lblSecilenSporcu.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -304,7 +304,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblSecilenSporcu.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>23</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -334,7 +334,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>22</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -364,7 +364,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>15</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -394,7 +394,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>14</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -424,7 +424,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>13</value>
   </data>
   <data name="cmbTK.Location" type="System.Drawing.Point, System.Drawing">
     <value>203, 353</value>
@@ -445,7 +445,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cmbTK.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>12</value>
   </data>
   <data name="cmbTGS.Location" type="System.Drawing.Point, System.Drawing">
     <value>333, 353</value>
@@ -466,7 +466,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cmbTGS.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>9</value>
   </data>
   <data name="cmbVB.Location" type="System.Drawing.Point, System.Drawing">
     <value>469, 353</value>
@@ -487,7 +487,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cmbVB.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
   <data name="cmbGrafikTuru.Items" xml:space="preserve">
     <value>Çizgi</value>
@@ -517,7 +517,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cmbGrafikTuru.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>11</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -547,13 +547,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>21</value>
   </data>
   <data name="cmbIstatistikTuru.Items" xml:space="preserve">
     <value>Aylık Başarı Grafiği</value>
   </data>
   <data name="cmbIstatistikTuru.Items1" xml:space="preserve">
     <value>Haftalık Başarı Grafiği</value>
+  </data>
+  <data name="cmbIstatistikTuru.Items2" xml:space="preserve">
+    <value>Belirli Zaman Aralığı Başarı Grafiği</value>
+  </data>
+  <data name="cmbIstatistikTuru.Items3" xml:space="preserve">
+    <value>Sıralı Antrenman Başarı Grafiği</value>
   </data>
   <data name="cmbIstatistikTuru.Location" type="System.Drawing.Point, System.Drawing">
     <value>201, 442</value>
@@ -574,7 +580,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cmbIstatistikTuru.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>10</value>
   </data>
   <data name="lblAy.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -607,7 +613,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblAy.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>20</value>
   </data>
   <data name="lblYil.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -640,7 +646,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblYil.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>19</value>
   </data>
   <data name="txtAy.Location" type="System.Drawing.Point, System.Drawing">
     <value>17, 506</value>
@@ -664,7 +670,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtAy.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="txtYıl.Location" type="System.Drawing.Point, System.Drawing">
     <value>123, 506</value>
@@ -688,7 +694,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtYıl.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="btnRaporAl.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
@@ -697,7 +703,7 @@
     <value>Segoe UI, 18pt</value>
   </data>
   <data name="btnRaporAl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>384, 471</value>
+    <value>402, 396</value>
   </data>
   <data name="btnRaporAl.Size" type="System.Drawing.Size, System.Drawing">
     <value>171, 55</value>
@@ -718,7 +724,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnRaporAl.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -730,7 +736,7 @@
     <value>12, 545</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>350, 65</value>
+    <value>350, 143</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -740,7 +746,13 @@
 ait olan haftalik verileri getirecektir. 
 
 Not: Aylık başarı istatiğinde girmiş olduğunuz yıl verisi sadece o yıl içine 
-ait olan aylık verileri getirecektir.</value>
+ait olan aylık verileri getirecektir.
+
+Not:Zaman aralığı istatiğinde girmiş olduğunuz tarih aralığına göre 
+kaç adet kayıt veri varsa getirecektir.
+
+Not: Sıralı antrenman istatiğinde girmiş olduğunuz sıra bilgisi örneğin 1-20 
+şeklinde yazmanız durumunda ilk 20 antrenmani getirecektir.</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
@@ -752,10 +764,10 @@ ait olan aylık verileri getirecektir.</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="txtId.Location" type="System.Drawing.Point, System.Drawing">
-    <value>726, 310</value>
+    <value>805, 294</value>
   </data>
   <data name="txtId.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
@@ -776,6 +788,189 @@ ait olan aylık verileri getirecektir.</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtId.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblBaslangic.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblBaslangic.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt, style=Bold</value>
+  </data>
+  <data name="lblBaslangic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblBaslangic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 478</value>
+  </data>
+  <data name="lblBaslangic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 25</value>
+  </data>
+  <data name="lblBaslangic.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblBaslangic.Text" xml:space="preserve">
+    <value>Başlangıç</value>
+  </data>
+  <data name="lblBaslangic.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblBaslangic.Name" xml:space="preserve">
+    <value>lblBaslangic</value>
+  </data>
+  <data name="&gt;&gt;lblBaslangic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblBaslangic.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblBaslangic.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="lblBitis.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblBitis.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt, style=Bold</value>
+  </data>
+  <data name="lblBitis.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblBitis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 478</value>
+  </data>
+  <data name="lblBitis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 25</value>
+  </data>
+  <data name="lblBitis.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblBitis.Text" xml:space="preserve">
+    <value>Bitiş</value>
+  </data>
+  <data name="lblBitis.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblBitis.Name" xml:space="preserve">
+    <value>lblBitis</value>
+  </data>
+  <data name="&gt;&gt;lblBitis.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblBitis.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblBitis.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="dtBaslangic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 506</value>
+  </data>
+  <data name="dtBaslangic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="dtBaslangic.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="dtBaslangic.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;dtBaslangic.Name" xml:space="preserve">
+    <value>dtBaslangic</value>
+  </data>
+  <data name="&gt;&gt;dtBaslangic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dtBaslangic.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dtBaslangic.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="dtBitis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 506</value>
+  </data>
+  <data name="dtBitis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="dtBitis.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="dtBitis.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;dtBitis.Name" xml:space="preserve">
+    <value>dtBitis</value>
+  </data>
+  <data name="&gt;&gt;dtBitis.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dtBitis.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dtBitis.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblSira.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblSira.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt, style=Bold</value>
+  </data>
+  <data name="lblSira.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblSira.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 478</value>
+  </data>
+  <data name="lblSira.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 25</value>
+  </data>
+  <data name="lblSira.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblSira.Text" xml:space="preserve">
+    <value>Sıra</value>
+  </data>
+  <data name="lblSira.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblSira.Name" xml:space="preserve">
+    <value>lblSira</value>
+  </data>
+  <data name="&gt;&gt;lblSira.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSira.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblSira.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="txtSira.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 506</value>
+  </data>
+  <data name="txtSira.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="txtSira.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="txtSira.ToolTip" xml:space="preserve">
+    <value>Örneğin : 1-20 </value>
+  </data>
+  <data name="&gt;&gt;txtSira.Name" xml:space="preserve">
+    <value>txtSira</value>
+  </data>
+  <data name="&gt;&gt;txtSira.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtSira.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtSira.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -785,7 +980,7 @@ ait olan aylık verileri getirecektir.</value>
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>908, 619</value>
+    <value>908, 693</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -852,6 +1047,12 @@ ait olan aylık verileri getirecektir.</value>
   </data>
   <data name="&gt;&gt;DogumTarihi.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
+    <value>toolTip1</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FrmAyarlarRaporlama</value>

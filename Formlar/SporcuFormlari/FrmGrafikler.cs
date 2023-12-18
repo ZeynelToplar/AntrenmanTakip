@@ -13,8 +13,12 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Windows;
 using System.Windows.Forms;
+using System.Windows.Media.Imaging;
+using System.Windows.Media;
 using Rectangle = System.Drawing.Rectangle;
+using iText.Kernel.Colors;
 
 namespace AntrenmanTakip.Formlar.SporcuFormlari
 {
@@ -966,7 +970,8 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
             {
                 string pdfFilePath = saveDialog.FileName;
 
-                // iTextSharp kullanarak PDF oluşturma
+                #region v1 
+                //iTextSharp kullanarak PDF oluşturma
                 using (PdfWriter writer = new PdfWriter(pdfFilePath))
                 {
                     using (PdfDocument pdf = new PdfDocument(writer))
@@ -1004,11 +1009,14 @@ namespace AntrenmanTakip.Formlar.SporcuFormlari
                             float yPosition = (maxHeight - scaledHeight) / 2 + document.GetBottomMargin();
 
                             // Görüntüyü eklerken genişliği ve yüksekliği belirleyebilirsiniz
-                            document.Add(chartPdfImage.SetWidth(scaledWidth).SetHeight(scaledHeight));
+                            document.Add(chartPdfImage.SetWidth(maxWidth).SetHeight(maxHeight / 2).SetBorder(new iText.Layout.Borders.SolidBorder(DeviceRgb.GREEN, 2)));
+
                             InfService.ShowMessage("PDF kaydedildi.", "PDF saved.");
                         }
                     }
                 }
+                #endregion
+
             }
         }
     }

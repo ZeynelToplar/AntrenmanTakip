@@ -37,9 +37,9 @@
             // 
             // btnPDF
             // 
+            resources.ApplyResources(this.btnPDF, "btnPDF");
             this.btnPDF.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPDF.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btnPDF, "btnPDF");
             this.btnPDF.Image = global::AntrenmanTakip.Properties.Resources.pdf;
             this.btnPDF.Name = "btnPDF";
             this.btnPDF.UseVisualStyleBackColor = true;

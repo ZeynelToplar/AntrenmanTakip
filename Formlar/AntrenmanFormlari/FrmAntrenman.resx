@@ -262,10 +262,10 @@
     <value>Microsoft Sans Serif, 15pt</value>
   </data>
   <data name="lblZaman.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 0</value>
+    <value>279, 0</value>
   </data>
   <data name="lblZaman.Size" type="System.Drawing.Size, System.Drawing">
-    <value>339, 64</value>
+    <value>270, 64</value>
   </data>
   <data name="lblZaman.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -294,75 +294,6 @@
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;btnOturumKapat.Name" xml:space="preserve">
-    <value>btnOturumKapat</value>
-  </data>
-  <data name="&gt;&gt;btnOturumKapat.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnOturumKapat.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;btnOturumKapat.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnGeriGit.Name" xml:space="preserve">
-    <value>btnGeriGit</value>
-  </data>
-  <data name="&gt;&gt;btnGeriGit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnGeriGit.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;btnGeriGit.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btnSettings.Name" xml:space="preserve">
-    <value>btnSettings</value>
-  </data>
-  <data name="&gt;&gt;btnSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSettings.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;btnSettings.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1383, 41</value>
-  </data>
-  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnOturumKapat" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnGeriGit" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnSettings" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label1" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,3,642987,Percent,4,007286,Percent,4,098361,Percent,88,25137" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>280, 17</value>
-  </metadata>
   <data name="btnOturumKapat.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
   </data>
@@ -378,6 +309,9 @@
   <data name="btnOturumKapat.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>280, 17</value>
+  </metadata>
   <data name="btnOturumKapat.ToolTip" xml:space="preserve">
     <value>Yeniden başlat</value>
   </data>
@@ -453,6 +387,36 @@
   <data name="&gt;&gt;btnSettings.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1383, 41</value>
+  </data>
+  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnOturumKapat" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnGeriGit" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnSettings" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label1" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,3,642987,Percent,4,007286,Percent,4,098361,Percent,88,25137" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
   <data name="tableLayoutPanel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
@@ -495,131 +459,8 @@
   <data name="tableLayoutPanel3.ColumnCount" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Name" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 247</value>
-  </data>
-  <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1207, 456</value>
-  </data>
-  <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Name" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="flowLayoutPanel2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="flowLayoutPanel1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panel1" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Absolute,257,Absolute,656" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
   <data name="flowLayoutPanel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;btnFalsolu.Name" xml:space="preserve">
-    <value>btnFalsolu</value>
-  </data>
-  <data name="&gt;&gt;btnFalsolu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnFalsolu.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;btnFalsolu.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnYerden.Name" xml:space="preserve">
-    <value>btnYerden</value>
-  </data>
-  <data name="&gt;&gt;btnYerden.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnYerden.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;btnYerden.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btnHavadan.Name" xml:space="preserve">
-    <value>btnHavadan</value>
-  </data>
-  <data name="&gt;&gt;btnHavadan.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnHavadan.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;btnHavadan.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;lblAntrenmanTuru.Name" xml:space="preserve">
-    <value>lblAntrenmanTuru</value>
-  </data>
-  <data name="&gt;&gt;lblAntrenmanTuru.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblAntrenmanTuru.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;lblAntrenmanTuru.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="flowLayoutPanel2.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
-    <value>TopDown</value>
-  </data>
-  <data name="flowLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>297, 3</value>
-  </data>
-  <data name="flowLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 450</value>
-  </data>
-  <data name="flowLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Name" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="btnFalsolu.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
@@ -744,68 +585,32 @@
   <data name="&gt;&gt;lblAntrenmanTuru.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="flowLayoutPanel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;btnKarsidan.Name" xml:space="preserve">
-    <value>btnKarsidan</value>
-  </data>
-  <data name="&gt;&gt;btnKarsidan.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnKarsidan.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;btnKarsidan.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnSol.Name" xml:space="preserve">
-    <value>btnSol</value>
-  </data>
-  <data name="&gt;&gt;btnSol.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSol.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;btnSol.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btnSag.Name" xml:space="preserve">
-    <value>btnSag</value>
-  </data>
-  <data name="&gt;&gt;btnSag.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSag.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;btnSag.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="flowLayoutPanel1.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+  <data name="flowLayoutPanel2.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
     <value>TopDown</value>
   </data>
-  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+  <data name="flowLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 3</value>
   </data>
-  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>288, 450</value>
+  <data name="flowLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 450</value>
   </data>
-  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+  <data name="flowLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+  <data name="&gt;&gt;flowLayoutPanel2.Name" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
+  <data name="&gt;&gt;flowLayoutPanel2.Type" xml:space="preserve">
     <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;flowLayoutPanel2.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;flowLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="flowLayoutPanel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="btnKarsidan.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -903,74 +708,59 @@
   <data name="&gt;&gt;btnSag.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="tableLayoutPanel4.ColumnCount" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="flowLayoutPanel1.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
   </data>
-  <data name="&gt;&gt;btnAntrenmanBaslat.Name" xml:space="preserve">
-    <value>btnAntrenmanBaslat</value>
+  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
   </data>
-  <data name="&gt;&gt;btnAntrenmanBaslat.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>288, 450</value>
   </data>
-  <data name="&gt;&gt;btnAntrenmanBaslat.Parent" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
+  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
-  <data name="&gt;&gt;btnAntrenmanBaslat.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
   </data>
-  <data name="&gt;&gt;txtBasariliAtis.Name" xml:space="preserve">
-    <value>txtBasariliAtis</value>
+  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtBasariliAtis.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
   </data>
-  <data name="&gt;&gt;txtBasariliAtis.Parent" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
-  </data>
-  <data name="&gt;&gt;txtBasariliAtis.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btnKaydet.Name" xml:space="preserve">
-    <value>btnKaydet</value>
-  </data>
-  <data name="&gt;&gt;btnKaydet.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnKaydet.Parent" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
-  </data>
-  <data name="&gt;&gt;btnKaydet.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tableLayoutPanel4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="tableLayoutPanel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 709</value>
-  </data>
-  <data name="tableLayoutPanel4.RowCount" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1383, 64</value>
+  <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 247</value>
   </data>
-  <data name="tableLayoutPanel4.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+  <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel4.Name" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
+  <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1207, 456</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel4.Type" xml:space="preserve">
+  <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Name" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tableLayoutPanel3.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanel4.ZOrder" xml:space="preserve">
-    <value>22</value>
+  <data name="&gt;&gt;tableLayoutPanel3.ZOrder" xml:space="preserve">
+    <value>23</value>
   </data>
-  <data name="tableLayoutPanel4.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnAntrenmanBaslat" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblZaman" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="txtBasariliAtis" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnKaydet" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,25,Percent,25,Percent,25,Percent,25" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="flowLayoutPanel2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="flowLayoutPanel1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panel1" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Absolute,257,Absolute,656" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="tableLayoutPanel4.ColumnCount" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="btnAntrenmanBaslat.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -1012,16 +802,22 @@
     <value>Microsoft Sans Serif, 15pt</value>
   </data>
   <data name="txtBasariliAtis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>693, 3</value>
+    <value>555, 3</value>
   </data>
   <data name="txtBasariliAtis.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="txtBasariliAtis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>339, 58</value>
+    <value>270, 58</value>
   </data>
   <data name="txtBasariliAtis.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
+  </data>
+  <data name="txtBasariliAtis.Text" xml:space="preserve">
+    <value>Başarılı Atış Sayısı</value>
+  </data>
+  <data name="txtBasariliAtis.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
   </data>
   <data name="&gt;&gt;txtBasariliAtis.Name" xml:space="preserve">
     <value>txtBasariliAtis</value>
@@ -1045,10 +841,10 @@
     <value>MiddleLeft</value>
   </data>
   <data name="btnKaydet.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1038, 3</value>
+    <value>1107, 3</value>
   </data>
   <data name="btnKaydet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>342, 58</value>
+    <value>273, 58</value>
   </data>
   <data name="btnKaydet.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -1068,11 +864,74 @@
   <data name="&gt;&gt;btnKaydet.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="btnSifirla.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="btnSifirla.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 18pt</value>
+  </data>
+  <data name="btnSifirla.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnSifirla.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnSifirla.Location" type="System.Drawing.Point, System.Drawing">
+    <value>831, 3</value>
+  </data>
+  <data name="btnSifirla.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 58</value>
+  </data>
+  <data name="btnSifirla.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="btnSifirla.Text" xml:space="preserve">
+    <value>Sıfırla</value>
+  </data>
+  <data name="&gt;&gt;btnSifirla.Name" xml:space="preserve">
+    <value>btnSifirla</value>
+  </data>
+  <data name="&gt;&gt;btnSifirla.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSifirla.Parent" xml:space="preserve">
+    <value>tableLayoutPanel4</value>
+  </data>
+  <data name="&gt;&gt;btnSifirla.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tableLayoutPanel4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="tableLayoutPanel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 709</value>
+  </data>
+  <data name="tableLayoutPanel4.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1383, 64</value>
+  </data>
+  <data name="tableLayoutPanel4.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.Name" xml:space="preserve">
+    <value>tableLayoutPanel4</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="tableLayoutPanel4.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnAntrenmanBaslat" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblZaman" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="txtBasariliAtis" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnKaydet" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="btnSifirla" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
   <metadata name="ModbusScan.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>158, 17</value>
-  </metadata>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>280, 17</value>
   </metadata>
   <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>377, 17</value>
@@ -1101,394 +960,394 @@
   <data name="&gt;&gt;toolStrip1.ZOrder" xml:space="preserve">
     <value>21</value>
   </data>
-  <data name="comboBox1.Items" xml:space="preserve">
+  <data name="cmbAtisBir.Items" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="comboBox1.Items1" xml:space="preserve">
+  <data name="cmbAtisBir.Items1" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="comboBox1.Items2" xml:space="preserve">
+  <data name="cmbAtisBir.Items2" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="comboBox1.Items3" xml:space="preserve">
+  <data name="cmbAtisBir.Items3" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="comboBox1.Items4" xml:space="preserve">
+  <data name="cmbAtisBir.Items4" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="comboBox1.Items5" xml:space="preserve">
+  <data name="cmbAtisBir.Items5" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="cmbAtisBir.Location" type="System.Drawing.Point, System.Drawing">
     <value>1286, 334</value>
   </data>
-  <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="cmbAtisBir.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 21</value>
   </data>
-  <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="cmbAtisBir.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
-    <value>comboBox1</value>
+  <data name="&gt;&gt;cmbAtisBir.Name" xml:space="preserve">
+    <value>cmbAtisBir</value>
   </data>
-  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisBir.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisBir.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisBir.ZOrder" xml:space="preserve">
     <value>20</value>
   </data>
-  <data name="comboBox2.Items" xml:space="preserve">
+  <data name="cmbAtisIki.Items" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="comboBox2.Items1" xml:space="preserve">
+  <data name="cmbAtisIki.Items1" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="comboBox2.Items2" xml:space="preserve">
+  <data name="cmbAtisIki.Items2" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="comboBox2.Items3" xml:space="preserve">
+  <data name="cmbAtisIki.Items3" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="comboBox2.Items4" xml:space="preserve">
+  <data name="cmbAtisIki.Items4" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="comboBox2.Items5" xml:space="preserve">
+  <data name="cmbAtisIki.Items5" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="comboBox2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="cmbAtisIki.Location" type="System.Drawing.Point, System.Drawing">
     <value>1286, 361</value>
   </data>
-  <data name="comboBox2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="cmbAtisIki.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 21</value>
   </data>
-  <data name="comboBox2.TabIndex" type="System.Int32, mscorlib">
+  <data name="cmbAtisIki.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="&gt;&gt;comboBox2.Name" xml:space="preserve">
-    <value>comboBox2</value>
+  <data name="&gt;&gt;cmbAtisIki.Name" xml:space="preserve">
+    <value>cmbAtisIki</value>
   </data>
-  <data name="&gt;&gt;comboBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisIki.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;comboBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisIki.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;comboBox2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisIki.ZOrder" xml:space="preserve">
     <value>19</value>
   </data>
-  <data name="comboBox3.Items" xml:space="preserve">
+  <data name="cmbAtisUc.Items" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="comboBox3.Items1" xml:space="preserve">
+  <data name="cmbAtisUc.Items1" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="comboBox3.Items2" xml:space="preserve">
+  <data name="cmbAtisUc.Items2" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="comboBox3.Items3" xml:space="preserve">
+  <data name="cmbAtisUc.Items3" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="comboBox3.Items4" xml:space="preserve">
+  <data name="cmbAtisUc.Items4" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="comboBox3.Items5" xml:space="preserve">
+  <data name="cmbAtisUc.Items5" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="comboBox3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="cmbAtisUc.Location" type="System.Drawing.Point, System.Drawing">
     <value>1286, 388</value>
   </data>
-  <data name="comboBox3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="cmbAtisUc.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 21</value>
   </data>
-  <data name="comboBox3.TabIndex" type="System.Int32, mscorlib">
+  <data name="cmbAtisUc.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="&gt;&gt;comboBox3.Name" xml:space="preserve">
-    <value>comboBox3</value>
+  <data name="&gt;&gt;cmbAtisUc.Name" xml:space="preserve">
+    <value>cmbAtisUc</value>
   </data>
-  <data name="&gt;&gt;comboBox3.Type" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisUc.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;comboBox3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisUc.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;comboBox3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisUc.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
-  <data name="comboBox4.Items" xml:space="preserve">
+  <data name="cmbAtisDort.Items" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="comboBox4.Items1" xml:space="preserve">
+  <data name="cmbAtisDort.Items1" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="comboBox4.Items2" xml:space="preserve">
+  <data name="cmbAtisDort.Items2" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="comboBox4.Items3" xml:space="preserve">
+  <data name="cmbAtisDort.Items3" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="comboBox4.Items4" xml:space="preserve">
+  <data name="cmbAtisDort.Items4" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="comboBox4.Items5" xml:space="preserve">
+  <data name="cmbAtisDort.Items5" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="comboBox4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="cmbAtisDort.Location" type="System.Drawing.Point, System.Drawing">
     <value>1286, 415</value>
   </data>
-  <data name="comboBox4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="cmbAtisDort.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 21</value>
   </data>
-  <data name="comboBox4.TabIndex" type="System.Int32, mscorlib">
+  <data name="cmbAtisDort.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="&gt;&gt;comboBox4.Name" xml:space="preserve">
-    <value>comboBox4</value>
+  <data name="&gt;&gt;cmbAtisDort.Name" xml:space="preserve">
+    <value>cmbAtisDort</value>
   </data>
-  <data name="&gt;&gt;comboBox4.Type" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisDort.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;comboBox4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisDort.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;comboBox4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisDort.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
-  <data name="comboBox5.Items" xml:space="preserve">
+  <data name="cmbAtisBes.Items" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="comboBox5.Items1" xml:space="preserve">
+  <data name="cmbAtisBes.Items1" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="comboBox5.Items2" xml:space="preserve">
+  <data name="cmbAtisBes.Items2" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="comboBox5.Items3" xml:space="preserve">
+  <data name="cmbAtisBes.Items3" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="comboBox5.Items4" xml:space="preserve">
+  <data name="cmbAtisBes.Items4" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="comboBox5.Items5" xml:space="preserve">
+  <data name="cmbAtisBes.Items5" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="comboBox5.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="cmbAtisBes.Location" type="System.Drawing.Point, System.Drawing">
     <value>1286, 442</value>
   </data>
-  <data name="comboBox5.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="cmbAtisBes.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 21</value>
   </data>
-  <data name="comboBox5.TabIndex" type="System.Int32, mscorlib">
+  <data name="cmbAtisBes.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="&gt;&gt;comboBox5.Name" xml:space="preserve">
-    <value>comboBox5</value>
+  <data name="&gt;&gt;cmbAtisBes.Name" xml:space="preserve">
+    <value>cmbAtisBes</value>
   </data>
-  <data name="&gt;&gt;comboBox5.Type" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisBes.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;comboBox5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisBes.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;comboBox5.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisBes.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
-  <data name="comboBox6.Items" xml:space="preserve">
+  <data name="cmbAtisAlti.Items" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="comboBox6.Items1" xml:space="preserve">
+  <data name="cmbAtisAlti.Items1" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="comboBox6.Items2" xml:space="preserve">
+  <data name="cmbAtisAlti.Items2" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="comboBox6.Items3" xml:space="preserve">
+  <data name="cmbAtisAlti.Items3" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="comboBox6.Items4" xml:space="preserve">
+  <data name="cmbAtisAlti.Items4" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="comboBox6.Items5" xml:space="preserve">
+  <data name="cmbAtisAlti.Items5" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="comboBox6.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="cmbAtisAlti.Location" type="System.Drawing.Point, System.Drawing">
     <value>1286, 469</value>
   </data>
-  <data name="comboBox6.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="cmbAtisAlti.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 21</value>
   </data>
-  <data name="comboBox6.TabIndex" type="System.Int32, mscorlib">
+  <data name="cmbAtisAlti.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="&gt;&gt;comboBox6.Name" xml:space="preserve">
-    <value>comboBox6</value>
+  <data name="&gt;&gt;cmbAtisAlti.Name" xml:space="preserve">
+    <value>cmbAtisAlti</value>
   </data>
-  <data name="&gt;&gt;comboBox6.Type" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisAlti.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;comboBox6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisAlti.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;comboBox6.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisAlti.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
-  <data name="comboBox7.Items" xml:space="preserve">
+  <data name="cmbAtisYedi.Items" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="comboBox7.Items1" xml:space="preserve">
+  <data name="cmbAtisYedi.Items1" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="comboBox7.Items2" xml:space="preserve">
+  <data name="cmbAtisYedi.Items2" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="comboBox7.Items3" xml:space="preserve">
+  <data name="cmbAtisYedi.Items3" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="comboBox7.Items4" xml:space="preserve">
+  <data name="cmbAtisYedi.Items4" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="comboBox7.Items5" xml:space="preserve">
+  <data name="cmbAtisYedi.Items5" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="comboBox7.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="cmbAtisYedi.Location" type="System.Drawing.Point, System.Drawing">
     <value>1286, 496</value>
   </data>
-  <data name="comboBox7.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="cmbAtisYedi.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 21</value>
   </data>
-  <data name="comboBox7.TabIndex" type="System.Int32, mscorlib">
+  <data name="cmbAtisYedi.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="&gt;&gt;comboBox7.Name" xml:space="preserve">
-    <value>comboBox7</value>
+  <data name="&gt;&gt;cmbAtisYedi.Name" xml:space="preserve">
+    <value>cmbAtisYedi</value>
   </data>
-  <data name="&gt;&gt;comboBox7.Type" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisYedi.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;comboBox7.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisYedi.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;comboBox7.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisYedi.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
-  <data name="comboBox8.Items" xml:space="preserve">
+  <data name="cmbAtisSekiz.Items" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="comboBox8.Items1" xml:space="preserve">
+  <data name="cmbAtisSekiz.Items1" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="comboBox8.Items2" xml:space="preserve">
+  <data name="cmbAtisSekiz.Items2" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="comboBox8.Items3" xml:space="preserve">
+  <data name="cmbAtisSekiz.Items3" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="comboBox8.Items4" xml:space="preserve">
+  <data name="cmbAtisSekiz.Items4" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="comboBox8.Items5" xml:space="preserve">
+  <data name="cmbAtisSekiz.Items5" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="comboBox8.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="cmbAtisSekiz.Location" type="System.Drawing.Point, System.Drawing">
     <value>1286, 523</value>
   </data>
-  <data name="comboBox8.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="cmbAtisSekiz.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 21</value>
   </data>
-  <data name="comboBox8.TabIndex" type="System.Int32, mscorlib">
+  <data name="cmbAtisSekiz.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="&gt;&gt;comboBox8.Name" xml:space="preserve">
-    <value>comboBox8</value>
+  <data name="&gt;&gt;cmbAtisSekiz.Name" xml:space="preserve">
+    <value>cmbAtisSekiz</value>
   </data>
-  <data name="&gt;&gt;comboBox8.Type" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisSekiz.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;comboBox8.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisSekiz.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;comboBox8.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisSekiz.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="comboBox9.Items" xml:space="preserve">
+  <data name="cmbAtisDokuz.Items" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="comboBox9.Items1" xml:space="preserve">
+  <data name="cmbAtisDokuz.Items1" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="comboBox9.Items2" xml:space="preserve">
+  <data name="cmbAtisDokuz.Items2" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="comboBox9.Items3" xml:space="preserve">
+  <data name="cmbAtisDokuz.Items3" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="comboBox9.Items4" xml:space="preserve">
+  <data name="cmbAtisDokuz.Items4" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="comboBox9.Items5" xml:space="preserve">
+  <data name="cmbAtisDokuz.Items5" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="comboBox9.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="cmbAtisDokuz.Location" type="System.Drawing.Point, System.Drawing">
     <value>1286, 550</value>
   </data>
-  <data name="comboBox9.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="cmbAtisDokuz.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 21</value>
   </data>
-  <data name="comboBox9.TabIndex" type="System.Int32, mscorlib">
+  <data name="cmbAtisDokuz.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="&gt;&gt;comboBox9.Name" xml:space="preserve">
-    <value>comboBox9</value>
+  <data name="&gt;&gt;cmbAtisDokuz.Name" xml:space="preserve">
+    <value>cmbAtisDokuz</value>
   </data>
-  <data name="&gt;&gt;comboBox9.Type" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisDokuz.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;comboBox9.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisDokuz.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;comboBox9.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisDokuz.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="comboBox10.Items" xml:space="preserve">
+  <data name="cmbAtisOn.Items" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="comboBox10.Items1" xml:space="preserve">
+  <data name="cmbAtisOn.Items1" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="comboBox10.Items2" xml:space="preserve">
+  <data name="cmbAtisOn.Items2" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="comboBox10.Items3" xml:space="preserve">
+  <data name="cmbAtisOn.Items3" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="comboBox10.Items4" xml:space="preserve">
+  <data name="cmbAtisOn.Items4" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="comboBox10.Items5" xml:space="preserve">
+  <data name="cmbAtisOn.Items5" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="comboBox10.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="cmbAtisOn.Location" type="System.Drawing.Point, System.Drawing">
     <value>1286, 577</value>
   </data>
-  <data name="comboBox10.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="cmbAtisOn.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 21</value>
   </data>
-  <data name="comboBox10.TabIndex" type="System.Int32, mscorlib">
+  <data name="cmbAtisOn.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="&gt;&gt;comboBox10.Name" xml:space="preserve">
-    <value>comboBox10</value>
+  <data name="&gt;&gt;cmbAtisOn.Name" xml:space="preserve">
+    <value>cmbAtisOn</value>
   </data>
-  <data name="&gt;&gt;comboBox10.Type" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisOn.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;comboBox10.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisOn.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;comboBox10.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisOn.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
@@ -1852,7 +1711,7 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>46</value>
+    <value>25</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>

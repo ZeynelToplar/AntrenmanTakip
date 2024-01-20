@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAntrenman));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gridViewSporcular = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ad = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,19 +65,20 @@
             this.btnAntrenmanBaslat = new System.Windows.Forms.Button();
             this.txtBasariliAtis = new System.Windows.Forms.TextBox();
             this.btnKaydet = new System.Windows.Forms.Button();
+            this.btnSifirla = new System.Windows.Forms.Button();
             this.ModbusScan = new System.Windows.Forms.Timer(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.cmbAtisBir = new System.Windows.Forms.ComboBox();
+            this.cmbAtisIki = new System.Windows.Forms.ComboBox();
+            this.cmbAtisUc = new System.Windows.Forms.ComboBox();
+            this.cmbAtisDort = new System.Windows.Forms.ComboBox();
+            this.cmbAtisBes = new System.Windows.Forms.ComboBox();
+            this.cmbAtisAlti = new System.Windows.Forms.ComboBox();
+            this.cmbAtisYedi = new System.Windows.Forms.ComboBox();
+            this.cmbAtisSekiz = new System.Windows.Forms.ComboBox();
+            this.cmbAtisDokuz = new System.Windows.Forms.ComboBox();
+            this.cmbAtisOn = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -105,14 +106,14 @@
             this.gridViewSporcular.BackgroundColor = System.Drawing.Color.White;
             this.gridViewSporcular.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridViewSporcular.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridViewSporcular.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridViewSporcular.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridViewSporcular.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
             this.Ad,
@@ -122,26 +123,26 @@
             this.Kilo,
             this.Mevki});
             this.gridViewSporcular.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridViewSporcular.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridViewSporcular.DefaultCellStyle = dataGridViewCellStyle2;
             this.gridViewSporcular.MultiSelect = false;
             this.gridViewSporcular.Name = "gridViewSporcular";
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridViewSporcular.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.gridViewSporcular.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridViewSporcular.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.gridViewSporcular.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gridViewSporcular.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridViewSporcular.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewSporcular_CellClick);
             // 
@@ -346,7 +347,8 @@
             this.tableLayoutPanel4.Controls.Add(this.btnAntrenmanBaslat, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.lblZaman, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.txtBasariliAtis, 2, 0);
-            this.tableLayoutPanel4.Controls.Add(this.btnKaydet, 3, 0);
+            this.tableLayoutPanel4.Controls.Add(this.btnKaydet, 4, 0);
+            this.tableLayoutPanel4.Controls.Add(this.btnSifirla, 3, 0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             // 
             // btnAntrenmanBaslat
@@ -374,6 +376,16 @@
             this.btnKaydet.UseVisualStyleBackColor = false;
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
+            // btnSifirla
+            // 
+            resources.ApplyResources(this.btnSifirla, "btnSifirla");
+            this.btnSifirla.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnSifirla.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSifirla.Image = global::AntrenmanTakip.Properties.Resources.temizle;
+            this.btnSifirla.Name = "btnSifirla";
+            this.btnSifirla.UseVisualStyleBackColor = false;
+            this.btnSifirla.Click += new System.EventHandler(this.btnSifirla_Click);
+            // 
             // ModbusScan
             // 
             this.ModbusScan.Tick += new System.EventHandler(this.ModbusScan_Tick);
@@ -383,136 +395,137 @@
             resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.Name = "toolStrip1";
             // 
-            // comboBox1
+            // cmbAtisBir
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            resources.GetString("comboBox1.Items"),
-            resources.GetString("comboBox1.Items1"),
-            resources.GetString("comboBox1.Items2"),
-            resources.GetString("comboBox1.Items3"),
-            resources.GetString("comboBox1.Items4"),
-            resources.GetString("comboBox1.Items5")});
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.Name = "comboBox1";
+            this.cmbAtisBir.FormattingEnabled = true;
+            this.cmbAtisBir.Items.AddRange(new object[] {
+            resources.GetString("cmbAtisBir.Items"),
+            resources.GetString("cmbAtisBir.Items1"),
+            resources.GetString("cmbAtisBir.Items2"),
+            resources.GetString("cmbAtisBir.Items3"),
+            resources.GetString("cmbAtisBir.Items4"),
+            resources.GetString("cmbAtisBir.Items5")});
+            resources.ApplyResources(this.cmbAtisBir, "cmbAtisBir");
+            this.cmbAtisBir.Name = "cmbAtisBir";
+            this.cmbAtisBir.SelectedIndexChanged += new System.EventHandler(this.cmbAtisBir_SelectedIndexChanged);
             // 
-            // comboBox2
+            // cmbAtisIki
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            resources.GetString("comboBox2.Items"),
-            resources.GetString("comboBox2.Items1"),
-            resources.GetString("comboBox2.Items2"),
-            resources.GetString("comboBox2.Items3"),
-            resources.GetString("comboBox2.Items4"),
-            resources.GetString("comboBox2.Items5")});
-            resources.ApplyResources(this.comboBox2, "comboBox2");
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.cmbAtisIki.FormattingEnabled = true;
+            this.cmbAtisIki.Items.AddRange(new object[] {
+            resources.GetString("cmbAtisIki.Items"),
+            resources.GetString("cmbAtisIki.Items1"),
+            resources.GetString("cmbAtisIki.Items2"),
+            resources.GetString("cmbAtisIki.Items3"),
+            resources.GetString("cmbAtisIki.Items4"),
+            resources.GetString("cmbAtisIki.Items5")});
+            resources.ApplyResources(this.cmbAtisIki, "cmbAtisIki");
+            this.cmbAtisIki.Name = "cmbAtisIki";
+            this.cmbAtisIki.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
-            // comboBox3
+            // cmbAtisUc
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            resources.GetString("comboBox3.Items"),
-            resources.GetString("comboBox3.Items1"),
-            resources.GetString("comboBox3.Items2"),
-            resources.GetString("comboBox3.Items3"),
-            resources.GetString("comboBox3.Items4"),
-            resources.GetString("comboBox3.Items5")});
-            resources.ApplyResources(this.comboBox3, "comboBox3");
-            this.comboBox3.Name = "comboBox3";
+            this.cmbAtisUc.FormattingEnabled = true;
+            this.cmbAtisUc.Items.AddRange(new object[] {
+            resources.GetString("cmbAtisUc.Items"),
+            resources.GetString("cmbAtisUc.Items1"),
+            resources.GetString("cmbAtisUc.Items2"),
+            resources.GetString("cmbAtisUc.Items3"),
+            resources.GetString("cmbAtisUc.Items4"),
+            resources.GetString("cmbAtisUc.Items5")});
+            resources.ApplyResources(this.cmbAtisUc, "cmbAtisUc");
+            this.cmbAtisUc.Name = "cmbAtisUc";
             // 
-            // comboBox4
+            // cmbAtisDort
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            resources.GetString("comboBox4.Items"),
-            resources.GetString("comboBox4.Items1"),
-            resources.GetString("comboBox4.Items2"),
-            resources.GetString("comboBox4.Items3"),
-            resources.GetString("comboBox4.Items4"),
-            resources.GetString("comboBox4.Items5")});
-            resources.ApplyResources(this.comboBox4, "comboBox4");
-            this.comboBox4.Name = "comboBox4";
+            this.cmbAtisDort.FormattingEnabled = true;
+            this.cmbAtisDort.Items.AddRange(new object[] {
+            resources.GetString("cmbAtisDort.Items"),
+            resources.GetString("cmbAtisDort.Items1"),
+            resources.GetString("cmbAtisDort.Items2"),
+            resources.GetString("cmbAtisDort.Items3"),
+            resources.GetString("cmbAtisDort.Items4"),
+            resources.GetString("cmbAtisDort.Items5")});
+            resources.ApplyResources(this.cmbAtisDort, "cmbAtisDort");
+            this.cmbAtisDort.Name = "cmbAtisDort";
             // 
-            // comboBox5
+            // cmbAtisBes
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
-            resources.GetString("comboBox5.Items"),
-            resources.GetString("comboBox5.Items1"),
-            resources.GetString("comboBox5.Items2"),
-            resources.GetString("comboBox5.Items3"),
-            resources.GetString("comboBox5.Items4"),
-            resources.GetString("comboBox5.Items5")});
-            resources.ApplyResources(this.comboBox5, "comboBox5");
-            this.comboBox5.Name = "comboBox5";
+            this.cmbAtisBes.FormattingEnabled = true;
+            this.cmbAtisBes.Items.AddRange(new object[] {
+            resources.GetString("cmbAtisBes.Items"),
+            resources.GetString("cmbAtisBes.Items1"),
+            resources.GetString("cmbAtisBes.Items2"),
+            resources.GetString("cmbAtisBes.Items3"),
+            resources.GetString("cmbAtisBes.Items4"),
+            resources.GetString("cmbAtisBes.Items5")});
+            resources.ApplyResources(this.cmbAtisBes, "cmbAtisBes");
+            this.cmbAtisBes.Name = "cmbAtisBes";
             // 
-            // comboBox6
+            // cmbAtisAlti
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
-            resources.GetString("comboBox6.Items"),
-            resources.GetString("comboBox6.Items1"),
-            resources.GetString("comboBox6.Items2"),
-            resources.GetString("comboBox6.Items3"),
-            resources.GetString("comboBox6.Items4"),
-            resources.GetString("comboBox6.Items5")});
-            resources.ApplyResources(this.comboBox6, "comboBox6");
-            this.comboBox6.Name = "comboBox6";
+            this.cmbAtisAlti.FormattingEnabled = true;
+            this.cmbAtisAlti.Items.AddRange(new object[] {
+            resources.GetString("cmbAtisAlti.Items"),
+            resources.GetString("cmbAtisAlti.Items1"),
+            resources.GetString("cmbAtisAlti.Items2"),
+            resources.GetString("cmbAtisAlti.Items3"),
+            resources.GetString("cmbAtisAlti.Items4"),
+            resources.GetString("cmbAtisAlti.Items5")});
+            resources.ApplyResources(this.cmbAtisAlti, "cmbAtisAlti");
+            this.cmbAtisAlti.Name = "cmbAtisAlti";
             // 
-            // comboBox7
+            // cmbAtisYedi
             // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
-            resources.GetString("comboBox7.Items"),
-            resources.GetString("comboBox7.Items1"),
-            resources.GetString("comboBox7.Items2"),
-            resources.GetString("comboBox7.Items3"),
-            resources.GetString("comboBox7.Items4"),
-            resources.GetString("comboBox7.Items5")});
-            resources.ApplyResources(this.comboBox7, "comboBox7");
-            this.comboBox7.Name = "comboBox7";
+            this.cmbAtisYedi.FormattingEnabled = true;
+            this.cmbAtisYedi.Items.AddRange(new object[] {
+            resources.GetString("cmbAtisYedi.Items"),
+            resources.GetString("cmbAtisYedi.Items1"),
+            resources.GetString("cmbAtisYedi.Items2"),
+            resources.GetString("cmbAtisYedi.Items3"),
+            resources.GetString("cmbAtisYedi.Items4"),
+            resources.GetString("cmbAtisYedi.Items5")});
+            resources.ApplyResources(this.cmbAtisYedi, "cmbAtisYedi");
+            this.cmbAtisYedi.Name = "cmbAtisYedi";
             // 
-            // comboBox8
+            // cmbAtisSekiz
             // 
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
-            resources.GetString("comboBox8.Items"),
-            resources.GetString("comboBox8.Items1"),
-            resources.GetString("comboBox8.Items2"),
-            resources.GetString("comboBox8.Items3"),
-            resources.GetString("comboBox8.Items4"),
-            resources.GetString("comboBox8.Items5")});
-            resources.ApplyResources(this.comboBox8, "comboBox8");
-            this.comboBox8.Name = "comboBox8";
+            this.cmbAtisSekiz.FormattingEnabled = true;
+            this.cmbAtisSekiz.Items.AddRange(new object[] {
+            resources.GetString("cmbAtisSekiz.Items"),
+            resources.GetString("cmbAtisSekiz.Items1"),
+            resources.GetString("cmbAtisSekiz.Items2"),
+            resources.GetString("cmbAtisSekiz.Items3"),
+            resources.GetString("cmbAtisSekiz.Items4"),
+            resources.GetString("cmbAtisSekiz.Items5")});
+            resources.ApplyResources(this.cmbAtisSekiz, "cmbAtisSekiz");
+            this.cmbAtisSekiz.Name = "cmbAtisSekiz";
             // 
-            // comboBox9
+            // cmbAtisDokuz
             // 
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Items.AddRange(new object[] {
-            resources.GetString("comboBox9.Items"),
-            resources.GetString("comboBox9.Items1"),
-            resources.GetString("comboBox9.Items2"),
-            resources.GetString("comboBox9.Items3"),
-            resources.GetString("comboBox9.Items4"),
-            resources.GetString("comboBox9.Items5")});
-            resources.ApplyResources(this.comboBox9, "comboBox9");
-            this.comboBox9.Name = "comboBox9";
+            this.cmbAtisDokuz.FormattingEnabled = true;
+            this.cmbAtisDokuz.Items.AddRange(new object[] {
+            resources.GetString("cmbAtisDokuz.Items"),
+            resources.GetString("cmbAtisDokuz.Items1"),
+            resources.GetString("cmbAtisDokuz.Items2"),
+            resources.GetString("cmbAtisDokuz.Items3"),
+            resources.GetString("cmbAtisDokuz.Items4"),
+            resources.GetString("cmbAtisDokuz.Items5")});
+            resources.ApplyResources(this.cmbAtisDokuz, "cmbAtisDokuz");
+            this.cmbAtisDokuz.Name = "cmbAtisDokuz";
             // 
-            // comboBox10
+            // cmbAtisOn
             // 
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
-            resources.GetString("comboBox10.Items"),
-            resources.GetString("comboBox10.Items1"),
-            resources.GetString("comboBox10.Items2"),
-            resources.GetString("comboBox10.Items3"),
-            resources.GetString("comboBox10.Items4"),
-            resources.GetString("comboBox10.Items5")});
-            resources.ApplyResources(this.comboBox10, "comboBox10");
-            this.comboBox10.Name = "comboBox10";
+            this.cmbAtisOn.FormattingEnabled = true;
+            this.cmbAtisOn.Items.AddRange(new object[] {
+            resources.GetString("cmbAtisOn.Items"),
+            resources.GetString("cmbAtisOn.Items1"),
+            resources.GetString("cmbAtisOn.Items2"),
+            resources.GetString("cmbAtisOn.Items3"),
+            resources.GetString("cmbAtisOn.Items4"),
+            resources.GetString("cmbAtisOn.Items5")});
+            resources.ApplyResources(this.cmbAtisOn, "cmbAtisOn");
+            this.cmbAtisOn.Name = "cmbAtisOn";
             // 
             // label2
             // 
@@ -584,16 +597,16 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox10);
-            this.Controls.Add(this.comboBox9);
-            this.Controls.Add(this.comboBox8);
-            this.Controls.Add(this.comboBox7);
-            this.Controls.Add(this.comboBox6);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbAtisOn);
+            this.Controls.Add(this.cmbAtisDokuz);
+            this.Controls.Add(this.cmbAtisSekiz);
+            this.Controls.Add(this.cmbAtisYedi);
+            this.Controls.Add(this.cmbAtisAlti);
+            this.Controls.Add(this.cmbAtisBes);
+            this.Controls.Add(this.cmbAtisDort);
+            this.Controls.Add(this.cmbAtisUc);
+            this.Controls.Add(this.cmbAtisIki);
+            this.Controls.Add(this.cmbAtisBir);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.tableLayoutPanel4);
             this.Controls.Add(this.tableLayoutPanel3);
@@ -650,16 +663,16 @@
         private System.Windows.Forms.Button btnKaydet;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.ComboBox comboBox10;
+        private System.Windows.Forms.ComboBox cmbAtisBir;
+        private System.Windows.Forms.ComboBox cmbAtisIki;
+        private System.Windows.Forms.ComboBox cmbAtisUc;
+        private System.Windows.Forms.ComboBox cmbAtisDort;
+        private System.Windows.Forms.ComboBox cmbAtisBes;
+        private System.Windows.Forms.ComboBox cmbAtisAlti;
+        private System.Windows.Forms.ComboBox cmbAtisYedi;
+        private System.Windows.Forms.ComboBox cmbAtisSekiz;
+        private System.Windows.Forms.ComboBox cmbAtisDokuz;
+        private System.Windows.Forms.ComboBox cmbAtisOn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -671,5 +684,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button btnSifirla;
     }
 }

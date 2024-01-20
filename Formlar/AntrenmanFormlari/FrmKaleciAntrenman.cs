@@ -354,6 +354,8 @@ namespace AntrenmanTakip.Formlar.AntrenmanFormlari
                         label1.Text = "Please select the player you want to train";
                         lblAntrenmanTuru.Text = "No training type selected.";
                     }
+                    ModbusScan.Stop();
+                    objIModbusMaster.Disconnection();
                 }
             }
             else
@@ -444,10 +446,10 @@ namespace AntrenmanTakip.Formlar.AntrenmanFormlari
         private void btnKaydet_Click(object sender, EventArgs e)
         {
             AntrenmanEkle(txtBasariliAtis.Text);
-            txtBasariliAtis.Text = "";
             try
             {
                 objIModbusMaster.WriteSingleRegister(slaveAddress, 4096, d0);
+                ElementleriSifirla();
             }
             catch (Exception ex)
             {
@@ -463,6 +465,39 @@ namespace AntrenmanTakip.Formlar.AntrenmanFormlari
         private void lblZaman_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSifirla_Click(object sender, EventArgs e)
+        {
+            ElementleriSifirla();
+        }
+        private void ElementleriSifirla()
+        {
+            if (systemLanguage == "English")
+            {
+                label1.Text = "Please select the player to train.";
+            }
+            else if (systemLanguage == "Turkish")
+            {
+                label1.Text = "Lütfen antrenman yapılacak oyuncuyu seçiniz.";
+            }
+            lblZaman.Text = "00:00";
+            sporcu = null;
+            TumButonlariPasifYap();
+            cmbAtisBir.SelectedIndex = 0;
+            cmbAtisIki.SelectedIndex = 0;
+            cmbAtisUc.SelectedIndex = 0;
+            cmbAtisDort.SelectedIndex = 0;
+            cmbAtisBes.SelectedIndex = 0;
+            cmbAtisAlti.SelectedIndex = 0;
+            cmbAtisYedi.SelectedIndex = 0;
+            cmbAtisSekiz.SelectedIndex = 0;
+            cmbAtisDokuz.SelectedIndex = 0;
+            cmbAtisOn.SelectedIndex = 0;
+            if (systemLanguage == "English")
+                txtBasariliAtis.Text = "Successful Shoot";
+            else if (systemLanguage == "Turkish")
+                txtBasariliAtis.Text = "Başarılı Atış Sayısı";
         }
 
         private void TumButonlariPasifYap()

@@ -46,6 +46,7 @@ namespace AntrenmanTakip.Formlar.AntrenmanFormlari
 
         private void FrmAntrenman_Load(object sender, EventArgs e)
         {
+            port = Context._context.PortAyari.FirstOrDefault(p => p.Id == 1).Port;
             if (txtBasariliAtis.Text == "")
                 btnKaydet.Enabled = false;
             //Veri Tabanı işlemleri
@@ -737,6 +738,8 @@ namespace AntrenmanTakip.Formlar.AntrenmanFormlari
                         label1.Text = "Please select the player you want to practice";
                         lblAntrenmanTuru.Text = "No practice type selected";
                     }
+                    ModbusScan.Stop();
+                    objIModbusMaster.Disconnection();
                 }
             }
             else
@@ -798,6 +801,10 @@ namespace AntrenmanTakip.Formlar.AntrenmanFormlari
                 _frmAyarlar = new FrmAyarlar();
                 _frmAyarlar.Show();
             }
+            else
+            {
+                _frmAyarlar.BringToFront();
+            }
         }
 
         private void btnOturumKapat_Click(object sender, EventArgs e)
@@ -828,11 +835,21 @@ namespace AntrenmanTakip.Formlar.AntrenmanFormlari
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
+            var bolge1 = cmbAtisBir.SelectedItem.ToString();
+            var bolge2 = cmbAtisIki.SelectedItem.ToString();
+            var bolge3 = cmbAtisUc.SelectedItem.ToString();
+            var bolge4 = cmbAtisDort.SelectedItem.ToString();
+            var bolge5 = cmbAtisBes.SelectedItem.ToString();
+            var bolge6 = cmbAtisAlti.SelectedItem.ToString();
+            var bolge7 = cmbAtisYedi.SelectedItem.ToString();
+            var bolge8 = cmbAtisSekiz.SelectedItem.ToString();
+            var bolge9 = cmbAtisDokuz.SelectedItem.ToString();
+            var bolge10 = cmbAtisOn.SelectedItem.ToString();
             AntrenmanEkle(txtBasariliAtis.Text);
-            txtBasariliAtis.Text = "";
             try
             {
                 objIModbusMaster.WriteSingleRegister(slaveAddress, 4096, d0);
+                ElementleriSifirla();
             }
             catch (Exception ex)
             {
@@ -846,6 +863,44 @@ namespace AntrenmanTakip.Formlar.AntrenmanFormlari
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSifirla_Click(object sender, EventArgs e)
+        {
+            ElementleriSifirla();
+        }
+        private void ElementleriSifirla()
+        {
+            if (systemLanguage == "English")
+            {
+                label1.Text = "Please select the player to train.";
+            }
+            else if (systemLanguage == "Turkish")
+            {
+                label1.Text = "Lütfen antrenman yapılacak oyuncuyu seçiniz.";
+            }
+            lblZaman.Text = "00:00";
+            sporcu = null;
+            TumButonlariPasifYap();
+            cmbAtisBir.SelectedIndex = 0;
+            cmbAtisIki.SelectedIndex = 0;
+            cmbAtisUc.SelectedIndex = 0;
+            cmbAtisDort.SelectedIndex = 0;
+            cmbAtisBes.SelectedIndex = 0;
+            cmbAtisAlti.SelectedIndex = 0;
+            cmbAtisYedi.SelectedIndex = 0;
+            cmbAtisSekiz.SelectedIndex = 0;
+            cmbAtisDokuz.SelectedIndex = 0;
+            cmbAtisOn.SelectedIndex = 0;
+            if (systemLanguage == "English")
+                txtBasariliAtis.Text = "Successful Shoot";
+            else if (systemLanguage == "Turkish")
+                txtBasariliAtis.Text = "Başarılı Atış Sayısı";
+        }
+
+        private void cmbAtisBir_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
@@ -884,6 +939,6 @@ namespace AntrenmanTakip.Formlar.AntrenmanFormlari
             }
             Context._context.SaveChanges();
             InfService.ShowMessage("Antrenman kaydı eklendi.", "Training log added.");
-        }
+        }     
     }
 }

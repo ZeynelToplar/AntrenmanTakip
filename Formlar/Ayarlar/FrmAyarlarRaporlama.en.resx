@@ -141,6 +141,9 @@
   <data name="DogumTarihi.HeaderText" xml:space="preserve">
     <value>Date Of Birth</value>
   </data>
+  <data name="gridViewSporcular.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 25</value>
@@ -148,11 +151,17 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Practice Type:</value>
   </data>
+  <data name="label1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>152, 25</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Selected player:</value>
+  </data>
+  <data name="label2.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lblSecilenSporcu.Size" type="System.Drawing.Size, System.Drawing">
     <value>152, 25</value>
@@ -160,11 +169,17 @@
   <data name="lblSecilenSporcu.Text" xml:space="preserve">
     <value>No one selected.</value>
   </data>
+  <data name="lblSecilenSporcu.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>113, 25</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>Chart Type:</value>
+  </data>
+  <data name="label4.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 25</value>
@@ -172,11 +187,17 @@
   <data name="label5.Text" xml:space="preserve">
     <value>Ball Position</value>
   </data>
+  <data name="label5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>155, 25</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
     <value>Ball Arrival Type</value>
+  </data>
+  <data name="label6.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
     <value>482, 323</value>
@@ -187,17 +208,38 @@
   <data name="label7.Text" xml:space="preserve">
     <value>Shoot Type:</value>
   </data>
+  <data name="label7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbTK.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="cmbTGS.Location" type="System.Drawing.Point, System.Drawing">
     <value>342, 351</value>
   </data>
+  <data name="cmbTGS.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="cmbVB.Location" type="System.Drawing.Point, System.Drawing">
     <value>478, 351</value>
+  </data>
+  <data name="cmbVB.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbGrafikTuru.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>133, 25</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
     <value>Statistic Type:</value>
+  </data>
+  <data name="label8.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbIstatistikTuru.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lblAy.Location" type="System.Drawing.Point, System.Drawing">
     <value>36, 478</value>
@@ -208,6 +250,9 @@
   <data name="lblAy.Text" xml:space="preserve">
     <value>Month</value>
   </data>
+  <data name="lblAy.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblYil.Location" type="System.Drawing.Point, System.Drawing">
     <value>146, 478</value>
   </data>
@@ -217,11 +262,23 @@
   <data name="lblYil.Text" xml:space="preserve">
     <value>Year</value>
   </data>
+  <data name="lblYil.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAy.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtYıl.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="btnRaporAl.Location" type="System.Drawing.Point, System.Drawing">
     <value>419, 461</value>
   </data>
   <data name="btnRaporAl.Text" xml:space="preserve">
     <value>Get Report</value>
+  </data>
+  <data name="btnRaporAl.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>435, 143</value>
@@ -239,11 +296,20 @@ It will return how many records have data.
 Note: The order information you entered in the sequential training statistics, for example 1-20
 If you write as follows, it will bring the first 20 training.</value>
   </data>
+  <data name="label3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtId.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblBaslangic.Size" type="System.Drawing.Size, System.Drawing">
     <value>56, 25</value>
   </data>
   <data name="lblBaslangic.Text" xml:space="preserve">
     <value>Start</value>
+  </data>
+  <data name="lblBaslangic.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lblBitis.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 25</value>
@@ -251,11 +317,17 @@ If you write as follows, it will bring the first 20 training.</value>
   <data name="lblBitis.Text" xml:space="preserve">
     <value>End</value>
   </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 25</value>
+  <data name="lblBitis.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>Order</value>
+  <data name="dtBaslangic.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="dtBitis.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSira.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="txtSira.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 20</value>
@@ -269,5 +341,8 @@ If you write as follows, it will bring the first 20 training.</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Reporting</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
   </data>
 </root>

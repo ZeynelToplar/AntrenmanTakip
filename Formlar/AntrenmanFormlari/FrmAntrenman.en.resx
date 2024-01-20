@@ -165,13 +165,10 @@
     <value>NoControl</value>
   </data>
   <data name="lblZaman.Location" type="System.Drawing.Point, System.Drawing">
-    <value>372, 0</value>
+    <value>298, 0</value>
   </data>
   <data name="lblZaman.Size" type="System.Drawing.Size, System.Drawing">
-    <value>363, 64</value>
-  </data>
-  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1478, 41</value>
+    <value>289, 64</value>
   </data>
   <data name="btnOturumKapat.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -197,20 +194,11 @@
   <data name="btnSettings.ToolTip" xml:space="preserve">
     <value>Settings</value>
   </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1478, 41</value>
+  </data>
   <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>1477, 200</value>
-  </data>
-  <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1279, 481</value>
-  </data>
-  <data name="flowLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>369, 3</value>
-  </data>
-  <data name="flowLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 475</value>
-  </data>
-  <data name="btnFalsolu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="btnFalsolu.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -218,17 +206,11 @@
   <data name="btnFalsolu.Text" xml:space="preserve">
     <value>CURVEBALL</value>
   </data>
-  <data name="btnYerden.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
   <data name="btnYerden.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnYerden.Text" xml:space="preserve">
     <value>FROM THE GROUND</value>
-  </data>
-  <data name="btnHavadan.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="btnHavadan.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -245,11 +227,11 @@
   <data name="lblAntrenmanTuru.Text" xml:space="preserve">
     <value>No Training Type Selected.</value>
   </data>
-  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>360, 475</value>
+  <data name="flowLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>369, 3</value>
   </data>
-  <data name="btnKarsidan.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+  <data name="flowLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 475</value>
   </data>
   <data name="btnKarsidan.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -257,17 +239,11 @@
   <data name="btnKarsidan.Text" xml:space="preserve">
     <value>ACROSS</value>
   </data>
-  <data name="btnSol.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
   <data name="btnSol.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnSol.Text" xml:space="preserve">
     <value>LEFT</value>
-  </data>
-  <data name="btnSag.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="btnSag.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -275,14 +251,11 @@
   <data name="btnSag.Text" xml:space="preserve">
     <value>RIGHT</value>
   </data>
-  <data name="tableLayoutPanel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 734</value>
+  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 475</value>
   </data>
-  <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1478, 64</value>
-  </data>
-  <data name="btnAntrenmanBaslat.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
+  <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1279, 481</value>
   </data>
   <data name="btnAntrenmanBaslat.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -291,55 +264,73 @@
     <value>Start Practice</value>
   </data>
   <data name="txtBasariliAtis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>741, 3</value>
+    <value>593, 3</value>
   </data>
   <data name="txtBasariliAtis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>363, 58</value>
+    <value>289, 58</value>
+  </data>
+  <data name="txtBasariliAtis.Text" xml:space="preserve">
+    <value>Successful Shoot</value>
   </data>
   <data name="btnKaydet.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnKaydet.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1110, 3</value>
+    <value>1183, 3</value>
   </data>
   <data name="btnKaydet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>365, 58</value>
+    <value>292, 58</value>
   </data>
   <data name="btnKaydet.Text" xml:space="preserve">
     <value>Save</value>
   </data>
+  <data name="btnSifirla.Location" type="System.Drawing.Point, System.Drawing">
+    <value>888, 3</value>
+  </data>
+  <data name="btnSifirla.Size" type="System.Drawing.Size, System.Drawing">
+    <value>289, 58</value>
+  </data>
+  <data name="btnSifirla.Text" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="tableLayoutPanel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 734</value>
+  </data>
+  <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1478, 64</value>
+  </data>
   <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1478, 25</value>
   </data>
-  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1375, 345</value>
+  <data name="cmbAtisBir.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1372, 345</value>
   </data>
-  <data name="comboBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1375, 372</value>
+  <data name="cmbAtisIki.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1372, 376</value>
   </data>
-  <data name="comboBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1375, 399</value>
+  <data name="cmbAtisUc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1372, 403</value>
   </data>
-  <data name="comboBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1375, 426</value>
+  <data name="cmbAtisDort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1372, 430</value>
   </data>
-  <data name="comboBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1375, 453</value>
+  <data name="cmbAtisBes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1372, 457</value>
   </data>
-  <data name="comboBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1375, 480</value>
+  <data name="cmbAtisAlti.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1372, 484</value>
   </data>
-  <data name="comboBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1375, 507</value>
+  <data name="cmbAtisYedi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1372, 511</value>
   </data>
-  <data name="comboBox8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1375, 534</value>
+  <data name="cmbAtisSekiz.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1372, 538</value>
   </data>
-  <data name="comboBox9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1375, 561</value>
+  <data name="cmbAtisDokuz.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1372, 565</value>
   </data>
-  <data name="comboBox10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1375, 588</value>
+  <data name="cmbAtisOn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1372, 592</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>1334, 311</value>

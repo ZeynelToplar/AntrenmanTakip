@@ -195,7 +195,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>353, 29</value>
+    <value>273, 24</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Please select the player to train.</value>
@@ -222,10 +222,10 @@
     <value>Time:</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 24</value>
+    <value>160, 24</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Successfull Shoot:</value>
+    <value>Successful Shoot:</value>
   </data>
   <data name="btnKaydet.Text" xml:space="preserve">
     <value>Save</value>
@@ -235,6 +235,105 @@
   </data>
   <data name="btnAntrenmanBaslat.Text" xml:space="preserve">
     <value>Start</value>
+  </data>
+  <data name="btnSifirla.Text" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 20</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>10. Shoot</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 20</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>9. Shoot</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 20</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>8. Shoot</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 20</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>7. Shoot</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 20</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>6. Shoot</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 20</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>5. Shoot</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 20</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>4. Shoot</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 20</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>3. Shoot</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 20</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>2. Shoot</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 20</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>1. Shoot</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 24</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Target</value>
+  </data>
+  <data name="cmbAtisOn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>942, 574</value>
+  </data>
+  <data name="cmbAtisDokuz.Location" type="System.Drawing.Point, System.Drawing">
+    <value>942, 547</value>
+  </data>
+  <data name="cmbAtisSekiz.Location" type="System.Drawing.Point, System.Drawing">
+    <value>942, 520</value>
+  </data>
+  <data name="cmbAtisYedi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>942, 493</value>
+  </data>
+  <data name="cmbAtisAlti.Location" type="System.Drawing.Point, System.Drawing">
+    <value>942, 466</value>
+  </data>
+  <data name="cmbAtisBes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>942, 439</value>
+  </data>
+  <data name="cmbAtisDort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>942, 412</value>
+  </data>
+  <data name="cmbAtisUc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>942, 385</value>
+  </data>
+  <data name="cmbAtisIki.Location" type="System.Drawing.Point, System.Drawing">
+    <value>942, 358</value>
+  </data>
+  <data name="cmbAtisBir.Location" type="System.Drawing.Point, System.Drawing">
+    <value>942, 331</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

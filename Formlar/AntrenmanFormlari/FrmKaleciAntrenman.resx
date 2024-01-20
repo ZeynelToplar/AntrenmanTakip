@@ -117,206 +117,809 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnOturumKapat.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="label6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>6. Atış</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnOturumKapat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 6</value>
-  </data>
-  <data name="btnOturumKapat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 36</value>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>859, 494</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnOturumKapat.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="btnYerden.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>280, 17</value>
-  </metadata>
-  <data name="btnOturumKapat.ToolTip" xml:space="preserve">
-    <value>Yeniden başlat</value>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
   </data>
-  <data name="&gt;&gt;btnOturumKapat.Name" xml:space="preserve">
-    <value>btnOturumKapat</value>
+  <data name="&gt;&gt;cmbAtisAlti.Name" xml:space="preserve">
+    <value>cmbAtisAlti</value>
   </data>
-  <data name="&gt;&gt;btnOturumKapat.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
   </data>
-  <data name="&gt;&gt;btnOturumKapat.Parent" xml:space="preserve">
-    <value>panel2</value>
+  <data name="btnKaydet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>261, 56</value>
   </data>
-  <data name="&gt;&gt;btnOturumKapat.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="cmbAtisYedi.Items3" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="btnSettings.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 4</value>
-  </data>
-  <data name="btnSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 39</value>
-  </data>
-  <data name="btnSettings.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="btnSettings.ToolTip" xml:space="preserve">
-    <value>Ayarlar</value>
+  <data name="&gt;&gt;btnSol.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;btnSettings.Name" xml:space="preserve">
     <value>btnSettings</value>
   </data>
-  <data name="&gt;&gt;btnSettings.Type" xml:space="preserve">
+  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="btnSifirla.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;btnSag.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSettings.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;btnSettings.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnGeriGit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnGeriGit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 4</value>
-  </data>
-  <data name="btnGeriGit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 39</value>
-  </data>
-  <data name="btnGeriGit.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnGeriGit.ToolTip" xml:space="preserve">
-    <value>Geri git</value>
-  </data>
-  <data name="&gt;&gt;btnGeriGit.Name" xml:space="preserve">
-    <value>btnGeriGit</value>
-  </data>
-  <data name="&gt;&gt;btnGeriGit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnGeriGit.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;btnGeriGit.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 1</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1047, 45</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="gridViewSporcular.ColumnHeadersHeight" type="System.Int32, mscorlib">
-    <value>50</value>
-  </data>
-  <metadata name="Id.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Id.HeaderText" xml:space="preserve">
-    <value>Id</value>
-  </data>
-  <data name="Id.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <metadata name="Ad.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Ad.HeaderText" xml:space="preserve">
-    <value>Ad</value>
-  </data>
-  <data name="Ad.Width" type="System.Int32, mscorlib">
-    <value>115</value>
-  </data>
-  <metadata name="Soyad.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Soyad.HeaderText" xml:space="preserve">
-    <value>Soyad</value>
   </data>
   <data name="Soyad.Width" type="System.Int32, mscorlib">
     <value>115</value>
   </data>
-  <metadata name="Yas.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Yas.HeaderText" xml:space="preserve">
-    <value>Yaş</value>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>859, 359</value>
   </data>
-  <metadata name="Boy.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <data name="cmbAtisBir.Location" type="System.Drawing.Point, System.Drawing">
+    <value>932, 331</value>
+  </data>
+  <data name="&gt;&gt;btnHavadan.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;cmbAtisYedi.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="cmbAtisSekiz.Location" type="System.Drawing.Point, System.Drawing">
+    <value>932, 520</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisYedi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ModbusScan.Name" xml:space="preserve">
+    <value>ModbusScan</value>
+  </data>
+  <data name="&gt;&gt;lblAntrenmanTuru.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisSekiz.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisBes.Name" xml:space="preserve">
+    <value>cmbAtisBes</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisIki.Name" xml:space="preserve">
+    <value>cmbAtisIki</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 20</value>
+  </data>
+  <data name="cmbAtisIki.Items3" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnSifirla.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;btnKarsidan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnSol.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 125</value>
+  </data>
+  <data name="cmbAtisDort.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbAtisSekiz.Items5" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="Ad.HeaderText" xml:space="preserve">
+    <value>Ad</value>
+  </data>
+  <data name="cmbAtisSekiz.Items2" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cmbAtisSekiz.Items1" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnGeriGit.Name" xml:space="preserve">
+    <value>btnGeriGit</value>
+  </data>
   <data name="Boy.HeaderText" xml:space="preserve">
     <value>Boy</value>
   </data>
-  <metadata name="Kilo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Kilo.HeaderText" xml:space="preserve">
-    <value>Kilo</value>
+  <data name="btnGeriGit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 4</value>
   </data>
-  <metadata name="Mevki.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Mevki.HeaderText" xml:space="preserve">
-    <value>Mevki</value>
+  <data name="btnFalsolu.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="Mevki.Width" type="System.Int32, mscorlib">
-    <value>120</value>
-  </data>
-  <data name="gridViewSporcular.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 49</value>
-  </data>
-  <data name="gridViewSporcular.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
-    <value>Vertical</value>
-  </data>
-  <data name="gridViewSporcular.Size" type="System.Drawing.Size, System.Drawing">
-    <value>875, 216</value>
-  </data>
-  <data name="gridViewSporcular.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="&gt;&gt;timerAntrenman.Name" xml:space="preserve">
+    <value>timerAntrenman</value>
   </data>
   <data name="&gt;&gt;gridViewSporcular.Name" xml:space="preserve">
     <value>gridViewSporcular</value>
   </data>
-  <data name="&gt;&gt;gridViewSporcular.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisDort.Name" xml:space="preserve">
+    <value>cmbAtisDort</value>
+  </data>
+  <data name="cmbAtisDokuz.Items3" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="cmbAtisDokuz.Items5" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cmbAtisDokuz.Items4" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisOn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnGeriGit.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cmbAtisDort.Items5" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnKaydet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>492, 545</value>
+  </data>
+  <data name="gridViewSporcular.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisDokuz.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnSifirla.Location" type="System.Drawing.Point, System.Drawing">
+    <value>492, 483</value>
+  </data>
+  <data name="panel2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnKaydet.Text" xml:space="preserve">
+    <value>Kaydet</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblAntrenmanTuru.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="label11.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;Ad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblAntrenmanTuru.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 616</value>
+  </data>
+  <data name="&gt;&gt;timerAntrenman.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cmbAtisAlti.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbAtisDokuz.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 21</value>
+  </data>
+  <data name="gridViewSporcular.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 49</value>
+  </data>
+  <data name="cmbAtisDokuz.Items" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Soyad.HeaderText" xml:space="preserve">
+    <value>Soyad</value>
+  </data>
+  <data name="btnKarsidan.Text" xml:space="preserve">
+    <value>KARŞIDAN</value>
+  </data>
+  <data name="&gt;&gt;btnHavadan.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtBasariliAtis.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="label8.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="btnSag.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="label13.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="Id.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisSekiz.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Yas.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnKarsidan.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 20</value>
+  </data>
+  <data name="btnSettings.ToolTip" xml:space="preserve">
+    <value>Ayarlar</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cmbAtisUc.Items5" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnSol.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 102</value>
+  </data>
+  <data name="&gt;&gt;txtBasariliAtis.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="cmbAtisSekiz.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 21</value>
+  </data>
+  <data name="cmbAtisBir.Items" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Kilo.HeaderText" xml:space="preserve">
+    <value>Kilo</value>
+  </data>
+  <data name="cmbAtisIki.Items" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gridViewSporcular.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblAntrenmanTuru.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;btnKaydet.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>859, 521</value>
+  </data>
+  <data name="&gt;&gt;lblZaman.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1038, 664</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnOturumKapat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 36</value>
+  </data>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;btnSettings.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="btnGeriGit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 39</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btnSifirla.Text" xml:space="preserve">
+    <value>Sıfırla</value>
+  </data>
+  <data name="btnSag.Text" xml:space="preserve">
+    <value>SAĞDAN</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 20</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisUc.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Hedef Bölge</value>
+  </data>
+  <data name="label14.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblZaman.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>859, 386</value>
+  </data>
+  <data name="Mevki.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>859, 575</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Lütfen antrenman yapılacak oyuncuyu seçiniz.</value>
+  </data>
+  <data name="lblAntrenmanTuru.Text" xml:space="preserve">
+    <value>Antrenman türü seçilmedi.</value>
+  </data>
+  <data name="btnSifirla.Size" type="System.Drawing.Size, System.Drawing">
+    <value>261, 56</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cmbAtisOn.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="cmbAtisAlti.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 21</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>431, 290</value>
+  </data>
+  <data name="btnKaydet.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24.75pt</value>
+  </data>
+  <data name="btnKarsidan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 102</value>
+  </data>
+  <data name="btnAntrenmanBaslat.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisDort.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>9. Atış</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnYerden.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Kilo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Mevki.HeaderText" xml:space="preserve">
+    <value>Mevki</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisBir.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnOturumKapat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 1</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 24</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cmbAtisAlti.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnKarsidan.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>859, 548</value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnGeriGit.ToolTip" xml:space="preserve">
+    <value>Geri git</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnYerden.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="cmbAtisDokuz.Items2" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>7. Atış</value>
+  </data>
+  <data name="cmbAtisDort.Items1" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnKarsidan.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="lblZaman.Text" xml:space="preserve">
+    <value>00:00</value>
+  </data>
+  <data name="&gt;&gt;btnSol.Name" xml:space="preserve">
+    <value>btnSol</value>
+  </data>
+  <data name="cmbAtisUc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 21</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnOturumKapat.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cmbAtisOn.Items1" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnSag.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 228</value>
+  </data>
+  <data name="cmbAtisIki.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="cmbAtisIki.Items2" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnOturumKapat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 6</value>
+  </data>
+  <data name="cmbAtisIki.Items4" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cmbAtisIki.Items5" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisDokuz.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="lblAntrenmanTuru.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 18pt</value>
+  </data>
+  <data name="label9.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gridViewSporcular.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>882, 290</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>414, 336</value>
+  </data>
+  <data name="&gt;&gt;txtBasariliAtis.Name" xml:space="preserve">
+    <value>txtBasariliAtis</value>
+  </data>
+  <data name="&gt;&gt;Soyad.Name" xml:space="preserve">
+    <value>Soyad</value>
+  </data>
+  <data name="cmbAtisDokuz.Location" type="System.Drawing.Point, System.Drawing">
+    <value>932, 547</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>859, 413</value>
+  </data>
+  <data name="&gt;&gt;btnSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;btnAntrenmanBaslat.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cmbAtisOn.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;btnSol.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="cmbAtisDort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>932, 412</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisSekiz.Name" xml:space="preserve">
+    <value>cmbAtisSekiz</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>488, 396</value>
+  </data>
+  <data name="btnSag.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;btnAntrenmanBaslat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cmbAtisBir.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btnGeriGit.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="btnAntrenmanBaslat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>492, 325</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnKaydet.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 20</value>
+  </data>
+  <data name="&gt;&gt;txtBasariliAtis.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnSifirla.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnGeriGit.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;Mevki.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnSettings.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>394, 24</value>
+  </data>
+  <data name="&gt;&gt;btnKaydet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 24</value>
+  </data>
+  <data name="&gt;&gt;btnFalsolu.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="btnKarsidan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 19</value>
+  </data>
+  <data name="btnYerden.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="cmbAtisBir.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 21</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>859, 440</value>
+  </data>
+  <data name="btnSifirla.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24.75pt</value>
+  </data>
+  <data name="btnKarsidan.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btnSag.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 102</value>
+  </data>
+  <data name="cmbAtisAlti.Items2" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnKarsidan.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="&gt;&gt;lblZaman.Name" xml:space="preserve">
+    <value>lblZaman</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 24</value>
+  </data>
+  <data name="&gt;&gt;btnHavadan.Name" xml:space="preserve">
+    <value>btnHavadan</value>
+  </data>
+  <data name="lblZaman.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="label1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>488, 443</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="txtBasariliAtis.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="lblZaman.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 24</value>
+  </data>
+  <data name="cmbAtisYedi.Items2" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cmbAtisOn.Items5" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="cmbAtisUc.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;btnAntrenmanBaslat.Name" xml:space="preserve">
+    <value>btnAntrenmanBaslat</value>
   </data>
   <data name="&gt;&gt;gridViewSporcular.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;gridViewSporcular.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;lblZaman.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnFalsolu.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnSol.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
-  <data name="btnFalsolu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>233, 228</value>
+  <data name="cmbAtisAlti.Items" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="btnFalsolu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 102</value>
+  <data name="&gt;&gt;btnAntrenmanBaslat.ZOrder" xml:space="preserve">
+    <value>27</value>
   </data>
-  <data name="btnFalsolu.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnHavadan.Text" xml:space="preserve">
+    <value>HAVADAN</value>
+  </data>
+  <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>8. Atış</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisOn.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblAntrenmanTuru.Name" xml:space="preserve">
+    <value>lblAntrenmanTuru</value>
+  </data>
+  <data name="cmbAtisAlti.Items1" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblZaman.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="btnFalsolu.Text" xml:space="preserve">
     <value>FALSOLU</value>
@@ -324,455 +927,263 @@
   <data name="btnFalsolu.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
   </data>
-  <data name="&gt;&gt;btnFalsolu.Name" xml:space="preserve">
-    <value>btnFalsolu</value>
-  </data>
-  <data name="&gt;&gt;btnFalsolu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnFalsolu.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;btnFalsolu.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnSag.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="btnSag.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 228</value>
-  </data>
-  <data name="btnSag.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 102</value>
-  </data>
-  <data name="btnSag.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="btnSag.Text" xml:space="preserve">
-    <value>SAĞDAN</value>
-  </data>
-  <data name="btnSag.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
-  </data>
-  <data name="&gt;&gt;btnSag.Name" xml:space="preserve">
-    <value>btnSag</value>
-  </data>
-  <data name="&gt;&gt;btnSag.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSag.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;btnSag.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnYerden.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="btnYerden.Location" type="System.Drawing.Point, System.Drawing">
-    <value>233, 125</value>
-  </data>
-  <data name="btnYerden.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 102</value>
-  </data>
-  <data name="btnYerden.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="btnYerden.Text" xml:space="preserve">
-    <value>YERDEN</value>
-  </data>
-  <data name="btnYerden.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
-  </data>
-  <data name="&gt;&gt;btnYerden.Name" xml:space="preserve">
-    <value>btnYerden</value>
-  </data>
-  <data name="&gt;&gt;btnYerden.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnYerden.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;btnYerden.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btnSol.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="btnSol.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 125</value>
-  </data>
-  <data name="btnSol.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 102</value>
-  </data>
-  <data name="btnSol.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="btnSol.Text" xml:space="preserve">
-    <value>SOLDAN</value>
-  </data>
-  <data name="btnSol.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
-  </data>
-  <data name="&gt;&gt;btnSol.Name" xml:space="preserve">
-    <value>btnSol</value>
-  </data>
-  <data name="&gt;&gt;btnSol.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSol.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;btnSol.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btnHavadan.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="btnHavadan.Location" type="System.Drawing.Point, System.Drawing">
-    <value>233, 19</value>
-  </data>
-  <data name="btnHavadan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 102</value>
-  </data>
   <data name="btnHavadan.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="btnHavadan.Text" xml:space="preserve">
-    <value>HAVADAN</value>
+  <data name="&gt;&gt;cmbAtisDokuz.Name" xml:space="preserve">
+    <value>cmbAtisDokuz</value>
   </data>
-  <data name="btnHavadan.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
-  </data>
-  <data name="&gt;&gt;btnHavadan.Name" xml:space="preserve">
-    <value>btnHavadan</value>
-  </data>
-  <data name="&gt;&gt;btnHavadan.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnHavadan.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;btnHavadan.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="btnKarsidan.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnFalsolu.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
-  <data name="btnKarsidan.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 19</value>
+  <data name="label7.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="btnKarsidan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 102</value>
+  <data name="cmbAtisIki.Location" type="System.Drawing.Point, System.Drawing">
+    <value>932, 358</value>
   </data>
-  <data name="btnKarsidan.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="btnKarsidan.Text" xml:space="preserve">
-    <value>KARŞIDAN</value>
-  </data>
-  <data name="btnKarsidan.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
-  </data>
-  <data name="&gt;&gt;btnKarsidan.Name" xml:space="preserve">
-    <value>btnKarsidan</value>
-  </data>
-  <data name="&gt;&gt;btnKarsidan.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnKarsidan.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;btnKarsidan.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 271</value>
   </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>414, 336</value>
+  <data name="&gt;&gt;btnFalsolu.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="cmbAtisDort.Items2" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1047, 45</value>
+  </data>
+  <data name="btnSol.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Antrenman Türü</value>
+  <data name="cmbAtisYedi.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="txtBasariliAtis.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;cmbAtisUc.Name" xml:space="preserve">
+    <value>cmbAtisUc</value>
   </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 18pt</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>470, 290</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>495, 29</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Lütfen antrenman yapılacak oyuncuyu seçiniz.</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="lblAntrenmanTuru.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblAntrenmanTuru.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 18pt</value>
-  </data>
-  <data name="lblAntrenmanTuru.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 616</value>
-  </data>
-  <data name="lblAntrenmanTuru.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="lblAntrenmanTuru.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 39</value>
-  </data>
-  <data name="lblAntrenmanTuru.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="lblAntrenmanTuru.Text" xml:space="preserve">
-    <value>Antrenman türü seçilmedi.</value>
-  </data>
-  <data name="&gt;&gt;lblAntrenmanTuru.Name" xml:space="preserve">
-    <value>lblAntrenmanTuru</value>
-  </data>
-  <data name="&gt;&gt;lblAntrenmanTuru.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblAntrenmanTuru.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblAntrenmanTuru.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="lblZaman.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblZaman.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14pt</value>
-  </data>
-  <data name="lblZaman.Location" type="System.Drawing.Point, System.Drawing">
-    <value>622, 396</value>
-  </data>
-  <data name="lblZaman.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 24</value>
-  </data>
-  <data name="lblZaman.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="lblZaman.Text" xml:space="preserve">
-    <value>00:00</value>
-  </data>
-  <data name="&gt;&gt;lblZaman.Name" xml:space="preserve">
-    <value>lblZaman</value>
-  </data>
-  <data name="&gt;&gt;lblZaman.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="cmbAtisDokuz.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
   </data>
   <data name="&gt;&gt;lblZaman.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;lblZaman.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="btnKaydet.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <metadata name="timerAntrenman.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="ModbusScan.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>158, 17</value>
-  </metadata>
-  <data name="txtBasariliAtis.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15pt</value>
-  </data>
-  <data name="txtBasariliAtis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>606, 437</value>
-  </data>
-  <data name="txtBasariliAtis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 30</value>
-  </data>
-  <data name="txtBasariliAtis.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;txtBasariliAtis.Name" xml:space="preserve">
-    <value>txtBasariliAtis</value>
-  </data>
-  <data name="&gt;&gt;txtBasariliAtis.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtBasariliAtis.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txtBasariliAtis.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14pt</value>
   </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="cmbAtisYedi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 21</value>
   </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>488, 396</value>
+  <data name="Id.HeaderText" xml:space="preserve">
+    <value>Id</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 24</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Süre:</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14pt</value>
-  </data>
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>488, 443</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 24</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Başarılı Atış:</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
   </data>
   <data name="&gt;&gt;label3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisUc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 20</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Id.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;Mevki.Name" xml:space="preserve">
+    <value>Mevki</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="cmbAtisOn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>932, 574</value>
+  </data>
+  <data name="cmbAtisAlti.Items3" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisSekiz.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="cmbAtisSekiz.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="btnKaydet.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 24.75pt</value>
+  <data name="cmbAtisBes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 21</value>
   </data>
-  <data name="btnKaydet.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="btnKaydet.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="cmbAtisBes.Items4" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="btnKaydet.Location" type="System.Drawing.Point, System.Drawing">
-    <value>492, 499</value>
+  <data name="cmbAtisBes.Items5" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="btnKaydet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>261, 56</value>
+  <data name="cmbAtisBes.Items2" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="btnKaydet.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="cmbAtisBes.Items3" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="btnKaydet.Text" xml:space="preserve">
-    <value>Kaydet</value>
+  <data name="cmbAtisBir.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
-  <data name="&gt;&gt;btnKaydet.Name" xml:space="preserve">
-    <value>btnKaydet</value>
-  </data>
-  <data name="&gt;&gt;btnKaydet.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
   </data>
   <data name="&gt;&gt;btnKaydet.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnKaydet.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;cmbAtisIki.ZOrder" xml:space="preserve">
+    <value>19</value>
   </data>
-  <data name="btnAntrenmanBaslat.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 24.75pt</value>
-  </data>
-  <data name="btnAntrenmanBaslat.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="btnAntrenmanBaslat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>492, 325</value>
-  </data>
-  <data name="btnAntrenmanBaslat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>261, 56</value>
-  </data>
-  <data name="btnAntrenmanBaslat.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="btnAntrenmanBaslat.Text" xml:space="preserve">
-    <value>Başlat</value>
-  </data>
-  <data name="&gt;&gt;btnAntrenmanBaslat.Name" xml:space="preserve">
-    <value>btnAntrenmanBaslat</value>
-  </data>
-  <data name="&gt;&gt;btnAntrenmanBaslat.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnAntrenmanBaslat.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cmbAtisIki.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnAntrenmanBaslat.ZOrder" xml:space="preserve">
+  <data name="cmbAtisBir.Items1" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cmbAtisOn.Items4" xml:space="preserve">
     <value>5</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  <data name="cmbAtisBir.Items4" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cmbAtisBir.Items5" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisIki.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="btnHavadan.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSifirla.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="btnSol.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="&gt;&gt;btnSifirla.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Başarılı Atış:</value>
+  </data>
+  <data name="Ad.Width" type="System.Int32, mscorlib">
+    <value>115</value>
+  </data>
+  <data name="txtBasariliAtis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>606, 437</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FrmKaleciAntrenman</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnFalsolu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Süre:</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisBes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cmbAtisUc.Items4" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="&gt;&gt;btnGeriGit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>857, 331</value>
+  </data>
+  <data name="cmbAtisDort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 21</value>
+  </data>
+  <data name="btnOturumKapat.ToolTip" xml:space="preserve">
+    <value>Yeniden başlat</value>
   </data>
   <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>877, 664</value>
+  <data name="&gt;&gt;cmbAtisYedi.Name" xml:space="preserve">
+    <value>cmbAtisYedi</value>
+  </data>
+  <data name="cmbAtisUc.Items3" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Kilo.Name" xml:space="preserve">
+    <value>Kilo</value>
+  </data>
+  <data name="cmbAtisBir.Items2" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -980,76 +1391,574 @@
         UWjhtIuG3/gfzQGa+2QwjpcAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+  <data name="lblAntrenmanTuru.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Kaleci Antrenmanı</value>
+  <data name="cmbAtisDort.Items" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;Id.Name" xml:space="preserve">
-    <value>Id</value>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 20</value>
   </data>
-  <data name="&gt;&gt;Id.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="groupBox1.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;Ad.Name" xml:space="preserve">
-    <value>Ad</value>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;Ad.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="cmbAtisDort.Items3" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;Soyad.Name" xml:space="preserve">
-    <value>Soyad</value>
+  <data name="cmbAtisUc.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
   </data>
-  <data name="&gt;&gt;Soyad.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnHavadan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 102</value>
+  </data>
+  <data name="btnAntrenmanBaslat.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnYerden.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 102</value>
   </data>
   <data name="&gt;&gt;Yas.Name" xml:space="preserve">
     <value>Yas</value>
   </data>
-  <data name="&gt;&gt;Yas.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="cmbAtisIki.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 21</value>
   </data>
-  <data name="&gt;&gt;Boy.Name" xml:space="preserve">
-    <value>Boy</value>
+  <data name="cmbAtisYedi.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnYerden.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 125</value>
+  </data>
+  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;btnSag.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label10.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnFalsolu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 228</value>
+  </data>
+  <data name="btnFalsolu.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnFalsolu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 102</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>32</value>
   </data>
   <data name="&gt;&gt;Boy.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Kilo.Name" xml:space="preserve">
-    <value>Kilo</value>
+  <data name="cmbAtisBes.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;Kilo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Mevki.Name" xml:space="preserve">
-    <value>Mevki</value>
+  <data name="btnAntrenmanBaslat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>261, 56</value>
   </data>
-  <data name="&gt;&gt;Mevki.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="cmbAtisYedi.Items5" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="&gt;&gt;timerAntrenman.Name" xml:space="preserve">
-    <value>timerAntrenman</value>
+  <data name="btnAntrenmanBaslat.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;timerAntrenman.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;cmbAtisAlti.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ModbusScan.Name" xml:space="preserve">
-    <value>ModbusScan</value>
+  <data name="&gt;&gt;btnSol.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>3. Atış</value>
+  </data>
+  <data name="&gt;&gt;btnKarsidan.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cmbAtisBes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>932, 439</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisBes.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="cmbAtisUc.Items" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 20</value>
+  </data>
+  <data name="&gt;&gt;btnOturumKapat.Name" xml:space="preserve">
+    <value>btnOturumKapat</value>
+  </data>
+  <data name="cmbAtisBes.Items1" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cmbAtisYedi.Items1" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cmbAtisUc.Items1" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSag.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>859, 467</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisDort.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="lblAntrenmanTuru.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisAlti.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;btnSifirla.Name" xml:space="preserve">
+    <value>btnSifirla</value>
+  </data>
+  <data name="&gt;&gt;btnSettings.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>2. Atış</value>
+  </data>
+  <data name="cmbAtisSekiz.Items3" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Antrenman Türü</value>
+  </data>
+  <data name="&gt;&gt;btnSifirla.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisOn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnYerden.Text" xml:space="preserve">
+    <value>YERDEN</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Kaleci Antrenmanı</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 39</value>
+  </data>
+  <data name="cmbAtisDort.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>5. Atış</value>
+  </data>
+  <data name="cmbAtisOn.Items3" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnAntrenmanBaslat.Text" xml:space="preserve">
+    <value>Başlat</value>
+  </data>
+  <data name="cmbAtisYedi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>932, 493</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>1. Atış</value>
+  </data>
+  <data name="cmbAtisUc.Items2" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="cmbAtisUc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>932, 385</value>
+  </data>
+  <data name="cmbAtisDokuz.Items1" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cmbAtisYedi.Items4" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>4. Atış</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisDort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="btnAntrenmanBaslat.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24.75pt</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>10. Atış</value>
+  </data>
+  <data name="lblZaman.Location" type="System.Drawing.Point, System.Drawing">
+    <value>622, 396</value>
+  </data>
+  <data name="lblAntrenmanTuru.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 39</value>
+  </data>
+  <data name="btnKaydet.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="cmbAtisOn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 21</value>
+  </data>
+  <data name="cmbAtisAlti.Items5" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cmbAtisIki.Items1" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnKaydet.Name" xml:space="preserve">
+    <value>btnKaydet</value>
+  </data>
+  <data name="gridViewSporcular.Size" type="System.Drawing.Size, System.Drawing">
+    <value>875, 216</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label12.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;cmbAtisAlti.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisBir.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;Boy.Name" xml:space="preserve">
+    <value>Boy</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="cmbAtisAlti.Location" type="System.Drawing.Point, System.Drawing">
+    <value>932, 466</value>
   </data>
   <data name="&gt;&gt;ModbusScan.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="btnHavadan.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="btnKaydet.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="cmbAtisSekiz.Items" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cmbAtisSekiz.Items4" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisBir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label14.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnOturumKapat.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisYedi.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;btnYerden.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisDokuz.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;btnOturumKapat.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cmbAtisOn.Items2" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 20</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisBes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 20</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;gridViewSporcular.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
     <value>toolTip1</value>
   </data>
-  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="cmbAtisSekiz.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FrmKaleciAntrenman</value>
+  <data name="cmbAtisIki.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewSporcular.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="cmbAtisYedi.Items" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="lblAntrenmanTuru.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="btnSag.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="label14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="btnHavadan.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;Soyad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Id.Name" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="btnSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 4</value>
+  </data>
+  <data name="&gt;&gt;Ad.Name" xml:space="preserve">
+    <value>Ad</value>
+  </data>
+  <data name="&gt;&gt;btnSag.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;btnFalsolu.Name" xml:space="preserve">
+    <value>btnFalsolu</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisBir.Name" xml:space="preserve">
+    <value>cmbAtisBir</value>
+  </data>
+  <data name="btnSol.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;btnYerden.Name" xml:space="preserve">
+    <value>btnYerden</value>
+  </data>
+  <data name="txtBasariliAtis.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmbAtisOn.Items" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="cmbAtisDokuz.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnYerden.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;btnOturumKapat.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisOn.Name" xml:space="preserve">
+    <value>cmbAtisOn</value>
+  </data>
+  <data name="cmbAtisBes.Items" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblZaman.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSol.Text" xml:space="preserve">
+    <value>SOLDAN</value>
+  </data>
+  <data name="cmbAtisDort.Items4" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btnKarsidan.Name" xml:space="preserve">
+    <value>btnKarsidan</value>
+  </data>
+  <data name="Yas.HeaderText" xml:space="preserve">
+    <value>Yaş</value>
+  </data>
+  <data name="txtBasariliAtis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 30</value>
+  </data>
+  <data name="&gt;&gt;btnSifirla.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnHavadan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 19</value>
+  </data>
+  <data name="cmbAtisBes.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
+  </data>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 20</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cmbAtisBir.Items3" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblAntrenmanTuru.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="cmbAtisAlti.Items4" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnYerden.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnHavadan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gridViewSporcular.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;btnSag.Name" xml:space="preserve">
+    <value>btnSag</value>
+  </data>
+  <data name="btnGeriGit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;cmbAtisUc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en</value>
+  </metadata>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>280, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Soyad.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Mevki.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Kilo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="timerAntrenman.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="Yas.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Ad.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Boy.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Id.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ModbusScan.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>158, 17</value>
+  </metadata>
 </root>
